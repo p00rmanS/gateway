@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" data-size="1">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f4ecdd" id="themeColor">
+  <meta name="description" content="Gateway Buffet guest guide in 11 languages: buffet tips, things to do before the night show, and a mahalo before you go.">
+  <title>Gateway Buffet Guest Guide</title>
+
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icon-512.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Guest Guide">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400..700&family=Instrument+Serif:ital@0;1&display=swap">
+  <link rel="stylesheet" href="css/styles.css?v=14">
+  <script src="js/boot.js?v=14"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" defer></script>
+  <script src="js/i18n.js?v=14" defer></script>
+  <script src="js/icons.js?v=14" defer></script>
+  <script src="js/app.js?v=14" defer></script>
+</head>
+<body>
+  <a class="skip" href="#panel">Skip to content</a>
+
+  <!-- ============ Top bar ============ -->
+  <header class="topbar">
+    <div class="topbar__inner">
+      <h1 class="topbar__greet" id="greet">Aloha!</h1>
+      <div class="tools">
+        <button class="tool" id="sizeBtn" type="button" aria-label="Text size" aria-expanded="false" aria-controls="sizePanel">Aa</button>
+        <button class="tool tool--bulb" id="themeBtn" type="button" aria-label="Light or dark mode" aria-pressed="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path class="bulb-glass" d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5Z"/><path d="M9 18h6M10 22h4"/><path class="bulb-rays" d="M12 1v.5M4.2 3.2l.4.4M19.8 3.2l-.4.4M1 9h.5M22.5 9H23"/></svg>
+        </button>
+        <button class="tool" id="qrBtn" type="button" aria-label="Show QR code">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3M21 14v.01M14 21h3M21 17v4h-4"/></svg>
+        </button>
+        <button class="tool" id="setBtn" type="button" aria-label="Server settings">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Text size panel (opens from the Aa button). Wordless, so it works in every language. -->
+    <div class="sizer" id="sizePanel" role="group" aria-label="Text size" hidden>
+      <div class="sizer__row">
+        <button class="sizer__btn sizer__btn--sm" type="button" data-step="-1" aria-label="Smaller text">A</button>
+        <input class="sizer__range" id="sizeRange" type="range" min="0" max="4" step="1" value="1" aria-label="Text size">
+        <button class="sizer__btn sizer__btn--lg" type="button" data-step="1" aria-label="Larger text">A</button>
+      </div>
+      <div class="sizer__dots" id="sizeDots" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+    </div>
+  </header>
+
+  <!-- ============ Language picker ============ -->
+  <div class="langbar">
+    <div class="langs" id="langs" role="group" aria-label="Language"></div>
+  </div>
+
+  <!-- ============ Content ============ -->
+  <main class="main" id="main">
+    <div class="panel" id="panel" role="tabpanel" tabindex="-1"></div>
+  </main>
+
+  <!-- ============ Section tabs ============ -->
+  <nav class="tabbar" aria-label="Sections">
+    <div class="tabbar__inner" role="tablist" id="tablist">
+      <button class="tab" role="tab" id="tab-guide" data-tab="guide" aria-controls="panel" type="button">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg>
+        <span class="tab__label"></span>
+      </button>
+      <button class="tab" role="tab" id="tab-acts" data-tab="acts" aria-controls="panel" type="button">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M13 5v2M13 17v2M13 11v2"/></svg>
+        <span class="tab__label"></span>
+      </button>
+      <button class="tab" role="tab" id="tab-close" data-tab="close" aria-controls="panel" type="button">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <span class="tab__label"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Wordless swipe hint (works in every language) -->
+  <div class="swipe-hint" id="swipeHint" aria-hidden="true">
+    <svg class="swipe-hint__arrow" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg>
+    <svg class="swipe-hint__hand" viewBox="0 0 24 24"><path d="M22 14a8 8 0 0 1-8 8"/><path d="M18 11v-1a2 2 0 0 0-4 0"/><path d="M14 10V9a2 2 0 0 0-4 0v1"/><path d="M10 9.5V4a2 2 0 0 0-4 0v10"/><path d="M18 11a2 2 0 1 1 4 0v3a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-6-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"/></svg>
+    <svg class="swipe-hint__arrow" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg>
+  </div>
+
+  <!-- ============ Server settings ============ -->
+  <dialog class="sheet" id="setDlg" aria-labelledby="setTitle">
+    <form method="dialog" id="setForm">
+      <h2 class="sheet__title" id="setTitle">Server settings</h2>
+      <p class="sheet__sub">Saved on this phone only. Each server sets their own once.</p>
+
+      <label class="field__label" for="sName">Your name</label>
+      <input class="field" id="sName" maxlength="30" placeholder="e.g. James" autocomplete="off">
+
+      <div class="field__row">
+        <div>
+          <label class="field__label" for="sStart">Show starts</label>
+          <input class="field" id="sStart" placeholder="7:15" inputmode="decimal" pattern="\d{1,2}:\d{2}">
+        </div>
+        <div>
+          <label class="field__label" for="sGates">Gates open</label>
+          <input class="field" id="sGates" placeholder="6:50" inputmode="decimal" pattern="\d{1,2}:\d{2}">
+        </div>
+      </div>
+
+      <div class="sheet__actions">
+        <button class="btn btn--ghost" type="button" id="setCancel">Cancel</button>
+        <button class="btn" type="submit">Save</button>
+      </div>
+    </form>
+  </dialog>
+
+  <!-- ============ QR code ============ -->
+  <dialog class="sheet" id="qrDlg" aria-labelledby="qrTitle">
+    <h2 class="sheet__title" id="qrTitle"></h2>
+    <p class="sheet__sub">Opens this guide in the language shown.</p>
+    <div class="qrbox" id="qrbox"></div>
+    <div class="sheet__actions">
+      <button class="btn" type="button" id="qrClose">OK</button>
+    </div>
+  </dialog>
+
+  <noscript><p class="noscript">This guide needs JavaScript turned on.</p></noscript>
+</body>
+</html>

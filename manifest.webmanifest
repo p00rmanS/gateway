@@ -1,0 +1,16 @@
+{
+  "name": "Gateway Buffet Guest Guide",
+  "short_name": "Guest Guide",
+  "description": "Gateway Buffet guest guide in 11 languages.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#f4ecdd",
+  "theme_color": "#1c1a17",
+  "icons": [
+    { "src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "assets/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

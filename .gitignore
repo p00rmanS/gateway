@@ -1,0 +1,11 @@
+# Local preview config
+.claude/
+# Backup of the original single-file version
+_original/
+
+# OS / editor clutter
+.DS_Store
+Thumbs.db
+
+# Photos not used by the guide (not published)
+assets/kap.jpg

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5d2f5e"/>
+      <stop offset=".45" stop-color="#b2475a"/>
+      <stop offset=".75" stop-color="#ea7a4c"/>
+      <stop offset="1" stop-color="#f6b968"/>
+    </linearGradient>
+    <path id="frond" d="M0 0C14-10 34-8 46 8 34 2 22 2 12 4 7 5 3 4 0 2Z"/>
+  </defs>
+  <rect width="512" height="512" fill="url(#sky)"/>
+  <circle cx="210" cy="330" r="82" fill="#ffdf9a"/>
+  <path fill="#4a2238" d="M0 380c40-20 70-46 110-50s60 26 100 22 70-40 110-42 60 30 100 30 60-18 92-14V512H0Z"/>
+  <path fill="#1d0f18" d="M0 428c90-16 180-12 270-4s170 6 242-2V512H0Z"/>
+  <g fill="#1d0f18" transform="translate(318 108) scale(2.6)">
+    <path d="M-14 152c2-30 7-60 14-96l5 1c-6 34-9 64-9 95Z"/>
+    <g transform="translate(2 56)">
+      <use href="#frond" transform="rotate(-38)"/><use href="#frond" transform="rotate(-4)"/><use href="#frond" transform="rotate(28) scale(.9)"/>
+      <g transform="scale(-1 1)"><use href="#frond" transform="rotate(-30)"/><use href="#frond" transform="rotate(4) scale(.95)"/><use href="#frond" transform="rotate(34) scale(.85)"/></g>
+      <use href="#frond" transform="rotate(-78) scale(.7)"/>
+    </g>
+  </g>
+</svg>
