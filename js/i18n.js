@@ -25,42 +25,42 @@ self.I18N = {
         {
           "id": "self",
           "title": "Self-Service Restaurant",
-          "text": "This is a self-service restaurant. Help yourself to as much food as you like and enjoy your meal."
+          "text": "This is a self-service restaurant. Please help yourself to as much food as you like, and enjoy your meal."
         },
         {
           "id": "buffet",
           "title": "Buffet Areas & Food",
-          "text": "We have a kids' menu, sirloin steak, assorted meats, chicken, ahi sashimi, seafood, vegetables, and rice. Drinks are at the drink stations on both sides of the building. Plates are under the buffet line and in the salad & dessert area."
+          "text": "We offer a kids' menu, sirloin steak, assorted meats, chicken, ahi sashimi, seafood, vegetables, and rice. Drinks are available at the drink stations on both sides of the building. Plates are located beneath the buffet line and in the salad and dessert area."
         },
         {
           "id": "plates",
           "title": "Plates & Utensils",
-          "text": "Plates and utensils (spoons, forks, etc.) are in the salad & dessert area. Ask any staff member if you need something."
+          "text": "Plates and utensils (spoons, forks, etc.) are in the salad and dessert area. If you need anything, please ask any member of our staff."
         },
         {
           "id": "after",
           "title": "After Your Meal",
-          "text": "Please stack used plates neatly on one side of your table. Staff will collect them. Feel free to grab a clean plate for more."
+          "text": "Please stack used plates neatly on one side of your table, and our staff will collect them. Feel free to take a clean plate whenever you would like more."
         },
         {
           "id": "allergy",
           "title": "Food Allergies",
-          "text": "If you have food allergies, scan the QR code for ingredient lists, allergy information, and options for your diet."
+          "text": "If you have food allergies, please {link}view our allergy guide{/link} for ingredient lists, allergen information, and options for your diet."
         },
         {
           "id": "restroom",
           "title": "Restrooms",
-          "text": "Restrooms are on the opposite side of the building: women's on the left, men's on the right. If you step outside, get a stamp before leaving so you can come back in."
+          "text": "Restrooms are on the opposite side of the building: women's on the left, men's on the right. If you need to step outside, please get a hand stamp before leaving so you can return."
         },
         {
           "id": "robot",
           "title": "Serving Robot",
-          "text": "Please don't touch the serving robot or put plates on it. Staff will collect plates as they pass by."
+          "text": "Please do not touch the serving robot or place plates on it. Our staff will collect plates as they pass by."
         },
         {
           "id": "coupon",
           "title": "Discount Coupons",
-          "text": "Get discount coupons for select shops in the Hukilau Marketplace! Don't miss out."
+          "text": "Discount coupons are available for select shops in the Hukilau Marketplace. Don't miss out!"
         }
       ],
       "foot": "Enjoy your meal!"
@@ -70,7 +70,7 @@ self.I18N = {
       "foot": "No rush, enjoy your dessert first!",
       "show": {
         "title": "Night Show",
-        "text": "Going to tonight's night show? It starts at {start} PM, and gates open at {gates} PM. Your seats are reserved, so please be there on time. If your seats aren't reserved, just ask an usher for help. The theater is a 5–7 minute walk."
+        "text": "Attending the night show this evening? It begins at {start} PM, and gates open at {gates} PM. Your seats are reserved, so please arrive on time. If your seats are not reserved, an usher will be happy to help. The theater is a 5–7 minute walk from here."
       },
       "items": [
         {
@@ -82,9 +82,9 @@ self.I18N = {
           ]
         },
         {
-          "title": "Lā'ie Tram Tour",
+          "title": "Lāʻie Tram Tour",
           "subtitle": "",
-          "text": "Ride around the little town of Lā'ie and the BYU–Hawaii campus, with a 15-minute stop at the beautiful Lā'ie Hawaii Temple grounds of The Church of Jesus Christ of Latter-day Saints.",
+          "text": "Ride around the small town of Lāʻie and the BYU–Hawaii campus, with a 15-minute stop at the beautiful grounds of the Lāʻie Hawaiʻi Temple of The Church of Jesus Christ of Latter-day Saints.",
           "chips": [
             "Every 20 min",
             "3:00–6:30 PM",
@@ -94,7 +94,7 @@ self.I18N = {
         {
           "title": "Hawaiian Journey Theater",
           "subtitle": "Jeri's Fire Knife Show",
-          "text": "The story of fire knife competition, told by Jeri, an all-time defending champion who started fire knife at a young age.",
+          "text": "The story of fire knife competition, told by Jeri, a longtime defending champion who began fire knife dancing at a young age.",
           "chips": [
             "Every 30 min",
             "1:30–6:30 PM",
@@ -104,7 +104,7 @@ self.I18N = {
         {
           "title": "Polynesian Football Hall of Fame",
           "subtitle": "",
-          "text": "A gallery honoring Polynesian football legends, with plaques, photos, mementos, an interactive display, and a Wall of Honor. It's right across from Gateway Buffet in the PCC Welcome Center.",
+          "text": "A gallery honoring Polynesian football legends, featuring plaques, photos, memorabilia, an interactive display, and a Wall of Honor. It is located directly across from Gateway Buffet, inside the PCC Welcome Center.",
           "chips": [
             "Until 7:00 PM"
           ]
@@ -114,7 +114,7 @@ self.I18N = {
     "close": {
       "thanks": {
         "title": "Mahalo, ʻOhana!",
-        "text": "Thank you for joining us at Gateway Buffet tonight. It's been a pleasure taking care of you, so please take all the time you need."
+        "text": "Thank you for joining us at Gateway Buffet tonight. It has been a pleasure serving you, so please take all the time you need."
       },
       "review": {
         "title": "Share your experience",
@@ -130,7 +130,7 @@ self.I18N = {
     "status": {
       "open": "Open now",
       "soon": "Closing soon",
-      "ended": "Done for today",
+      "ended": "Closed for today",
       "next": "Next:",
       "gatesIn": "Gates open in {m} min",
       "gatesOpen": "Gates open · show in {m} min",
@@ -155,52 +155,52 @@ self.I18N = {
         {
           "id": "self",
           "title": "Restaurante de autoservicio",
-          "text": "Este es un restaurante de autoservicio. Sírvanse la comida que deseen y disfruten."
+          "text": "Este es un restaurante de autoservicio. Sírvanse todo lo que deseen y disfruten de su comida."
         },
         {
           "id": "buffet",
           "title": "Buffet y comida",
-          "text": "Tenemos menú infantil, sirloin steak, carnes variadas, pollo, sashimi de atún (ahi), mariscos, verduras y arroz. Las bebidas están en las estaciones a ambos lados del edificio. Los platos están debajo de la línea del buffet y en el área de ensaladas y postres."
+          "text": "Ofrecemos menú infantil, filete de res (sirloin), carnes variadas, pollo, sashimi de atún (ahi), mariscos, verduras y arroz. Las bebidas se encuentran en las estaciones de bebidas, a ambos lados del edificio. Los platos están debajo de la barra del buffet y en el área de ensaladas y postres."
         },
         {
           "id": "plates",
           "title": "Platos y cubiertos",
-          "text": "Los platos y cubiertos (cucharas, tenedores, etc.) están en el área de ensaladas y postres. Si necesitan algo, pregunten al personal."
+          "text": "Los platos y cubiertos (cucharas, tenedores, etc.) se encuentran en el área de ensaladas y postres. Si necesitan algo, nuestro personal con gusto les ayudará."
         },
         {
           "id": "after",
           "title": "Después de comer",
-          "text": "Por favor, apilen los platos usados a un lado de la mesa. El personal los recogerá. Pueden tomar un plato limpio para servirse más."
+          "text": "Por favor, apilen los platos usados a un lado de la mesa; el personal los recogerá. Pueden tomar un plato limpio cada vez que deseen servirse más."
         },
         {
           "id": "allergy",
           "title": "Alergias alimentarias",
-          "text": "Si tienen alergias alimentarias, escaneen el código QR para ver los ingredientes, la información sobre alérgenos y opciones para su dieta."
+          "text": "Si tienen alergias alimentarias, por favor {link}consulten nuestra guía de alérgenos{/link}, donde encontrarán la lista de ingredientes, información sobre alérgenos y opciones para su dieta."
         },
         {
           "id": "restroom",
           "title": "Baños",
-          "text": "Los baños están al otro lado del edificio: el de mujeres a la izquierda y el de hombres a la derecha. Si salen, pidan un sello antes de salir para poder volver a entrar."
+          "text": "Los baños se encuentran al otro lado del edificio: el de mujeres a la izquierda y el de hombres a la derecha. Si necesitan salir, pidan un sello en la mano antes de hacerlo para poder volver a entrar."
         },
         {
           "id": "robot",
           "title": "Robot mesero",
-          "text": "Por favor, no toquen el robot mesero ni pongan platos sobre él. El personal recogerá los platos al pasar."
+          "text": "Por favor, no toquen el robot mesero ni coloquen platos sobre él. El personal recogerá los platos al pasar por las mesas."
         },
         {
           "id": "coupon",
           "title": "Cupones de descuento",
-          "text": "¡Tenemos cupones de descuento para algunas tiendas del Hukilau Marketplace! No se los pierdan."
+          "text": "¡Tenemos cupones de descuento para tiendas seleccionadas del Hukilau Marketplace! No se los pierdan."
         }
       ],
       "foot": "¡Buen provecho!"
     },
     "acts": {
       "head": "Antes del espectáculo",
-      "foot": "¡Sin prisa, disfruten su postre primero!",
+      "foot": "Sin prisa: ¡disfruten primero su postre!",
       "show": {
         "title": "Espectáculo nocturno",
-        "text": "¿Van al espectáculo nocturno esta noche? Comienza a las {start} p. m. y las puertas abren a las {gates} p. m. Sus asientos están reservados, así que por favor lleguen a tiempo. Si sus asientos no están reservados, pidan ayuda a un acomodador. El teatro está a 5–7 minutos caminando."
+        "text": "¿Asistirán al espectáculo nocturno esta noche? Comienza a las {start} p. m. y las puertas abren a las {gates} p. m. Sus asientos están reservados, así que les pedimos llegar a tiempo. Si sus asientos no están reservados, un acomodador con gusto les ayudará. El teatro está a 5–7 minutos a pie."
       },
       "items": [
         {
@@ -212,9 +212,9 @@ self.I18N = {
           ]
         },
         {
-          "title": "Tram Tour por Lā'ie",
+          "title": "Tram Tour por Lāʻie",
           "subtitle": "",
-          "text": "Recorran el pueblo de Lā'ie y el campus de BYU–Hawaii, con una parada de 15 minutos en los hermosos jardines del Templo de Lā'ie de La Iglesia de Jesucristo de los Santos de los Últimos Días.",
+          "text": "Recorran el pequeño pueblo de Lāʻie y el campus de BYU–Hawaii, con una parada de 15 minutos en los hermosos jardines del Templo de Lāʻie, Hawái, de La Iglesia de Jesucristo de los Santos de los Últimos Días.",
           "chips": [
             "Cada 20 min",
             "3:00–6:30 p. m.",
@@ -224,7 +224,7 @@ self.I18N = {
         {
           "title": "Hawaiian Journey Theater",
           "subtitle": "Espectáculo de cuchillo de fuego de Jeri",
-          "text": "La historia de las competencias de cuchillo de fuego, contada por Jeri, campeón histórico que empezó a practicarlo desde muy joven.",
+          "text": "La historia de las competencias de cuchillo de fuego, contada por Jeri, campeón que defendió su título durante muchos años y que comenzó a practicar desde muy joven.",
           "chips": [
             "Cada 30 min",
             "1:30–6:30 p. m.",
@@ -232,9 +232,9 @@ self.I18N = {
           ]
         },
         {
-          "title": "Salón de la Fama del Fútbol Polinesio",
+          "title": "Salón de la Fama del Fútbol Americano Polinesio",
           "subtitle": "",
-          "text": "Una galería que honra a las leyendas polinesias del fútbol americano, con placas, fotos, recuerdos, una pantalla interactiva y un Muro de Honor. Está justo enfrente del Gateway Buffet, en el Welcome Center de PCC.",
+          "text": "Una galería que honra a las leyendas polinesias del fútbol americano, con placas, fotos, recuerdos, una pantalla interactiva y un Muro de Honor. Está justo enfrente de Gateway Buffet, dentro del Welcome Center de PCC.",
           "chips": [
             "Hasta las 7:00 p. m."
           ]
@@ -244,15 +244,15 @@ self.I18N = {
     "close": {
       "thanks": {
         "title": "¡Mahalo, ʻOhana!",
-        "text": "Gracias por acompañarnos esta noche en Gateway Buffet. Ha sido un placer atenderles; por favor, tómense todo el tiempo que necesiten."
+        "text": "Gracias por acompañarnos esta noche en Gateway Buffet. Ha sido un placer atenderlos; por favor, tómense todo el tiempo que necesiten."
       },
       "review": {
         "title": "Compartan su experiencia",
-        "text": "Cuando tengan un momento, por favor escaneen el código QR y toquen TripAdvisor. Nos encantaría saber sobre su comida, su mesero y todo su día en PCC, incluyendo la aldea, el buffet y el espectáculo nocturno de esta noche. Les agradeceríamos mucho su opinión sincera. Si disfrutaron de su velada con nosotros, una reseña de 5 estrellas significaría muchísimo para nuestro equipo."
+        "text": "Cuando tengan un momento, por favor escaneen el código QR y toquen TripAdvisor. Nos encantaría conocer su opinión sobre la comida, su mesero y todo su día en PCC, incluidos la aldea, el buffet y el espectáculo nocturno de esta noche. Les agradeceríamos mucho su opinión sincera. Si disfrutaron de su velada con nosotros, una reseña de 5 estrellas significaría muchísimo para nuestro equipo."
       },
       "survey": {
         "title": "Una nota para después",
-        "text": "En aproximadamente una semana, la persona que compró los boletos recibirá una breve encuesta por correo de PCC sobre su visita en general. Si disfrutaron su visita, por favor califíquennos con un 10."
+        "text": "En aproximadamente una semana, la persona que compró los boletos recibirá de PCC una breve encuesta por correo electrónico sobre su visita en general. Si disfrutaron de su visita, por favor califíquennos con un 10."
       },
       "server": "Su mesero esta noche:",
       "end": "¡Mahalo nui loa y disfruten el resto de su noche!"
@@ -260,12 +260,12 @@ self.I18N = {
     "status": {
       "open": "Abierto ahora",
       "soon": "Cierra pronto",
-      "ended": "Terminado por hoy",
+      "ended": "Cerrado por hoy",
       "next": "Próximo:",
       "gatesIn": "Las puertas abren en {m} min",
-      "gatesOpen": "Puertas abiertas · show en {m} min",
-      "gates": "Abren puertas",
-      "starts": "Inicia el show",
+      "gatesOpen": "Puertas abiertas · espectáculo en {m} min",
+      "gates": "Apertura de puertas",
+      "starts": "Inicio del espectáculo",
       "scanHint": "Escaneen el código QR y toquen TripAdvisor"
     }
   },
@@ -274,7 +274,7 @@ self.I18N = {
     "htmlLang": "pt-BR",
     "greet": "Aloha! Bem-vindos",
     "sub": "Bem-vindos ao Gateway Buffet",
-    "qr": "Escaneie para abrir no celular",
+    "qr": "Escaneiem para abrir no celular",
     "tabs": {
       "guide": "Informações",
       "acts": "O que fazer",
@@ -290,7 +290,7 @@ self.I18N = {
         {
           "id": "buffet",
           "title": "Buffet e pratos",
-          "text": "Temos cardápio infantil, contrafilé, carnes variadas, frango, sashimi de atum (ahi), frutos do mar, legumes e arroz. As bebidas ficam nas estações de bebidas dos dois lados do prédio. Os pratos ficam embaixo da linha do buffet e na área de saladas e sobremesas."
+          "text": "Temos cardápio infantil, contrafilé, carnes variadas, frango, sashimi de atum (ahi), frutos do mar, legumes e arroz. As bebidas ficam nas estações de bebidas, dos dois lados do prédio. Os pratos ficam embaixo do balcão do buffet e na área de saladas e sobremesas."
         },
         {
           "id": "plates",
@@ -300,17 +300,17 @@ self.I18N = {
         {
           "id": "after",
           "title": "Depois da refeição",
-          "text": "Por favor, empilhem os pratos usados em um canto da mesa. Nossa equipe vai recolhê-los. Peguem um prato limpo para se servir de novo."
+          "text": "Por favor, empilhem os pratos usados em um canto da mesa; nossa equipe vai recolhê-los. Fiquem à vontade para pegar um prato limpo e se servir novamente."
         },
         {
           "id": "allergy",
           "title": "Alergias alimentares",
-          "text": "Se vocês têm alergia alimentar, escaneiem o QR code para ver a lista de ingredientes, informações sobre alérgenos e opções para a sua dieta."
+          "text": "Se vocês têm alergia alimentar, por favor {link}consultem nosso guia de alergias{/link}, com a lista de ingredientes, informações sobre alérgenos e opções para a sua dieta."
         },
         {
           "id": "restroom",
           "title": "Banheiros",
-          "text": "Os banheiros ficam do outro lado do prédio: feminino à esquerda, masculino à direita. Se forem sair, peçam um carimbo antes para poder entrar de novo."
+          "text": "Os banheiros ficam do outro lado do prédio: feminino à esquerda, masculino à direita. Se precisarem sair, peçam um carimbo na mão antes, para poder entrar novamente."
         },
         {
           "id": "robot",
@@ -342,9 +342,9 @@ self.I18N = {
           ]
         },
         {
-          "title": "Tram Tour de Lā'ie",
+          "title": "Tram Tour de Lāʻie",
           "subtitle": "",
-          "text": "Passeiem pela pequena cidade de Lā'ie e pelo campus da BYU–Hawaii, com uma parada de 15 minutos nos lindos jardins do Templo de Lā'ie, de A Igreja de Jesus Cristo dos Santos dos Últimos Dias.",
+          "text": "Passeiem pela pequena cidade de Lāʻie e pelo campus da BYU–Hawaii, com uma parada de 15 minutos nos lindos jardins do Templo de Lāʻie, no Havaí, da Igreja de Jesus Cristo dos Santos dos Últimos Dias.",
           "chips": [
             "A cada 20 min",
             "15h–18h30",
@@ -390,13 +390,13 @@ self.I18N = {
     "status": {
       "open": "Aberto agora",
       "soon": "Fecha em breve",
-      "ended": "Encerrado por hoje",
+      "ended": "Fechado por hoje",
       "next": "Próximo:",
       "gatesIn": "Portões abrem em {m} min",
       "gatesOpen": "Portões abertos · show em {m} min",
       "gates": "Abertura dos portões",
       "starts": "Início do show",
-      "scanHint": "Escaneie o QR code e toque em TripAdvisor"
+      "scanHint": "Escaneiem o QR code e toquem em TripAdvisor"
     }
   },
   "fr": {
@@ -415,42 +415,42 @@ self.I18N = {
         {
           "id": "self",
           "title": "Restaurant en libre-service",
-          "text": "Ceci est un restaurant en libre-service. Servez-vous autant que vous le souhaitez et bon repas !"
+          "text": "Notre restaurant fonctionne en libre-service. Servez-vous autant que vous le souhaitez et profitez de votre repas."
         },
         {
           "id": "buffet",
           "title": "Buffet et plats",
-          "text": "Vous trouverez un menu enfant, du faux-filet, des viandes variées, du poulet, du sashimi de thon (ahi), des fruits de mer, des légumes et du riz. Les boissons sont aux stations de boissons des deux côtés du bâtiment. Les assiettes se trouvent sous le buffet et dans l'espace salades et desserts."
+          "text": "Vous trouverez un menu enfant, du faux-filet, des viandes variées, du poulet, du sashimi de thon (ahi), des fruits de mer, des légumes et du riz. Les boissons sont disponibles aux fontaines situées des deux côtés du bâtiment. Les assiettes se trouvent sous le buffet et dans l'espace salades et desserts."
         },
         {
           "id": "plates",
           "title": "Assiettes et couverts",
-          "text": "Les assiettes et couverts (cuillères, fourchettes, etc.) se trouvent dans l'espace salades et desserts. N'hésitez pas à demander au personnel."
+          "text": "Les assiettes et les couverts (cuillères, fourchettes, etc.) se trouvent dans l'espace salades et desserts. Si vous avez besoin de quoi que ce soit, n'hésitez pas à vous adresser au personnel."
         },
         {
           "id": "after",
           "title": "Après le repas",
-          "text": "Merci d'empiler vos assiettes usagées sur un côté de la table. Le personnel les débarrassera. Prenez une assiette propre pour vous resservir."
+          "text": "Merci d'empiler vos assiettes usagées sur un côté de la table ; le personnel les débarrassera. N'hésitez pas à prendre une assiette propre pour vous resservir."
         },
         {
           "id": "allergy",
           "title": "Allergies alimentaires",
-          "text": "En cas d'allergie alimentaire, scannez le code QR pour consulter la liste des ingrédients, les informations sur les allergènes et les options adaptées à votre régime."
+          "text": "En cas d'allergie alimentaire, {link}consultez notre guide des allergènes{/link} : liste des ingrédients, informations sur les allergènes et options adaptées à votre régime."
         },
         {
           "id": "restroom",
           "title": "Toilettes",
-          "text": "Les toilettes se trouvent de l'autre côté du bâtiment : femmes à gauche, hommes à droite. Si vous sortez, demandez un tampon avant de partir pour pouvoir revenir."
+          "text": "Les toilettes se trouvent de l'autre côté du bâtiment : femmes à gauche, hommes à droite. Si vous devez sortir, demandez un tampon sur la main avant de partir afin de pouvoir revenir."
         },
         {
           "id": "robot",
           "title": "Robot serveur",
-          "text": "Merci de ne pas toucher le robot serveur ni d'y poser des assiettes. Le personnel débarrasse les assiettes en passant."
+          "text": "Merci de ne pas toucher le robot serveur et de ne pas y poser d'assiettes. Le personnel débarrasse les assiettes en passant."
         },
         {
           "id": "coupon",
           "title": "Bons de réduction",
-          "text": "Profitez de bons de réduction dans certaines boutiques du Hukilau Marketplace ! À ne pas manquer."
+          "text": "Profitez de bons de réduction dans certaines boutiques du Hukilau Marketplace. À ne pas manquer !"
         }
       ],
       "foot": "Bon appétit !"
@@ -460,7 +460,7 @@ self.I18N = {
       "foot": "Rien ne presse, savourez d'abord votre dessert !",
       "show": {
         "title": "Spectacle du soir",
-        "text": "Vous allez au spectacle du soir ? Il commence à {start} du soir et les portes ouvrent à {gates}. Vos places sont réservées, merci donc d'arriver à l'heure. Si vos places ne sont pas réservées, demandez de l'aide à un placeur. Le théâtre est à 5–7 minutes à pied."
+        "text": "Vous assistez au spectacle du soir ? Il commence à {start} du soir et les portes ouvrent à {gates}. Vos places sont réservées : merci d'arriver à l'heure. Si vos places ne sont pas réservées, un placeur se fera un plaisir de vous aider. Le théâtre se trouve à 5–7 minutes à pied."
       },
       "items": [
         {
@@ -472,9 +472,9 @@ self.I18N = {
           ]
         },
         {
-          "title": "Tram Tour de Lā'ie",
+          "title": "Tram Tour de Lāʻie",
           "subtitle": "",
-          "text": "Faites le tour de la petite ville de Lā'ie et du campus de BYU–Hawaii, avec un arrêt de 15 minutes dans les magnifiques jardins du temple de Lā'ie de l'Église de Jésus-Christ des Saints des Derniers Jours.",
+          "text": "Faites le tour de la petite ville de Lāʻie et du campus de BYU–Hawaii, avec un arrêt de 15 minutes dans les magnifiques jardins du temple de Lāʻie (Hawaï) de l'Église de Jésus-Christ des Saints des Derniers Jours.",
           "chips": [
             "Toutes les 20 min",
             "15 h – 18 h 30",
@@ -520,7 +520,7 @@ self.I18N = {
     "status": {
       "open": "Ouvert",
       "soon": "Ferme bientôt",
-      "ended": "Terminé pour aujourd'hui",
+      "ended": "Fermé pour aujourd'hui",
       "next": "Prochain :",
       "gatesIn": "Ouverture des portes dans {m} min",
       "gatesOpen": "Portes ouvertes · spectacle dans {m} min",
@@ -545,7 +545,7 @@ self.I18N = {
         {
           "id": "self",
           "title": "Selbstbedienungsrestaurant",
-          "text": "Dies ist ein Selbstbedienungsrestaurant. Nehmen Sie sich so viel Sie möchten und genießen Sie Ihr Essen."
+          "text": "Dies ist ein Selbstbedienungsrestaurant. Nehmen Sie sich so viel, wie Sie möchten, und genießen Sie Ihr Essen."
         },
         {
           "id": "buffet",
@@ -565,12 +565,12 @@ self.I18N = {
         {
           "id": "allergy",
           "title": "Lebensmittelallergien",
-          "text": "Bei Lebensmittelallergien scannen Sie bitte den QR-Code für Zutatenlisten, Allergeninformationen und passende Optionen für Ihre Ernährung."
+          "text": "Bei Lebensmittelallergien finden Sie in unserem {link}Allergen-Leitfaden{/link} Zutatenlisten, Allergeninformationen und passende Optionen für Ihre Ernährung."
         },
         {
           "id": "restroom",
           "title": "Toiletten",
-          "text": "Die Toiletten befinden sich auf der gegenüberliegenden Seite des Gebäudes: Damen links, Herren rechts. Wenn Sie hinausgehen, lassen Sie sich bitte vorher einen Stempel geben, damit Sie wieder hereinkommen."
+          "text": "Die Toiletten befinden sich auf der gegenüberliegenden Seite des Gebäudes: Damen links, Herren rechts. Wenn Sie kurz hinausgehen möchten, lassen Sie sich bitte vorher einen Handstempel geben, damit Sie wieder eingelassen werden können."
         },
         {
           "id": "robot",
@@ -580,7 +580,7 @@ self.I18N = {
         {
           "id": "coupon",
           "title": "Rabattgutscheine",
-          "text": "Wir haben Rabattgutscheine für ausgewählte Geschäfte im Hukilau Marketplace! Nicht verpassen."
+          "text": "Für ausgewählte Geschäfte im Hukilau Marketplace erhalten Sie bei uns Rabattgutscheine – nicht verpassen!"
         }
       ],
       "foot": "Guten Appetit!"
@@ -602,9 +602,9 @@ self.I18N = {
           ]
         },
         {
-          "title": "Lā'ie Tram-Tour",
+          "title": "Lāʻie Tram-Tour",
           "subtitle": "",
-          "text": "Fahren Sie durch den kleinen Ort Lā'ie und über den Campus der BYU–Hawaii, mit einem 15-minütigen Halt auf dem wunderschönen Gelände des Lā'ie-Hawaii-Tempels der Kirche Jesu Christi der Heiligen der Letzten Tage.",
+          "text": "Fahren Sie durch den kleinen Ort Lāʻie und über den Campus der BYU–Hawaii, mit einem 15-minütigen Halt auf dem wunderschönen Gelände des Lāʻie-Hawaiʻi-Tempels der Kirche Jesu Christi der Heiligen der Letzten Tage.",
           "chips": [
             "Alle 20 Min.",
             "15:00–18:30 Uhr",
@@ -638,19 +638,19 @@ self.I18N = {
       },
       "review": {
         "title": "Teilen Sie Ihre Erfahrung",
-        "text": "Wenn Sie einen Moment Zeit haben, scannen Sie bitte den QR-Code und tippen Sie auf TripAdvisor. Wir würden gerne von Ihrem Essen, Ihrem Service und Ihrem ganzen Tag im PCC hören, einschließlich des Dorfes, des Buffets und der Abendshow. Wir würden uns sehr über Ihre ehrliche Bewertung freuen. Wenn Ihnen der Abend bei uns gefallen hat, würde eine 5-Sterne-Bewertung unserem Team sehr viel bedeuten."
+        "text": "Wenn Sie einen Moment Zeit haben, scannen Sie bitte den QR-Code und tippen Sie auf TripAdvisor. Wir würden gerne erfahren, wie Ihnen das Essen, der Service und Ihr ganzer Tag im PCC gefallen haben – einschließlich des Dorfes, des Buffets und der Abendshow. Wir würden uns sehr über Ihre ehrliche Bewertung freuen. Wenn Ihnen der Abend bei uns gefallen hat, würde eine 5-Sterne-Bewertung unserem Team sehr viel bedeuten."
       },
       "survey": {
         "title": "Ein Hinweis für später",
         "text": "In etwa einer Woche erhält die Person, die Ihre Tickets gekauft hat, eine kurze E-Mail-Umfrage vom PCC zu Ihrem gesamten Besuch. Wenn Ihnen Ihr Besuch gefallen hat, bewerten Sie uns bitte mit einer 10."
       },
-      "server": "Ihr Service heute Abend:",
+      "server": "Ihre Bedienung heute Abend:",
       "end": "Mahalo nui loa und noch einen schönen Abend!"
     },
     "status": {
       "open": "Jetzt geöffnet",
       "soon": "Schließt bald",
-      "ended": "Für heute beendet",
+      "ended": "Heute geschlossen",
       "next": "Nächste:",
       "gatesIn": "Einlass in {m} Min.",
       "gatesOpen": "Einlass läuft · Show in {m} Min.",
@@ -690,12 +690,12 @@ self.I18N = {
         {
           "id": "after",
           "title": "Na de maaltijd",
-          "text": "Stapel gebruikte borden netjes aan één kant van de tafel. Ons personeel ruimt ze af. Neem gerust een schoon bord voor een volgende ronde."
+          "text": "Wilt u gebruikte borden netjes aan één kant van de tafel stapelen? Ons personeel ruimt ze af. Neem gerust een schoon bord voor een volgende ronde."
         },
         {
           "id": "allergy",
           "title": "Voedselallergieën",
-          "text": "Heeft u een voedselallergie? Scan de QR-code voor ingrediëntenlijsten, allergeneninformatie en opties die bij uw dieet passen."
+          "text": "Heeft u een voedselallergie? Bekijk dan onze {link}allergenengids{/link} met ingrediëntenlijsten, allergeneninformatie en opties die bij uw dieet passen."
         },
         {
           "id": "restroom",
@@ -705,12 +705,12 @@ self.I18N = {
         {
           "id": "robot",
           "title": "Bedieningsrobot",
-          "text": "Raak de bedieningsrobot niet aan en zet er geen borden op. Ons personeel haalt de borden op als ze langskomen."
+          "text": "Raak de bedieningsrobot alstublieft niet aan en zet er geen borden op. Ons personeel haalt de borden op wanneer het langskomt."
         },
         {
           "id": "coupon",
           "title": "Kortingsbonnen",
-          "text": "Er zijn kortingsbonnen voor geselecteerde winkels in de Hukilau Marketplace! Mis ze niet."
+          "text": "Er zijn kortingsbonnen voor geselecteerde winkels in de Hukilau Marketplace. Mis ze niet!"
         }
       ],
       "foot": "Eet smakelijk!"
@@ -732,9 +732,9 @@ self.I18N = {
           ]
         },
         {
-          "title": "Lā'ie Tram Tour",
+          "title": "Lāʻie Tram Tour",
           "subtitle": "",
-          "text": "Rijd door het stadje Lā'ie en over de campus van BYU–Hawaii, met een stop van 15 minuten bij het prachtige terrein van de Lā'ie Hawaii-tempel van De Kerk van Jezus Christus van de Heiligen der Laatste Dagen.",
+          "text": "Rijd door het stadje Lāʻie en over de campus van BYU–Hawaii, met een stop van 15 minuten bij het prachtige terrein van de Lāʻie Hawaiʻi-tempel van De Kerk van Jezus Christus van de Heiligen der Laatste Dagen.",
           "chips": [
             "Elke 20 min",
             "15.00–18.30 uur",
@@ -764,14 +764,14 @@ self.I18N = {
     "close": {
       "thanks": {
         "title": "Mahalo, ʻOhana!",
-        "text": "Hartelijk dank dat u vanavond bij Gateway Buffet heeft gegeten. Het was een genoegen om u te bedienen, dus neem gerust de tijd."
+        "text": "Hartelijk dank dat u vanavond bij Gateway Buffet heeft gegeten. Het was ons een genoegen u te bedienen. Neemt u gerust de tijd."
       },
       "review": {
         "title": "Deel uw ervaring",
         "text": "Als u even tijd heeft, scan dan alstublieft de QR-code en tik op TripAdvisor. We horen graag over uw maaltijd, uw ober en uw hele dag in het PCC, inclusief het dorp, het buffet en de avondshow. Wij zouden uw eerlijke beoordeling zeer op prijs stellen. Heeft u genoten van uw avond bij ons, dan zou een beoordeling van 5 sterren ons team heel veel betekenen."
       },
       "survey": {
-        "title": "Een berichtje voor later",
+        "title": "Een bericht voor later",
         "text": "Over ongeveer een week ontvangt degene die uw tickets heeft gekocht een korte e-mailenquête van het PCC over uw hele bezoek. Heeft u genoten van uw bezoek, geef ons dan alstublieft een 10."
       },
       "server": "Uw ober vanavond:",
@@ -780,7 +780,7 @@ self.I18N = {
     "status": {
       "open": "Nu open",
       "soon": "Sluit binnenkort",
-      "ended": "Klaar voor vandaag",
+      "ended": "Gesloten voor vandaag",
       "next": "Volgende:",
       "gatesIn": "Deuren open over {m} min",
       "gatesOpen": "Deuren open · show over {m} min",
@@ -810,12 +810,12 @@ self.I18N = {
         {
           "id": "buffet",
           "title": "Khu buffet và món ăn",
-          "text": "Có thực đơn trẻ em, bít tết thăn, các món thịt, gà, sashimi cá ngừ, hải sản, rau và cơm. Đồ uống có tại quầy nước ở hai bên tòa nhà. Đĩa có ở phía dưới quầy buffet và tại khu salad & tráng miệng."
+          "text": "Nhà hàng có thực đơn trẻ em, bít tết thăn bò, các món thịt, gà, sashimi cá ngừ, hải sản, rau và cơm. Đồ uống có tại quầy nước ở hai bên tòa nhà. Đĩa được đặt bên dưới quầy buffet và tại khu salad & tráng miệng."
         },
         {
           "id": "plates",
           "title": "Đĩa và dụng cụ ăn",
-          "text": "Đĩa và dụng cụ ăn (thìa, nĩa, v.v.) có ở khu salad & tráng miệng. Nếu cần, xin hãy hỏi nhân viên."
+          "text": "Đĩa và dụng cụ ăn (thìa, nĩa, v.v.) có ở khu salad & tráng miệng. Nếu cần hỗ trợ, quý khách vui lòng liên hệ nhân viên."
         },
         {
           "id": "after",
@@ -825,29 +825,29 @@ self.I18N = {
         {
           "id": "allergy",
           "title": "Dị ứng thực phẩm",
-          "text": "Nếu quý khách bị dị ứng thực phẩm, vui lòng quét mã QR để xem thành phần, thông tin dị ứng và các lựa chọn phù hợp với chế độ ăn."
+          "text": "Nếu quý khách bị dị ứng thực phẩm, vui lòng {link}xem hướng dẫn về dị ứng{/link} để biết thành phần, thông tin về chất gây dị ứng và các lựa chọn phù hợp với chế độ ăn."
         },
         {
           "id": "restroom",
           "title": "Nhà vệ sinh",
-          "text": "Nhà vệ sinh ở phía bên kia tòa nhà: nữ bên trái, nam bên phải. Nếu ra ngoài, xin hãy đóng dấu trước khi đi để có thể vào lại."
+          "text": "Nhà vệ sinh ở phía bên kia tòa nhà: nữ bên trái, nam bên phải. Nếu quý khách cần ra ngoài, vui lòng đóng dấu tay trước khi ra để có thể vào lại."
         },
         {
           "id": "robot",
           "title": "Robot phục vụ",
-          "text": "Xin đừng chạm vào robot phục vụ hoặc đặt đĩa lên robot. Nhân viên sẽ dọn đĩa khi đi ngang qua."
+          "text": "Quý khách vui lòng không chạm vào robot phục vụ và không đặt đĩa lên robot. Nhân viên sẽ dọn đĩa khi đi ngang qua."
         },
         {
           "id": "coupon",
           "title": "Phiếu giảm giá",
-          "text": "Chúng tôi có phiếu giảm giá cho một số cửa hàng tại Hukilau Marketplace! Đừng bỏ lỡ nhé."
+          "text": "Chúng tôi có phiếu giảm giá cho một số cửa hàng tại Hukilau Marketplace. Quý khách đừng bỏ lỡ!"
         }
       ],
       "foot": "Chúc quý khách ngon miệng!"
     },
     "acts": {
       "head": "Trước giờ biểu diễn",
-      "foot": "Cứ thong thả, thưởng thức món tráng miệng trước nhé!",
+      "foot": "Quý khách cứ thong thả thưởng thức món tráng miệng trước nhé!",
       "show": {
         "title": "Chương trình biểu diễn tối",
         "text": "Quý khách sẽ xem chương trình biểu diễn tối nay chứ? Chương trình bắt đầu lúc {start} tối, cổng mở lúc {gates} tối. Chỗ ngồi đã được giữ sẵn, vì vậy xin vui lòng đến đúng giờ. Nếu chỗ ngồi chưa được giữ, xin hãy nhờ nhân viên hướng dẫn hỗ trợ. Nhà hát cách đây 5–7 phút đi bộ."
@@ -862,9 +862,9 @@ self.I18N = {
           ]
         },
         {
-          "title": "Tour xe điện Lā'ie",
+          "title": "Tour xe điện Lāʻie",
           "subtitle": "",
-          "text": "Dạo quanh thị trấn Lā'ie và khuôn viên trường BYU–Hawaii, dừng 15 phút tại khuôn viên Đền thờ Lā'ie xinh đẹp của Giáo hội Các Thánh Hữu Ngày Sau của Chúa Giê Su Ky Tô.",
+          "text": "Dạo quanh thị trấn nhỏ Lāʻie và khuôn viên trường BYU–Hawaii, dừng 15 phút tại khuôn viên Đền Thờ Lāʻie xinh đẹp của Giáo Hội Các Thánh Hữu Ngày Sau của Chúa Giê Su Ky Tô.",
           "chips": [
             "Mỗi 20 phút",
             "3:00–6:30 chiều",
@@ -910,12 +910,12 @@ self.I18N = {
     "status": {
       "open": "Đang mở",
       "soon": "Sắp đóng",
-      "ended": "Đã kết thúc hôm nay",
+      "ended": "Hôm nay đã kết thúc",
       "next": "Tiếp theo:",
       "gatesIn": "Cổng mở sau {m} phút",
       "gatesOpen": "Cổng đã mở · biểu diễn sau {m} phút",
       "gates": "Mở cổng",
-      "starts": "Bắt đầu",
+      "starts": "Giờ biểu diễn",
       "scanHint": "Quét mã QR rồi chọn TripAdvisor"
     }
   },
@@ -940,7 +940,7 @@ self.I18N = {
         {
           "id": "buffet",
           "title": "自助区与菜品",
-          "text": "提供儿童餐、西冷牛排、各式肉类、鸡肉、金枪鱼生鱼片、海鲜、蔬菜和米饭。饮料在建筑两侧的饮料区。餐盘在自助餐台下方以及沙拉和甜点区。"
+          "text": "提供儿童餐、西冷牛排、各式肉类、鸡肉、金枪鱼生鱼片、海鲜、蔬菜和米饭。饮料位于建筑两侧的饮料区。餐盘放在自助餐台下方以及沙拉和甜点区。"
         },
         {
           "id": "plates",
@@ -955,12 +955,12 @@ self.I18N = {
         {
           "id": "allergy",
           "title": "食物过敏",
-          "text": "如果您有食物过敏，请扫描二维码查看配料表、过敏信息以及适合您饮食需求的选择。"
+          "text": "如果您有食物过敏，请{link}查看过敏信息指南{/link}，了解配料表、过敏原信息以及适合您饮食需求的选择。"
         },
         {
           "id": "restroom",
           "title": "洗手间",
-          "text": "洗手间位于建筑的另一侧：女洗手间在左边，男洗手间在右边。如需外出，请在离开前盖章，以便重新入场。"
+          "text": "洗手间位于建筑的另一侧：女洗手间在左边，男洗手间在右边。如需外出，请在离开前于手上盖章，以便重新入场。"
         },
         {
           "id": "robot",
@@ -970,7 +970,7 @@ self.I18N = {
         {
           "id": "coupon",
           "title": "优惠券",
-          "text": "我们还提供 Hukilau Marketplace 部分商店可用的优惠券！千万别错过。"
+          "text": "我们还提供 Hukilau Marketplace 部分商店可用的优惠券，千万不要错过！"
         }
       ],
       "foot": "祝您用餐愉快！"
@@ -980,7 +980,7 @@ self.I18N = {
       "foot": "不用着急，先享用甜点吧！",
       "show": {
         "title": "夜间表演",
-        "text": "今晚要去看夜间表演吗？表演晚上{start}开始，{gates}开放入场。您的座位已预留，请准时到场。如果您的座位没有预留，请向引座员寻求帮助。步行到剧场约5–7分钟。"
+        "text": "今晚要去观看夜间表演吗？表演于晚上{start}开始，晚上{gates}开放入场。您的座位已预留，请准时到场。如果您的座位没有预留，请向引座员寻求帮助。步行到剧场约5–7分钟。"
       },
       "items": [
         {
@@ -992,9 +992,9 @@ self.I18N = {
           ]
         },
         {
-          "title": "Lā'ie 游览电车",
+          "title": "Lāʻie 游览电车",
           "subtitle": "",
-          "text": "乘车游览 Lā'ie 小镇和杨百翰大学夏威夷分校校园，并在美丽的耶稣基督后期圣徒教会 Lā'ie 圣殿园区停留15分钟。",
+          "text": "乘车游览 Lāʻie 小镇和杨百翰大学夏威夷分校校园，并在美丽的耶稣基督后期圣徒教会 Lāʻie 圣殿园区停留15分钟。",
           "chips": [
             "每20分钟一班",
             "下午3:00–6:30",
@@ -1014,7 +1014,7 @@ self.I18N = {
         {
           "title": "波利尼西亚美式橄榄球名人堂",
           "subtitle": "",
-          "text": "展示波利尼西亚橄榄球传奇人物的成就，包括纪念牌匾、照片、纪念品、互动展示和荣誉墙。就在 Gateway Buffet 对面的 PCC 游客中心内。",
+          "text": "展示波利尼西亚美式橄榄球传奇人物的成就，包括纪念牌匾、照片、纪念品、互动展示和荣誉墙。就在 Gateway Buffet 对面的 PCC 游客中心内。",
           "chips": [
             "开放至晚上7:00"
           ]
@@ -1032,7 +1032,7 @@ self.I18N = {
       },
       "survey": {
         "title": "温馨提示",
-        "text": "大约一周后，购票人会收到PCC发送的一份简短邮件问卷，询问您此次参观的整体体验。如果您喜欢这次参观，请给我们打10分。"
+        "text": "大约一周后，购票人会收到PCC发送的一份简短的电子邮件问卷，询问您此次参观的整体体验。如果您喜欢这次参观，请给我们打10分。"
       },
       "server": "今晚为您服务的是：",
       "end": "Mahalo nui loa！祝您有个愉快的夜晚！"
@@ -1070,7 +1070,7 @@ self.I18N = {
         {
           "id": "buffet",
           "title": "自助區與菜色",
-          "text": "提供兒童餐、沙朗牛排、各式肉類、雞肉、鮪魚生魚片、海鮮、蔬菜和白飯。飲料在建築兩側的飲料區。餐盤在自助餐檯下方以及沙拉和甜點區。"
+          "text": "提供兒童餐、沙朗牛排、各式肉類、雞肉、鮪魚生魚片、海鮮、蔬菜和白飯。飲料位於建築兩側的飲料區。餐盤放在自助餐檯下方以及沙拉和甜點區。"
         },
         {
           "id": "plates",
@@ -1085,12 +1085,12 @@ self.I18N = {
         {
           "id": "allergy",
           "title": "食物過敏",
-          "text": "如果您有食物過敏，請掃描QR碼查看成分表、過敏資訊以及適合您飲食需求的選擇。"
+          "text": "如果您有食物過敏，請{link}查看過敏資訊指南{/link}，了解成分表、過敏原資訊以及適合您飲食需求的選擇。"
         },
         {
           "id": "restroom",
           "title": "洗手間",
-          "text": "洗手間位於建築的另一側：女洗手間在左邊，男洗手間在右邊。如需外出，請在離開前蓋章，以便重新入場。"
+          "text": "洗手間位於建築的另一側：女洗手間在左邊，男洗手間在右邊。如需外出，請在離開前於手上蓋章，以便重新入場。"
         },
         {
           "id": "robot",
@@ -1100,7 +1100,7 @@ self.I18N = {
         {
           "id": "coupon",
           "title": "優惠券",
-          "text": "我們還提供 Hukilau Marketplace 部分商店可用的優惠券！千萬別錯過。"
+          "text": "我們還提供 Hukilau Marketplace 部分商店可用的優惠券，千萬不要錯過！"
         }
       ],
       "foot": "祝您用餐愉快！"
@@ -1110,7 +1110,7 @@ self.I18N = {
       "foot": "不用急，先享用甜點吧！",
       "show": {
         "title": "夜間表演",
-        "text": "今晚要去看夜間表演嗎？表演晚上{start}開始，{gates}開放入場。您的座位已預留，請準時到場。如果您的座位沒有預留，請向帶位人員尋求協助。步行到劇場約5–7分鐘。"
+        "text": "今晚要去觀賞夜間表演嗎？表演於晚上{start}開始，晚上{gates}開放入場。您的座位已預留，請準時到場。如果您的座位沒有預留，請向帶位人員尋求協助。步行到劇場約5–7分鐘。"
       },
       "items": [
         {
@@ -1122,9 +1122,9 @@ self.I18N = {
           ]
         },
         {
-          "title": "Lā'ie 遊覽電車",
+          "title": "Lāʻie 遊覽電車",
           "subtitle": "",
-          "text": "搭車遊覽 Lā'ie 小鎮和楊百翰大學夏威夷分校校園，並在美麗的耶穌基督後期聖徒教會 Lā'ie 聖殿園區停留15分鐘。",
+          "text": "搭車遊覽 Lāʻie 小鎮和楊百翰大學夏威夷分校校園，並在美麗的耶穌基督後期聖徒教會 Lāʻie 聖殿園區停留15分鐘。",
           "chips": [
             "每20分鐘一班",
             "下午3:00–6:30",
@@ -1162,7 +1162,7 @@ self.I18N = {
       },
       "survey": {
         "title": "貼心提醒",
-        "text": "大約一週後，購票人會收到PCC寄出的一份簡短電郵問卷，詢問您此次參觀的整體體驗。如果您喜歡這次參觀，請給我們打10分。"
+        "text": "大約一週後，購票人會收到PCC寄出的一份簡短的電子郵件問卷，詢問您此次參觀的整體體驗。如果您喜歡這次參觀，請給我們打10分。"
       },
       "server": "今晚為您服務的是：",
       "end": "Mahalo nui loa！祝您有個愉快的夜晚！"
@@ -1195,7 +1195,7 @@ self.I18N = {
         {
           "id": "self",
           "title": "셀프 서비스 레스토랑",
-          "text": "이곳은 셀프 서비스 레스토랑입니다. 원하시는 만큼 직접 음식을 가져가시고, 즐겁게 식사하세요."
+          "text": "이곳은 셀프 서비스 레스토랑입니다. 원하시는 만큼 음식을 직접 가져다 드시고, 즐거운 식사 되세요."
         },
         {
           "id": "buffet",
@@ -1210,27 +1210,27 @@ self.I18N = {
         {
           "id": "after",
           "title": "식사 후",
-          "text": "사용하신 접시는 테이블 한쪽에 가지런히 쌓아주세요. 직원이 수거해 갑니다. 원하시면 깨끗한 접시를 다시 가져가실 수 있습니다."
+          "text": "사용하신 접시는 테이블 한쪽에 가지런히 쌓아 주세요. 직원이 수거해 갑니다. 원하시면 깨끗한 접시를 다시 가져가실 수 있습니다."
         },
         {
           "id": "allergy",
           "title": "식품 알레르기",
-          "text": "식품 알레르기가 있으신 경우, QR 코드를 스캔하여 재료 목록과 알레르기 정보, 고객님의 식단에 맞는 옵션을 확인해 주세요."
+          "text": "식품 알레르기가 있으신 경우, {link}알레르기 안내 페이지{/link}에서 재료 목록과 알레르기 정보, 고객님의 식단에 맞는 메뉴를 확인해 주세요."
         },
         {
           "id": "restroom",
           "title": "화장실",
-          "text": "화장실은 건물 반대편에 있습니다. 여성 화장실은 왼쪽, 남성 화장실은 오른쪽입니다. 외출하실 경우, 다시 입장하실 수 있도록 나가기 전에 스탬프를 받아주세요."
+          "text": "화장실은 건물 반대편에 있습니다. 여성 화장실은 왼쪽, 남성 화장실은 오른쪽입니다. 밖으로 나가실 경우, 다시 입장하실 수 있도록 나가시기 전에 손등에 스탬프를 받아 주세요."
         },
         {
           "id": "robot",
           "title": "서빙 로봇",
-          "text": "서빙 로봇을 만지거나 접시를 올리지 말아주세요. 직원이 테이블을 지나가며 접시를 수거합니다."
+          "text": "서빙 로봇을 만지거나 로봇 위에 접시를 올리지 말아 주세요. 직원이 테이블을 지나가며 접시를 수거합니다."
         },
         {
           "id": "coupon",
           "title": "할인 쿠폰",
-          "text": "후클라우 마켓플레이스 내 일부 매장에서 사용할 수 있는 할인 쿠폰도 제공됩니다! 놓치지 마세요!"
+          "text": "후클라우 마켓플레이스 내 일부 매장에서 사용할 수 있는 할인 쿠폰도 준비되어 있습니다. 놓치지 마세요!"
         }
       ],
       "foot": "맛있는 식사 되세요!"
@@ -1264,11 +1264,11 @@ self.I18N = {
         {
           "title": "하와이안 저니 극장",
           "subtitle": "제리의 파이어 나이프 쇼",
-          "text": "어린 시절부터 파이어 나이프를 시작해 오랫동안 챔피언 자리를 지켜온 제리가 들려주는 파이어 나이프 대회의 역사.",
+          "text": "어린 시절부터 파이어 나이프를 시작해 오랫동안 챔피언 자리를 지켜 온 제리가 파이어 나이프 대회의 역사를 들려드립니다.",
           "chips": [
             "30분 간격",
             "오후 1:30–6:30",
-            "마지막 상영: 오후 6:30"
+            "마지막 공연: 오후 6:30"
           ]
         },
         {
@@ -1345,7 +1345,7 @@ self.I18N = {
         {
           "id": "allergy",
           "title": "食物アレルギー",
-          "text": "食物アレルギーをお持ちの方は、QRコードを読み取り、原材料・アレルギー情報・お食事に合ったメニューをご確認ください。"
+          "text": "食物アレルギーをお持ちの方は、{link}アレルギー情報ページ{/link}で原材料・アレルギー情報・お食事に合ったメニューをご確認ください。"
         },
         {
           "id": "restroom",

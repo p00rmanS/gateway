@@ -19,6 +19,7 @@
   ];
   const GUIDE_ICONS = ["bell", "utensils", "plates", "stack", "leaf", "restroom", "robot", "tag"];
   const ACT_ICONS = ["bag", "tram", "flame", "trophy"];
+  const ALLERGY_URL = "https://www.polynesia-allergy.com";
   const DEFAULT_START = "7:15";
   const DEFAULT_GATES = "6:50";
   const SOON_MINUTES = 30;
@@ -133,6 +134,12 @@
 
   const endline = (text) => `<p class="endline">${esc(text)}</p>`;
 
+  // Text with an optional {link}…{/link} part (used by the allergy tip) becomes a tappable link.
+  const EXTERNAL = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>`;
+  const withLink = (text, url) => esc(text)
+    .replace("{link}", `<a class="inline-link" href="${url}" target="_blank" rel="noopener">`)
+    .replace("{/link}", `${EXTERNAL}</a>`);
+
   // Previous / next section buttons, labelled with the (already translated) tab names.
   const ARROW_L = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>`;
   const ARROW_R = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>`;
@@ -155,7 +162,7 @@
             <h3 class="step__title">${esc(item.title)}</h3>
             <span class="badge">${icon(GUIDE_ICONS[i])}</span>
           </div>
-          <p class="step__text">${esc(item.text)}</p>
+          <p class="step__text">${withLink(item.text, ALLERGY_URL)}</p>
         </div>
       </li>`).join("");
     return viewHead(tabs.guide) + `<ol class="steps">${steps}</ol>` + endline(guide.foot) + pager();
