@@ -1,7 +1,8 @@
 # Gateway Buffet Guest Guide
 
-A mobile guest guide for Gateway Buffet at the Polynesian Cultural Center, in 11 languages
-(English, Español, Português, Français, Deutsch, Nederlands, Tiếng Việt, 简体中文, 繁體中文, 한국어, 日本語).
+A mobile guest guide for Gateway Buffet at the Polynesian Cultural Center, in 14 languages
+(English, Español, Português, Français, Deutsch, Nederlands, Tiếng Việt, 简体中文, 繁體中文, 한국어, 日本語,
+Dansk, Српски, العربية). Arabic is shown right to left.
 
 Servers show it to guests at the table: buffet tips, things to do before the night show
 (with live open/closing status and a countdown to gates opening), and a mahalo with the

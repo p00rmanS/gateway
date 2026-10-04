@@ -30,7 +30,7 @@ self.I18N = {
         {
           "id": "buffet",
           "title": "Buffet Areas & Food",
-          "text": "We offer a kids' menu, sirloin steak, assorted meats, chicken, ahi sashimi, seafood, vegetables, and rice. Drinks are available at the drink stations on both sides of the building. Plates are located beneath the buffet line and in the salad and dessert area."
+          "text": "We offer a kids' menu, sirloin steak, assorted meats, chicken, ahi sashimi, poke (marinated raw fish), seafood, vegetables, and rice. Drinks are available at the drink stations on both sides of the building. Plates are located beneath the buffet line and in the salad and dessert area."
         },
         {
           "id": "plates",
@@ -60,7 +60,7 @@ self.I18N = {
         {
           "id": "coupon",
           "title": "Discount Coupons",
-          "text": "Discount coupons are available for select shops in the Hukilau Marketplace. Don't miss out!"
+          "text": "Discount coupons are available for select shops in the Hukilau Marketplace. If you haven't received one yet, please ask your server. Don't miss out!"
         }
       ],
       "foot": "Enjoy your meal!"
@@ -161,7 +161,7 @@ self.I18N = {
         {
           "id": "buffet",
           "title": "Buffet y comida",
-          "text": "Ofrecemos menú infantil, filete de res (sirloin), carnes variadas, pollo, sashimi de atún (ahi), mariscos, verduras y arroz. Las bebidas se encuentran en las estaciones de bebidas, a ambos lados del edificio. Los platos están debajo de la barra del buffet y en el área de ensaladas y postres."
+          "text": "Ofrecemos menú infantil, filete de res (sirloin), carnes variadas, pollo, sashimi de atún (ahi), poke (pescado crudo marinado), mariscos, verduras y arroz. Las bebidas se encuentran en las estaciones de bebidas, a ambos lados del edificio. Los platos están debajo de la barra del buffet y en el área de ensaladas y postres."
         },
         {
           "id": "plates",
@@ -191,7 +191,7 @@ self.I18N = {
         {
           "id": "coupon",
           "title": "Cupones de descuento",
-          "text": "¡Tenemos cupones de descuento para tiendas seleccionadas del Hukilau Marketplace! No se los pierdan."
+          "text": "¡Tenemos cupones de descuento para tiendas seleccionadas del Hukilau Marketplace! Si aún no han recibido uno, pídanlo a su mesero. No se los pierdan."
         }
       ],
       "foot": "¡Buen provecho!"
@@ -292,7 +292,7 @@ self.I18N = {
         {
           "id": "buffet",
           "title": "Buffet e pratos",
-          "text": "Temos cardápio infantil, contrafilé, carnes variadas, frango, sashimi de atum (ahi), frutos do mar, legumes e arroz. As bebidas ficam nas estações de bebidas, dos dois lados do prédio. Os pratos ficam embaixo do balcão do buffet e na área de saladas e sobremesas."
+          "text": "Temos cardápio infantil, contrafilé, carnes variadas, frango, sashimi de atum (ahi), poke (peixe cru marinado), frutos do mar, legumes e arroz. As bebidas ficam nas estações de bebidas, dos dois lados do prédio. Os pratos ficam embaixo do balcão do buffet e na área de saladas e sobremesas."
         },
         {
           "id": "plates",
@@ -322,7 +322,7 @@ self.I18N = {
         {
           "id": "coupon",
           "title": "Cupons de desconto",
-          "text": "Temos cupons de desconto para lojas selecionadas do Hukilau Marketplace! Não percam."
+          "text": "Temos cupons de desconto para lojas selecionadas do Hukilau Marketplace! Se ainda não receberam o seu, peçam ao seu garçom. Não percam."
         }
       ],
       "foot": "Bom apetite!"
@@ -423,7 +423,7 @@ self.I18N = {
         {
           "id": "buffet",
           "title": "Buffet et plats",
-          "text": "Vous trouverez un menu enfant, du faux-filet, des viandes variées, du poulet, du sashimi de thon (ahi), des fruits de mer, des légumes et du riz. Les boissons sont disponibles aux fontaines situées des deux côtés du bâtiment. Les assiettes se trouvent sous le buffet et dans l'espace salades et desserts."
+          "text": "Vous trouverez un menu enfant, du faux-filet, des viandes variées, du poulet, du sashimi de thon (ahi), du poke (poisson cru mariné), des fruits de mer, des légumes et du riz. Les boissons sont disponibles aux fontaines situées des deux côtés du bâtiment. Les assiettes se trouvent sous le buffet et dans l'espace salades et desserts."
         },
         {
           "id": "plates",
@@ -453,7 +453,7 @@ self.I18N = {
         {
           "id": "coupon",
           "title": "Bons de réduction",
-          "text": "Profitez de bons de réduction dans certaines boutiques du Hukilau Marketplace. À ne pas manquer !"
+          "text": "Profitez de bons de réduction dans certaines boutiques du Hukilau Marketplace. Si vous n'en avez pas encore reçu, demandez-en un à votre serveur. À ne pas manquer !"
         }
       ],
       "foot": "Bon appétit !"
@@ -554,7 +554,7 @@ self.I18N = {
         {
           "id": "buffet",
           "title": "Buffetbereiche & Speisen",
-          "text": "Es gibt ein Kindermenü, Sirloin-Steak, verschiedene Fleischgerichte, Hähnchen, Ahi-Sashimi (Thunfisch), Meeresfrüchte, Gemüse und Reis. Getränke finden Sie an den Getränkestationen auf beiden Seiten des Gebäudes. Teller stehen unter der Buffettheke sowie im Salat- und Dessertbereich bereit."
+          "text": "Es gibt ein Kindermenü, Sirloin-Steak, verschiedene Fleischgerichte, Hähnchen, Ahi-Sashimi (Thunfisch), Poke (marinierter roher Fisch), Meeresfrüchte, Gemüse und Reis. Getränke finden Sie an den Getränkestationen auf beiden Seiten des Gebäudes. Teller stehen unter der Buffettheke sowie im Salat- und Dessertbereich bereit."
         },
         {
           "id": "plates",
@@ -584,7 +584,7 @@ self.I18N = {
         {
           "id": "coupon",
           "title": "Rabattgutscheine",
-          "text": "Für ausgewählte Geschäfte im Hukilau Marketplace erhalten Sie bei uns Rabattgutscheine – nicht verpassen!"
+          "text": "Für ausgewählte Geschäfte im Hukilau Marketplace erhalten Sie bei uns Rabattgutscheine. Falls Sie noch keinen erhalten haben, fragen Sie bitte Ihre Bedienung – nicht verpassen!"
         }
       ],
       "foot": "Guten Appetit!"
@@ -685,7 +685,7 @@ self.I18N = {
         {
           "id": "buffet",
           "title": "Buffet en gerechten",
-          "text": "Er is een kindermenu, entrecote, diverse vleesgerechten, kip, ahi-sashimi (tonijn), zeevruchten, groenten en rijst. Drankjes vindt u bij de drankstations aan beide kanten van het gebouw. Borden staan onder het buffet en bij de salade- en dessertafdeling."
+          "text": "Er is een kindermenu, entrecote, diverse vleesgerechten, kip, ahi-sashimi (tonijn), poke (gemarineerde rauwe vis), zeevruchten, groenten en rijst. Drankjes vindt u bij de drankstations aan beide kanten van het gebouw. Borden staan onder het buffet en bij de salade- en dessertafdeling."
         },
         {
           "id": "plates",
@@ -715,7 +715,7 @@ self.I18N = {
         {
           "id": "coupon",
           "title": "Kortingsbonnen",
-          "text": "Er zijn kortingsbonnen voor geselecteerde winkels in de Hukilau Marketplace. Mis ze niet!"
+          "text": "Er zijn kortingsbonnen voor geselecteerde winkels in de Hukilau Marketplace. Heeft u er nog geen gekregen? Vraag er dan gerust een aan uw ober. Mis ze niet!"
         }
       ],
       "foot": "Eet smakelijk!"
@@ -816,7 +816,7 @@ self.I18N = {
         {
           "id": "buffet",
           "title": "Khu buffet và món ăn",
-          "text": "Nhà hàng có thực đơn trẻ em, bít tết thăn bò, các món thịt, gà, sashimi cá ngừ, hải sản, rau và cơm. Đồ uống có tại quầy nước ở hai bên tòa nhà. Đĩa được đặt bên dưới quầy buffet và tại khu salad & tráng miệng."
+          "text": "Nhà hàng có thực đơn trẻ em, bít tết thăn bò, các món thịt, gà, sashimi cá ngừ, poke (cá sống trộn gia vị), hải sản, rau và cơm. Đồ uống có tại quầy nước ở hai bên tòa nhà. Đĩa được đặt bên dưới quầy buffet và tại khu salad & tráng miệng."
         },
         {
           "id": "plates",
@@ -846,7 +846,7 @@ self.I18N = {
         {
           "id": "coupon",
           "title": "Phiếu giảm giá",
-          "text": "Chúng tôi có phiếu giảm giá cho một số cửa hàng tại Hukilau Marketplace. Quý khách đừng bỏ lỡ!"
+          "text": "Chúng tôi có phiếu giảm giá cho một số cửa hàng tại Hukilau Marketplace. Nếu quý khách chưa nhận được, vui lòng hỏi người phục vụ. Quý khách đừng bỏ lỡ!"
         }
       ],
       "foot": "Chúc quý khách ngon miệng!"
@@ -947,7 +947,7 @@ self.I18N = {
         {
           "id": "buffet",
           "title": "自助区与菜品",
-          "text": "提供儿童餐、西冷牛排、各式肉类、鸡肉、金枪鱼生鱼片、海鲜、蔬菜和米饭。饮料位于建筑两侧的饮料区。餐盘放在自助餐台下方以及沙拉和甜点区。"
+          "text": "提供儿童餐、西冷牛排、各式肉类、鸡肉、金枪鱼生鱼片、夏威夷拌生鱼（poke）、海鲜、蔬菜和米饭。饮料位于建筑两侧的饮料区。餐盘放在自助餐台下方以及沙拉和甜点区。"
         },
         {
           "id": "plates",
@@ -977,7 +977,7 @@ self.I18N = {
         {
           "id": "coupon",
           "title": "优惠券",
-          "text": "我们还提供 Hukilau Marketplace 部分商店可用的优惠券，千万不要错过！"
+          "text": "我们还提供 Hukilau Marketplace 部分商店可用的优惠券。如果您还没有收到，请向您的服务员索取，千万不要错过！"
         }
       ],
       "foot": "祝您用餐愉快！"
@@ -1078,7 +1078,7 @@ self.I18N = {
         {
           "id": "buffet",
           "title": "自助區與菜色",
-          "text": "提供兒童餐、沙朗牛排、各式肉類、雞肉、鮪魚生魚片、海鮮、蔬菜和白飯。飲料位於建築兩側的飲料區。餐盤放在自助餐檯下方以及沙拉和甜點區。"
+          "text": "提供兒童餐、沙朗牛排、各式肉類、雞肉、鮪魚生魚片、夏威夷拌生魚（poke）、海鮮、蔬菜和白飯。飲料位於建築兩側的飲料區。餐盤放在自助餐檯下方以及沙拉和甜點區。"
         },
         {
           "id": "plates",
@@ -1108,7 +1108,7 @@ self.I18N = {
         {
           "id": "coupon",
           "title": "優惠券",
-          "text": "我們還提供 Hukilau Marketplace 部分商店可用的優惠券，千萬不要錯過！"
+          "text": "我們還提供 Hukilau Marketplace 部分商店可用的優惠券。如果您還沒有收到，請向您的服務人員索取，千萬不要錯過！"
         }
       ],
       "foot": "祝您用餐愉快！"
@@ -1209,7 +1209,7 @@ self.I18N = {
         {
           "id": "buffet",
           "title": "뷔페 구역 및 음식 종류",
-          "text": "어린이 메뉴, 등심 스테이크, 다양한 고기 요리, 닭고기, 참치 사시미, 해산물, 채소, 밥이 준비되어 있습니다. 음료는 건물 양쪽에 있는 음료 코너에서 이용하실 수 있습니다. 접시는 뷔페 라인 아래쪽과 샐러드 및 디저트 구역에 있습니다."
+          "text": "어린이 메뉴, 등심 스테이크, 다양한 고기 요리, 닭고기, 참치 사시미, 포케(양념한 생선회), 해산물, 채소, 밥이 준비되어 있습니다. 음료는 건물 양쪽에 있는 음료 코너에서 이용하실 수 있습니다. 접시는 뷔페 라인 아래쪽과 샐러드 및 디저트 구역에 있습니다."
         },
         {
           "id": "plates",
@@ -1239,7 +1239,7 @@ self.I18N = {
         {
           "id": "coupon",
           "title": "할인 쿠폰",
-          "text": "후클라우 마켓플레이스 내 일부 매장에서 사용할 수 있는 할인 쿠폰도 준비되어 있습니다. 놓치지 마세요!"
+          "text": "후클라우 마켓플레이스 내 일부 매장에서 사용할 수 있는 할인 쿠폰도 준비되어 있습니다. 아직 받지 못하셨다면 담당 서버에게 요청해 주세요. 놓치지 마세요!"
         }
       ],
       "foot": "맛있는 식사 되세요!"
@@ -1340,7 +1340,7 @@ self.I18N = {
         {
           "id": "buffet",
           "title": "ビュッフェエリアとお料理",
-          "text": "キッズメニュー、サーロインステーキ、各種肉料理、チキン、アヒ（マグロ）の刺身、シーフード、野菜、ご飯をご用意しています。お飲み物は建物の両側にあるドリンクコーナーにございます。お皿はビュッフェラインの下段とサラダ・デザートエリアにございます。"
+          "text": "キッズメニュー、サーロインステーキ、各種肉料理、チキン、アヒ（マグロ）の刺身、ポキ（ハワイ風の生魚の和え物）、シーフード、野菜、ご飯をご用意しています。お飲み物は建物の両側にあるドリンクコーナーにございます。お皿はビュッフェラインの下段とサラダ・デザートエリアにございます。"
         },
         {
           "id": "plates",
@@ -1370,7 +1370,7 @@ self.I18N = {
         {
           "id": "coupon",
           "title": "割引クーポン",
-          "text": "フキラウ・マーケットプレイス内の一部店舗で使える割引クーポンもございます！お見逃しなく。"
+          "text": "フキラウ・マーケットプレイス内の一部店舗で使える割引クーポンもございます。まだお受け取りでない場合は、担当スタッフにお申し付けください。お見逃しなく！"
         }
       ],
       "foot": "どうぞお召し上がりください！"
@@ -1448,6 +1448,400 @@ self.I18N = {
       "gates": "開場",
       "starts": "開演",
       "scanHint": "QRコードを読み取り、TripAdvisorをタップ"
+    }
+  },
+  "da": {
+    "name": "Dansk",
+    "htmlLang": "da",
+    "greet": "Aloha! Velkommen",
+    "sub": "Velkommen til Gateway Buffet",
+    "qr": "Scan for at åbne guiden på jeres telefon",
+    "tabs": {
+      "guide": "Info",
+      "acts": "Oplevelser",
+      "close": "Inden I går"
+    },
+    "guide": {
+      "items": [
+        {
+          "id": "self",
+          "title": "Selvbetjeningsrestaurant",
+          "text": "Dette er en selvbetjeningsrestaurant. Tag gerne så meget mad, I har lyst til, og nyd måltidet."
+        },
+        {
+          "id": "buffet",
+          "title": "Buffet og retter",
+          "text": "Vi tilbyder børnemenu, sirloin steak, forskellige kødretter, kylling, ahi-sashimi (tun), poke (marineret rå fisk), skaldyr, grøntsager og ris. Drikkevarer finder I ved drikkestationerne i begge sider af bygningen. Tallerkener står under buffeten samt i salat- og dessertområdet."
+        },
+        {
+          "id": "plates",
+          "title": "Tallerkener og bestik",
+          "text": "Tallerkener og bestik (skeer, gafler osv.) finder I i salat- og dessertområdet. Spørg endelig vores personale, hvis I mangler noget."
+        },
+        {
+          "id": "after",
+          "title": "Efter måltidet",
+          "text": "Stil venligst brugte tallerkener pænt stablet i den ene side af bordet, så tager vores personale dem. Tag gerne en ren tallerken, når I vil have mere."
+        },
+        {
+          "id": "allergy",
+          "title": "Fødevareallergi",
+          "text": "Har I en fødevareallergi, så {link}se vores allergiguide{/link} med ingredienslister, allergenoplysninger og muligheder, der passer til jeres kost."
+        },
+        {
+          "id": "restroom",
+          "title": "Toiletter",
+          "text": "Toiletterne ligger i den modsatte side af bygningen: dametoilettet til venstre og herretoilettet til højre. Hvis I skal udenfor, så få venligst et stempel på hånden, inden I går, så I kan komme ind igen."
+        },
+        {
+          "id": "robot",
+          "title": "Serveringsrobot",
+          "text": "Rør venligst ikke ved serveringsrobotten, og stil ikke tallerkener på den. Vores personale tager tallerkenerne, når de går forbi."
+        },
+        {
+          "id": "coupon",
+          "title": "Rabatkuponer",
+          "text": "Der er rabatkuponer til udvalgte butikker i Hukilau Marketplace. Hvis I endnu ikke har fået en, så spørg venligst jeres tjener. Gå ikke glip af dem!"
+        }
+      ],
+      "foot": "God appetit!"
+    },
+    "acts": {
+      "head": "Før showet",
+      "foot": "Ingen hast – nyd først jeres dessert!",
+      "show": {
+        "title": "Aftenshow",
+        "text": "Skal I se aftenshowet i aften? Det begynder kl. {start} om aftenen, og dørene åbner kl. {gates}. Jeres pladser er reserveret, så kom venligst til tiden. Hvis jeres pladser ikke er reserveret, hjælper en af vores pladsanvisere jer gerne. Teatret ligger 5–7 minutters gang herfra."
+      },
+      "items": [
+        {
+          "title": "Hukilau Marketplace",
+          "subtitle": "",
+          "text": "Køb gaver, snacks og souvenirs, inden butikkerne lukker.",
+          "chips": [
+            "Til kl. 19.00"
+          ]
+        },
+        {
+          "title": "Lāʻie Tram Tour",
+          "subtitle": "",
+          "text": "Kør en tur rundt i den lille by Lāʻie og på BYU–Hawaii-campusset med et stop på 15 minutter ved de smukke haver omkring Lāʻie Hawaiʻi-templet, som tilhører Jesu Kristi Kirke af Sidste Dages Hellige.",
+          "chips": [
+            "Hvert 20. min.",
+            "15.00–18.30",
+            "Turen varer 35 min."
+          ]
+        },
+        {
+          "title": "Hawaiian Journey Theater",
+          "subtitle": "Jeris ildknivshow",
+          "text": "Historien om konkurrencer med ildkniv, fortalt af Jeri – en mangeårig forsvarende mester, der begyndte med ildkniven allerede som ung.",
+          "chips": [
+            "Hver 30. min.",
+            "13.30–18.30",
+            "Sidste show: 18.30"
+          ]
+        },
+        {
+          "title": "Polynesian Football Hall of Fame",
+          "subtitle": "",
+          "text": "Et galleri til ære for polynesiske legender inden for amerikansk fodbold med mindeplader, fotos, erindringsgenstande, en interaktiv skærm og en æresvæg. Det ligger lige over for Gateway Buffet i PCC's Welcome Center.",
+          "chips": [
+            "Til kl. 19.00"
+          ]
+        }
+      ]
+    },
+    "close": {
+      "thanks": {
+        "title": "Mahalo, ʻOhana!",
+        "text": "Tak, fordi I spiste med os på Gateway Buffet i aften. Det har været en fornøjelse at betjene jer, så tag jer endelig god tid."
+      },
+      "review": {
+        "title": "Del jeres oplevelse",
+        "text": "Når I har et øjeblik, så scan venligst QR-koden og tryk på TripAdvisor. Vi vil meget gerne høre om jeres måltid, jeres tjener og hele jeres dag på PCC, herunder landsbyen, aftenens buffet og aftenshowet. Vi vil sætte stor pris på en ærlig anmeldelse. Hvis I har nydt aftenen hos os, vil en anmeldelse med 5 stjerner betyde meget for vores team."
+      },
+      "survey": {
+        "title": "En besked til senere",
+        "text": "Om cirka en uge modtager den person, der købte jeres billetter, en kort spørgeundersøgelse på e-mail fra PCC om jeres samlede besøg. Hvis I nød besøget, så giv os venligst en 10'er."
+      },
+      "server": "Jeres tjener i aften:",
+      "end": "Mahalo nui loa, og hav en dejlig aften!",
+      "qrNote": "Jeres tjener viser jer gerne QR-koden."
+    },
+    "status": {
+      "open": "Åbent nu",
+      "soon": "Lukker snart",
+      "ended": "Lukket for i dag",
+      "next": "Næste:",
+      "gatesIn": "Dørene åbner om {m} min.",
+      "gatesOpen": "Dørene er åbne · show om {m} min.",
+      "gates": "Dørene åbner",
+      "starts": "Showet begynder",
+      "scanHint": "Scan QR-koden, og tryk derefter på TripAdvisor"
+    }
+  },
+  "sr": {
+    "name": "Српски",
+    "htmlLang": "sr-Cyrl",
+    "greet": "Алоха! Добро дошли",
+    "sub": "Добро дошли у Gateway Buffet",
+    "qr": "Скенирајте да бисте отворили водич на телефону",
+    "tabs": {
+      "guide": "Упутство",
+      "acts": "Активности",
+      "close": "Пре одласка"
+    },
+    "guide": {
+      "items": [
+        {
+          "id": "self",
+          "title": "Ресторан са самопослуживањем",
+          "text": "Ово је ресторан са самопослуживањем. Послужите се колико год желите и уживајте у оброку."
+        },
+        {
+          "id": "buffet",
+          "title": "Шведски сто и јела",
+          "text": "Нудимо дечји мени, сирлоин стек, разне врсте меса, пилетину, ахи сашими (туна), поке (маринирана сирова риба), морске плодове, поврће и пиринач. Пића су доступна на станицама за пиће са обе стране зграде. Тањири се налазе испод шведског стола и у делу са салатама и десертима."
+        },
+        {
+          "id": "plates",
+          "title": "Тањири и прибор за јело",
+          "text": "Тањири и прибор за јело (кашике, виљушке итд.) налазе се у делу са салатама и десертима. Ако вам било шта затреба, слободно се обратите нашем особљу."
+        },
+        {
+          "id": "after",
+          "title": "После оброка",
+          "text": "Молимо вас да искоришћене тањире уредно сложите на једну страну стола, а наше особље ће их покупити. Слободно узмите чист тањир кад год пожелите још."
+        },
+        {
+          "id": "allergy",
+          "title": "Алергије на храну",
+          "text": "Ако имате алергију на храну, {link}погледајте наш водич о алергенима{/link} са списком састојака, информацијама о алергенима и опцијама прилагођеним вашој исхрани."
+        },
+        {
+          "id": "restroom",
+          "title": "Тоалети",
+          "text": "Тоалети се налазе на супротној страни зграде: женски лево, мушки десно. Ако треба да изађете, молимо вас да пре изласка добијете печат на руци како бисте могли поново да уђете."
+        },
+        {
+          "id": "robot",
+          "title": "Робот за послуживање",
+          "text": "Молимо вас да не дирате робота за послуживање и да на њега не стављате тањире. Наше особље ће покупити тањире у пролазу."
+        },
+        {
+          "id": "coupon",
+          "title": "Купони за попуст",
+          "text": "Купони за попуст важе у одабраним продавницама у Hukilau Marketplace. Ако још нисте добили купон, замолите свог конобара. Не пропустите их!"
+        }
+      ],
+      "foot": "Пријатно!"
+    },
+    "acts": {
+      "head": "Пре представе",
+      "foot": "Без журбе, прво уживајте у десерту!",
+      "show": {
+        "title": "Вечерња представа",
+        "text": "Идете ли вечерас на вечерњу представу? Почиње у {start} увече, а улаз се отвара у {gates}. Ваша места су резервисана, па вас молимо да стигнете на време. Ако ваша места нису резервисана, разводник ће вам радо помоћи. Позориште је удаљено 5–7 минута хода."
+      },
+      "items": [
+        {
+          "title": "Hukilau Marketplace",
+          "subtitle": "",
+          "text": "Купите поклоне, грицкалице и сувенире пре него што се продавнице затворе.",
+          "chips": [
+            "До 19:00"
+          ]
+        },
+        {
+          "title": "Обилазак места Lāʻie трамвајем",
+          "subtitle": "",
+          "text": "Провозајте се кроз градић Lāʻie и кампус BYU–Hawaii, уз паузу од 15 минута у прелепим вртовима храма Lāʻie Hawaiʻi Цркве Исуса Христа светаца последњих дана.",
+          "chips": [
+            "Сваких 20 мин",
+            "15:00–18:30",
+            "Вожња траје 35 мин"
+          ]
+        },
+        {
+          "title": "Hawaiian Journey Theater",
+          "subtitle": "Џеријева представа са ватреним ножем",
+          "text": "Прича о такмичењима са ватреним ножем коју приповеда Џери, дугогодишњи шампион који је вешто бранио титулу и који је са ватреним ножем почео још као дечак.",
+          "chips": [
+            "Сваких 30 мин",
+            "13:30–18:30",
+            "Последња представа: 18:30"
+          ]
+        },
+        {
+          "title": "Polynesian Football Hall of Fame",
+          "subtitle": "",
+          "text": "Галерија у част полинежанских легенди америчког фудбала, са плакетама, фотографијама, успоменама, интерактивним екраном и Зидом части. Налази се тачно преко пута Gateway Buffet, у PCC Welcome Center.",
+          "chips": [
+            "До 19:00"
+          ]
+        }
+      ]
+    },
+    "close": {
+      "thanks": {
+        "title": "Mahalo, ʻOhana!",
+        "text": "Хвала вам што сте вечерас били наши гости у Gateway Buffet. Било нам је задовољство да вас услужимо, па слободно останите колико год желите."
+      },
+      "review": {
+        "title": "Поделите своје утиске",
+        "text": "Када будете имали тренутак, молимо вас да скенирате QR код и додирнете TripAdvisor. Радо бисмо чули ваше утиске о оброку, конобару и целом дану у PCC, укључујући село, вечерашњи шведски сто и вечерњу представу. Били бисмо веома захвални на вашој искреној рецензији. Ако сте уживали у вечери са нама, рецензија са 5 звездица много би значила нашем тиму."
+      },
+      "survey": {
+        "title": "Напомена за касније",
+        "text": "За отприлике недељу дана, особа која је купила ваше улазнице добиће од PCC кратку анкету путем е-поште о вашој целокупној посети. Ако сте уживали у посети, молимо вас да нам дате оцену 10."
+      },
+      "server": "Ваш конобар вечерас:",
+      "end": "Mahalo nui loa и пријатно вече!",
+      "qrNote": "Ваш конобар ће вам показати QR код."
+    },
+    "status": {
+      "open": "Отворено",
+      "soon": "Ускоро се затвара",
+      "ended": "Затворено за данас",
+      "next": "Следеће:",
+      "gatesIn": "Улаз се отвара за {m} мин",
+      "gatesOpen": "Улаз је отворен · представа за {m} мин",
+      "gates": "Отварање улаза",
+      "starts": "Почетак представе",
+      "scanHint": "Скенирајте QR код, па додирните TripAdvisor"
+    }
+  },
+  "ar": {
+    "name": "العربية",
+    "htmlLang": "ar",
+    "dir": "rtl",
+    "greet": "ألوها! أهلاً وسهلاً بكم",
+    "sub": "أهلاً بكم في Gateway Buffet",
+    "qr": "امسحوا الرمز لفتح الدليل على هواتفكم",
+    "tabs": {
+      "guide": "دليل الضيوف",
+      "acts": "أنشطة",
+      "close": "قبل المغادرة"
+    },
+    "guide": {
+      "items": [
+        {
+          "id": "self",
+          "title": "مطعم بخدمة ذاتية",
+          "text": "هذا مطعم بخدمة ذاتية. تفضّلوا بتناول ما تشاؤون من الطعام، ونتمنى لكم وجبة شهية."
+        },
+        {
+          "id": "buffet",
+          "title": "البوفيه والأطباق",
+          "text": "نقدّم قائمة للأطفال، وستيك السيرلوين، ولحوماً متنوعة، ودجاجاً، وساشيمي التونة (أهي)، والبوكي (سمك نيء متبّل)، والمأكولات البحرية، والخضروات، والأرز. تتوفر المشروبات في محطات المشروبات على جانبي المبنى، وتوجد الأطباق أسفل خط البوفيه وفي ركن السلطات والحلويات."
+        },
+        {
+          "id": "plates",
+          "title": "الأطباق وأدوات المائدة",
+          "text": "تجدون الأطباق وأدوات المائدة (الملاعق والشوك وغيرها) في ركن السلطات والحلويات. إذا احتجتم إلى أي شيء، فلا تترددوا في سؤال أحد أفراد فريقنا."
+        },
+        {
+          "id": "after",
+          "title": "بعد الوجبة",
+          "text": "يُرجى وضع الأطباق المستعملة فوق بعضها بترتيب على أحد جانبي الطاولة، وسيقوم فريقنا بجمعها. ويمكنكم أخذ طبق نظيف متى رغبتم في المزيد."
+        },
+        {
+          "id": "allergy",
+          "title": "الحساسية الغذائية",
+          "text": "إذا كانت لديكم حساسية غذائية، يُرجى {link}الاطلاع على دليل الحساسية{/link} لمعرفة المكونات ومعلومات مسببات الحساسية والخيارات المناسبة لنظامكم الغذائي."
+        },
+        {
+          "id": "restroom",
+          "title": "دورات المياه",
+          "text": "تقع دورات المياه في الجهة المقابلة من المبنى: دورة مياه السيدات على اليسار، ودورة مياه الرجال على اليمين. إذا احتجتم إلى الخروج، يُرجى الحصول على ختم على اليد قبل المغادرة حتى تتمكنوا من الدخول مجدداً."
+        },
+        {
+          "id": "robot",
+          "title": "روبوت الخدمة",
+          "text": "يُرجى عدم لمس روبوت الخدمة أو وضع الأطباق عليه. سيجمع فريقنا الأطباق أثناء مروره."
+        },
+        {
+          "id": "coupon",
+          "title": "قسائم الخصم",
+          "text": "تتوفر قسائم خصم لمتاجر مختارة في Hukilau Marketplace. إذا لم تحصلوا على قسيمة بعد، يُرجى طلبها من النادل. لا تفوّتوها!"
+        }
+      ],
+      "foot": "بالهناء والشفاء!"
+    },
+    "acts": {
+      "head": "قبل العرض",
+      "foot": "لا داعي للعجلة، استمتعوا بالحلوى أولاً!",
+      "show": {
+        "title": "العرض المسائي",
+        "text": "هل ستحضرون العرض المسائي الليلة؟ يبدأ العرض الساعة {start} مساءً، وتُفتح البوابات الساعة {gates} مساءً. مقاعدكم محجوزة، لذا يُرجى الحضور في الموعد. وإذا لم تكن مقاعدكم محجوزة، فسيسعد أحد المرشدين بمساعدتكم. يبعد المسرح 5–7 دقائق سيراً على الأقدام."
+      },
+      "items": [
+        {
+          "title": "Hukilau Marketplace",
+          "subtitle": "",
+          "text": "تسوّقوا الهدايا والوجبات الخفيفة والتذكارات قبل إغلاق المتاجر.",
+          "chips": [
+            "حتى الساعة 7:00 مساءً"
+          ]
+        },
+        {
+          "title": "جولة الترام في Lāʻie",
+          "subtitle": "",
+          "text": "جولة حول بلدة Lāʻie الصغيرة وحرم جامعة BYU–Hawaii، مع توقف لمدة 15 دقيقة في الحدائق الجميلة لمعبد Lāʻie في هاواي التابع لكنيسة يسوع المسيح لقديسي الأيام الأخيرة.",
+          "chips": [
+            "كل 20 دقيقة",
+            "3:00–6:30 مساءً",
+            "مدة الجولة 35 دقيقة"
+          ]
+        },
+        {
+          "title": "Hawaiian Journey Theater",
+          "subtitle": "عرض السكين النارية مع جيري",
+          "text": "قصة مسابقات السكين النارية يرويها جيري، البطل الذي حافظ على لقبه سنوات طويلة وبدأ ممارسة السكين النارية منذ صغره.",
+          "chips": [
+            "كل 30 دقيقة",
+            "1:30–6:30 مساءً",
+            "آخر عرض: 6:30 مساءً"
+          ]
+        },
+        {
+          "title": "Polynesian Football Hall of Fame",
+          "subtitle": "",
+          "text": "معرض يكرّم أساطير كرة القدم الأمريكية من بولينيزيا، ويضم لوحات تذكارية وصوراً ومقتنيات وشاشة تفاعلية وجدار الشرف. يقع مباشرةً مقابل Gateway Buffet داخل مركز الترحيب في PCC.",
+          "chips": [
+            "حتى الساعة 7:00 مساءً"
+          ]
+        }
+      ]
+    },
+    "close": {
+      "thanks": {
+        "title": "Mahalo, ʻOhana!",
+        "text": "شكراً لانضمامكم إلينا في Gateway Buffet هذا المساء. لقد كان من دواعي سرورنا خدمتكم، فخذوا كل الوقت الذي تحتاجونه."
+      },
+      "review": {
+        "title": "شاركونا تجربتكم",
+        "text": "عندما يتسنى لكم الوقت، يُرجى مسح رمز QR والنقر على TripAdvisor. يسعدنا أن نسمع رأيكم في وجبتكم والنادل الذي خدمكم ويومكم كاملاً في PCC، بما في ذلك القرية وبوفيه الليلة والعرض المسائي. سنكون ممتنين جداً لتقييمكم الصادق. وإذا استمتعتم بأمسيتكم معنا، فإن تقييماً بخمس نجوم سيعني الكثير لفريقنا."
+      },
+      "survey": {
+        "title": "ملاحظة لاحقة",
+        "text": "بعد أسبوع تقريباً، سيتلقى الشخص الذي اشترى تذاكركم استبياناً قصيراً عبر البريد الإلكتروني من PCC حول زيارتكم بشكل عام. إذا استمتعتم بزيارتكم، يُرجى منحنا تقييم 10."
+      },
+      "server": "النادل الذي يخدمكم الليلة:",
+      "end": "Mahalo nui loa، ونتمنى لكم أمسية سعيدة!",
+      "qrNote": "سيعرض عليكم النادل رمز QR."
+    },
+    "status": {
+      "open": "مفتوح الآن",
+      "soon": "يُغلق قريباً",
+      "ended": "مغلق لهذا اليوم",
+      "next": "التالي:",
+      "gatesIn": "تُفتح البوابات بعد {m} دقيقة",
+      "gatesOpen": "البوابات مفتوحة · يبدأ العرض بعد {m} دقيقة",
+      "gates": "فتح البوابات",
+      "starts": "بدء العرض",
+      "scanHint": "امسحوا رمز QR، ثم انقروا على TripAdvisor"
     }
   }
 };

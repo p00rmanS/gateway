@@ -98,7 +98,7 @@
   function formatTime(minutes) {
     const d = new Date(Date.UTC(2024, 0, 1, Math.floor(minutes / 60), minutes % 60));
     try {
-      return new Intl.DateTimeFormat(t().htmlLang, { hour: "numeric", minute: "2-digit", timeZone: "UTC" }).format(d);
+      return new Intl.DateTimeFormat(t().htmlLang, { hour: "numeric", minute: "2-digit", timeZone: "UTC", numberingSystem: "latn" }).format(d);
     } catch {
       return `${Math.floor(minutes / 60)}:${pad2(minutes % 60)}`;
     }
@@ -287,6 +287,7 @@
   function renderChrome() {
     const lang = t();
     document.documentElement.lang = lang.htmlLang;
+    document.documentElement.dir = lang.dir || "ltr"; // Arabic reads right to left
     renderGreeting();
 
     $$(".tab").forEach((btn) => {
@@ -361,7 +362,7 @@
   function buildLanguagePicker() {
     const box = $("langs");
     box.innerHTML = `<span class="langs__icon" aria-hidden="true">${icon("globe")}</span>` + LANGS.map((k) => `
-      <button class="lang" type="button" data-lang="${k}" lang="${I18N[k].htmlLang}" aria-pressed="false">
+      <button class="lang" type="button" data-lang="${k}" lang="${I18N[k].htmlLang}" dir="auto" aria-pressed="false">
         <img class="lang__flag" src="assets/flags/${k}.svg" alt="" width="20" height="14" decoding="async" onerror="this.remove()">${esc(I18N[k].name)}
       </button>`).join("");
 
@@ -383,7 +384,8 @@
 
     $("tablist").addEventListener("keydown", (e) => {
       const i = TABS.indexOf(state.tab);
-      const next = { ArrowRight: i + 1, ArrowLeft: i - 1, Home: 0, End: TABS.length - 1 }[e.key];
+      const fwd = isRtl() ? -1 : 1;
+      const next = { ArrowRight: i + fwd, ArrowLeft: i - fwd, Home: 0, End: TABS.length - 1 }[e.key];
       if (next === undefined) return;
       e.preventDefault();
       goTo(TABS[(next + TABS.length) % TABS.length], { focus: true });
@@ -392,6 +394,8 @@
     bindSwipe();
     bindDesktopNavigation();
   }
+
+  const isRtl = () => document.documentElement.dir === "rtl";
 
   const step = (dir) => {
     const i = TABS.indexOf(state.tab) + dir;
@@ -425,7 +429,8 @@
       if (!drag.axis && Math.hypot(mx, my) > 8) drag.axis = Math.abs(mx) > Math.abs(my) * 0.8 ? "x" : "y";
       if (drag.axis !== "x") return;
       const i = TABS.indexOf(state.tab);
-      const atEdge = (mx > 0 && i === 0) || (mx < 0 && i === TABS.length - 1);
+      const towardNext = isRtl() ? mx > 0 : mx < 0;
+      const atEdge = (!towardNext && i === 0) || (towardNext && i === TABS.length - 1);
       drag.raw = mx;
       drag.dx = atEdge ? mx * .15 : mx * .5; // rubber-band at the first and last tab
       panel.classList.add("is-dragging");
@@ -442,7 +447,7 @@
       const speed = Math.abs(raw) / (performance.now() - drag.t); // px per ms
       const far = Math.abs(raw) > Math.min(90, main.clientWidth * .22);
       const flick = speed > .45 && Math.abs(raw) > 30;
-      const dir = raw < 0 ? 1 : -1;
+      const dir = (raw < 0) !== isRtl() ? 1 : -1;
       const i = TABS.indexOf(state.tab) + dir;
       const commit = (far || flick) && i >= 0 && i < TABS.length;
       reset(!commit);
@@ -465,7 +470,7 @@
       if (Math.abs(acc) > 60) {
         locked = true; // one section per gesture
         hideSwipeHint();
-        step(acc > 0 ? 1 : -1);
+        step((acc > 0) !== isRtl() ? 1 : -1);
       }
     }, { passive: false });
 
@@ -473,7 +478,7 @@
       if (e.key !== "ArrowLeft" && e.key !== "ArrowRight") return;
       if (e.altKey || e.ctrlKey || e.metaKey || document.querySelector("dialog[open]")) return;
       if (e.target.closest("input, textarea, [role=tablist], .langs")) return;
-      step(e.key === "ArrowRight" ? 1 : -1);
+      step((e.key === "ArrowRight") !== isRtl() ? 1 : -1);
     });
   }
 

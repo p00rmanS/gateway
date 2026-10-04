@@ -27,8 +27,8 @@
   --measure: 680px; /* content column width */
   --ease: cubic-bezier(.22, 1, .36, 1);
 
-  --serif: "Instrument Serif", "Iowan Old Style", Georgia, "Noto Serif", "Noto Serif KR", "Noto Serif JP", "Noto Serif SC", serif;
-  --sans: "Instrument Sans", system-ui, -apple-system, "Segoe UI", "Noto Sans", "Apple SD Gothic Neo", "Noto Sans KR",
+  --serif: "Instrument Serif", "Iowan Old Style", Georgia, "Noto Sans Arabic", "Noto Serif", "Noto Serif KR", "Noto Serif JP", "Noto Serif SC", serif;
+  --sans: "Instrument Sans", "Noto Sans Arabic", system-ui, -apple-system, "Segoe UI", "Noto Sans", "Apple SD Gothic Neo", "Noto Sans KR",
           "Hiragino Sans", "Noto Sans JP", "PingFang SC", "PingFang TC", "Noto Sans SC", "Noto Sans TC", "Microsoft YaHei", sans-serif;
 
   color-scheme: light;
@@ -98,6 +98,7 @@ h1, h2, h3, p, ol, ul { margin: 0; padding: 0; }
 }
 .topbar.is-swapping .topbar__greet { opacity: 0; }
 /* CJK fonts have no true italic; keep them upright instead of a fake slant */
+html:lang(ar) .topbar__greet,
 html:lang(ko) .topbar__greet, html:lang(ja) .topbar__greet,
 html:lang(zh-Hans) .topbar__greet, html:lang(zh-Hant) .topbar__greet { font-style: normal; font-weight: 600; letter-spacing: 0; font-size: clamp(1.8rem, 8vw, 2.6rem); }
 
@@ -128,7 +129,7 @@ html:lang(zh-Hans) .topbar__greet, html:lang(zh-Hant) .topbar__greet { font-styl
 
 /* Text size panel */
 .sizer {
-  position: absolute; top: calc(100% - 2px); right: var(--gutter); z-index: 60;
+  position: absolute; top: calc(100% - 2px); inset-inline-end: var(--gutter); z-index: 60;
   width: min(340px, calc(100vw - 2 * var(--gutter)));
   padding: 16px 16px 14px;
   border-radius: 18px;
@@ -342,12 +343,12 @@ html:lang(zh-Hans) .topbar__greet, html:lang(zh-Hant) .topbar__greet { font-styl
 }
 .ticket__main, .ticket__stub { padding: 18px 18px 20px; }
 .ticket__stub { padding-left: 14px; padding-right: 14px; }
-.ticket__stub { border-left: 2px dashed color-mix(in srgb, var(--ticket-ink) 30%, transparent); }
+.ticket__stub { border-inline-start: 2px dashed color-mix(in srgb, var(--ticket-ink) 30%, transparent); }
 .ticket__title { font-family: var(--serif); font-weight: 400; font-size: 1.65em; line-height: 1.05; margin-bottom: 14px; }
 .ticket__label { display: block; font-size: .7rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; opacity: .7; }
 .ticket__time { font-family: var(--serif); font-size: 1.75em; line-height: 1.05; font-variant-numeric: tabular-nums; white-space: nowrap; }
 /* CJK fonts have no true italic: keep italic display text upright instead of a fake slant */
-:is(html:lang(ko), html:lang(ja), html:lang(zh-Hans), html:lang(zh-Hant)) :is(.count__post, .endline, .mahalo__title, .server__name, .step__num) { font-style: normal; }
+:is(html:lang(ko), html:lang(ja), html:lang(zh-Hans), html:lang(zh-Hant), html:lang(ar)) :is(.count__post, .endline, .mahalo__title, .server__name, .step__num) { font-style: normal; }
 html:lang(ko) .ticket__time, html:lang(ja) .ticket__time,
 html:lang(zh-Hans) .ticket__time, html:lang(zh-Hant) .ticket__time { font-size: 1.4em; }
 .ticket__stub .ticket__time { color: var(--gold); }
@@ -496,7 +497,7 @@ html:lang(zh-Hans) .ticket__time, html:lang(zh-Hant) .ticket__time { font-size: 
   transition: transform .15s, box-shadow .15s;
 }
 .pager__btn:active { transform: translateY(2px); box-shadow: 0 0 0 var(--rule); }
-.pager__btn--next { grid-column: 2; align-items: flex-end; text-align: right; background: var(--ink); color: var(--paper); border-color: var(--ink); box-shadow: 0 2px 0 var(--lava); }
+.pager__btn--next { grid-column: 2; align-items: flex-end; text-align: end; background: var(--ink); color: var(--paper); border-color: var(--ink); box-shadow: 0 2px 0 var(--lava); }
 .pager__dir { display: flex; align-items: center; gap: 4px; font-size: 1.3rem; line-height: 1; }
 .pager__dir svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
 .pager__label { font-family: var(--serif); font-size: 1.35em; line-height: 1.1; }
@@ -604,4 +605,34 @@ html:lang(zh-Hans) .ticket__time, html:lang(zh-Hant) .ticket__time { font-size: 
   .tab { flex-direction: row; gap: 8px; min-height: 44px; }
   .swipe-hint { bottom: calc(70px + env(safe-area-inset-bottom, 0px)); }
   body { padding-bottom: calc(70px + env(safe-area-inset-bottom, 0px)); }
+}
+
+/* ---------- 13. Right-to-left (Arabic) ---------- */
+/* Arabic letters join together; letter-spacing would break them apart */
+html:lang(ar) * { letter-spacing: 0 !important; }
+html:lang(ar) body { line-height: 1.75; }
+
+/* The ticket's punched notches sit on the stub edge, which is on the left in RTL */
+[dir="rtl"] .ticket {
+  -webkit-mask:
+    radial-gradient(circle var(--notch) at var(--stub) 0, #0000 98%, #000) top / 100% 51% no-repeat,
+    radial-gradient(circle var(--notch) at var(--stub) 100%, #0000 98%, #000) bottom / 100% 51% no-repeat;
+  mask:
+    radial-gradient(circle var(--notch) at var(--stub) 0, #0000 98%, #000) top / 100% 51% no-repeat,
+    radial-gradient(circle var(--notch) at var(--stub) 100%, #0000 98%, #000) bottom / 100% 51% no-repeat;
+}
+
+/* Arrows point the way the page reads */
+[dir="rtl"] .pager__dir svg,
+[dir="rtl"] .scan__steps svg:nth-child(2),
+[dir="rtl"] .inline-link svg { transform: scaleX(-1); }
+
+/* Next section slides in from the left, previous from the right */
+[dir="rtl"] .panel[data-enter="next"] > * { animation-name: enter-prev; }
+[dir="rtl"] .panel[data-enter="prev"] > * { animation-name: enter-next; }
+
+/* Language row: fade the end (left) edge */
+[dir="rtl"] .langs {
+  -webkit-mask-image: linear-gradient(270deg, #000 calc(100% - 40px), transparent);
+  mask-image: linear-gradient(270deg, #000 calc(100% - 40px), transparent);
 }
