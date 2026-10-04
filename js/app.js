@@ -258,7 +258,10 @@
         <p class="block__text">${esc(close.review.text)}</p>
         <p class="scan">
           <span class="scan__steps" aria-hidden="true">${icon("qr")}${ARROW_R}<img src="assets/tripadvisor.png" alt="" width="30" height="30"></span>
-          <span>${esc(status.scanHint)}</span>
+          <span class="scan__text">
+            ${esc(status.scanHint)}
+            <small class="scan__note">${esc(close.qrNote)}</small>
+          </span>
         </p>
       </section>`;
 

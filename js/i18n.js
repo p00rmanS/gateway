@@ -125,7 +125,8 @@ self.I18N = {
         "text": "In about a week, the person who purchased your tickets will receive a short email survey from PCC about your overall visit. If you enjoyed your visit, please rate us a 10."
       },
       "server": "Your server tonight:",
-      "end": "Mahalo nui loa, and enjoy the rest of your evening!"
+      "end": "Mahalo nui loa, and enjoy the rest of your evening!",
+      "qrNote": "Your server will show you the QR code."
     },
     "status": {
       "open": "Open now",
@@ -255,7 +256,8 @@ self.I18N = {
         "text": "En aproximadamente una semana, la persona que compró los boletos recibirá de PCC una breve encuesta por correo electrónico sobre su visita en general. Si disfrutaron de su visita, por favor califíquennos con un 10."
       },
       "server": "Su mesero esta noche:",
-      "end": "¡Mahalo nui loa y disfruten el resto de su noche!"
+      "end": "¡Mahalo nui loa y disfruten el resto de su noche!",
+      "qrNote": "Su mesero les mostrará el código QR."
     },
     "status": {
       "open": "Abierto ahora",
@@ -385,7 +387,8 @@ self.I18N = {
         "text": "Em cerca de uma semana, quem comprou os ingressos vai receber do PCC uma pesquisa curta por e-mail sobre a visita como um todo. Se vocês gostaram da visita, por favor, nos deem nota 10."
       },
       "server": "Seu garçom esta noite:",
-      "end": "Mahalo nui loa e aproveitem o resto da noite!"
+      "end": "Mahalo nui loa e aproveitem o resto da noite!",
+      "qrNote": "Seu garçom vai mostrar o QR code a vocês."
     },
     "status": {
       "open": "Aberto agora",
@@ -515,7 +518,8 @@ self.I18N = {
         "text": "Dans environ une semaine, la personne qui a acheté vos billets recevra du PCC un court questionnaire par e-mail sur l'ensemble de votre visite. Si vous avez apprécié votre visite, merci de nous donner la note de 10."
       },
       "server": "Votre serveur ce soir :",
-      "end": "Mahalo nui loa, et excellente soirée !"
+      "end": "Mahalo nui loa, et excellente soirée !",
+      "qrNote": "Votre serveur vous présentera le code QR."
     },
     "status": {
       "open": "Ouvert",
@@ -645,7 +649,8 @@ self.I18N = {
         "text": "In etwa einer Woche erhält die Person, die Ihre Tickets gekauft hat, eine kurze E-Mail-Umfrage vom PCC zu Ihrem gesamten Besuch. Wenn Ihnen Ihr Besuch gefallen hat, bewerten Sie uns bitte mit einer 10."
       },
       "server": "Ihre Bedienung heute Abend:",
-      "end": "Mahalo nui loa und noch einen schönen Abend!"
+      "end": "Mahalo nui loa und noch einen schönen Abend!",
+      "qrNote": "Ihre Bedienung zeigt Ihnen gerne den QR-Code."
     },
     "status": {
       "open": "Jetzt geöffnet",
@@ -775,7 +780,8 @@ self.I18N = {
         "text": "Over ongeveer een week ontvangt degene die uw tickets heeft gekocht een korte e-mailenquête van het PCC over uw hele bezoek. Heeft u genoten van uw bezoek, geef ons dan alstublieft een 10."
       },
       "server": "Uw ober vanavond:",
-      "end": "Mahalo nui loa, en nog een fijne avond!"
+      "end": "Mahalo nui loa, en nog een fijne avond!",
+      "qrNote": "Uw ober laat u graag de QR-code zien."
     },
     "status": {
       "open": "Nu open",
@@ -905,7 +911,8 @@ self.I18N = {
         "text": "Khoảng một tuần nữa, người đã mua vé sẽ nhận được một email khảo sát ngắn từ PCC về chuyến tham quan. Nếu quý khách hài lòng với chuyến tham quan, xin hãy chấm cho chúng tôi 10 điểm."
       },
       "server": "Người phục vụ tối nay:",
-      "end": "Mahalo nui loa! Chúc quý khách buổi tối thật vui vẻ!"
+      "end": "Mahalo nui loa! Chúc quý khách buổi tối thật vui vẻ!",
+      "qrNote": "Người phục vụ sẽ đưa mã QR cho quý khách."
     },
     "status": {
       "open": "Đang mở",
@@ -1035,7 +1042,8 @@ self.I18N = {
         "text": "大约一周后，购票人会收到PCC发送的一份简短的电子邮件问卷，询问您此次参观的整体体验。如果您喜欢这次参观，请给我们打10分。"
       },
       "server": "今晚为您服务的是：",
-      "end": "Mahalo nui loa！祝您有个愉快的夜晚！"
+      "end": "Mahalo nui loa！祝您有个愉快的夜晚！",
+      "qrNote": "您的服务员会为您出示二维码。"
     },
     "status": {
       "open": "开放中",
@@ -1165,7 +1173,8 @@ self.I18N = {
         "text": "大約一週後，購票人會收到PCC寄出的一份簡短的電子郵件問卷，詢問您此次參觀的整體體驗。如果您喜歡這次參觀，請給我們打10分。"
       },
       "server": "今晚為您服務的是：",
-      "end": "Mahalo nui loa！祝您有個愉快的夜晚！"
+      "end": "Mahalo nui loa！祝您有個愉快的夜晚！",
+      "qrNote": "您的服務人員會為您出示QR碼。"
     },
     "status": {
       "open": "開放中",
@@ -1295,7 +1304,8 @@ self.I18N = {
         "text": "약 일주일 후, 티켓을 구매하신 분께 PCC에서 전반적인 방문 경험에 대한 짧은 이메일 설문을 보내드립니다. 방문이 즐거우셨다면 10점으로 평가해 주세요."
       },
       "server": "오늘 담당 서버:",
-      "end": "Mahalo nui loa! 즐거운 저녁 보내세요!"
+      "end": "Mahalo nui loa! 즐거운 저녁 보내세요!",
+      "qrNote": "QR 코드는 담당 서버가 보여 드립니다."
     },
     "status": {
       "open": "운영 중",
@@ -1425,7 +1435,8 @@ self.I18N = {
         "text": "約1週間後、チケットをご購入された方にPCCから今回のご訪問全体についての簡単なアンケートメールが届きます。ご訪問を楽しんでいただけましたら、ぜひ10点をおつけください。"
       },
       "server": "本日の担当：",
-      "end": "Mahalo nui loa！素敵な夜をお過ごしください！"
+      "end": "Mahalo nui loa！素敵な夜をお過ごしください！",
+      "qrNote": "QRコードは担当スタッフがご提示いたします。"
     },
     "status": {
       "open": "営業中",

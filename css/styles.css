@@ -415,6 +415,12 @@ html:lang(zh-Hans) .ticket__time, html:lang(zh-Hant) .ticket__time { font-size: 
   background: var(--paper-2);
   font-weight: 600;
 }
+.scan__text { min-width: 0; }
+.scan__note {
+  display: block; margin-top: 4px;
+  font-size: .86em; font-weight: 500; line-height: 1.4;
+  color: var(--ink-2);
+}
 /* visual instructions: QR code → TripAdvisor owl */
 .scan__steps { display: flex; align-items: center; gap: 6px; flex-shrink: 0; }
 .scan__steps svg { width: 28px; height: 28px; color: var(--lava); }
