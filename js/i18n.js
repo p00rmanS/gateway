@@ -1843,5 +1843,267 @@ self.I18N = {
       "starts": "بدء العرض",
       "scanHint": "امسحوا رمز QR، ثم انقروا على TripAdvisor"
     }
+  },
+  "it": {
+    "name": "Italiano",
+    "htmlLang": "it",
+    "greet": "Aloha! Benvenuti",
+    "sub": "Benvenuti al Gateway Buffet",
+    "qr": "Scansionate per aprire la guida sul telefono",
+    "tabs": {
+      "guide": "Info",
+      "acts": "Da fare",
+      "close": "Prima di andare"
+    },
+    "guide": {
+      "items": [
+        {
+          "id": "self",
+          "title": "Ristorante self-service",
+          "text": "Questo è un ristorante self-service. Servitevi pure quanto desiderate e gustatevi il pasto."
+        },
+        {
+          "id": "buffet",
+          "title": "Buffet e piatti",
+          "text": "Offriamo un menù per bambini, controfiletto (sirloin), carni assortite, pollo, sashimi di tonno (ahi), poke (pesce crudo marinato), frutti di mare, verdure e riso. Le bevande sono disponibili alle postazioni bevande su entrambi i lati dell'edificio. I piatti si trovano sotto il bancone del buffet e nell'area insalate e dessert."
+        },
+        {
+          "id": "plates",
+          "title": "Piatti e posate",
+          "text": "Piatti e posate (cucchiai, forchette, ecc.) si trovano nell'area insalate e dessert. Per qualsiasi necessità, non esitate a chiedere al nostro personale."
+        },
+        {
+          "id": "after",
+          "title": "Dopo il pasto",
+          "text": "Vi preghiamo di impilare ordinatamente i piatti usati su un lato del tavolo: il nostro personale passerà a ritirarli. Prendete pure un piatto pulito ogni volta che desiderate servirvi ancora."
+        },
+        {
+          "id": "allergy",
+          "title": "Allergie alimentari",
+          "text": "In caso di allergie alimentari, {link}consultate la nostra guida agli allergeni{/link}: troverete l'elenco degli ingredienti, le informazioni sugli allergeni e le opzioni adatte alla vostra dieta."
+        },
+        {
+          "id": "restroom",
+          "title": "Servizi igienici",
+          "text": "I servizi igienici si trovano sul lato opposto dell'edificio: donne a sinistra, uomini a destra. Se dovete uscire, vi preghiamo di farvi apporre un timbro sulla mano prima di uscire, così potrete rientrare."
+        },
+        {
+          "id": "robot",
+          "title": "Robot di servizio",
+          "text": "Vi preghiamo di non toccare il robot di servizio e di non appoggiarvi sopra i piatti. Il nostro personale ritirerà i piatti passando tra i tavoli."
+        },
+        {
+          "id": "coupon",
+          "title": "Buoni sconto",
+          "text": "Sono disponibili buoni sconto per alcuni negozi selezionati dell'Hukilau Marketplace. Se non l'avete ancora ricevuto, chiedetelo al vostro cameriere. Da non perdere!"
+        }
+      ],
+      "foot": "Buon appetito!"
+    },
+    "acts": {
+      "head": "Prima dello spettacolo",
+      "foot": "Nessuna fretta, gustatevi prima il dessert!",
+      "show": {
+        "title": "Spettacolo serale",
+        "text": "Andate allo spettacolo serale stasera? Inizia alle {start} di sera e i cancelli aprono alle {gates}. I vostri posti sono riservati, quindi vi preghiamo di arrivare puntuali. Se i vostri posti non sono riservati, una maschera sarà lieta di aiutarvi. Il teatro si trova a 5–7 minuti a piedi."
+      },
+      "items": [
+        {
+          "title": "Hukilau Marketplace",
+          "subtitle": "",
+          "text": "Acquistate regali, snack e souvenir prima della chiusura dei negozi.",
+          "chips": [
+            "Fino alle 19:00"
+          ]
+        },
+        {
+          "title": "Tram Tour di Lāʻie",
+          "subtitle": "",
+          "text": "Un giro della piccola cittadina di Lāʻie e del campus della BYU–Hawaii, con una sosta di 15 minuti nei bellissimi giardini del Tempio di Lāʻie, Hawaiʻi, della Chiesa di Gesù Cristo dei Santi degli Ultimi Giorni.",
+          "chips": [
+            "Ogni 20 min",
+            "15:00–18:30",
+            "Durata: 35 min"
+          ]
+        },
+        {
+          "title": "Hawaiian Journey Theater",
+          "subtitle": "Lo spettacolo del coltello di fuoco di Jeri",
+          "text": "La storia delle gare di coltello di fuoco, raccontata da Jeri, campione che ha difeso il suo titolo per molti anni e che ha iniziato fin da giovanissimo.",
+          "chips": [
+            "Ogni 30 min",
+            "13:30–18:30",
+            "Ultimo spettacolo: 18:30"
+          ]
+        },
+        {
+          "title": "Polynesian Football Hall of Fame",
+          "subtitle": "",
+          "text": "Una galleria dedicata alle leggende polinesiane del football americano, con targhe, fotografie, cimeli, uno schermo interattivo e un Muro d'Onore. Si trova proprio di fronte al Gateway Buffet, all'interno del Welcome Center del PCC.",
+          "chips": [
+            "Fino alle 19:00"
+          ]
+        }
+      ]
+    },
+    "close": {
+      "thanks": {
+        "title": "Mahalo, ʻOhana!",
+        "text": "Grazie per aver cenato con noi al Gateway Buffet questa sera. È stato un piacere servirvi: prendetevi tutto il tempo che desiderate."
+      },
+      "review": {
+        "title": "Condividete la vostra esperienza",
+        "text": "Quando avete un momento, vi preghiamo di scansionare il codice QR e toccare TripAdvisor. Ci farebbe piacere conoscere la vostra opinione sul pasto, sul vostro cameriere e sull'intera giornata al PCC, compresi il villaggio, il buffet di stasera e lo spettacolo serale. Vi saremmo molto grati per una recensione sincera. Se avete apprezzato la serata con noi, una recensione a 5 stelle significherebbe molto per il nostro team."
+      },
+      "survey": {
+        "title": "Una nota per dopo",
+        "text": "Tra circa una settimana, la persona che ha acquistato i biglietti riceverà dal PCC un breve sondaggio via e-mail sulla vostra visita. Se la visita vi è piaciuta, vi preghiamo di darci un 10."
+      },
+      "server": "Il vostro cameriere stasera:",
+      "end": "Mahalo nui loa e buona serata!",
+      "qrNote": "Il vostro cameriere vi mostrerà il codice QR."
+    },
+    "status": {
+      "open": "Aperto ora",
+      "soon": "Chiude a breve",
+      "ended": "Chiuso per oggi",
+      "next": "Prossimo:",
+      "gatesIn": "Apertura cancelli tra {m} min",
+      "gatesOpen": "Cancelli aperti · spettacolo tra {m} min",
+      "gates": "Apertura cancelli",
+      "starts": "Inizio spettacolo",
+      "scanHint": "Scansionate il codice QR, poi toccate TripAdvisor"
+    }
+  },
+  "th": {
+    "name": "ไทย",
+    "htmlLang": "th",
+    "greet": "อะโลฮา! ยินดีต้อนรับ",
+    "sub": "ยินดีต้อนรับสู่ Gateway Buffet",
+    "qr": "สแกนเพื่อเปิดคู่มือบนโทรศัพท์ของท่าน",
+    "tabs": {
+      "guide": "คำแนะนำ",
+      "acts": "กิจกรรม",
+      "close": "ก่อนกลับ"
+    },
+    "guide": {
+      "items": [
+        {
+          "id": "self",
+          "title": "ร้านอาหารแบบบริการตนเอง",
+          "text": "ร้านของเราเป็นร้านอาหารแบบบริการตนเอง เชิญตักอาหารได้ตามต้องการ และขอให้เพลิดเพลินกับมื้ออาหาร"
+        },
+        {
+          "id": "buffet",
+          "title": "บุฟเฟต์และรายการอาหาร",
+          "text": "เรามีเมนูสำหรับเด็ก สเต๊กเซอร์ลอยน์ เนื้อสัตว์หลากหลายชนิด ไก่ ซาชิมิปลาทูน่า (อาฮิ) โปเกะ (ปลาดิบหมักเครื่องปรุง) อาหารทะเล ผัก และข้าว เครื่องดื่มมีให้บริการที่จุดเครื่องดื่มทั้งสองฝั่งของอาคาร ส่วนจานวางอยู่ใต้ไลน์บุฟเฟต์และบริเวณสลัดและของหวาน"
+        },
+        {
+          "id": "plates",
+          "title": "จานและช้อนส้อม",
+          "text": "จานและช้อนส้อม (ช้อน ส้อม ฯลฯ) อยู่บริเวณสลัดและของหวาน หากต้องการความช่วยเหลือ สามารถสอบถามพนักงานของเราได้ทุกเมื่อ"
+        },
+        {
+          "id": "after",
+          "title": "หลังรับประทานอาหาร",
+          "text": "กรุณาวางจานที่ใช้แล้วซ้อนกันให้เรียบร้อยไว้ที่ด้านใดด้านหนึ่งของโต๊ะ พนักงานของเราจะมาเก็บให้ หากต้องการรับประทานเพิ่ม เชิญหยิบจานใหม่ได้เลย"
+        },
+        {
+          "id": "allergy",
+          "title": "การแพ้อาหาร",
+          "text": "หากท่านมีอาการแพ้อาหาร กรุณา{link}ดูคู่มือข้อมูลสารก่อภูมิแพ้{/link} เพื่อดูรายการส่วนผสม ข้อมูลสารก่อภูมิแพ้ และตัวเลือกที่เหมาะกับอาหารของท่าน"
+        },
+        {
+          "id": "restroom",
+          "title": "ห้องน้ำ",
+          "text": "ห้องน้ำอยู่อีกฝั่งหนึ่งของอาคาร ห้องน้ำหญิงอยู่ทางซ้าย ห้องน้ำชายอยู่ทางขวา หากท่านต้องการออกไปด้านนอก กรุณาประทับตราที่มือก่อนออก เพื่อให้สามารถกลับเข้ามาได้"
+        },
+        {
+          "id": "robot",
+          "title": "หุ่นยนต์เสิร์ฟอาหาร",
+          "text": "กรุณาอย่าสัมผัสหุ่นยนต์เสิร์ฟอาหาร หรือวางจานไว้บนหุ่นยนต์ พนักงานของเราจะเก็บจานเมื่อเดินผ่าน"
+        },
+        {
+          "id": "coupon",
+          "title": "คูปองส่วนลด",
+          "text": "เรามีคูปองส่วนลดสำหรับร้านค้าที่ร่วมรายการใน Hukilau Marketplace หากท่านยังไม่ได้รับ กรุณาสอบถามพนักงานเสิร์ฟของท่าน อย่าพลาด!"
+        }
+      ],
+      "foot": "ขอให้อร่อยกับมื้ออาหาร!"
+    },
+    "acts": {
+      "head": "ก่อนเริ่มการแสดง",
+      "foot": "ไม่ต้องรีบ เชิญเพลิดเพลินกับของหวานก่อน!",
+      "show": {
+        "title": "การแสดงภาคค่ำ",
+        "text": "ท่านจะไปชมการแสดงภาคค่ำคืนนี้หรือไม่? การแสดงเริ่มเวลา {start} น. ช่วงค่ำ และประตูเปิดเวลา {gates} น. ที่นั่งของท่านได้รับการสำรองไว้แล้ว จึงขอให้มาถึงตรงเวลา หากที่นั่งของท่านยังไม่ได้สำรอง เจ้าหน้าที่นำที่นั่งยินดีให้ความช่วยเหลือ โรงละครอยู่ห่างออกไปเดินประมาณ 5–7 นาที"
+      },
+      "items": [
+        {
+          "title": "Hukilau Marketplace",
+          "subtitle": "",
+          "text": "เลือกซื้อของขวัญ ขนม และของที่ระลึกก่อนร้านค้าปิด",
+          "chips": [
+            "ถึง 19:00 น."
+          ]
+        },
+        {
+          "title": "ทัวร์รถรางเมืองลาอิเอ (Lāʻie)",
+          "subtitle": "",
+          "text": "นั่งรถรางชมเมืองเล็ก ๆ ลาอิเอ (Lāʻie) และวิทยาเขต BYU–Hawaii พร้อมแวะชมบริเวณอันงดงามของพระวิหารลาอิเอ ฮาวาย ของศาสนจักรของพระเยซูคริสต์แห่งวิสุทธิชนยุคสุดท้ายเป็นเวลา 15 นาที",
+          "chips": [
+            "ทุก 20 นาที",
+            "15:00–18:30 น.",
+            "ใช้เวลา 35 นาที"
+          ]
+        },
+        {
+          "title": "Hawaiian Journey Theater",
+          "subtitle": "การแสดงมีดไฟของเจอร์รี",
+          "text": "เรื่องราวของการแข่งขันมีดไฟ เล่าโดยเจอร์รี แชมป์ผู้ป้องกันตำแหน่งมาอย่างยาวนาน และเริ่มฝึกมีดไฟตั้งแต่ยังเด็ก",
+          "chips": [
+            "ทุก 30 นาที",
+            "13:30–18:30 น.",
+            "รอบสุดท้าย: 18:30 น."
+          ]
+        },
+        {
+          "title": "Polynesian Football Hall of Fame",
+          "subtitle": "",
+          "text": "แกลเลอรีเชิดชูตำนานอเมริกันฟุตบอลชาวโพลินีเซีย พร้อมแผ่นจารึก ภาพถ่าย ของที่ระลึก จอแสดงผลแบบอินเทอร์แอคทีฟ และกำแพงเกียรติยศ ตั้งอยู่ตรงข้าม Gateway Buffet ภายใน Welcome Center ของ PCC",
+          "chips": [
+            "ถึง 19:00 น."
+          ]
+        }
+      ]
+    },
+    "close": {
+      "thanks": {
+        "title": "Mahalo, ʻOhana!",
+        "text": "ขอขอบคุณที่มารับประทานอาหารกับเราที่ Gateway Buffet ในค่ำคืนนี้ เป็นเกียรติอย่างยิ่งที่ได้ให้บริการท่าน เชิญใช้เวลาได้ตามสบาย"
+      },
+      "review": {
+        "title": "แบ่งปันประสบการณ์ของท่าน",
+        "text": "เมื่อท่านสะดวก กรุณาสแกนคิวอาร์โค้ดแล้วแตะ TripAdvisor เรายินดีอย่างยิ่งที่จะได้รับฟังความคิดเห็นเกี่ยวกับมื้ออาหาร พนักงานเสิร์ฟ และวันทั้งวันของท่านที่ PCC ทั้งหมู่บ้าน บุฟเฟต์คืนนี้ และการแสดงภาคค่ำ เราจะขอบคุณเป็นอย่างยิ่งสำหรับรีวิวที่จริงใจของท่าน และหากท่านประทับใจกับค่ำคืนนี้ รีวิว 5 ดาวจะมีความหมายอย่างมากสำหรับทีมงานของเรา"
+      },
+      "survey": {
+        "title": "ข้อมูลสำหรับภายหลัง",
+        "text": "ในอีกประมาณหนึ่งสัปดาห์ ผู้ที่ซื้อบัตรของท่านจะได้รับแบบสอบถามสั้น ๆ ทางอีเมลจาก PCC เกี่ยวกับการเยี่ยมชมโดยรวม หากท่านประทับใจกับการเยี่ยมชม กรุณาให้คะแนนเรา 10 คะแนน"
+      },
+      "server": "พนักงานเสิร์ฟของท่านในค่ำคืนนี้:",
+      "end": "Mahalo nui loa ขอให้ท่านมีค่ำคืนที่แสนสุข!",
+      "qrNote": "พนักงานเสิร์ฟจะนำคิวอาร์โค้ดมาให้ท่าน"
+    },
+    "status": {
+      "open": "เปิดอยู่",
+      "soon": "ใกล้ปิดแล้ว",
+      "ended": "ปิดแล้วสำหรับวันนี้",
+      "next": "รอบถัดไป:",
+      "gatesIn": "ประตูเปิดในอีก {m} นาที",
+      "gatesOpen": "ประตูเปิดแล้ว · การแสดงเริ่มในอีก {m} นาที",
+      "gates": "ประตูเปิด",
+      "starts": "เริ่มการแสดง",
+      "scanHint": "สแกนคิวอาร์โค้ด แล้วแตะ TripAdvisor"
+    }
   }
 };

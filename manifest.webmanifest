@@ -1,7 +1,7 @@
 {
   "name": "Gateway Buffet Guest Guide",
   "short_name": "Guest Guide",
-  "description": "Gateway Buffet guest guide in 14 languages.",
+  "description": "Gateway Buffet guest guide in 16 languages.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
