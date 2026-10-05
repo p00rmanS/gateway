@@ -12,12 +12,16 @@
 
   /* ---------- Static config ---------- */
   const SCHEDULES = [
-    { until: "19:00" },                            // Hukilau Marketplace
+    { until: "19:30" },                            // Hukilau Marketplace
     { from: "15:00", to: "18:30", every: 20 },     // Lāʻie Tram Tour
     { from: "13:30", to: "18:30", every: 30 },     // Fire knife show
     { until: "19:00" }                             // Football Hall of Fame
   ];
-  const GUIDE_ICONS = ["bell", "utensils", "plates", "stack", "leaf", "restroom", "robot", "tag"];
+  // Icon for each Welcome Guide item, by its id in js/i18n.js
+  const GUIDE_ICONS = {
+    self: "bell", buffet: "utensils", icecream: "icecream", plates: "plates", after: "stack",
+    allergy: "leaf", restroom: "restroom", robot: "robot", charging: "charging", coupon: "tag"
+  };
   const ACT_ICONS = ["bag", "tram", "flame", "trophy"];
   const ALLERGY_URL = "https://www.polynesia-allergy.com";
   const DEFAULT_START = "7:15";
@@ -132,7 +136,16 @@
       <h2 class="view-head__title">${esc(title)}</h2>
     </header>`;
 
-  const endline = (text) => `<p class="endline">${esc(text)}</p>`;
+  // Text can contain "\n" for separate paragraphs.
+  const paras = (text, cls, render = esc) =>
+    String(text).split("\n").map((p) => `<p class="${cls}">${render(p)}</p>`).join("");
+
+  // Closing line of a section, with an optional softer note underneath.
+  const endline = (title, note) => `
+    <div class="end">
+      <p class="endline">${esc(title)}</p>
+      ${note ? paras(note, "endnote") : ""}
+    </div>`;
 
   // Text with an optional {link}…{/link} part (used by the allergy tip) becomes a tappable link.
   const EXTERNAL = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>`;
@@ -160,12 +173,12 @@
         <div>
           <div class="item-head">
             <h3 class="step__title">${esc(item.title)}</h3>
-            <span class="badge">${icon(GUIDE_ICONS[i])}</span>
+            <span class="badge">${icon(GUIDE_ICONS[item.id] || "bell")}</span>
           </div>
-          <p class="step__text">${withLink(item.text, ALLERGY_URL)}</p>
+          ${paras(item.text, "step__text", (p) => withLink(p, ALLERGY_URL))}
         </div>
       </li>`).join("");
-    return viewHead(tabs.guide) + `<ol class="steps">${steps}</ol>` + endline(guide.foot) + pager();
+    return viewHead(tabs.guide) + `<ol class="steps">${steps}</ol>` + endline(guide.foot, guide.footNote) + pager();
   }
 
   // Big countdown numeral, with the localised words around it ("Gates open in {m} min" / "開場まで{m}分").
@@ -215,7 +228,7 @@
             <span class="badge">${icon(ACT_ICONS[i])}</span>
           </div>
           ${item.subtitle ? `<strong class="act__subtitle">${esc(item.subtitle)}</strong>` : ""}
-          ${item.text ? `<p class="act__text">${esc(item.text)}</p>` : ""}
+          ${item.text ? paras(item.text, "act__text") : ""}
           <p class="act__meta">${item.chips.map((c) => `<span>${esc(c)}</span>`).join("")}</p>
         </li>`;
     }).join("");
@@ -223,10 +236,10 @@
     return viewHead(tabs.acts)
       + count
       + ticket
-      + `<p class="show-text">${esc(fillTimes(acts.show.text))}</p>`
+      + paras(fillTimes(acts.show.text), "show-text")
       + `<h3 class="kicker section-label">${esc(acts.head)}</h3>`
       + `<ul class="acts">${items}</ul>`
-      + endline(acts.foot)
+      + endline(acts.foot, acts.footNote)
       + pager();
   }
 
@@ -244,7 +257,7 @@
       <section class="mahalo">
         <p class="kicker">03 / 03</p>
         <h2 class="mahalo__title">${esc(close.thanks.title)}</h2>
-        <p class="mahalo__text">${esc(close.thanks.text)}</p>
+        ${paras(close.thanks.text, "mahalo__text")}
         ${server}
       </section>`;
 
@@ -255,7 +268,7 @@
           <div class="stars" aria-hidden="true">${icon("star").repeat(5)}</div>
         </div>
         <h3 class="block__title">${esc(close.review.title)}</h3>
-        <p class="block__text">${esc(close.review.text)}</p>
+        ${paras(close.review.text, "block__text")}
         <p class="scan">
           <span class="scan__steps" aria-hidden="true">${icon("qr")}${ARROW_R}<img src="assets/tripadvisor.png" alt="" width="30" height="30"></span>
           <span class="scan__text">
@@ -268,10 +281,10 @@
     const survey = `
       <section class="block">
         <h3 class="block__title">${esc(close.survey.title)}</h3>
-        <p class="block__text">${esc(close.survey.text)}</p>
+        ${paras(close.survey.text, "block__text")}
       </section>`;
 
-    return mahalo + review + survey + endline(close.end) + pager();
+    return mahalo + review + survey + endline(close.end, close.endNote) + pager();
   }
 
   const VIEWS = { guide: viewGuide, acts: viewActs, close: viewClose };

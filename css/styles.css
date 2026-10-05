@@ -261,14 +261,17 @@ html:lang(zh-Hans) .topbar__greet, html:lang(zh-Hant) .topbar__greet { font-styl
   text-wrap: balance;
 }
 
+.end { margin: 40px 0 16px; text-align: center; }
 .endline {
-  margin: 40px 0 16px;
+  margin: 0;
   text-align: center;
   font-family: var(--serif); font-style: italic;
   font-size: 1.7em; line-height: 1.15;
   text-wrap: balance;
 }
 .endline::before { content: ""; display: block; width: 32px; height: 2px; margin: 0 auto 18px; background: var(--lava); }
+.endnote { margin: 10px auto 0; max-width: 32ch; color: var(--ink-2); text-wrap: balance; }
+.endnote + .endnote { margin-top: 4px; }
 
 /* ---------- 6. Guide ---------- */
 .steps { list-style: none; margin-top: 18px; }
@@ -299,6 +302,9 @@ html:lang(zh-Hans) .topbar__greet, html:lang(zh-Hant) .topbar__greet { font-styl
 }
 .inline-link:hover { text-decoration-thickness: 3px; }
 .step__text { color: color-mix(in srgb, var(--ink) 82%, var(--paper)); text-wrap: pretty; }
+.step__text + .step__text, .act__text + .act__text,
+.block__text + .block__text, .show-text + .show-text { margin-top: 8px; }
+.mahalo__text + .mahalo__text { margin-top: 10px; }
 
 /* title + icon badge, shared by guide steps and activities */
 .item-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 14px; }
@@ -418,9 +424,9 @@ html:lang(zh-Hans) .ticket__time, html:lang(zh-Hant) .ticket__time { font-size: 
 }
 .scan__text { min-width: 0; }
 .scan__note {
-  display: block; margin-top: 4px;
-  font-size: .86em; font-weight: 500; line-height: 1.4;
-  color: var(--ink-2);
+  display: block; margin-top: 6px;
+  font-size: .9em; font-weight: 600; line-height: 1.4;
+  color: var(--lava);
 }
 /* visual instructions: QR code → TripAdvisor owl */
 .scan__steps { display: flex; align-items: center; gap: 6px; flex-shrink: 0; }
