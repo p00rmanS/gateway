@@ -126,8 +126,7 @@
 
   const fillTimes = (text) => text
     .replaceAll("{start}", settings.start)
-    .replaceAll("{gates}", settings.gates)
-    .replaceAll("{arrive}", settings.gates);
+    .replaceAll("{gates}", settings.gates);
 
   /* ---------- Views ---------- */
   const viewHead = (title) => `

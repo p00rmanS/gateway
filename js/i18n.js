@@ -13,7 +13,6 @@ self.I18N = {
     "name": "English",
     "htmlLang": "en",
     "greet": "Aloha! Welcome",
-    "sub": "Welcome to Gateway Buffet",
     "qr": "Scan to open on your phone",
     "tabs": {
       "guide": "Welcome Guide",
@@ -157,8 +156,7 @@ self.I18N = {
     "name": "Español",
     "htmlLang": "es",
     "greet": "¡Aloha! Bienvenidos",
-    "sub": "Bienvenidos a Gateway Buffet",
-    "qr": "Escanee para abrir en su teléfono",
+    "qr": "Escaneen para abrir la guía en su teléfono",
     "tabs": {
       "guide": "Guía",
       "acts": "Qué hacer",
@@ -222,7 +220,7 @@ self.I18N = {
     },
     "acts": {
       "head": "Antes del espectáculo",
-      "foot": "Disfruten su tiempo",
+      "foot": "Disfruten de su tiempo",
       "show": {
         "title": "Espectáculo nocturno",
         "text": "¿Asistirán al espectáculo nocturno esta noche? El espectáculo comienza a las {start} p. m. y las puertas abren a las {gates} p. m.\nSi ya tienen asientos asignados, les recomendamos llegar con tiempo para acomodarse con calma. Si no tienen asiento asignado, uno de nuestros acomodadores con gusto les ayudará.\nEl teatro se encuentra aproximadamente a 5–7 minutos a pie de Gateway Buffet."
@@ -237,7 +235,7 @@ self.I18N = {
           ]
         },
         {
-          "title": "Tram Tour por Lāʻie",
+          "title": "Recorrido en tranvía por Lāʻie",
           "subtitle": "",
           "text": "Disfruten de un recorrido panorámico por el pueblo de Lāʻie y el campus de BYU–Hawaii.\nEl recorrido incluye además una parada de 15 minutos en los jardines del Templo de Lāʻie, Hawái, de La Iglesia de Jesucristo de los Santos de los Últimos Días.",
           "chips": [
@@ -301,7 +299,6 @@ self.I18N = {
     "name": "Português",
     "htmlLang": "pt-BR",
     "greet": "Aloha! Bem-vindos",
-    "sub": "Bem-vindos ao Gateway Buffet",
     "qr": "Escaneiem para abrir no celular",
     "tabs": {
       "guide": "Informações",
@@ -381,7 +378,7 @@ self.I18N = {
           ]
         },
         {
-          "title": "Tram Tour de Lāʻie",
+          "title": "Passeio de bondinho por Lāʻie",
           "subtitle": "",
           "text": "Façam um passeio panorâmico pela cidade de Lāʻie e pelo campus da BYU–Hawaii.\nO passeio inclui também uma parada de 15 minutos nos jardins do Templo de Lāʻie, no Havaí, da Igreja de Jesus Cristo dos Santos dos Últimos Dias.",
           "chips": [
@@ -445,7 +442,6 @@ self.I18N = {
     "name": "Français",
     "htmlLang": "fr",
     "greet": "Aloha ! Bienvenue",
-    "sub": "Bienvenue au Gateway Buffet",
     "qr": "Scannez pour ouvrir sur votre téléphone",
     "tabs": {
       "guide": "Infos",
@@ -466,7 +462,7 @@ self.I18N = {
         },
         {
           "id": "icecream",
-          "title": "Glaces et glace à l'ananas Dole",
+          "title": "Glaces et glace italienne à l'ananas Dole",
           "text": "Des stations de glaces se trouvent des deux côtés du bâtiment.\nLa glace à l'italienne à l'ananas Dole est disponible côté Hauʻula. N'hésitez pas à demander de l'aide à un serveur."
         },
         {
@@ -525,7 +521,7 @@ self.I18N = {
           ]
         },
         {
-          "title": "Tram Tour de Lāʻie",
+          "title": "Visite en tram de Lāʻie",
           "subtitle": "",
           "text": "Profitez d'une balade panoramique à travers la ville de Lāʻie et le campus de BYU–Hawaii.\nLa visite comprend également un arrêt de 15 minutes dans les jardins du temple de Lāʻie (Hawaï) de l'Église de Jésus-Christ des Saints des Derniers Jours.",
           "chips": [
@@ -589,7 +585,6 @@ self.I18N = {
     "name": "Deutsch",
     "htmlLang": "de",
     "greet": "Aloha! Willkommen",
-    "sub": "Willkommen im Gateway Buffet",
     "qr": "Zum Öffnen auf dem Handy scannen",
     "tabs": {
       "guide": "Hinweise",
@@ -710,7 +705,7 @@ self.I18N = {
       },
       "survey": {
         "title": "Ein Hinweis für später",
-        "text": "Etwa eine Woche nach Ihrem Besuch erhält die Person, die die Tickets gekauft hat, möglicherweise eine kurze E-Mail-Umfrage des PCC zum gesamten Erlebnis.\nFalls Sie diese erhalten, wären wir Ihnen dankbar, wenn Sie sich auch dort einen Moment Zeit für Ihr Feedback nehmen."
+        "text": "Etwa eine Woche nach Ihrem Besuch erhält die Person, die die Tickets gekauft hat, möglicherweise eine kurze E-Mail-Umfrage des PCC zum gesamten Erlebnis.\nFalls Sie diese erhalten, wären wir Ihnen dankbar, wenn Sie sich auch dort einen Moment Zeit für Ihr Feedback nehmen würden."
       },
       "server": "Ihre Bedienung heute Abend:",
       "end": "Mahalo nui loa",
@@ -733,7 +728,6 @@ self.I18N = {
     "name": "Nederlands",
     "htmlLang": "nl",
     "greet": "Aloha! Welkom",
-    "sub": "Welkom bij Gateway Buffet",
     "qr": "Scan om te openen op uw telefoon",
     "tabs": {
       "guide": "Info",
@@ -813,7 +807,7 @@ self.I18N = {
           ]
         },
         {
-          "title": "Lāʻie Tram Tour",
+          "title": "Tramtour door Lāʻie",
           "subtitle": "",
           "text": "Geniet van een schilderachtige rit door het stadje Lāʻie en over de campus van BYU–Hawaii.\nDe tour omvat ook een stop van 15 minuten bij het terrein van de Lāʻie Hawaiʻi-tempel van De Kerk van Jezus Christus van de Heiligen der Laatste Dagen.",
           "chips": [
@@ -877,7 +871,6 @@ self.I18N = {
     "name": "Tiếng Việt",
     "htmlLang": "vi",
     "greet": "Aloha! Xin chào quý khách",
-    "sub": "Chào mừng đến Gateway Buffet",
     "qr": "Quét để mở trên điện thoại",
     "tabs": {
       "guide": "Hướng dẫn",
@@ -1021,7 +1014,6 @@ self.I18N = {
     "name": "简体中文",
     "htmlLang": "zh-Hans",
     "greet": "Aloha！欢迎光临",
-    "sub": "欢迎光临 Gateway Buffet",
     "qr": "扫码在手机上打开",
     "tabs": {
       "guide": "用餐须知",
@@ -1165,7 +1157,6 @@ self.I18N = {
     "name": "繁體中文",
     "htmlLang": "zh-Hant",
     "greet": "Aloha！歡迎光臨",
-    "sub": "歡迎光臨 Gateway Buffet",
     "qr": "掃描在手機上開啟",
     "tabs": {
       "guide": "用餐須知",
@@ -1309,7 +1300,6 @@ self.I18N = {
     "name": "한국어",
     "htmlLang": "ko",
     "greet": "알로하! 환영합니다",
-    "sub": "Gateway Buffet에 오신 것을 환영합니다",
     "qr": "스캔하여 휴대폰에서 열기",
     "tabs": {
       "guide": "이용 안내",
@@ -1361,7 +1351,7 @@ self.I18N = {
         {
           "id": "charging",
           "title": "충전 스테이션",
-          "text": "출구 근처에 보안 사물함이 있는 휴대폰 충전 스테이션이 있습니다.\n스테이션에 안내된 방법에 따라 기기를 충전하고 사물함을 이용해 주세요."
+          "text": "출구 근처에 보안 사물함을 갖춘 휴대폰 충전 스테이션이 마련되어 있습니다.\n스테이션에 안내된 방법에 따라 기기를 충전하고 사물함을 이용해 주세요."
         },
         {
           "id": "coupon",
@@ -1453,7 +1443,6 @@ self.I18N = {
     "name": "日本語",
     "htmlLang": "ja",
     "greet": "アロハ！ようこそ",
-    "sub": "Gateway Buffetへようこそ",
     "qr": "スマホで開くにはスキャン",
     "tabs": {
       "guide": "ご利用案内",
@@ -1570,7 +1559,7 @@ self.I18N = {
       },
       "review": {
         "title": "ご感想をお聞かせください",
-        "text": "お時間がございましたら、PCCでのご体験についてぜひお聞かせください。\n担当スタッフがQRコードをご提示いたします。読み取ってTripAdvisorをタップすると、お料理、担当スタッフ、ビレッジ、ビュッフェ、ナイトショーについてのご感想をお寄せいただけます。\n皆さまのご意見は、お客様の体験をより良くするための大切な励みとなります。お時間をいただき、心より感謝申し上げます。"
+        "text": "お時間がございましたら、PCCでのご体験についてぜひお聞かせください。\n担当スタッフがQRコードをご提示いたします。読み取ってTripAdvisorをタップすると、お料理、担当スタッフ、ビレッジ、ビュッフェ、ナイトショーについてのご感想をお寄せいただけます。\n皆さまのご意見は、お客様の体験をより良いものにするための貴重な参考とさせていただきます。お時間をいただき、心より感謝申し上げます。"
       },
       "survey": {
         "title": "後日のご案内",
@@ -1597,7 +1586,6 @@ self.I18N = {
     "name": "Dansk",
     "htmlLang": "da",
     "greet": "Aloha! Velkommen",
-    "sub": "Velkommen til Gateway Buffet",
     "qr": "Scan for at åbne guiden på jeres telefon",
     "tabs": {
       "guide": "Info",
@@ -1619,7 +1607,7 @@ self.I18N = {
         {
           "id": "icecream",
           "title": "Is & Dole-ananas-softice",
-          "text": "Der er isstationer i begge sider af bygningen.\nDole-ananas-softice findes i Hauʻula-siden. Spørg gerne en tjener om hjælp."
+          "text": "Der er isstationer i begge sider af bygningen.\nDole-ananas-softice findes på Hauʻula-siden. Spørg gerne en tjener om hjælp."
         },
         {
           "id": "plates",
@@ -1677,7 +1665,7 @@ self.I18N = {
           ]
         },
         {
-          "title": "Lāʻie Tram Tour",
+          "title": "Tramtur i Lāʻie",
           "subtitle": "",
           "text": "Nyd en naturskøn tur gennem byen Lāʻie og BYU–Hawaii-campusset.\nTuren omfatter også et stop på 15 minutter ved området omkring Lāʻie Hawaiʻi-templet, som tilhører Jesu Kristi Kirke af Sidste Dages Hellige.",
           "chips": [
@@ -1741,7 +1729,6 @@ self.I18N = {
     "name": "Српски",
     "htmlLang": "sr-Cyrl",
     "greet": "Алоха! Добро дошли",
-    "sub": "Добро дошли у Gateway Buffet",
     "qr": "Скенирајте да бисте отворили водич на телефону",
     "tabs": {
       "guide": "Упутство",
@@ -1768,7 +1755,7 @@ self.I18N = {
         {
           "id": "plates",
           "title": "Тањири и прибор за јело",
-          "text": "Тањири су доступни у целом делу са шведским столом.\nАко вам је потребан нов прибор за јело, замолите неког од наших конобара – радо ће вам га донети."
+          "text": "Тањири су доступни у целом делу са шведским столом.\nАко вам је потребан нови прибор за јело, замолите неког од наших конобара – радо ће вам га донети."
         },
         {
           "id": "after",
@@ -1793,12 +1780,12 @@ self.I18N = {
         {
           "id": "charging",
           "title": "Станица за пуњење",
-          "text": "Близу излазних врата налази се станица за пуњење телефона са сигурносним ормарићима.\nМолимо вас да пратите упутства истакнута на станици за пуњење уређаја и коришћење ормарића."
+          "text": "Близу излазних врата налази се станица за пуњење телефона са сигурносним ормарићима.\nМолимо вас да пратите упутства истакнута на станици како бисте напунили уређај и користили ормарић."
         },
         {
           "id": "coupon",
           "title": "Купони за попуст",
-          "text": "Током посете можете добити купоне за попуст у одабраним продавницама у Hukilau Marketplace.\nАко га нисте добили, замолите свог конобара."
+          "text": "Током посете можете добити купоне за попуст у одабраним продавницама у Hukilau Marketplace.\nАко нисте добили купон, замолите свог конобара."
         }
       ],
       "foot": "Пријатно!",
@@ -1862,7 +1849,7 @@ self.I18N = {
       },
       "survey": {
         "title": "Напомена за касније",
-        "text": "Отприлике недељу дана након ваше посете, особа која је купила улазнице може добити од PCC кратку анкету путем е-поште о целокупном искуству.\nАко је добијете, били бисмо вам захвални да одвојите тренутак и тамо поделите своје утиске."
+        "text": "Отприлике недељу дана након ваше посете, особа која је купила улазнице може добити од PCC кратку анкету путем е-поште о целокупном искуству.\nАко је добијете, били бисмо вам захвални ако бисте одвојили тренутак да и тамо поделите своје утиске."
       },
       "server": "Ваш конобар вечерас:",
       "end": "Mahalo nui loa",
@@ -1886,7 +1873,6 @@ self.I18N = {
     "htmlLang": "ar",
     "dir": "rtl",
     "greet": "ألوها! أهلاً وسهلاً بكم",
-    "sub": "أهلاً بكم في Gateway Buffet",
     "qr": "امسحوا الرمز لفتح الدليل على هواتفكم",
     "tabs": {
       "guide": "دليل الضيوف",
@@ -2030,7 +2016,6 @@ self.I18N = {
     "name": "Italiano",
     "htmlLang": "it",
     "greet": "Aloha! Benvenuti",
-    "sub": "Benvenuti al Gateway Buffet",
     "qr": "Scansionate per aprire la guida sul telefono",
     "tabs": {
       "guide": "Info",
@@ -2087,7 +2072,7 @@ self.I18N = {
         {
           "id": "coupon",
           "title": "Buoni sconto",
-          "text": "Durante la visita potreste ricevere buoni sconto per alcuni negozi selezionati dell'Hukilau Marketplace.\nSe non l'avete ricevuto, chiedetelo al vostro cameriere."
+          "text": "Durante la visita potreste ricevere buoni sconto per alcuni negozi selezionati dell'Hukilau Marketplace.\nSe non ne avete ricevuto uno, chiedetelo al vostro cameriere."
         }
       ],
       "foot": "Buon appetito!",
@@ -2110,7 +2095,7 @@ self.I18N = {
           ]
         },
         {
-          "title": "Tram Tour di Lāʻie",
+          "title": "Giro in tram di Lāʻie",
           "subtitle": "",
           "text": "Godetevi un giro panoramico attraverso la cittadina di Lāʻie e il campus della BYU–Hawaii.\nIl tour include anche una sosta di 15 minuti nei giardini del Tempio di Lāʻie, Hawaiʻi, della Chiesa di Gesù Cristo dei Santi degli Ultimi Giorni.",
           "chips": [
@@ -2174,7 +2159,6 @@ self.I18N = {
     "name": "ไทย",
     "htmlLang": "th",
     "greet": "อะโลฮา! ยินดีต้อนรับ",
-    "sub": "ยินดีต้อนรับสู่ Gateway Buffet",
     "qr": "สแกนเพื่อเปิดคู่มือบนโทรศัพท์ของท่าน",
     "tabs": {
       "guide": "คำแนะนำ",
