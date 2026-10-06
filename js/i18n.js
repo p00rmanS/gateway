@@ -114,7 +114,7 @@ self.I18N = {
         {
           "title": "Polynesian Football Hall of Fame",
           "subtitle": "",
-          "text": "Explore a gallery honoring Polynesian football legends, with plaques, photographs, memorabilia, interactive displays, and the Wall of Honor.\nIt is located directly across from Gateway Buffet inside the PCC Welcome Center.",
+          "text": "Explore a gallery honoring Polynesian football legends, with plaques, photographs, memorabilia, interactive displays, and the Wall of Honor.\nIt is located directly across from Gateway Buffet inside the Polynesian Cultural Center's Welcome Center.",
           "chips": [
             "Until 7:00 PM"
           ]
@@ -129,11 +129,11 @@ self.I18N = {
       },
       "review": {
         "title": "Share Your Experience",
-        "text": "If you have a moment, we'd love to hear about your experience at PCC.\nYour server will show you the QR code. Simply scan it and tap TripAdvisor to share feedback about your meal, your server, the villages, the buffet, or the night show.\nYour feedback helps our team continue improving the guest experience, and we truly appreciate you taking the time to share it."
+        "text": "If you have a moment, we'd love to hear about your experience at the Polynesian Cultural Center.\nYour server will show you the QR code. Simply scan it and tap TripAdvisor to share feedback about your meal, your server, the villages, the buffet, or the night show.\nYour feedback helps our team continue improving the guest experience, and we truly appreciate you taking the time to share it."
       },
       "survey": {
         "title": "A Note for Later",
-        "text": "About a week after your visit, the person who purchased the tickets may receive a short email survey from PCC about the overall experience.\nIf you receive one, we'd be grateful if you took a moment to share your feedback there as well."
+        "text": "About a week after your visit, the person who purchased the tickets may receive a short email survey from the Polynesian Cultural Center about the overall experience.\nIf you receive one, we'd be grateful if you took a moment to share your feedback there as well."
       },
       "server": "Your server tonight:",
       "end": "Mahalo Nui Loa",
@@ -257,7 +257,7 @@ self.I18N = {
         {
           "title": "Salón de la Fama del Fútbol Americano Polinesio",
           "subtitle": "",
-          "text": "Recorran una galería que rinde homenaje a las leyendas polinesias del fútbol americano, con placas, fotografías, recuerdos, pantallas interactivas y el Muro de Honor.\nSe encuentra justo enfrente de Gateway Buffet, dentro del Welcome Center de PCC.",
+          "text": "Recorran una galería que rinde homenaje a las leyendas polinesias del fútbol americano, con placas, fotografías, recuerdos, pantallas interactivas y el Muro de Honor.\nSe encuentra justo enfrente de Gateway Buffet, dentro del Welcome Center del Polynesian Cultural Center.",
           "chips": [
             "Hasta las 7:00 p. m."
           ]
@@ -272,11 +272,11 @@ self.I18N = {
       },
       "review": {
         "title": "Compartan su experiencia",
-        "text": "Si tienen un momento, nos encantaría conocer su experiencia en PCC.\nSu mesero les mostrará el código QR. Solo escanéenlo y toquen TripAdvisor para compartir su opinión sobre la comida, su mesero, las aldeas, el buffet o el espectáculo nocturno.\nSus comentarios ayudan a nuestro equipo a seguir mejorando la experiencia de nuestros visitantes, y les agradecemos sinceramente que se tomen el tiempo de compartirlos."
+        "text": "Si tienen un momento, nos encantaría conocer su experiencia en el Polynesian Cultural Center.\nSu mesero les mostrará el código QR. Solo escanéenlo y toquen TripAdvisor para compartir su opinión sobre la comida, su mesero, las aldeas, el buffet o el espectáculo nocturno.\nSus comentarios ayudan a nuestro equipo a seguir mejorando la experiencia de nuestros visitantes, y les agradecemos sinceramente que se tomen el tiempo de compartirlos."
       },
       "survey": {
         "title": "Una nota para después",
-        "text": "Aproximadamente una semana después de su visita, la persona que compró los boletos podría recibir de PCC una breve encuesta por correo electrónico sobre la experiencia en general.\nSi la reciben, les agradeceríamos que se tomaran un momento para compartir allí también sus comentarios."
+        "text": "Aproximadamente una semana después de su visita, la persona que compró los boletos podría recibir del Polynesian Cultural Center una breve encuesta por correo electrónico sobre la experiencia en general.\nSi la reciben, les agradeceríamos que se tomaran un momento para compartir allí también sus comentarios."
       },
       "server": "Su mesero esta noche:",
       "end": "Mahalo nui loa",
@@ -400,7 +400,7 @@ self.I18N = {
         {
           "title": "Polynesian Football Hall of Fame",
           "subtitle": "",
-          "text": "Conheçam uma galeria que homenageia lendas polinésias do futebol americano, com placas, fotografias, recordações, telas interativas e o Mural de Honra.\nFica bem em frente ao Gateway Buffet, dentro do Welcome Center do PCC.",
+          "text": "Conheçam uma galeria que homenageia lendas polinésias do futebol americano, com placas, fotografias, recordações, telas interativas e o Mural de Honra.\nFica bem em frente ao Gateway Buffet, dentro do Welcome Center do Polynesian Cultural Center.",
           "chips": [
             "Até 19h"
           ]
@@ -415,11 +415,11 @@ self.I18N = {
       },
       "review": {
         "title": "Compartilhem sua experiência",
-        "text": "Se tiverem um momento, adoraríamos saber como foi a experiência de vocês no PCC.\nSeu garçom vai mostrar o QR code. É só escaneá-lo e tocar em TripAdvisor para compartilhar sua opinião sobre a refeição, o garçom, as vilas, o buffet ou o show noturno.\nSeus comentários ajudam nossa equipe a continuar melhorando a experiência dos visitantes, e agradecemos sinceramente por dedicarem um tempo a compartilhá-los."
+        "text": "Se tiverem um momento, adoraríamos saber como foi a experiência de vocês no Polynesian Cultural Center.\nSeu garçom vai mostrar o QR code. É só escaneá-lo e tocar em TripAdvisor para compartilhar sua opinião sobre a refeição, o garçom, as vilas, o buffet ou o show noturno.\nSeus comentários ajudam nossa equipe a continuar melhorando a experiência dos visitantes, e agradecemos sinceramente por dedicarem um tempo a compartilhá-los."
       },
       "survey": {
         "title": "Um aviso para depois",
-        "text": "Cerca de uma semana após a visita, quem comprou os ingressos poderá receber do PCC uma pesquisa curta por e-mail sobre a experiência como um todo.\nSe a receberem, ficaremos gratos se puderem dedicar um momento para compartilhar sua opinião também por lá."
+        "text": "Cerca de uma semana após a visita, quem comprou os ingressos poderá receber do Polynesian Cultural Center uma pesquisa curta por e-mail sobre a experiência como um todo.\nSe a receberem, ficaremos gratos se puderem dedicar um momento para compartilhar sua opinião também por lá."
       },
       "server": "Seu garçom esta noite:",
       "end": "Mahalo nui loa",
@@ -543,7 +543,7 @@ self.I18N = {
         {
           "title": "Polynesian Football Hall of Fame",
           "subtitle": "",
-          "text": "Découvrez une galerie qui rend hommage aux légendes polynésiennes du football américain : plaques, photographies, souvenirs, écrans interactifs et mur d'honneur.\nElle se trouve juste en face du Gateway Buffet, dans le Welcome Center du PCC.",
+          "text": "Découvrez une galerie qui rend hommage aux légendes polynésiennes du football américain : plaques, photographies, souvenirs, écrans interactifs et mur d'honneur.\nElle se trouve juste en face du Gateway Buffet, dans le Welcome Center du Polynesian Cultural Center.",
           "chips": [
             "Jusqu'à 19 h"
           ]
@@ -558,11 +558,11 @@ self.I18N = {
       },
       "review": {
         "title": "Partagez votre expérience",
-        "text": "Si vous avez un moment, nous serions ravis de connaître votre avis sur votre expérience au PCC.\nVotre serveur vous présentera le code QR. Il vous suffit de le scanner et de toucher TripAdvisor pour partager votre avis sur votre repas, votre serveur, les villages, le buffet ou le spectacle du soir.\nVos commentaires aident notre équipe à améliorer sans cesse l'expérience de nos visiteurs, et nous vous remercions sincèrement de prendre le temps de les partager."
+        "text": "Si vous avez un moment, nous serions ravis de connaître votre avis sur votre expérience au Polynesian Cultural Center.\nVotre serveur vous présentera le code QR. Il vous suffit de le scanner et de toucher TripAdvisor pour partager votre avis sur votre repas, votre serveur, les villages, le buffet ou le spectacle du soir.\nVos commentaires aident notre équipe à améliorer sans cesse l'expérience de nos visiteurs, et nous vous remercions sincèrement de prendre le temps de les partager."
       },
       "survey": {
         "title": "Une note pour plus tard",
-        "text": "Environ une semaine après votre visite, la personne qui a acheté les billets pourra recevoir du PCC un court questionnaire par e-mail sur l'ensemble de l'expérience.\nSi vous le recevez, nous vous serions reconnaissants de prendre un moment pour y donner également votre avis."
+        "text": "Environ une semaine après votre visite, la personne qui a acheté les billets pourra recevoir du Polynesian Cultural Center un court questionnaire par e-mail sur l'ensemble de l'expérience.\nSi vous le recevez, nous vous serions reconnaissants de prendre un moment pour y donner également votre avis."
       },
       "server": "Votre serveur ce soir :",
       "end": "Mahalo nui loa",
@@ -686,7 +686,7 @@ self.I18N = {
         {
           "title": "Polynesian Football Hall of Fame",
           "subtitle": "",
-          "text": "Entdecken Sie eine Galerie zu Ehren polynesischer Football-Legenden mit Plaketten, Fotografien, Erinnerungsstücken, interaktiven Stationen und der Ehrenwand.\nSie befindet sich direkt gegenüber dem Gateway Buffet im PCC Welcome Center.",
+          "text": "Entdecken Sie eine Galerie zu Ehren polynesischer Football-Legenden mit Plaketten, Fotografien, Erinnerungsstücken, interaktiven Stationen und der Ehrenwand.\nSie befindet sich direkt gegenüber dem Gateway Buffet im Welcome Center des Polynesian Cultural Center.",
           "chips": [
             "Bis 19:00 Uhr"
           ]
@@ -701,11 +701,11 @@ self.I18N = {
       },
       "review": {
         "title": "Teilen Sie Ihre Erfahrung",
-        "text": "Wenn Sie einen Moment Zeit haben, würden wir uns freuen, von Ihrem Erlebnis im PCC zu hören.\nIhre Bedienung zeigt Ihnen den QR-Code. Scannen Sie ihn einfach und tippen Sie auf TripAdvisor, um uns Ihre Meinung zu Ihrem Essen, Ihrer Bedienung, den Dörfern, dem Buffet oder der Abendshow mitzuteilen.\nIhr Feedback hilft unserem Team, das Erlebnis unserer Gäste weiter zu verbessern, und wir danken Ihnen herzlich, dass Sie sich die Zeit dafür nehmen."
+        "text": "Wenn Sie einen Moment Zeit haben, würden wir uns freuen, von Ihrem Erlebnis im Polynesian Cultural Center zu hören.\nIhre Bedienung zeigt Ihnen den QR-Code. Scannen Sie ihn einfach und tippen Sie auf TripAdvisor, um uns Ihre Meinung zu Ihrem Essen, Ihrer Bedienung, den Dörfern, dem Buffet oder der Abendshow mitzuteilen.\nIhr Feedback hilft unserem Team, das Erlebnis unserer Gäste weiter zu verbessern, und wir danken Ihnen herzlich, dass Sie sich die Zeit dafür nehmen."
       },
       "survey": {
         "title": "Ein Hinweis für später",
-        "text": "Etwa eine Woche nach Ihrem Besuch erhält die Person, die die Tickets gekauft hat, möglicherweise eine kurze E-Mail-Umfrage des PCC zum gesamten Erlebnis.\nFalls Sie diese erhalten, wären wir Ihnen dankbar, wenn Sie sich auch dort einen Moment Zeit für Ihr Feedback nehmen würden."
+        "text": "Etwa eine Woche nach Ihrem Besuch erhält die Person, die die Tickets gekauft hat, möglicherweise eine kurze E-Mail-Umfrage des Polynesian Cultural Center zum gesamten Erlebnis.\nFalls Sie diese erhalten, wären wir Ihnen dankbar, wenn Sie sich auch dort einen Moment Zeit für Ihr Feedback nehmen würden."
       },
       "server": "Ihre Bedienung heute Abend:",
       "end": "Mahalo nui loa",
@@ -829,7 +829,7 @@ self.I18N = {
         {
           "title": "Polynesian Football Hall of Fame",
           "subtitle": "",
-          "text": "Bekijk een galerie ter ere van Polynesische footballlegendes, met plaquettes, foto's, aandenkens, interactieve schermen en de erewand.\nDe galerie ligt recht tegenover Gateway Buffet, in het Welcome Center van het PCC.",
+          "text": "Bekijk een galerie ter ere van Polynesische footballlegendes, met plaquettes, foto's, aandenkens, interactieve schermen en de erewand.\nDe galerie ligt recht tegenover Gateway Buffet, in het Welcome Center van het Polynesian Cultural Center.",
           "chips": [
             "Tot 19.00 uur"
           ]
@@ -844,11 +844,11 @@ self.I18N = {
       },
       "review": {
         "title": "Deel uw ervaring",
-        "text": "Heeft u even tijd? Dan horen wij graag hoe u uw bezoek aan het PCC heeft ervaren.\nUw ober laat u de QR-code zien. Scan deze en tik op TripAdvisor om uw mening te delen over uw maaltijd, uw ober, de dorpen, het buffet of de avondshow.\nUw feedback helpt ons team de ervaring van onze gasten steeds te verbeteren, en wij waarderen het zeer dat u de tijd neemt om die te delen."
+        "text": "Heeft u even tijd? Dan horen wij graag hoe u uw bezoek aan het Polynesian Cultural Center heeft ervaren.\nUw ober laat u de QR-code zien. Scan deze en tik op TripAdvisor om uw mening te delen over uw maaltijd, uw ober, de dorpen, het buffet of de avondshow.\nUw feedback helpt ons team de ervaring van onze gasten steeds te verbeteren, en wij waarderen het zeer dat u de tijd neemt om die te delen."
       },
       "survey": {
         "title": "Een bericht voor later",
-        "text": "Ongeveer een week na uw bezoek kan degene die de tickets heeft gekocht een korte e-mailenquête van het PCC ontvangen over de hele ervaring.\nOntvangt u deze, dan stellen wij het zeer op prijs als u ook daar even uw feedback wilt geven."
+        "text": "Ongeveer een week na uw bezoek kan degene die de tickets heeft gekocht een korte e-mailenquête van het Polynesian Cultural Center ontvangen over de hele ervaring.\nOntvangt u deze, dan stellen wij het zeer op prijs als u ook daar even uw feedback wilt geven."
       },
       "server": "Uw ober vanavond:",
       "end": "Mahalo nui loa",
@@ -972,7 +972,7 @@ self.I18N = {
         {
           "title": "Đại sảnh Danh vọng Bóng bầu dục Polynesia",
           "subtitle": "",
-          "text": "Tham quan phòng trưng bày tôn vinh các huyền thoại bóng bầu dục Polynesia với bảng vinh danh, ảnh, kỷ vật, màn hình tương tác và Bức tường Danh dự.\nPhòng trưng bày nằm ngay đối diện Gateway Buffet, bên trong Welcome Center của PCC.",
+          "text": "Tham quan phòng trưng bày tôn vinh các huyền thoại bóng bầu dục Polynesia với bảng vinh danh, ảnh, kỷ vật, màn hình tương tác và Bức tường Danh dự.\nPhòng trưng bày nằm ngay đối diện Gateway Buffet, bên trong Welcome Center của Polynesian Cultural Center.",
           "chips": [
             "Đến 7:00 tối"
           ]
@@ -987,11 +987,11 @@ self.I18N = {
       },
       "review": {
         "title": "Chia sẻ trải nghiệm",
-        "text": "Nếu có thời gian, chúng tôi rất mong được nghe về trải nghiệm của quý khách tại PCC.\nNgười phục vụ sẽ đưa mã QR cho quý khách. Quý khách chỉ cần quét mã và chọn TripAdvisor để chia sẻ cảm nhận về bữa ăn, người phục vụ, các ngôi làng, bữa buffet hoặc chương trình biểu diễn tối.\nÝ kiến của quý khách giúp đội ngũ chúng tôi không ngừng nâng cao trải nghiệm của khách tham quan. Chúng tôi chân thành cảm ơn quý khách đã dành thời gian chia sẻ."
+        "text": "Nếu có thời gian, chúng tôi rất mong được nghe về trải nghiệm của quý khách tại Polynesian Cultural Center.\nNgười phục vụ sẽ đưa mã QR cho quý khách. Quý khách chỉ cần quét mã và chọn TripAdvisor để chia sẻ cảm nhận về bữa ăn, người phục vụ, các ngôi làng, bữa buffet hoặc chương trình biểu diễn tối.\nÝ kiến của quý khách giúp đội ngũ chúng tôi không ngừng nâng cao trải nghiệm của khách tham quan. Chúng tôi chân thành cảm ơn quý khách đã dành thời gian chia sẻ."
       },
       "survey": {
         "title": "Lưu ý sau chuyến đi",
-        "text": "Khoảng một tuần sau chuyến tham quan, người đã mua vé có thể nhận được một email khảo sát ngắn từ PCC về trải nghiệm chung.\nNếu nhận được, chúng tôi rất biết ơn nếu quý khách dành chút thời gian chia sẻ ý kiến tại đó."
+        "text": "Khoảng một tuần sau chuyến tham quan, người đã mua vé có thể nhận được một email khảo sát ngắn từ Polynesian Cultural Center về trải nghiệm chung.\nNếu nhận được, chúng tôi rất biết ơn nếu quý khách dành chút thời gian chia sẻ ý kiến tại đó."
       },
       "server": "Người phục vụ tối nay:",
       "end": "Mahalo nui loa",
@@ -1115,7 +1115,7 @@ self.I18N = {
         {
           "title": "波利尼西亚美式橄榄球名人堂",
           "subtitle": "",
-          "text": "参观致敬波利尼西亚美式橄榄球传奇人物的展馆，馆内有纪念牌匾、照片、纪念品、互动展示和荣誉墙。\n展馆就在 Gateway Buffet 对面的 PCC 游客中心内。",
+          "text": "参观致敬波利尼西亚美式橄榄球传奇人物的展馆，馆内有纪念牌匾、照片、纪念品、互动展示和荣誉墙。\n展馆就在 Gateway Buffet 对面的 Polynesian Cultural Center 游客中心内。",
           "chips": [
             "开放至晚上7:00"
           ]
@@ -1130,11 +1130,11 @@ self.I18N = {
       },
       "review": {
         "title": "分享您的体验",
-        "text": "如果您方便，我们很想听听您在PCC的体验。\n您的服务员会为您出示二维码。只需扫描并点击 TripAdvisor，即可分享您对餐点、服务员、各个村落、自助餐或夜间表演的感受。\n您的反馈能帮助我们的团队不断提升游客体验，衷心感谢您抽空分享。"
+        "text": "如果您方便，我们很想听听您在 Polynesian Cultural Center 的体验。\n您的服务员会为您出示二维码。只需扫描并点击 TripAdvisor，即可分享您对餐点、服务员、各个村落、自助餐或夜间表演的感受。\n您的反馈能帮助我们的团队不断提升游客体验，衷心感谢您抽空分享。"
       },
       "survey": {
         "title": "温馨提示",
-        "text": "参观结束约一周后，购票人可能会收到PCC发送的一份简短电子邮件问卷，询问此次的整体体验。\n如果您收到问卷，诚挚邀请您抽出片刻时间，在问卷中分享您的意见。"
+        "text": "参观结束约一周后，购票人可能会收到 Polynesian Cultural Center 发送的一份简短电子邮件问卷，询问此次的整体体验。\n如果您收到问卷，诚挚邀请您抽出片刻时间，在问卷中分享您的意见。"
       },
       "server": "今晚为您服务的是：",
       "end": "Mahalo nui loa",
@@ -1258,7 +1258,7 @@ self.I18N = {
         {
           "title": "玻里尼西亞美式足球名人堂",
           "subtitle": "",
-          "text": "參觀向玻里尼西亞美式足球傳奇人物致敬的展館，館內有紀念牌匾、照片、紀念品、互動展示和榮譽牆。\n展館就在 Gateway Buffet 對面的 PCC 遊客中心內。",
+          "text": "參觀向玻里尼西亞美式足球傳奇人物致敬的展館，館內有紀念牌匾、照片、紀念品、互動展示和榮譽牆。\n展館就在 Gateway Buffet 對面的 Polynesian Cultural Center 遊客中心內。",
           "chips": [
             "開放至晚上7:00"
           ]
@@ -1273,11 +1273,11 @@ self.I18N = {
       },
       "review": {
         "title": "分享您的體驗",
-        "text": "如果您方便，我們很想聽聽您在PCC的體驗。\n您的服務人員會為您出示QR碼。只要掃描並點擊 TripAdvisor，即可分享您對餐點、服務人員、各個村落、自助餐或夜間表演的感受。\n您的回饋能幫助我們的團隊持續提升遊客體驗，衷心感謝您撥空分享。"
+        "text": "如果您方便，我們很想聽聽您在 Polynesian Cultural Center 的體驗。\n您的服務人員會為您出示QR碼。只要掃描並點擊 TripAdvisor，即可分享您對餐點、服務人員、各個村落、自助餐或夜間表演的感受。\n您的回饋能幫助我們的團隊持續提升遊客體驗，衷心感謝您撥空分享。"
       },
       "survey": {
         "title": "貼心提醒",
-        "text": "參觀結束約一週後，購票人可能會收到PCC寄出的一份簡短電子郵件問卷，詢問此次的整體體驗。\n如果您收到問卷，誠摯邀請您撥出片刻時間，在問卷中分享您的意見。"
+        "text": "參觀結束約一週後，購票人可能會收到 Polynesian Cultural Center 寄出的一份簡短電子郵件問卷，詢問此次的整體體驗。\n如果您收到問卷，誠摯邀請您撥出片刻時間，在問卷中分享您的意見。"
       },
       "server": "今晚為您服務的是：",
       "end": "Mahalo nui loa",
@@ -1401,7 +1401,7 @@ self.I18N = {
         {
           "title": "폴리네시안 풋볼 명예의 전당",
           "subtitle": "",
-          "text": "명판, 사진, 기념품, 인터랙티브 전시, 명예의 벽으로 폴리네시아 풋볼 전설들을 기리는 갤러리를 둘러보세요.\nGateway Buffet 바로 맞은편 PCC 웰컴 센터 안에 있습니다.",
+          "text": "명판, 사진, 기념품, 인터랙티브 전시, 명예의 벽으로 폴리네시아 풋볼 전설들을 기리는 갤러리를 둘러보세요.\nGateway Buffet 바로 맞은편 Polynesian Cultural Center 웰컴 센터 안에 있습니다.",
           "chips": [
             "저녁 7시까지"
           ]
@@ -1416,11 +1416,11 @@ self.I18N = {
       },
       "review": {
         "title": "경험을 들려주세요",
-        "text": "잠시 시간이 되신다면 PCC에서의 경험을 들려주세요.\n담당 서버가 QR 코드를 보여 드립니다. QR 코드를 스캔하고 TripAdvisor를 눌러 식사, 담당 서버, 빌리지, 뷔페, 나이트 쇼에 대한 의견을 남겨 주세요.\n여러분의 소중한 의견은 저희 팀이 방문객 경험을 계속 개선하는 데 큰 도움이 됩니다. 시간을 내어 주셔서 진심으로 감사드립니다."
+        "text": "잠시 시간이 되신다면 Polynesian Cultural Center에서의 경험을 들려주세요.\n담당 서버가 QR 코드를 보여 드립니다. QR 코드를 스캔하고 TripAdvisor를 눌러 식사, 담당 서버, 빌리지, 뷔페, 나이트 쇼에 대한 의견을 남겨 주세요.\n여러분의 소중한 의견은 저희 팀이 방문객 경험을 계속 개선하는 데 큰 도움이 됩니다. 시간을 내어 주셔서 진심으로 감사드립니다."
       },
       "survey": {
         "title": "나중에 받으실 안내",
-        "text": "방문 후 약 일주일 뒤, 티켓을 구매하신 분께 PCC에서 전반적인 경험에 대한 짧은 이메일 설문을 보내드릴 수 있습니다.\n설문을 받으시면 잠시 시간을 내어 그곳에도 의견을 남겨 주시면 감사하겠습니다."
+        "text": "방문 후 약 일주일 뒤, 티켓을 구매하신 분께 Polynesian Cultural Center에서 전반적인 경험에 대한 짧은 이메일 설문을 보내드릴 수 있습니다.\n설문을 받으시면 잠시 시간을 내어 그곳에도 의견을 남겨 주시면 감사하겠습니다."
       },
       "server": "오늘 담당 서버:",
       "end": "Mahalo nui loa",
@@ -1544,7 +1544,7 @@ self.I18N = {
         {
           "title": "ポリネシアン・フットボール殿堂",
           "subtitle": "",
-          "text": "記念プレート、写真、記念品、インタラクティブ展示、名誉の壁で、ポリネシアのフットボール界の伝説たちを称えるギャラリーです。\nGateway Buffetのすぐ向かい、PCCウェルカムセンター内にございます。",
+          "text": "記念プレート、写真、記念品、インタラクティブ展示、名誉の壁で、ポリネシアのフットボール界の伝説たちを称えるギャラリーです。\nGateway Buffetのすぐ向かい、Polynesian Cultural Centerのウェルカムセンター内にございます。",
           "chips": [
             "午後7時まで"
           ]
@@ -1559,11 +1559,11 @@ self.I18N = {
       },
       "review": {
         "title": "ご感想をお聞かせください",
-        "text": "お時間がございましたら、PCCでのご体験についてぜひお聞かせください。\n担当スタッフがQRコードをご提示いたします。読み取ってTripAdvisorをタップすると、お料理、担当スタッフ、ビレッジ、ビュッフェ、ナイトショーについてのご感想をお寄せいただけます。\n皆さまのご意見は、お客様の体験をより良いものにするための貴重な参考とさせていただきます。お時間をいただき、心より感謝申し上げます。"
+        "text": "お時間がございましたら、Polynesian Cultural Centerでのご体験についてぜひお聞かせください。\n担当スタッフがQRコードをご提示いたします。読み取ってTripAdvisorをタップすると、お料理、担当スタッフ、ビレッジ、ビュッフェ、ナイトショーについてのご感想をお寄せいただけます。\n皆さまのご意見は、お客様の体験をより良いものにするための貴重な参考とさせていただきます。お時間をいただき、心より感謝申し上げます。"
       },
       "survey": {
         "title": "後日のご案内",
-        "text": "ご来園から約1週間後、チケットをご購入された方にPCCから全体のご体験に関する簡単なアンケートメールが届く場合がございます。\nお受け取りの際は、そちらにもご意見をお寄せいただけましたら幸いです。"
+        "text": "ご来園から約1週間後、チケットをご購入された方にPolynesian Cultural Centerから全体のご体験に関する簡単なアンケートメールが届く場合がございます。\nお受け取りの際は、そちらにもご意見をお寄せいただけましたら幸いです。"
       },
       "server": "本日の担当：",
       "end": "Mahalo nui loa",
@@ -1687,7 +1687,7 @@ self.I18N = {
         {
           "title": "Polynesian Football Hall of Fame",
           "subtitle": "",
-          "text": "Besøg et galleri til ære for polynesiske legender inden for amerikansk fodbold med mindeplader, fotografier, erindringsgenstande, interaktive skærme og Æresvæggen.\nDet ligger lige over for Gateway Buffet i PCC's Welcome Center.",
+          "text": "Besøg et galleri til ære for polynesiske legender inden for amerikansk fodbold med mindeplader, fotografier, erindringsgenstande, interaktive skærme og Æresvæggen.\nDet ligger lige over for Gateway Buffet i Polynesian Cultural Centers Welcome Center.",
           "chips": [
             "Til kl. 19.00"
           ]
@@ -1702,11 +1702,11 @@ self.I18N = {
       },
       "review": {
         "title": "Del jeres oplevelse",
-        "text": "Hvis I har et øjeblik, vil vi meget gerne høre om jeres oplevelse på PCC.\nJeres tjener viser jer QR-koden. Scan den, og tryk på TripAdvisor for at dele jeres feedback om måltidet, jeres tjener, landsbyerne, buffeten eller aftenshowet.\nJeres feedback hjælper vores team med at gøre gæsteoplevelsen endnu bedre, og vi sætter stor pris på, at I tager jer tid til at dele den."
+        "text": "Hvis I har et øjeblik, vil vi meget gerne høre om jeres oplevelse på Polynesian Cultural Center.\nJeres tjener viser jer QR-koden. Scan den, og tryk på TripAdvisor for at dele jeres feedback om måltidet, jeres tjener, landsbyerne, buffeten eller aftenshowet.\nJeres feedback hjælper vores team med at gøre gæsteoplevelsen endnu bedre, og vi sætter stor pris på, at I tager jer tid til at dele den."
       },
       "survey": {
         "title": "En besked til senere",
-        "text": "Cirka en uge efter jeres besøg kan den person, der købte billetterne, modtage en kort spørgeundersøgelse på e-mail fra PCC om den samlede oplevelse.\nHvis I modtager den, vil vi være taknemmelige, hvis I også tager et øjeblik til at dele jeres feedback dér."
+        "text": "Cirka en uge efter jeres besøg kan den person, der købte billetterne, modtage en kort spørgeundersøgelse på e-mail fra Polynesian Cultural Center om den samlede oplevelse.\nHvis I modtager den, vil vi være taknemmelige, hvis I også tager et øjeblik til at dele jeres feedback dér."
       },
       "server": "Jeres tjener i aften:",
       "end": "Mahalo nui loa",
@@ -1830,7 +1830,7 @@ self.I18N = {
         {
           "title": "Polynesian Football Hall of Fame",
           "subtitle": "",
-          "text": "Обиђите галерију у част полинежанских легенди америчког фудбала, са плакетама, фотографијама, успоменама, интерактивним екранима и Зидом части.\nНалази се тачно преко пута Gateway Buffet, у PCC Welcome Center.",
+          "text": "Обиђите галерију у част полинежанских легенди америчког фудбала, са плакетама, фотографијама, успоменама, интерактивним екранима и Зидом части.\nНалази се тачно преко пута Gateway Buffet, у Welcome Center-у Polynesian Cultural Center-а.",
           "chips": [
             "До 19:00"
           ]
@@ -1845,11 +1845,11 @@ self.I18N = {
       },
       "review": {
         "title": "Поделите своје утиске",
-        "text": "Ако имате тренутак, радо бисмо чули какво је било ваше искуство у PCC.\nВаш конобар ће вам показати QR код. Само га скенирајте и додирните TripAdvisor да бисте поделили утиске о оброку, конобару, селима, шведском столу или вечерњој представи.\nВаши утисци помажу нашем тиму да стално унапређује искуство гостију, и искрено вам захваљујемо што сте одвојили време да их поделите."
+        "text": "Ако имате тренутак, радо бисмо чули какво је било ваше искуство у Polynesian Cultural Center-у.\nВаш конобар ће вам показати QR код. Само га скенирајте и додирните TripAdvisor да бисте поделили утиске о оброку, конобару, селима, шведском столу или вечерњој представи.\nВаши утисци помажу нашем тиму да стално унапређује искуство гостију, и искрено вам захваљујемо што сте одвојили време да их поделите."
       },
       "survey": {
         "title": "Напомена за касније",
-        "text": "Отприлике недељу дана након ваше посете, особа која је купила улазнице може добити од PCC кратку анкету путем е-поште о целокупном искуству.\nАко је добијете, били бисмо вам захвални ако бисте одвојили тренутак да и тамо поделите своје утиске."
+        "text": "Отприлике недељу дана након ваше посете, особа која је купила улазнице може добити од Polynesian Cultural Center-а кратку анкету путем е-поште о целокупном искуству.\nАко је добијете, били бисмо вам захвални ако бисте одвојили тренутак да и тамо поделите своје утиске."
       },
       "server": "Ваш конобар вечерас:",
       "end": "Mahalo nui loa",
@@ -1974,7 +1974,7 @@ self.I18N = {
         {
           "title": "Polynesian Football Hall of Fame",
           "subtitle": "",
-          "text": "تجوّلوا في معرض يكرّم أساطير كرة القدم الأمريكية من بولينيزيا، ويضم لوحات تذكارية وصوراً ومقتنيات وشاشات تفاعلية وجدار الشرف.\nيقع مباشرةً مقابل Gateway Buffet داخل مركز الترحيب في PCC.",
+          "text": "تجوّلوا في معرض يكرّم أساطير كرة القدم الأمريكية من بولينيزيا، ويضم لوحات تذكارية وصوراً ومقتنيات وشاشات تفاعلية وجدار الشرف.\nيقع مباشرةً مقابل Gateway Buffet داخل مركز الترحيب في Polynesian Cultural Center.",
           "chips": [
             "حتى الساعة 7:00 مساءً"
           ]
@@ -1989,11 +1989,11 @@ self.I18N = {
       },
       "review": {
         "title": "شاركونا تجربتكم",
-        "text": "إذا كان لديكم بعض الوقت، يسعدنا أن نسمع عن تجربتكم في PCC.\nسيعرض عليكم النادل رمز QR. ما عليكم سوى مسحه والنقر على TripAdvisor لمشاركة رأيكم في وجبتكم أو النادل أو القرى أو البوفيه أو العرض المسائي.\nتساعد آراؤكم فريقنا على مواصلة تحسين تجربة الضيوف، ونقدّر حقاً تخصيصكم الوقت لمشاركتها."
+        "text": "إذا كان لديكم بعض الوقت، يسعدنا أن نسمع عن تجربتكم في Polynesian Cultural Center.\nسيعرض عليكم النادل رمز QR. ما عليكم سوى مسحه والنقر على TripAdvisor لمشاركة رأيكم في وجبتكم أو النادل أو القرى أو البوفيه أو العرض المسائي.\nتساعد آراؤكم فريقنا على مواصلة تحسين تجربة الضيوف، ونقدّر حقاً تخصيصكم الوقت لمشاركتها."
       },
       "survey": {
         "title": "ملاحظة لاحقة",
-        "text": "بعد أسبوع تقريباً من زيارتكم، قد يتلقى الشخص الذي اشترى التذاكر استبياناً قصيراً عبر البريد الإلكتروني من PCC حول التجربة بشكل عام.\nإذا وصلكم الاستبيان، فسنكون ممتنين لو خصّصتم لحظة لمشاركة رأيكم فيه أيضاً."
+        "text": "بعد أسبوع تقريباً من زيارتكم، قد يتلقى الشخص الذي اشترى التذاكر استبياناً قصيراً عبر البريد الإلكتروني من Polynesian Cultural Center حول التجربة بشكل عام.\nإذا وصلكم الاستبيان، فسنكون ممتنين لو خصّصتم لحظة لمشاركة رأيكم فيه أيضاً."
       },
       "server": "النادل الذي يخدمكم الليلة:",
       "end": "Mahalo nui loa",
@@ -2117,7 +2117,7 @@ self.I18N = {
         {
           "title": "Polynesian Football Hall of Fame",
           "subtitle": "",
-          "text": "Visitate una galleria dedicata alle leggende polinesiane del football americano, con targhe, fotografie, cimeli, schermi interattivi e il Muro d'Onore.\nSi trova proprio di fronte al Gateway Buffet, all'interno del Welcome Center del PCC.",
+          "text": "Visitate una galleria dedicata alle leggende polinesiane del football americano, con targhe, fotografie, cimeli, schermi interattivi e il Muro d'Onore.\nSi trova proprio di fronte al Gateway Buffet, all'interno del Welcome Center del Polynesian Cultural Center.",
           "chips": [
             "Fino alle 19:00"
           ]
@@ -2132,11 +2132,11 @@ self.I18N = {
       },
       "review": {
         "title": "Condividete la vostra esperienza",
-        "text": "Se avete un momento, ci farebbe piacere conoscere la vostra esperienza al PCC.\nIl vostro cameriere vi mostrerà il codice QR. Vi basterà scansionarlo e toccare TripAdvisor per condividere la vostra opinione sul pasto, sul cameriere, sui villaggi, sul buffet o sullo spettacolo serale.\nIl vostro feedback aiuta il nostro team a migliorare continuamente l'esperienza degli ospiti, e vi ringraziamo sinceramente per il tempo che ci dedicherete."
+        "text": "Se avete un momento, ci farebbe piacere conoscere la vostra esperienza al Polynesian Cultural Center.\nIl vostro cameriere vi mostrerà il codice QR. Vi basterà scansionarlo e toccare TripAdvisor per condividere la vostra opinione sul pasto, sul cameriere, sui villaggi, sul buffet o sullo spettacolo serale.\nIl vostro feedback aiuta il nostro team a migliorare continuamente l'esperienza degli ospiti, e vi ringraziamo sinceramente per il tempo che ci dedicherete."
       },
       "survey": {
         "title": "Una nota per dopo",
-        "text": "Circa una settimana dopo la visita, la persona che ha acquistato i biglietti potrebbe ricevere dal PCC un breve sondaggio via e-mail sull'esperienza complessiva.\nSe lo riceverete, vi saremmo grati se poteste dedicare un momento a condividere anche lì il vostro feedback."
+        "text": "Circa una settimana dopo la visita, la persona che ha acquistato i biglietti potrebbe ricevere dal Polynesian Cultural Center un breve sondaggio via e-mail sull'esperienza complessiva.\nSe lo riceverete, vi saremmo grati se poteste dedicare un momento a condividere anche lì il vostro feedback."
       },
       "server": "Il vostro cameriere stasera:",
       "end": "Mahalo nui loa",
@@ -2260,7 +2260,7 @@ self.I18N = {
         {
           "title": "Polynesian Football Hall of Fame",
           "subtitle": "",
-          "text": "ชมแกลเลอรีที่เชิดชูตำนานอเมริกันฟุตบอลชาวโพลินีเซีย พร้อมแผ่นจารึก ภาพถ่าย ของที่ระลึก จอแสดงผลแบบอินเทอร์แอคทีฟ และกำแพงเกียรติยศ\nตั้งอยู่ตรงข้าม Gateway Buffet ภายใน Welcome Center ของ PCC",
+          "text": "ชมแกลเลอรีที่เชิดชูตำนานอเมริกันฟุตบอลชาวโพลินีเซีย พร้อมแผ่นจารึก ภาพถ่าย ของที่ระลึก จอแสดงผลแบบอินเทอร์แอคทีฟ และกำแพงเกียรติยศ\nตั้งอยู่ตรงข้าม Gateway Buffet ภายใน Welcome Center ของ Polynesian Cultural Center",
           "chips": [
             "ถึง 19:00 น."
           ]
@@ -2275,11 +2275,11 @@ self.I18N = {
       },
       "review": {
         "title": "แบ่งปันประสบการณ์ของท่าน",
-        "text": "หากท่านมีเวลา เรายินดีอย่างยิ่งที่จะได้รับฟังประสบการณ์ของท่านที่ PCC\nพนักงานเสิร์ฟจะนำคิวอาร์โค้ดมาให้ท่าน เพียงสแกนแล้วแตะ TripAdvisor เพื่อแบ่งปันความคิดเห็นเกี่ยวกับมื้ออาหาร พนักงานเสิร์ฟ หมู่บ้านต่าง ๆ บุฟเฟต์ หรือการแสดงภาคค่ำ\nความคิดเห็นของท่านช่วยให้ทีมงานของเราพัฒนาประสบการณ์ของแขกได้อย่างต่อเนื่อง และเราขอขอบคุณอย่างจริงใจที่ท่านสละเวลาแบ่งปัน"
+        "text": "หากท่านมีเวลา เรายินดีอย่างยิ่งที่จะได้รับฟังประสบการณ์ของท่านที่ Polynesian Cultural Center\nพนักงานเสิร์ฟจะนำคิวอาร์โค้ดมาให้ท่าน เพียงสแกนแล้วแตะ TripAdvisor เพื่อแบ่งปันความคิดเห็นเกี่ยวกับมื้ออาหาร พนักงานเสิร์ฟ หมู่บ้านต่าง ๆ บุฟเฟต์ หรือการแสดงภาคค่ำ\nความคิดเห็นของท่านช่วยให้ทีมงานของเราพัฒนาประสบการณ์ของแขกได้อย่างต่อเนื่อง และเราขอขอบคุณอย่างจริงใจที่ท่านสละเวลาแบ่งปัน"
       },
       "survey": {
         "title": "ข้อมูลสำหรับภายหลัง",
-        "text": "ประมาณหนึ่งสัปดาห์หลังการเยี่ยมชม ผู้ที่ซื้อบัตรอาจได้รับแบบสอบถามสั้น ๆ ทางอีเมลจาก PCC เกี่ยวกับประสบการณ์โดยรวม\nหากท่านได้รับ เราจะขอบคุณเป็นอย่างยิ่งหากท่านสละเวลาสักครู่เพื่อแบ่งปันความคิดเห็นในแบบสอบถามนั้นด้วย"
+        "text": "ประมาณหนึ่งสัปดาห์หลังการเยี่ยมชม ผู้ที่ซื้อบัตรอาจได้รับแบบสอบถามสั้น ๆ ทางอีเมลจาก Polynesian Cultural Center เกี่ยวกับประสบการณ์โดยรวม\nหากท่านได้รับ เราจะขอบคุณเป็นอย่างยิ่งหากท่านสละเวลาสักครู่เพื่อแบ่งปันความคิดเห็นในแบบสอบถามนั้นด้วย"
       },
       "server": "พนักงานเสิร์ฟของท่านในค่ำคืนนี้:",
       "end": "Mahalo nui loa",
