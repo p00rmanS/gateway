@@ -2,7 +2,7 @@
    - The page itself: network first, falling back to the cached copy when offline.
    - Everything else (CSS, JS, flags, icons, fonts, QR library): served from cache, refreshed in the background.
    When you deploy changes: raise the ?v= number in index.html, and set VERSION here to the same number. */
-const VERSION = "v23";
+const VERSION = "v24";
 const V = VERSION.slice(1); // must match the ?v= number in index.html
 const CACHE = `guest-guide-${VERSION}`;
 

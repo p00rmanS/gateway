@@ -29,6 +29,11 @@
   const SOON_MINUTES = 30;
   const COUNTDOWN_WINDOW = 180;
 
+  // Section 03 (Before You Go) stays locked for the first ~28 minutes after the guide is first opened.
+  const UNLOCK_DELAY = 28 * 60 * 1000;
+  const KEY_FIRST = "gg_first_visit";
+  const KEY_UNLOCKED = "gg_s3_unlocked";
+
   /* ---------- Helpers ---------- */
   const $ = (id) => document.getElementById(id);
   const $$ = (sel, root = document) => [...root.querySelectorAll(sel)];
@@ -72,6 +77,30 @@
   };
 
   const t = () => I18N[state.lang];
+
+  /* ---------- Section 03 timed unlock ---------- */
+  // Preview helpers: ?unlock=now opens it, ?unlock=reset starts the timer again, ?unlock=<minutes> sets minutes left.
+  (() => {
+    const u = params.get("unlock");
+    if (u === "reset") { store.set(KEY_FIRST, String(Date.now())); store.set(KEY_UNLOCKED, ""); }
+    else if (u === "now") store.set(KEY_UNLOCKED, "1");
+    else if (u && /^\d+$/.test(u)) { store.set(KEY_FIRST, String(Date.now() - UNLOCK_DELAY + +u * 60000)); store.set(KEY_UNLOCKED, ""); }
+  })();
+
+  // First visit is saved once, so refreshing or reopening never restarts the timer.
+  let firstVisit = +store.get(KEY_FIRST) || 0;
+  if (!firstVisit || firstVisit > Date.now()) {
+    firstVisit = Date.now();
+    store.set(KEY_FIRST, String(firstVisit));
+  }
+
+  function isUnlocked() {
+    if (store.get(KEY_UNLOCKED) === "1") return true;
+    if (Date.now() - firstVisit < UNLOCK_DELAY) return false;
+    store.set(KEY_UNLOCKED, "1");
+    return true;
+  }
+  const minutesLeft = () => Math.max(1, Math.ceil((firstVisit + UNLOCK_DELAY - Date.now()) / 60000));
 
   /* ---------- Time (always Hawaiʻi time, regardless of the phone's zone) ---------- */
   const toMinutes = (hhmm) => {
@@ -242,7 +271,20 @@
       + pager();
   }
 
+  // Shown until the unlock time: a calm "come back later" note, no review content.
+  function viewLocked() {
+    const { close, tabs } = t();
+    const { locked } = close;
+    return viewHead(tabs.close) + `
+      <section class="locked">
+        ${paras(locked.text, "locked__text")}
+        <p class="locked__note">${esc(locked.note)}</p>
+        <p class="locked__soon" id="lockedSoon" role="status">${esc(locked.soon.replace("{m}", minutesLeft()))}</p>
+      </section>` + pager();
+  }
+
   function viewClose() {
+    if (!isUnlocked()) return viewLocked();
     const { close, status } = t();
     const name = settings.name.trim();
 
@@ -588,6 +630,7 @@
       url.searchParams.set("lang", state.lang);
       url.searchParams.set("tab", state.tab);
       url.searchParams.delete("time");
+      url.searchParams.delete("unlock");
       if (window.QRCode) {
         new window.QRCode(box, { text: url.toString(), width: 240, height: 240, correctLevel: window.QRCode.CorrectLevel.M });
       } else {
@@ -638,4 +681,16 @@
   setInterval(() => {
     if (state.tab === "acts" && !document.querySelector("dialog[open]")) render(null);
   }, 30_000);
+
+  // Section 03: keep the quiet countdown fresh, and swap in the full content the moment it unlocks
+  // (no popup, no redirect, no notification — only if the guest is already looking at it).
+  function checkUnlock() {
+    if (state.tab !== "close") return;
+    const soon = $("lockedSoon");
+    if (!soon) return;                                         // already showing the unlocked content
+    if (isUnlocked()) { if (!document.querySelector("dialog[open]")) render("up"); return; }
+    soon.textContent = t().close.locked.soon.replace("{m}", minutesLeft());
+  }
+  setInterval(checkUnlock, 15_000);
+  document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible") checkUnlock(); });
 })();

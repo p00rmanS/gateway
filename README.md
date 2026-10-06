@@ -30,6 +30,19 @@ manifest.webmanifest  home-screen app settings
 assets/               flags, app icon, TripAdvisor logo
 ```
 
+## Section 03 timed unlock
+
+Before You Go is always visible in the navigation, but stays on a calm "available a little later" note for the
+first 28 minutes after the guide is first opened on a phone (`UNLOCK_DELAY` in `js/app.js`). The first-visit time
+and unlocked state are saved in localStorage (`gg_first_visit`, `gg_s3_unlocked`), so refreshing does not restart it.
+It swaps to the full content on its own, with no popup or redirect. Preview with `?unlock=now`, `?unlock=reset`
+or `?unlock=5` (5 minutes left).
+
+## Going back to the version without the timed unlock
+
+The version before this feature is saved as git tag `backup-before-timed-unlock` and branch `backup/before-timed-unlock`.
+To restore it: `git checkout backup-before-timed-unlock -- .` (or `git revert` the unlock commit).
+
 ## Run locally
 
 ```bash

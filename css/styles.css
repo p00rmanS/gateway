@@ -354,7 +354,7 @@ html:lang(zh-Hans) .topbar__greet, html:lang(zh-Hant) .topbar__greet { font-styl
 .ticket__label { display: block; font-size: .7rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; opacity: .7; }
 .ticket__time { font-family: var(--serif); font-size: 1.75em; line-height: 1.05; font-variant-numeric: tabular-nums; white-space: nowrap; }
 /* CJK fonts have no true italic: keep italic display text upright instead of a fake slant */
-:is(html:lang(ko), html:lang(ja), html:lang(zh-Hans), html:lang(zh-Hant), html:lang(ar), html:lang(th)) :is(.count__post, .endline, .mahalo__title, .server__name, .step__num) { font-style: normal; }
+:is(html:lang(ko), html:lang(ja), html:lang(zh-Hans), html:lang(zh-Hant), html:lang(ar), html:lang(th)) :is(.count__post, .endline, .mahalo__title, .server__name, .step__num, .locked__note) { font-style: normal; }
 html:lang(ko) .ticket__time, html:lang(ja) .ticket__time,
 html:lang(zh-Hans) .ticket__time, html:lang(zh-Hant) .ticket__time { font-size: 1.4em; }
 .ticket__stub .ticket__time { color: var(--gold); }
@@ -398,6 +398,12 @@ html:lang(zh-Hans) .ticket__time, html:lang(zh-Hant) .ticket__time { font-size: 
   text-wrap: balance;
 }
 .mahalo__text { margin-top: 18px; font-size: 1.12em; line-height: 1.5; text-wrap: pretty; }
+
+.locked { padding-top: 8px; }
+.locked__text { margin-top: 18px; font-size: 1.12em; line-height: 1.5; text-wrap: pretty; }
+.locked__text + .locked__text { margin-top: 10px; }
+.locked__note { margin-top: 22px; font-family: var(--serif); font-style: italic; font-size: 1.2em; color: var(--ink-2); }
+.locked__soon { margin-top: 22px; font-size: .85em; color: var(--ink-2); opacity: .8; }
 
 .server { margin-top: 28px; padding-top: 18px; border-top: 1px solid var(--rule); }
 .server__label { display: block; font-size: .9em; color: var(--ink-2); }

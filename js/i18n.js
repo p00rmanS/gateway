@@ -123,6 +123,11 @@ self.I18N = {
       "footNote": "No rush — enjoy your dessert first!"
     },
     "close": {
+      "locked": {
+        "text": "This section will become available a little later in your visit.\nPlease enjoy your meal and check back in about 25–30 minutes.",
+        "note": "No rush — enjoy your time with us!",
+        "soon": "Available in about {m} min"
+      },
       "thanks": {
         "title": "Mahalo, ʻOhana!",
         "text": "Thank you for joining us at Gateway Buffet tonight. It has been a pleasure serving you, and we hope you enjoyed your time with us.\nPlease feel free to relax and enjoy the rest of your evening."
@@ -266,6 +271,11 @@ self.I18N = {
       "footNote": "Sin prisa: ¡disfruten primero su postre!"
     },
     "close": {
+      "locked": {
+        "text": "Esta sección estará disponible un poco más tarde durante su visita.\nDisfruten de su comida y vuelvan a pasar en unos 25–30 minutos.",
+        "note": "Sin prisa: ¡disfruten su tiempo con nosotros!",
+        "soon": "Disponible en unos {m} min"
+      },
       "thanks": {
         "title": "¡Mahalo, ʻOhana!",
         "text": "Gracias por acompañarnos esta noche en Gateway Buffet. Ha sido un placer atenderlos y esperamos que hayan disfrutado de su tiempo con nosotros.\nSiéntanse con total libertad de relajarse y disfrutar del resto de su velada."
@@ -409,6 +419,11 @@ self.I18N = {
       "footNote": "Sem pressa: aproveitem a sobremesa primeiro!"
     },
     "close": {
+      "locked": {
+        "text": "Esta seção ficará disponível um pouco mais tarde durante a visita de vocês.\nAproveitem a refeição e voltem em cerca de 25–30 minutos.",
+        "note": "Sem pressa — aproveitem o tempo conosco!",
+        "soon": "Disponível em cerca de {m} min"
+      },
       "thanks": {
         "title": "Mahalo, ʻOhana!",
         "text": "Obrigado por estarem conosco no Gateway Buffet esta noite. Foi um prazer atendê-los, e esperamos que tenham aproveitado o tempo conosco.\nFiquem à vontade para relaxar e aproveitar o restante da noite."
@@ -552,6 +567,11 @@ self.I18N = {
       "footNote": "Rien ne presse : savourez d'abord votre dessert !"
     },
     "close": {
+      "locked": {
+        "text": "Cette section sera disponible un peu plus tard pendant votre visite.\nProfitez de votre repas et revenez dans environ 25 à 30 minutes.",
+        "note": "Pas de précipitation — profitez de votre moment avec nous !",
+        "soon": "Disponible dans environ {m} min"
+      },
       "thanks": {
         "title": "Mahalo, ʻOhana !",
         "text": "Merci d'avoir été parmi nous au Gateway Buffet ce soir. Ce fut un plaisir de vous servir, et nous espérons que vous avez passé un agréable moment.\nN'hésitez pas à vous détendre et à profiter du reste de votre soirée."
@@ -695,6 +715,11 @@ self.I18N = {
       "footNote": "Keine Eile – genießen Sie zuerst Ihr Dessert!"
     },
     "close": {
+      "locked": {
+        "text": "Dieser Bereich ist erst etwas später während Ihres Besuchs verfügbar.\nGenießen Sie Ihr Essen und schauen Sie in etwa 25–30 Minuten wieder vorbei.",
+        "note": "Keine Eile — genießen Sie die Zeit bei uns!",
+        "soon": "Verfügbar in etwa {m} Min."
+      },
       "thanks": {
         "title": "Mahalo, ʻOhana!",
         "text": "Vielen Dank, dass Sie heute Abend im Gateway Buffet zu Gast waren. Es war uns eine Freude, Sie zu bedienen, und wir hoffen, Sie haben die Zeit bei uns genossen.\nLehnen Sie sich gerne zurück und genießen Sie den restlichen Abend."
@@ -838,6 +863,11 @@ self.I18N = {
       "footNote": "Geen haast – geniet eerst van uw dessert!"
     },
     "close": {
+      "locked": {
+        "text": "Dit onderdeel wordt iets later tijdens uw bezoek beschikbaar.\nGeniet van uw maaltijd en kijk over ongeveer 25–30 minuten nog eens terug.",
+        "note": "Geen haast — geniet van uw tijd bij ons!",
+        "soon": "Beschikbaar over ongeveer {m} min"
+      },
       "thanks": {
         "title": "Mahalo, ʻOhana!",
         "text": "Hartelijk dank dat u vanavond bij Gateway Buffet te gast was. Het was ons een genoegen u te bedienen, en we hopen dat u van uw tijd bij ons heeft genoten.\nNeemt u gerust de tijd om te ontspannen en te genieten van de rest van uw avond."
@@ -981,6 +1011,11 @@ self.I18N = {
       "footNote": "Không cần vội – quý khách cứ thưởng thức món tráng miệng trước nhé!"
     },
     "close": {
+      "locked": {
+        "text": "Phần này sẽ mở sau một lúc nữa trong buổi tham quan của quý khách.\nXin cứ thong thả dùng bữa và quay lại sau khoảng 25–30 phút.",
+        "note": "Không cần vội — chúc quý khách có khoảng thời gian thật vui bên chúng tôi!",
+        "soon": "Mở sau khoảng {m} phút"
+      },
       "thanks": {
         "title": "Mahalo, ʻOhana!",
         "text": "Cảm ơn quý khách đã dùng bữa cùng chúng tôi tại Gateway Buffet tối nay. Thật vinh hạnh khi được phục vụ quý khách, mong rằng quý khách đã có khoảng thời gian vui vẻ cùng chúng tôi.\nXin quý khách cứ thư giãn và tận hưởng phần còn lại của buổi tối."
@@ -1124,6 +1159,11 @@ self.I18N = {
       "footNote": "不用着急，先享用甜点吧！"
     },
     "close": {
+      "locked": {
+        "text": "此部分将在您用餐稍晚些时候开放。\n请先享用美食，约 25–30 分钟后再回来看看。",
+        "note": "不着急，请尽情享受与我们共度的时光！",
+        "soon": "约 {m} 分钟后开放"
+      },
       "thanks": {
         "title": "Mahalo，ʻOhana！",
         "text": "感谢您今晚光临 Gateway Buffet。很荣幸为您服务，希望您在这里度过了愉快的时光。\n请放松心情，尽情享受今晚余下的时光。"
@@ -1267,6 +1307,11 @@ self.I18N = {
       "footNote": "不用急，先享用甜點吧！"
     },
     "close": {
+      "locked": {
+        "text": "此部分將在您用餐稍晚些時候開放。\n請先享用美食，約 25–30 分鐘後再回來看看。",
+        "note": "不著急，請盡情享受與我們共度的時光！",
+        "soon": "約 {m} 分鐘後開放"
+      },
       "thanks": {
         "title": "Mahalo，ʻOhana！",
         "text": "感謝您今晚光臨 Gateway Buffet。很榮幸為您服務，希望您在這裡度過了愉快的時光。\n請放鬆心情，盡情享受今晚接下來的時光。"
@@ -1410,6 +1455,11 @@ self.I18N = {
       "footNote": "서두르지 마시고 디저트 먼저 즐기세요!"
     },
     "close": {
+      "locked": {
+        "text": "이 섹션은 방문 중 조금 뒤에 열립니다.\n식사를 즐기시고 25~30분쯤 지나 다시 확인해 주세요.",
+        "note": "서두르지 마시고, 저희와 함께하는 시간을 즐겨 주세요!",
+        "soon": "약 {m}분 후에 열립니다"
+      },
       "thanks": {
         "title": "Mahalo, ʻOhana!",
         "text": "오늘 저녁 Gateway Buffet를 찾아주셔서 진심으로 감사드립니다. 여러분을 모실 수 있어 기뻤으며, 즐거운 시간 되셨기를 바랍니다.\n편안히 쉬시면서 남은 저녁 시간도 즐겁게 보내세요."
@@ -1553,6 +1603,11 @@ self.I18N = {
       "footNote": "お急ぎにならず、まずはデザートをお楽しみください！"
     },
     "close": {
+      "locked": {
+        "text": "このセクションは、ご滞在の少し後からご覧いただけます。\nどうぞお食事をお楽しみいただき、25〜30分ほど経ってからもう一度お立ち寄りください。",
+        "note": "お急ぎになりませんように。ごゆっくりお過ごしください！",
+        "soon": "あと約{m}分で開きます"
+      },
       "thanks": {
         "title": "Mahalo、ʻOhana！",
         "text": "今夜はGateway Buffetにお越しいただき、誠にありがとうございます。皆さまをおもてなしできて光栄でした。楽しいひとときをお過ごしいただけていれば幸いです。\nどうぞごゆっくりおくつろぎいただき、この後の夜もお楽しみください。"
@@ -1696,6 +1751,11 @@ self.I18N = {
       "footNote": "Ingen hast – nyd først jeres dessert!"
     },
     "close": {
+      "locked": {
+        "text": "Dette afsnit bliver tilgængeligt lidt senere under jeres besøg.\nNyd jeres måltid, og kig forbi igen om cirka 25–30 minutter.",
+        "note": "Ingen hast — nyd tiden hos os!",
+        "soon": "Tilgængeligt om cirka {m} min."
+      },
       "thanks": {
         "title": "Mahalo, ʻOhana!",
         "text": "Tak, fordi I var gæster hos os på Gateway Buffet i aften. Det har været en fornøjelse at betjene jer, og vi håber, I har nydt tiden hos os.\nSlap endelig af, og nyd resten af aftenen."
@@ -1839,6 +1899,11 @@ self.I18N = {
       "footNote": "Без журбе – прво уживајте у десерту!"
     },
     "close": {
+      "locked": {
+        "text": "Овај одељак ће бити доступан нешто касније током ваше посете.\nУживајте у оброку и навратите се за отприлике 25–30 минута.",
+        "note": "Без журбе — уживајте у времену са нама!",
+        "soon": "Доступно за отприлике {m} мин"
+      },
       "thanks": {
         "title": "Mahalo, ʻOhana!",
         "text": "Хвала вам што сте вечерас били наши гости у Gateway Buffet. Било нам је задовољство да вас услужимо и надамо се да сте уживали у времену проведеном са нама.\nСлободно се опустите и уживајте у остатку вечери."
@@ -1983,6 +2048,11 @@ self.I18N = {
       "footNote": "لا داعي للعجلة، استمتعوا بالحلوى أولاً!"
     },
     "close": {
+      "locked": {
+        "text": "سيتوفر هذا القسم بعد قليل خلال زيارتكم.\nاستمتعوا بوجبتكم وعاودوا الاطلاع بعد نحو 25–30 دقيقة.",
+        "note": "لا داعي للعجلة — استمتعوا بوقتكم معنا!",
+        "soon": "يتوفر بعد نحو {m} دقيقة"
+      },
       "thanks": {
         "title": "Mahalo, ʻOhana!",
         "text": "شكراً لانضمامكم إلينا في Gateway Buffet هذا المساء. لقد كان من دواعي سرورنا خدمتكم، ونأمل أن تكونوا قد استمتعتم بوقتكم معنا.\nتفضّلوا بالاسترخاء والاستمتاع ببقية أمسيتكم."
@@ -2126,6 +2196,11 @@ self.I18N = {
       "footNote": "Nessuna fretta: gustatevi prima il dessert!"
     },
     "close": {
+      "locked": {
+        "text": "Questa sezione sarà disponibile un po' più tardi durante la vostra visita.\nGoditevi il pasto e ripassate tra circa 25–30 minuti.",
+        "note": "Nessuna fretta — godetevi il tempo con noi!",
+        "soon": "Disponibile tra circa {m} min"
+      },
       "thanks": {
         "title": "Mahalo, ʻOhana!",
         "text": "Grazie per essere stati con noi al Gateway Buffet questa sera. È stato un piacere servirvi e speriamo che abbiate trascorso un piacevole momento.\nRilassatevi pure e godetevi il resto della serata."
@@ -2269,6 +2344,11 @@ self.I18N = {
       "footNote": "ไม่ต้องรีบ เชิญเพลิดเพลินกับของหวานก่อน!"
     },
     "close": {
+      "locked": {
+        "text": "ส่วนนี้จะเปิดให้ดูในอีกสักครู่ระหว่างที่คุณอยู่กับเรา\nเชิญเพลิดเพลินกับมื้ออาหาร แล้วกลับมาดูอีกครั้งในอีกประมาณ 25–30 นาที",
+        "note": "ไม่ต้องรีบ — ขอให้มีความสุขกับเวลาของคุณที่นี่!",
+        "soon": "เปิดในอีกประมาณ {m} นาที"
+      },
       "thanks": {
         "title": "Mahalo, ʻOhana!",
         "text": "ขอขอบคุณที่มาร่วมรับประทานอาหารกับเราที่ Gateway Buffet ในค่ำคืนนี้ เป็นเกียรติอย่างยิ่งที่ได้ให้บริการท่าน และหวังว่าท่านจะมีช่วงเวลาที่ดีกับเรา\nเชิญผ่อนคลายและเพลิดเพลินกับช่วงเวลาที่เหลือของค่ำคืนนี้"
