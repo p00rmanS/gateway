@@ -669,3 +669,26 @@ body.is-setup > :not(.setup) { visibility: hidden; }
 .btn--sm { padding: 8px 14px; font-size: .85em; }
 .server--top { margin: 0 0 22px; padding-top: 0; border-top: 0; }
 .server-mention { margin-top: 22px; font-size: .9em; color: var(--ink-2); text-wrap: pretty; }
+
+/* ---------- Notice box (Before You Go is open) ---------- */
+.notice {
+  position: fixed; left: 50%; z-index: 32; width: min(calc(100% - 32px), 420px);
+  bottom: calc(112px + env(safe-area-inset-bottom, 0px));
+  transform: translateX(-50%);
+  padding: 14px 16px; border-radius: 16px;
+  background: var(--ink); color: var(--paper);
+  box-shadow: 0 14px 36px -12px rgb(0 0 0 / .5);
+  animation: notice-in .5s var(--ease) both;
+}
+.notice[hidden] { display: none; }
+.notice__text { font-weight: 500; line-height: 1.35; text-wrap: balance; }
+.notice__actions { display: flex; gap: 8px; margin-top: 12px; justify-content: flex-end; flex-wrap: wrap; }
+.notice__open, .notice__ok {
+  min-height: 40px; padding: 8px 16px; border-radius: 999px; font: inherit; font-weight: 600; font-size: .9em; cursor: pointer;
+}
+.notice__open { background: var(--paper); color: var(--ink); border: 1px solid var(--paper); }
+.notice__ok { background: none; color: var(--paper); border: 1px solid color-mix(in srgb, var(--paper) 45%, transparent); }
+@keyframes notice-in { from { opacity: 0; transform: translate(-50%, 12px); } }
+@media (min-width: 720px) { .notice { bottom: calc(96px + env(safe-area-inset-bottom, 0px)); } }
+@media (orientation: landscape) and (max-height: 500px) { .notice { bottom: calc(74px + env(safe-area-inset-bottom, 0px)); } }
+@media (prefers-reduced-motion: reduce) { .notice { animation: none; } }

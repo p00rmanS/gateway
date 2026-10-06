@@ -37,6 +37,7 @@
   const UNLOCK_DELAY = 28 * 60 * 1000;
   const KEY_FIRST = "gg_first_visit";
   const KEY_UNLOCKED = "gg_s3_unlocked";
+  const KEY_NOTIFIED = "gg_s3_notified";
 
   /* ---------- Helpers ---------- */
   const $ = (id) => document.getElementById(id);
@@ -90,9 +91,9 @@
   // Preview helpers: ?unlock=now opens it, ?unlock=reset starts the timer again, ?unlock=<minutes> sets minutes left.
   (() => {
     const u = params.get("unlock");
-    if (u === "reset") { store.set(KEY_FIRST, String(Date.now())); store.set(KEY_UNLOCKED, ""); }
+    if (u === "reset") { store.set(KEY_FIRST, String(Date.now())); store.set(KEY_UNLOCKED, ""); store.set(KEY_NOTIFIED, ""); }
     else if (u === "now") store.set(KEY_UNLOCKED, "1");
-    else if (u && /^\d+$/.test(u)) { store.set(KEY_FIRST, String(Date.now() - UNLOCK_DELAY + +u * 60000)); store.set(KEY_UNLOCKED, ""); }
+    else if (u && /^\d+$/.test(u)) { store.set(KEY_FIRST, String(Date.now() - UNLOCK_DELAY + +u * 60000)); store.set(KEY_UNLOCKED, ""); store.set(KEY_NOTIFIED, ""); }
   })();
 
   // First visit is saved once, so refreshing or reopening never restarts the timer.
@@ -363,6 +364,7 @@
 
     $$(".lang").forEach((btn) => btn.setAttribute("aria-pressed", btn.dataset.lang === state.lang));
     $("qrTitle").textContent = lang.qr;
+    if (!$("notice").hidden) { $("noticeText").textContent = lang.close.ready; $("noticeOpen").textContent = lang.tabs.close; }
   }
 
   /** enter: "up" | "next" | "prev" | null (no animation) */
@@ -381,6 +383,7 @@
 
   function goTo(tab, { focus = false } = {}) {
     if (tab === state.tab) return;
+    if (tab === "close" && isUnlocked() && !$("notice").hidden) hideNotice();
     const dir = TABS.indexOf(tab) > TABS.indexOf(state.tab) ? "next" : "prev";
     state.tab = tab;
     hideSwipeHint();
@@ -728,12 +731,29 @@
   // Section 03: keep the quiet countdown fresh, and swap in the full content the moment it unlocks
   // (no popup, no redirect, no notification — only if the guest is already looking at it).
   function checkUnlock() {
-    if (state.tab !== "close") return;
     const soon = $("lockedSoon");
-    if (!soon) return;                                         // already showing the unlocked content
-    if (isUnlocked()) { if (!document.querySelector("dialog[open]")) render("up"); return; }
-    soon.textContent = t().close.locked.soon.replace("{m}", minutesLeft());
+    if (state.tab === "close" && soon) {
+      if (isUnlocked()) { if (!document.querySelector("dialog[open]")) render("up"); }
+      else soon.textContent = t().close.locked.soon.replace("{m}", minutesLeft());
+    }
+    if (!isUnlocked() || store.get(KEY_NOTIFIED) === "1") return;
+    if (state.tab === "close") { if (!$("lockedSoon")) store.set(KEY_NOTIFIED, "1"); return; } // they're already reading it
+    showNotice();
   }
+
+  /* One small notice box, once, when Before You Go opens. It never takes over the screen or moves the guest. */
+  function showNotice() {
+    $("noticeText").textContent = t().close.ready;
+    $("noticeOpen").textContent = t().tabs.close;
+    $("notice").hidden = false;
+  }
+  function hideNotice() {
+    $("notice").hidden = true;
+    store.set(KEY_NOTIFIED, "1");
+  }
+  $("noticeOk").addEventListener("click", hideNotice);
+  $("noticeOpen").addEventListener("click", () => { hideNotice(); goTo("close"); });
   setInterval(checkUnlock, 15_000);
   document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible") checkUnlock(); });
+  checkUnlock();
 })();

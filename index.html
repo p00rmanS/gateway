@@ -17,13 +17,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400..700&family=Instrument+Serif:ital@0;1&family=Noto+Sans+Arabic:wght@400..700&family=Noto+Sans+Thai:wght@400..700&display=swap">
-  <link rel="stylesheet" href="css/styles.css?v=26">
-  <script src="js/boot.js?v=26"></script>
+  <link rel="stylesheet" href="css/styles.css?v=27">
+  <script src="js/boot.js?v=27"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" defer></script>
-  <script src="js/i18n.js?v=26" defer></script>
-  <script src="js/icons.js?v=26" defer></script>
-  <script src="js/app.js?v=26" defer></script>
+  <script src="js/i18n.js?v=27" defer></script>
+  <script src="js/icons.js?v=27" defer></script>
+  <script src="js/app.js?v=27" defer></script>
 </head>
 <body>
   <a class="skip" href="#panel">Skip to content</a>
@@ -91,6 +91,15 @@
     <svg class="swipe-hint__hand" viewBox="0 0 24 24"><path d="M22 14a8 8 0 0 1-8 8"/><path d="M18 11v-1a2 2 0 0 0-4 0"/><path d="M14 10V9a2 2 0 0 0-4 0v1"/><path d="M10 9.5V4a2 2 0 0 0-4 0v10"/><path d="M18 11a2 2 0 1 1 4 0v3a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-6-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"/></svg>
     <svg class="swipe-hint__arrow" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg>
   </div>
+
+  <!-- Quiet notice when Before You Go opens (never a popup over the page, never auto-navigates) -->
+  <aside class="notice" id="notice" role="status" hidden>
+    <p class="notice__text" id="noticeText"></p>
+    <div class="notice__actions">
+      <button class="notice__open" id="noticeOpen" type="button"></button>
+      <button class="notice__ok" id="noticeOk" type="button">OK</button>
+    </div>
+  </aside>
 
   <!-- ============ Server settings ============ -->
   <dialog class="sheet" id="setDlg" aria-labelledby="setTitle">
