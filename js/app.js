@@ -24,8 +24,12 @@
   };
   const ACT_ICONS = ["bag", "tram", "flame", "trophy"];
   // Servers pick their name once on the staff link (?staff). Guests never see the picker.
-  const SERVERS = ["Donny", "Byron", "Kate", "Ricka", "Sky", "Kent", "Kun", "Nyle", "Hazel", "Dinda", "Sakura", "Dallin", "James"];
+  const SERVERS = ["Donny", "Byron", "Kate", "Ricka", "Sky", "Kent", "Kurt", "Nyle", "Hazel", "Dinda", "Dallin", "James"];
   const KEY_SERVER = "gatewayServer";
+  const CUSTOM = "__custom";   // "Other (type your name)" in the picker
+  // Any name from the list, or a typed one: letters (any language), spaces, . ' - ; up to 30 characters.
+  const isValidName = (n) => typeof n === "string" && /^[\p{L}][\p{L}\p{M} .'’-]{0,29}$/u.test(n.trim());
+  const cleanName = (n) => String(n).trim().replace(/\s+/g, " ");
   const KEY_STAFF = "gg_staff";
   const ALLERGY_URL = "https://www.polynesia-allergy.com";
   const DEFAULT_START = "7:15";
@@ -72,10 +76,12 @@
     tab: TABS.includes(params.get("tab")) ? params.get("tab") : "guide"
   };
 
+  if (store.get(KEY_SERVER) === "Kun") store.set(KEY_SERVER, "Kurt");   // fix a typo from an earlier list
+
   // Storage keys kept from the original page so servers' saved settings survive the upgrade.
   const settings = {
     // Guests get the name through the QR link (?server=); a staff phone has it saved.
-    name: SERVERS.includes(params.get("server")) ? params.get("server") : (SERVERS.includes(store.get(KEY_SERVER)) ? store.get(KEY_SERVER) : ""),
+    name: isValidName(params.get("server")) ? cleanName(params.get("server")) : (isValidName(store.get(KEY_SERVER)) ? cleanName(store.get(KEY_SERVER)) : ""),
     start: store.get("gg_start2") || DEFAULT_START,
     gates: store.get("gg_gates") || DEFAULT_GATES,
     size: document.documentElement.dataset.size || "1",   // applied early by js/boot.js
@@ -674,14 +680,27 @@
   /* ---------- Staff setup: pick your name once ---------- */
   function bindSetup() {
     const screen = $("setup"), select = $("setupName"), go = $("setupGo");
-    select.innerHTML = `<option value="" disabled selected>Select…</option>` + SERVERS.map((n) => `<option>${n}</option>`).join("");
-    select.addEventListener("change", () => { go.disabled = !select.value; });
+    const customWrap = $("setupCustomWrap"), custom = $("setupCustom");
+    select.innerHTML = `<option value="" disabled selected>Select…</option>`
+      + SERVERS.map((n) => `<option>${n}</option>`).join("")
+      + `<option value="${CUSTOM}">Other (type your name)</option>`;
+
+    // The name that would be saved right now ("" if nothing valid yet)
+    const chosen = () => select.value === CUSTOM ? (isValidName(custom.value) ? cleanName(custom.value) : "") : select.value;
+    const update = () => {
+      const isCustom = select.value === CUSTOM;
+      customWrap.hidden = !isCustom;
+      go.disabled = !chosen();
+    };
+    select.addEventListener("change", () => { update(); if (select.value === CUSTOM) custom.focus(); });
+    custom.addEventListener("input", update);
 
     $("setupForm").addEventListener("submit", (e) => {
       e.preventDefault();
-      if (!select.value) return;
-      settings.name = select.value;
-      store.set(KEY_SERVER, settings.name);
+      const name = chosen();
+      if (!name) return;
+      settings.name = name;
+      store.set(KEY_SERVER, name);
       screen.hidden = true;
       document.body.classList.remove("is-setup");
       render("up");
@@ -690,7 +709,11 @@
 
     $("changeServer").addEventListener("click", () => {
       $("setDlg").close();
-      select.value = ""; go.disabled = true;
+      // Pre-fill with the current name: pick it in the list, or open the custom box with it
+      if (SERVERS.includes(settings.name)) { select.value = settings.name; custom.value = ""; }
+      else if (settings.name) { select.value = CUSTOM; custom.value = settings.name; }
+      else { select.value = ""; custom.value = ""; }
+      update();
       showSetup();
     });
   }
@@ -702,7 +725,7 @@
 
   /* ---------- Boot ---------- */
   bindSetup();
-  if (isStaff() && !params.get("server") && !SERVERS.includes(store.get(KEY_SERVER))) showSetup();
+  if (isStaff() && !params.get("server") && !isValidName(store.get(KEY_SERVER))) showSetup();
   buildLanguagePicker();
   bindTabs();
   bindSettings();

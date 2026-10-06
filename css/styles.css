@@ -663,6 +663,8 @@ html:lang(th) body { line-height: 1.75; }
 .setup__title { font-family: var(--serif); font-weight: 400; font-size: clamp(2.2rem, 10vw, 3rem); line-height: 1; letter-spacing: -.02em; }
 .setup__sub { margin: 12px 0 28px; color: var(--ink-2); }
 .setup__go { width: 100%; margin-top: 22px; }
+.setup__custom[hidden] { display: none; }
+.setup__hint { margin-top: 6px; font-size: .85rem; color: var(--ink-2); }
 .setup__go:disabled { opacity: .45; }
 body.is-setup > :not(.setup) { visibility: hidden; }
 .sheet__server { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin: 14px 0; }

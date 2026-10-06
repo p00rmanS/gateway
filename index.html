@@ -17,13 +17,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400..700&family=Instrument+Serif:ital@0;1&family=Noto+Sans+Arabic:wght@400..700&family=Noto+Sans+Thai:wght@400..700&display=swap">
-  <link rel="stylesheet" href="css/styles.css?v=27">
-  <script src="js/boot.js?v=27"></script>
+  <link rel="stylesheet" href="css/styles.css?v=28">
+  <script src="js/boot.js?v=28"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" defer></script>
-  <script src="js/i18n.js?v=27" defer></script>
-  <script src="js/icons.js?v=27" defer></script>
-  <script src="js/app.js?v=27" defer></script>
+  <script src="js/i18n.js?v=28" defer></script>
+  <script src="js/icons.js?v=28" defer></script>
+  <script src="js/app.js?v=28" defer></script>
 </head>
 <body>
   <a class="skip" href="#panel">Skip to content</a>
@@ -147,6 +147,11 @@
       <p class="setup__sub">Choose your name to personalize the guest experience.</p>
       <label class="field__label" for="setupName">Your name</label>
       <select class="field" id="setupName" required></select>
+      <div class="setup__custom" id="setupCustomWrap" hidden>
+        <label class="field__label" for="setupCustom">Type your name</label>
+        <input class="field" id="setupCustom" maxlength="30" autocomplete="off" autocapitalize="words" spellcheck="false" placeholder="e.g. Leilani">
+        <p class="setup__hint">Saved on this phone only.</p>
+      </div>
       <button class="btn setup__go" type="submit" id="setupGo" disabled>Start Guest Guide</button>
     </form>
   </div>
