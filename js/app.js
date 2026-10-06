@@ -604,6 +604,7 @@
   }
 
   function bindSettings() {
+    $("setBtn").hidden = !isStaff();   // staff only: guests never see the settings icon
     const dlg = $("setDlg");
     const start = $("sStart"), gates = $("sGates");
 

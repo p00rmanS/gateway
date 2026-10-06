@@ -102,6 +102,7 @@ html:lang(ar) .topbar__greet, html:lang(th) .topbar__greet,
 html:lang(ko) .topbar__greet, html:lang(ja) .topbar__greet,
 html:lang(zh-Hans) .topbar__greet, html:lang(zh-Hant) .topbar__greet { font-style: normal; font-weight: 600; letter-spacing: 0; font-size: clamp(1.8rem, 8vw, 2.6rem); }
 
+.tool[hidden] { display: none; }
 .tools { display: flex; gap: 6px; flex-shrink: 0; }
 .tool {
   width: 44px; height: 44px;
