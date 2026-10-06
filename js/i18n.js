@@ -20,6 +20,7 @@ self.I18N = {
       "close": "Before You Go"
     },
     "guide": {
+      "server": "Your server today:",
       "items": [
         {
           "id": "self",
@@ -123,6 +124,7 @@ self.I18N = {
       "footNote": "No rush — enjoy your dessert first!"
     },
     "close": {
+      "mention": "If {name} helped make your visit special, you're welcome to mention {name} when sharing your experience.",
       "locked": {
         "text": "This section will become available a little later in your visit.\nPlease enjoy your meal and check back in about 25–30 minutes.",
         "note": "No rush — enjoy your time with us!",
@@ -168,6 +170,7 @@ self.I18N = {
       "close": "Antes de irse"
     },
     "guide": {
+      "server": "Su mesero hoy:",
       "items": [
         {
           "id": "self",
@@ -271,6 +274,7 @@ self.I18N = {
       "footNote": "Sin prisa: ¡disfruten primero su postre!"
     },
     "close": {
+      "mention": "Si {name} hizo especial su visita, pueden mencionar a {name} al compartir su experiencia.",
       "locked": {
         "text": "Esta sección estará disponible un poco más tarde durante su visita.\nDisfruten de su comida y vuelvan a pasar en unos 25–30 minutos.",
         "note": "Sin prisa: ¡disfruten su tiempo con nosotros!",
@@ -316,6 +320,7 @@ self.I18N = {
       "close": "Antes de ir"
     },
     "guide": {
+      "server": "Seu garçom hoje:",
       "items": [
         {
           "id": "self",
@@ -419,6 +424,7 @@ self.I18N = {
       "footNote": "Sem pressa: aproveitem a sobremesa primeiro!"
     },
     "close": {
+      "mention": "Se {name} tornou a visita de vocês especial, fiquem à vontade para mencionar {name} ao compartilhar sua experiência.",
       "locked": {
         "text": "Esta seção ficará disponível um pouco mais tarde durante a visita de vocês.\nAproveitem a refeição e voltem em cerca de 25–30 minutos.",
         "note": "Sem pressa — aproveitem o tempo conosco!",
@@ -464,6 +470,7 @@ self.I18N = {
       "close": "Avant de partir"
     },
     "guide": {
+      "server": "Votre serveur aujourd'hui :",
       "items": [
         {
           "id": "self",
@@ -567,6 +574,7 @@ self.I18N = {
       "footNote": "Rien ne presse : savourez d'abord votre dessert !"
     },
     "close": {
+      "mention": "Si {name} a rendu votre visite spéciale, vous pouvez mentionner {name} en partageant votre expérience.",
       "locked": {
         "text": "Cette section sera disponible un peu plus tard pendant votre visite.\nProfitez de votre repas et revenez dans environ 25 à 30 minutes.",
         "note": "Pas de précipitation — profitez de votre moment avec nous !",
@@ -612,6 +620,7 @@ self.I18N = {
       "close": "Zum Abschied"
     },
     "guide": {
+      "server": "Ihre Bedienung heute:",
       "items": [
         {
           "id": "self",
@@ -715,6 +724,7 @@ self.I18N = {
       "footNote": "Keine Eile – genießen Sie zuerst Ihr Dessert!"
     },
     "close": {
+      "mention": "Falls {name} Ihren Besuch zu etwas Besonderem gemacht hat, dürfen Sie {name} gern erwähnen, wenn Sie Ihre Erfahrung teilen.",
       "locked": {
         "text": "Dieser Bereich ist erst etwas später während Ihres Besuchs verfügbar.\nGenießen Sie Ihr Essen und schauen Sie in etwa 25–30 Minuten wieder vorbei.",
         "note": "Keine Eile — genießen Sie die Zeit bei uns!",
@@ -760,6 +770,7 @@ self.I18N = {
       "close": "Tot ziens"
     },
     "guide": {
+      "server": "Uw ober vandaag:",
       "items": [
         {
           "id": "self",
@@ -863,6 +874,7 @@ self.I18N = {
       "footNote": "Geen haast – geniet eerst van uw dessert!"
     },
     "close": {
+      "mention": "Als {name} uw bezoek bijzonder heeft gemaakt, mag u {name} gerust noemen wanneer u uw ervaring deelt.",
       "locked": {
         "text": "Dit onderdeel wordt iets later tijdens uw bezoek beschikbaar.\nGeniet van uw maaltijd en kijk over ongeveer 25–30 minuten nog eens terug.",
         "note": "Geen haast — geniet van uw tijd bij ons!",
@@ -908,6 +920,7 @@ self.I18N = {
       "close": "Trước khi về"
     },
     "guide": {
+      "server": "Người phục vụ hôm nay:",
       "items": [
         {
           "id": "self",
@@ -1011,6 +1024,7 @@ self.I18N = {
       "footNote": "Không cần vội – quý khách cứ thưởng thức món tráng miệng trước nhé!"
     },
     "close": {
+      "mention": "Nếu {name} đã giúp chuyến thăm của quý khách thêm đặc biệt, quý khách có thể nhắc đến {name} khi chia sẻ trải nghiệm.",
       "locked": {
         "text": "Phần này sẽ mở sau một lúc nữa trong buổi tham quan của quý khách.\nXin cứ thong thả dùng bữa và quay lại sau khoảng 25–30 phút.",
         "note": "Không cần vội — chúc quý khách có khoảng thời gian thật vui bên chúng tôi!",
@@ -1056,6 +1070,7 @@ self.I18N = {
       "close": "离开之前"
     },
     "guide": {
+      "server": "今天为您服务的是：",
       "items": [
         {
           "id": "self",
@@ -1159,6 +1174,7 @@ self.I18N = {
       "footNote": "不用着急，先享用甜点吧！"
     },
     "close": {
+      "mention": "如果 {name} 让您的这次到访更加难忘，欢迎您在分享体验时提到 {name}。",
       "locked": {
         "text": "此部分将在您用餐稍晚些时候开放。\n请先享用美食，约 25–30 分钟后再回来看看。",
         "note": "不着急，请尽情享受与我们共度的时光！",
@@ -1204,6 +1220,7 @@ self.I18N = {
       "close": "離開之前"
     },
     "guide": {
+      "server": "今天為您服務的是：",
       "items": [
         {
           "id": "self",
@@ -1307,6 +1324,7 @@ self.I18N = {
       "footNote": "不用急，先享用甜點吧！"
     },
     "close": {
+      "mention": "如果 {name} 讓您這次的到訪更加難忘，歡迎您在分享體驗時提到 {name}。",
       "locked": {
         "text": "此部分將在您用餐稍晚些時候開放。\n請先享用美食，約 25–30 分鐘後再回來看看。",
         "note": "不著急，請盡情享受與我們共度的時光！",
@@ -1352,6 +1370,7 @@ self.I18N = {
       "close": "떠나시기 전에"
     },
     "guide": {
+      "server": "오늘 담당 서버:",
       "items": [
         {
           "id": "self",
@@ -1455,6 +1474,7 @@ self.I18N = {
       "footNote": "서두르지 마시고 디저트 먼저 즐기세요!"
     },
     "close": {
+      "mention": "{name}님이 방문을 특별하게 만들어 드렸다면, 후기를 남기실 때 {name}님을 언급해 주셔도 좋습니다.",
       "locked": {
         "text": "이 섹션은 방문 중 조금 뒤에 열립니다.\n식사를 즐기시고 25~30분쯤 지나 다시 확인해 주세요.",
         "note": "서두르지 마시고, 저희와 함께하는 시간을 즐겨 주세요!",
@@ -1500,6 +1520,7 @@ self.I18N = {
       "close": "お帰りの前に"
     },
     "guide": {
+      "server": "本日の担当：",
       "items": [
         {
           "id": "self",
@@ -1603,6 +1624,7 @@ self.I18N = {
       "footNote": "お急ぎにならず、まずはデザートをお楽しみください！"
     },
     "close": {
+      "mention": "{name}がご来店を特別なものにできましたら、体験を共有される際に{name}の名前を添えていただいても構いません。",
       "locked": {
         "text": "このセクションは、ご滞在の少し後からご覧いただけます。\nどうぞお食事をお楽しみいただき、25〜30分ほど経ってからもう一度お立ち寄りください。",
         "note": "お急ぎになりませんように。ごゆっくりお過ごしください！",
@@ -1648,6 +1670,7 @@ self.I18N = {
       "close": "Inden I går"
     },
     "guide": {
+      "server": "Jeres tjener i dag:",
       "items": [
         {
           "id": "self",
@@ -1751,6 +1774,7 @@ self.I18N = {
       "footNote": "Ingen hast – nyd først jeres dessert!"
     },
     "close": {
+      "mention": "Hvis {name} gjorde jeres besøg ekstra specielt, er I velkomne til at nævne {name}, når I deler jeres oplevelse.",
       "locked": {
         "text": "Dette afsnit bliver tilgængeligt lidt senere under jeres besøg.\nNyd jeres måltid, og kig forbi igen om cirka 25–30 minutter.",
         "note": "Ingen hast — nyd tiden hos os!",
@@ -1796,6 +1820,7 @@ self.I18N = {
       "close": "Пре одласка"
     },
     "guide": {
+      "server": "Ваш конобар данас:",
       "items": [
         {
           "id": "self",
@@ -1899,6 +1924,7 @@ self.I18N = {
       "footNote": "Без журбе – прво уживајте у десерту!"
     },
     "close": {
+      "mention": "Ако вам је {name} учинио/ла посету посебном, слободно поменуте {name} када будете делили своје искуство.",
       "locked": {
         "text": "Овај одељак ће бити доступан нешто касније током ваше посете.\nУживајте у оброку и навратите се за отприлике 25–30 минута.",
         "note": "Без журбе — уживајте у времену са нама!",
@@ -1945,6 +1971,7 @@ self.I18N = {
       "close": "قبل المغادرة"
     },
     "guide": {
+      "server": "النادل الذي يخدمكم اليوم:",
       "items": [
         {
           "id": "self",
@@ -2048,6 +2075,7 @@ self.I18N = {
       "footNote": "لا داعي للعجلة، استمتعوا بالحلوى أولاً!"
     },
     "close": {
+      "mention": "إذا ساهم {name} في جعل زيارتكم مميزة، يمكنكم ذكر {name} عند مشاركة تجربتكم.",
       "locked": {
         "text": "سيتوفر هذا القسم بعد قليل خلال زيارتكم.\nاستمتعوا بوجبتكم وعاودوا الاطلاع بعد نحو 25–30 دقيقة.",
         "note": "لا داعي للعجلة — استمتعوا بوقتكم معنا!",
@@ -2093,6 +2121,7 @@ self.I18N = {
       "close": "Prima di andare"
     },
     "guide": {
+      "server": "Il vostro cameriere oggi:",
       "items": [
         {
           "id": "self",
@@ -2196,6 +2225,7 @@ self.I18N = {
       "footNote": "Nessuna fretta: gustatevi prima il dessert!"
     },
     "close": {
+      "mention": "Se {name} ha reso speciale la vostra visita, potete menzionare {name} quando condividete la vostra esperienza.",
       "locked": {
         "text": "Questa sezione sarà disponibile un po' più tardi durante la vostra visita.\nGoditevi il pasto e ripassate tra circa 25–30 minuti.",
         "note": "Nessuna fretta — godetevi il tempo con noi!",
@@ -2241,6 +2271,7 @@ self.I18N = {
       "close": "ก่อนกลับ"
     },
     "guide": {
+      "server": "พนักงานเสิร์ฟของท่านวันนี้:",
       "items": [
         {
           "id": "self",
@@ -2344,6 +2375,7 @@ self.I18N = {
       "footNote": "ไม่ต้องรีบ เชิญเพลิดเพลินกับของหวานก่อน!"
     },
     "close": {
+      "mention": "หากคุณ {name} ช่วยให้การมาเยือนของท่านพิเศษขึ้น ท่านสามารถกล่าวถึงคุณ {name} ได้ตามสะดวกเมื่อแบ่งปันประสบการณ์",
       "locked": {
         "text": "ส่วนนี้จะเปิดให้ดูในอีกสักครู่ระหว่างที่คุณอยู่กับเรา\nเชิญเพลิดเพลินกับมื้ออาหาร แล้วกลับมาดูอีกครั้งในอีกประมาณ 25–30 นาที",
         "note": "ไม่ต้องรีบ — ขอให้มีความสุขกับเวลาของคุณที่นี่!",

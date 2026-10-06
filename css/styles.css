@@ -654,3 +654,17 @@ html:lang(th) body { line-height: 1.75; }
   -webkit-mask-image: linear-gradient(270deg, #000 calc(100% - 40px), transparent);
   mask-image: linear-gradient(270deg, #000 calc(100% - 40px), transparent);
 }
+
+/* ---------- Staff setup (server name picker) ---------- */
+.setup { position: fixed; inset: 0; z-index: 50; display: grid; place-items: center; padding: 24px; background: var(--paper); }
+.setup[hidden] { display: none; }
+.setup__card { width: 100%; max-width: 380px; }
+.setup__title { font-family: var(--serif); font-weight: 400; font-size: clamp(2.2rem, 10vw, 3rem); line-height: 1; letter-spacing: -.02em; }
+.setup__sub { margin: 12px 0 28px; color: var(--ink-2); }
+.setup__go { width: 100%; margin-top: 22px; }
+.setup__go:disabled { opacity: .45; }
+body.is-setup > :not(.setup) { visibility: hidden; }
+.sheet__server { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin: 14px 0; }
+.btn--sm { padding: 8px 14px; font-size: .85em; }
+.server--top { margin: 0 0 22px; padding-top: 0; border-top: 0; }
+.server-mention { margin-top: 22px; font-size: .9em; color: var(--ink-2); text-wrap: pretty; }

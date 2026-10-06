@@ -17,13 +17,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400..700&family=Instrument+Serif:ital@0;1&family=Noto+Sans+Arabic:wght@400..700&family=Noto+Sans+Thai:wght@400..700&display=swap">
-  <link rel="stylesheet" href="css/styles.css?v=24">
-  <script src="js/boot.js?v=24"></script>
+  <link rel="stylesheet" href="css/styles.css?v=25">
+  <script src="js/boot.js?v=25"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" defer></script>
-  <script src="js/i18n.js?v=24" defer></script>
-  <script src="js/icons.js?v=24" defer></script>
-  <script src="js/app.js?v=24" defer></script>
+  <script src="js/i18n.js?v=25" defer></script>
+  <script src="js/icons.js?v=25" defer></script>
+  <script src="js/app.js?v=25" defer></script>
 </head>
 <body>
   <a class="skip" href="#panel">Skip to content</a>
@@ -96,10 +96,12 @@
   <dialog class="sheet" id="setDlg" aria-labelledby="setTitle">
     <form method="dialog" id="setForm">
       <h2 class="sheet__title" id="setTitle">Server settings</h2>
-      <p class="sheet__sub">Saved on this phone only. Each server sets their own once.</p>
+      <p class="sheet__sub">Saved on this phone only.</p>
 
-      <label class="field__label" for="sName">Your name</label>
-      <input class="field" id="sName" maxlength="30" placeholder="e.g. James" autocomplete="off">
+      <p class="sheet__server" id="setServer" hidden>
+        <span>Server: <b id="setServerName"></b></span>
+        <button class="btn btn--ghost btn--sm" type="button" id="changeServer">Change Server</button>
+      </p>
 
       <div class="field__row">
         <div>
@@ -128,6 +130,17 @@
       <button class="btn" type="button" id="qrClose">OK</button>
     </div>
   </dialog>
+
+  <!-- ============ Staff setup (only on the staff link) ============ -->
+  <div class="setup" id="setup" hidden>
+    <form class="setup__card" id="setupForm">
+      <h2 class="setup__title">Select Your Name</h2>
+      <p class="setup__sub">Choose your name to personalize the guest experience.</p>
+      <label class="field__label" for="setupName">Your name</label>
+      <select class="field" id="setupName" required></select>
+      <button class="btn setup__go" type="submit" id="setupGo" disabled>Start Guest Guide</button>
+    </form>
+  </div>
 
   <noscript><p class="noscript">This guide needs JavaScript turned on.</p></noscript>
 </body>

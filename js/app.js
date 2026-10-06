@@ -23,6 +23,10 @@
     allergy: "leaf", restroom: "restroom", robot: "robot", charging: "charging", coupon: "tag"
   };
   const ACT_ICONS = ["bag", "tram", "flame", "trophy"];
+  // Servers pick their name once on the staff link (?staff). Guests never see the picker.
+  const SERVERS = ["Donny", "Byron", "Kate", "Ricka", "Sky", "Kent", "Kun", "Nyle", "Hazel", "Dinda", "Sakura", "Dallin", "James"];
+  const KEY_SERVER = "gatewayServer";
+  const KEY_STAFF = "gg_staff";
   const ALLERGY_URL = "https://www.polynesia-allergy.com";
   const DEFAULT_START = "7:15";
   const DEFAULT_GATES = "6:50";
@@ -69,7 +73,8 @@
 
   // Storage keys kept from the original page so servers' saved settings survive the upgrade.
   const settings = {
-    name: store.get("gg_name") || "",
+    // Guests get the name through the QR link (?server=); a staff phone has it saved.
+    name: SERVERS.includes(params.get("server")) ? params.get("server") : (SERVERS.includes(store.get(KEY_SERVER)) ? store.get(KEY_SERVER) : ""),
     start: store.get("gg_start2") || DEFAULT_START,
     gates: store.get("gg_gates") || DEFAULT_GATES,
     size: document.documentElement.dataset.size || "1",   // applied early by js/boot.js
@@ -77,6 +82,9 @@
   };
 
   const t = () => I18N[state.lang];
+
+  if (params.has("staff")) store.set(KEY_STAFF, "1");
+  const isStaff = () => store.get(KEY_STAFF) === "1";
 
   /* ---------- Section 03 timed unlock ---------- */
   // Preview helpers: ?unlock=now opens it, ?unlock=reset starts the timer again, ?unlock=<minutes> sets minutes left.
@@ -206,7 +214,12 @@
           ${paras(item.text, "step__text", (p) => withLink(p, ALLERGY_URL))}
         </div>
       </li>`).join("");
-    return viewHead(tabs.guide) + `<ol class="steps">${steps}</ol>` + endline(guide.foot, guide.footNote) + pager();
+    const server = settings.name ? `
+      <p class="server server--top">
+        <span class="server__label">${esc(guide.server)}</span>
+        <span class="server__name">${esc(settings.name)}</span>
+      </p>` : "";
+    return viewHead(tabs.guide) + server + `<ol class="steps">${steps}</ol>` + endline(guide.foot, guide.footNote) + pager();
   }
 
   // Big countdown numeral, with the localised words around it ("Gates open in {m} min" / "開場まで{m}分").
@@ -286,13 +299,9 @@
   function viewClose() {
     if (!isUnlocked()) return viewLocked();
     const { close, status } = t();
-    const name = settings.name.trim();
+    const name = settings.name;
 
-    const server = name ? `
-      <p class="server">
-        <span class="server__label">${esc(close.server)}</span>
-        <span class="server__name">${esc(name)}</span>
-      </p>` : "";
+    const server = name ? `<p class="server-mention">${esc(close.mention).replaceAll("{name}", esc(name))}</p>` : "";
 
     const mahalo = `
       <section class="mahalo">
@@ -596,10 +605,11 @@
 
   function bindSettings() {
     const dlg = $("setDlg");
-    const name = $("sName"), start = $("sStart"), gates = $("sGates");
+    const start = $("sStart"), gates = $("sGates");
 
     $("setBtn").addEventListener("click", () => {
-      name.value = settings.name;
+      $("setServer").hidden = !isStaff();
+      $("setServerName").textContent = settings.name || "—";
       start.value = settings.start;
       gates.value = settings.gates;
       dlg.showModal();
@@ -609,10 +619,8 @@
     $("setForm").addEventListener("submit", (e) => {
       const s = start.value.trim(), g = gates.value.trim();
       if ((s && !isTime(s)) || (g && !isTime(g))) { e.preventDefault(); return; }
-      settings.name = name.value.trim();
       settings.start = s || DEFAULT_START;
       settings.gates = g || DEFAULT_GATES;
-      store.set("gg_name", settings.name);
       store.set("gg_start2", settings.start);
       store.set("gg_gates", settings.gates);
       render(null);
@@ -631,6 +639,9 @@
       url.searchParams.set("tab", state.tab);
       url.searchParams.delete("time");
       url.searchParams.delete("unlock");
+      url.searchParams.delete("staff");
+      if (settings.name) url.searchParams.set("server", settings.name);
+      else url.searchParams.delete("server");
       if (window.QRCode) {
         new window.QRCode(box, { text: url.toString(), width: 240, height: 240, correctLevel: window.QRCode.CorrectLevel.M });
       } else {
@@ -656,7 +667,38 @@
     document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible") wake(); });
   }
 
+  /* ---------- Staff setup: pick your name once ---------- */
+  function bindSetup() {
+    const screen = $("setup"), select = $("setupName"), go = $("setupGo");
+    select.innerHTML = `<option value="" disabled selected>Select…</option>` + SERVERS.map((n) => `<option>${n}</option>`).join("");
+    select.addEventListener("change", () => { go.disabled = !select.value; });
+
+    $("setupForm").addEventListener("submit", (e) => {
+      e.preventDefault();
+      if (!select.value) return;
+      settings.name = select.value;
+      store.set(KEY_SERVER, settings.name);
+      screen.hidden = true;
+      document.body.classList.remove("is-setup");
+      render("up");
+      showSwipeHint();
+    });
+
+    $("changeServer").addEventListener("click", () => {
+      $("setDlg").close();
+      select.value = ""; go.disabled = true;
+      showSetup();
+    });
+  }
+  function showSetup() {
+    $("setup").hidden = false;
+    document.body.classList.add("is-setup");
+    $("setupName").focus();
+  }
+
   /* ---------- Boot ---------- */
+  bindSetup();
+  if (isStaff() && !params.get("server") && !SERVERS.includes(store.get(KEY_SERVER))) showSetup();
   buildLanguagePicker();
   bindTabs();
   bindSettings();

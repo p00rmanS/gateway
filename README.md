@@ -30,6 +30,13 @@ manifest.webmanifest  home-screen app settings
 assets/               flags, app icon, TripAdvisor logo
 ```
 
+## Server setup (one staff link)
+
+Staff open the guide with `?staff=1` on the end of the link (e.g. `https://your-site/?staff=1`). The first time, they see
+"Select Your Name", pick from the list (`SERVERS` in `js/app.js`) and tap Start Guest Guide. The name is saved on that phone
+(`gatewayServer`) and shows as "Your server today" on the Welcome Guide and as a soft mention in Before You Go.
+To switch: settings (person icon) → Change Server. The QR code gives guests a link with the server's name but without the picker.
+
 ## Section 03 timed unlock
 
 Before You Go is always visible in the navigation, but stays on a calm "available a little later" note for the
