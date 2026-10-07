@@ -299,7 +299,7 @@
       <section class="locked">
         ${paras(locked.text, "locked__text")}
         <p class="locked__note">${esc(locked.note)}</p>
-        <p class="locked__soon" id="lockedSoon" role="status">${esc(locked.soon.replace("{m}", minutesLeft()))}</p>
+        <div class="locked__soon" id="lockedSoon">${countdown(locked.soon, minutesLeft())}</div>
       </section>` + pager();
   }
 
@@ -773,7 +773,7 @@
     const soon = $("lockedSoon");
     if (state.tab === "close" && soon) {
       if (isUnlocked()) { if (!document.querySelector("dialog[open]")) render("up"); }
-      else soon.textContent = t().close.locked.soon.replace("{m}", minutesLeft());
+      else soon.innerHTML = countdown(t().close.locked.soon, minutesLeft());
     }
     if (!isUnlocked() || store.get(KEY_NOTIFIED) === "1") return;
     if (state.tab === "close") { if (!$("lockedSoon")) store.set(KEY_NOTIFIED, "1"); return; } // they're already reading it
