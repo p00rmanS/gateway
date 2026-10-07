@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gateway Buffet – Intro Motion (8s)</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400..700&family=Instrument+Serif:ital@0;1&display=swap">
+<style>
+  :root { --paper:#f4ecdd; --ink:#1c1a17; --lava:#a8391a; --sea:#145b57; --gold:#d49a2c; }
+  html,body { margin:0; height:100%; background:#0d0a0c; overflow:hidden; }
+  #wrap { position:fixed; inset:0; display:grid; place-items:center; }
+  #stage { position:relative; width:1080px; height:1920px; overflow:hidden; transform-origin:center; flex:none;
+           font-family:"Instrument Sans",system-ui,sans-serif; background:#5d2f5e; }
+  #stage > * { position:absolute; }
+  #sky { inset:0; }
+  svg { position:absolute; inset:0; width:1080px; height:1920px; overflow:visible; }
+  #title { left:0; right:0; top:430px; text-align:center; color:var(--paper); }
+  #aloha { font-family:"Instrument Serif",Georgia,serif; font-size:300px; line-height:1; letter-spacing:-4px; white-space:nowrap; }
+  #aloha span { display:inline-block; will-change:transform,opacity,filter; }
+  #sub { font-size:38px; white-space:nowrap; letter-spacing:.34em; text-transform:uppercase; font-weight:600; margin-top:18px; color:#ffe7b8; }
+  #ticket { box-sizing:border-box; left:90px; width:900px; top:1020px; background:#1c1a17; color:var(--paper); border-radius:36px; padding:64px 64px 56px;
+            box-shadow:0 40px 90px rgba(20,5,15,.55); }
+  #ticket::before, #ticket::after { content:""; position:absolute; top:152px; width:44px; height:44px; border-radius:50%; background:#c55c4a; }
+  #ticket::before { left:-22px; } #ticket::after { right:-22px; }
+  #ticket h2 { margin:0 0 44px; font-family:"Instrument Serif",Georgia,serif; font-weight:400; font-size:84px; line-height:1; }
+  #ticket h2 em { color:#f6b968; }
+  .row { display:flex; align-items:center; gap:30px; padding:30px 0; border-top:2px dashed rgba(244,236,221,.28); font-size:48px; font-weight:500; }
+  .row i { flex:none; width:84px; height:84px; border-radius:24px; display:grid; place-items:center; font-style:normal; font-size:44px; }
+  .row small { display:block; font-size:30px; font-weight:400; color:#b0a690; margin-top:4px; }
+  #pill { left:90px; width:900px; top:1490px; box-sizing:border-box; display:flex; align-items:center; gap:44px; background:var(--paper); color:var(--ink); border-radius:36px; padding:30px 44px 30px 30px; box-shadow:0 30px 70px rgba(20,5,15,.5); }
+  #pill img { width:290px; height:290px; border-radius:18px; flex:none; }
+  #pill .big { font-family:"Instrument Serif",Georgia,serif; font-size:78px; line-height:1; }
+  #pill .big em { color:var(--lava); }
+  #pill small { display:block; margin-top:18px; font-size:30px; font-weight:600; color:#5b5346; word-break:break-all; }
+  #vig { inset:0; background:radial-gradient(120% 80% at 50% 40%, transparent 55%, rgba(20,6,16,.45)); pointer-events:none; }
+</style>
+</head>
+<body>
+<div id="wrap"><div id="stage">
+  <div id="sky"></div>
+  <svg viewBox="0 0 1080 1920" aria-hidden="true">
+    <defs>
+      <radialGradient id="glow"><stop offset="0" stop-color="#ffdf9a" stop-opacity=".9"/><stop offset="1" stop-color="#ffdf9a" stop-opacity="0"/></radialGradient>
+      <path id="frond" d="M0 0C14-10 34-8 46 8 34 2 22 2 12 4 7 5 3 4 0 2Z"/>
+    </defs>
+    <g id="stars" fill="#fff"></g>
+    <circle id="halo" cx="380" cy="1100" r="420" fill="url(#glow)"/>
+    <circle id="sun" cx="380" cy="1100" r="170" fill="#ffdf9a"/>
+    <path id="hillB" fill="#4a2238" d="M0 1320c80-40 140-92 220-100s120 52 200 44 140-80 220-84 120 60 200 60 120-36 240-28V1920H0Z"/>
+    <g id="palm" fill="#1d0f18">
+      <path d="M-14 152c2-30 7-60 14-96l5 1c-6 34-9 64-9 95Z"/>
+      <g id="fronds" transform="translate(2 56)">
+        <use href="#frond" transform="rotate(-38)"/><use href="#frond" transform="rotate(-4)"/><use href="#frond" transform="rotate(28) scale(.9)"/>
+        <g transform="scale(-1 1)"><use href="#frond" transform="rotate(-30)"/><use href="#frond" transform="rotate(4) scale(.95)"/><use href="#frond" transform="rotate(34) scale(.85)"/></g>
+        <use href="#frond" transform="rotate(-78) scale(.7)"/>
+      </g>
+    </g>
+    <path id="hillF" fill="#1d0f18" d="M0 1430c180-32 360-24 540-8s350 12 540-4V1920H0Z"/>
+    <g id="birds" fill="none" stroke="#2a1226" stroke-width="5" stroke-linecap="round"></g>
+  </svg>
+  <div id="title">
+    <div id="aloha"></div>
+    <div id="sub">Welcome to Gateway Buffet</div>
+  </div>
+  <div id="ticket">
+    <h2>Your <em>guest guide</em><br>in 16 languages</h2>
+    <div class="row"><i style="background:#a8391a">🍽</i><div>Buffet tips<small>Make the most of every plate</small></div></div>
+    <div class="row"><i style="background:#145b57">✦</i><div>Before the night show<small>Things to do around the island</small></div></div>
+    <div class="row"><i style="background:#d49a2c;color:#1c1a17">🌺</i><div>Mahalo before you go<small>A little thank-you for you</small></div></div>
+  </div>
+  <div id="pill"><img src="guest-qr.png" alt="QR code for the guest guide"><div><div class="big">Scan to <em>open</em> your guide</div><small>p00rmans.github.io/gateway</small></div></div>
+  <div id="vig"></div>
+</div></div>
+
+<script>
+const DUR = 8, W = 1080, H = 1920;
+const $ = s => document.querySelector(s);
+const clamp = (x,a=0,b=1) => Math.min(b, Math.max(a, x));
+const seg = (t,a,b) => clamp((t-a)/(b-a));
+const outCubic = x => 1-Math.pow(1-x,3);
+const outExpo  = x => x>=1?1:1-Math.pow(2,-10*x);
+const inOut    = x => x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;
+const outBack  = x => { const c=1.5; return 1+(c+1)*Math.pow(x-1,3)+c*Math.pow(x-1,2); };
+const lerp = (a,b,x) => a+(b-a)*x;
+const mix = (c1,c2,x) => c1.map((v,i)=>Math.round(lerp(v,c2[i],x)));
+const rgb = c => `rgb(${c.join()})`;
+
+// build letters, stars, birds
+const word = "Aloha!";
+$('#aloha').innerHTML = [...word].map(ch=>`<span>${ch}</span>`).join('');
+const letters = [...document.querySelectorAll('#aloha span')];
+const NS = 'http://www.w3.org/2000/svg';
+const stars = [];
+for (let i=0;i<46;i++){
+  const c = document.createElementNS(NS,'circle');
+  const x = (i*397)%W, y = (i*211)%820+30, r = 1.5+((i*7)%3);
+  c.setAttribute('cx',x); c.setAttribute('cy',y); c.setAttribute('r',r);
+  $('#stars').appendChild(c); stars.push({c,ph:i*.7});
+}
+const birds = [];
+for (let i=0;i<3;i++){
+  const p = document.createElementNS(NS,'path');
+  p.setAttribute('d','M-26 0Q-13 -18 0 0Q13 -18 26 0');
+  $('#birds').appendChild(p); birds.push(p);
+}
+
+const SKY_TOP_A=[18,8,32], SKY_TOP_B=[93,47,94];
+const SKY_1_A=[40,16,50],  SKY_1_B=[178,71,90];
+const SKY_2_A=[70,30,60],  SKY_2_B=[234,122,76];
+const SKY_3_A=[90,40,70],  SKY_3_B=[246,185,104];
+
+function render(t){
+  // ---- sky: night -> sunset (0 – 2.4s)
+  const k = outCubic(seg(t,0,2.6));
+  $('#sky').style.background =
+    `linear-gradient(180deg, ${rgb(mix(SKY_TOP_A,SKY_TOP_B,k))} 0%, ${rgb(mix(SKY_1_A,SKY_1_B,k))} 45%, ${rgb(mix(SKY_2_A,SKY_2_B,k))} 75%, ${rgb(mix(SKY_3_A,SKY_3_B,k))} 100%)`;
+  stars.forEach(s=>{ s.c.setAttribute('opacity', (1-k)*(.5+.5*Math.sin(t*3+s.ph))); });
+
+  // ---- sun & halo rise, then drift up gently
+  const rise = outCubic(seg(t,0.1,2.8));
+  const sunY = lerp(1560,1090,rise) - seg(t,4,8)*40;
+  $('#sun').setAttribute('cy',sunY); $('#halo').setAttribute('cy',sunY);
+  $('#halo').setAttribute('r', 380 + 30*Math.sin(t*1.6));
+  $('#halo').setAttribute('opacity', .2 + .8*rise);
+
+  // ---- hills slide up
+  const hb = outExpo(seg(t,0.2,1.7)), hf = outExpo(seg(t,0.4,1.9));
+  $('#hillB').setAttribute('transform',`translate(0 ${lerp(500,0,hb)})`);
+  $('#hillF').setAttribute('transform',`translate(0 ${lerp(600,0,hf)})`);
+
+  // ---- palm grows & sways
+  const pg = outBack(seg(t,0.7,2.1));
+  const sway = Math.sin(t*1.8)*2.2, fr = Math.sin(t*2.6)*3;
+  $('#palm').setAttribute('transform',
+    `translate(800 1300) rotate(${sway}) scale(${2.9*pg}) translate(0 -152)`);
+  $('#fronds').setAttribute('transform',`translate(2 56) rotate(${fr})`);
+
+  // ---- birds
+  birds.forEach((b,i)=>{
+    const p = seg(t,1.8+i*.25,5.5+i*.25);
+    b.setAttribute('transform',`translate(${lerp(-80,1160,p)} ${360+i*90-Math.sin(p*6+i)*30}) scale(${1-i*.2}, ${Math.sin(t*9+i)*.5+.7})`);
+    b.setAttribute('opacity', p>0&&p<1?1:0);
+  });
+
+  // ---- "Aloha!" letters
+  letters.forEach((el,i)=>{
+    const p = outBack(seg(t,1.7+i*.09,2.5+i*.09));
+    const o = seg(t,1.7+i*.09,2.2+i*.09);
+    el.style.opacity = o;
+    el.style.transform = `translateY(${lerp(90,0,p)}px) rotate(${lerp(-8,0,p)}deg)`;
+    el.style.filter = `blur(${lerp(14,0,o)}px)`;
+  });
+  const sub = outCubic(seg(t,2.7,3.5));
+  $('#sub').style.opacity = sub;
+  $('#sub').style.transform = `translateY(${lerp(30,0,sub)}px)`;
+  $('#sub').style.letterSpacing = `${lerp(.6,.34,sub)}em`;
+
+  // title lifts away as the ticket arrives
+  const lift = inOut(seg(t,4.1,5.0));
+  $('#title').style.transform = `translateY(${-lift*330}px) scale(${lerp(1,.62,lift)})`;
+  $('#title').style.transformOrigin = '50% 0';
+
+  // ---- ticket slides up, rows pop
+  const tk = outExpo(seg(t,4.3,5.3));
+  $('#ticket').style.transform = `translateY(${lerp(1100,-350,tk)}px) rotate(${lerp(4,0,tk)}deg)`;
+  $('#ticket').style.opacity = clamp(tk*3);
+  document.querySelectorAll('.row').forEach((r,i)=>{
+    const p = outBack(seg(t,5.1+i*.38,5.7+i*.38));
+    r.style.opacity = clamp(p*2);
+    r.style.transform = `translateX(${lerp(-60,0,clamp(p))}px)`;
+  });
+
+  // ---- call to action pill
+  const pl = outBack(seg(t,6.7,7.3));
+  $('#pill').style.opacity = clamp(pl*2);
+  $('#pill').style.transform = `translateY(${lerp(80,0,pl)}px) scale(${lerp(.92,1,clamp(pl))})`;
+
+  // ---- gentle fade in/out
+  $('#stage').style.opacity = Math.min(seg(t,0,.3), 1-seg(t,7.8,8));
+}
+
+function fit(){
+  if (new URLSearchParams(location.search).has('t')) { const e=$('#wrap'); e.style.display='block'; const st=$('#stage'); st.style.position='fixed'; st.style.left='0'; st.style.top='0'; st.style.transformOrigin='0 0'; return; }
+  const s = Math.min(innerWidth/W, innerHeight/H);
+  $('#stage').style.transform = `scale(${s})`;
+}
+addEventListener('resize',fit); fit();
+
+const q = new URLSearchParams(location.search);
+if (q.has('t')) {
+  // frame-exact mode used by the MP4 renderer
+  document.fonts.ready.then(()=>{ render(parseFloat(q.get('t'))); document.title='ready'; });
+} else {
+  let t0 = null;
+  const loop = ts => { if(t0===null) t0=ts; render(((ts-t0)/1000)%(DUR+1.2)); requestAnimationFrame(loop); };
+  document.fonts.ready.then(()=>requestAnimationFrame(loop));
+  addEventListener('click',()=>{ t0=null; });
+}
+</script>
+</body>
+</html>
