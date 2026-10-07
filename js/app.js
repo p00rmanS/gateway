@@ -31,6 +31,7 @@
   const isValidName = (n) => typeof n === "string" && /^[\p{L}][\p{L}\p{M} .'’-]{0,29}$/u.test(n.trim());
   const cleanName = (n) => String(n).trim().replace(/\s+/g, " ");
   const KEY_STAFF = "gg_staff";
+  const KEY_LANG = "gg_lang";   // the language a guest picked on this phone
   const ALLERGY_URL = "https://www.polynesia-allergy.com";
   const DEFAULT_START = "7:15";
   const DEFAULT_GATES = "6:50";
@@ -63,12 +64,22 @@
   /* ---------- State ---------- */
   const params = new URLSearchParams(location.search);
 
+  // The phone's own language, if the guide has it (null when there is no match).
+  function phoneLang() {
+    const nav = (navigator.language || "").toLowerCase();
+    if (!nav) return null;
+    if (nav.startsWith("zh")) return /tw|hk|mo|hant/.test(nav) ? "zht" : "zhs";
+    return LANGS.find((k) => nav.startsWith(k)) || null;
+  }
+
+  // Link (?lang=) first, then the language this guest picked before, then the phone's language, then English.
+  if (params.get("gate") === "reset") store.set(KEY_LANG, "");
   function guessLang() {
     const fromUrl = params.get("lang");
     if (fromUrl && I18N[fromUrl]) return fromUrl;
-    const nav = (navigator.language || "en").toLowerCase();
-    if (nav.startsWith("zh")) return /tw|hk|mo|hant/.test(nav) ? "zht" : "zhs";
-    return LANGS.find((k) => nav.startsWith(k)) || "en";
+    const saved = store.get(KEY_LANG);
+    if (saved && I18N[saved]) return saved;
+    return phoneLang() || "en";
   }
 
   const state = {
@@ -433,18 +444,70 @@
   /* ---------- Language picker ---------- */
   function buildLanguagePicker() {
     const box = $("langs");
-    box.innerHTML = `<span class="langs__icon" aria-hidden="true">${icon("globe")}</span>` + LANGS.map((k) => `
+    box.innerHTML = `<button class="langs__icon" type="button" data-gate aria-label="All languages">${icon("globe")}</button>` + LANGS.map((k) => `
       <button class="lang" type="button" data-lang="${k}" lang="${I18N[k].htmlLang}" dir="auto" aria-pressed="false">
         <img class="lang__flag" src="assets/flags/${k}.svg" alt="" width="20" height="14" decoding="async" onerror="this.remove()">${esc(I18N[k].name)}
       </button>`).join("");
 
     box.addEventListener("click", (e) => {
+      if (e.target.closest("[data-gate]")) return openGate();
       const btn = e.target.closest(".lang");
       if (!btn) return;
       setLang(btn.dataset.lang);
+      store.set(KEY_LANG, btn.dataset.lang);
       btn.scrollIntoView({ inline: "center", block: "nearest", behavior: "smooth" });
     });
   }
+
+
+  /* ---------- Language gate: a big full-screen choice, shown once on a guest's first visit ---------- */
+  const gateOption = (k, extra = "") => `
+    <button class="gate__opt${extra}" type="button" data-pick="${k}" lang="${I18N[k].htmlLang}" dir="auto"${k === state.lang ? ' aria-current="true"' : ""}>
+      <img class="gate__flag" src="assets/flags/${k}.svg" alt="" width="30" height="22" decoding="async" onerror="this.remove()">
+      <span class="gate__name">${esc(I18N[k].name)}</span>
+      ${extra ? `<svg class="gate__go" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>` : ""}
+    </button>`;
+
+  function fillGate() {
+    // The phone's language goes on top as one big "tap to continue" button; everything else in a grid below.
+    const mine = phoneLang();
+    const suggest = mine && mine !== "en" ? mine : null;
+    $("gateSuggest").innerHTML = suggest ? gateOption(suggest, " gate__opt--suggest") : "";
+    const rest = ["en", ...LANGS.filter((k) => k !== "en")].filter((k) => k !== suggest);
+    $("gateGrid").innerHTML = rest.map((k) => gateOption(k)).join("");
+  }
+
+  function openGate() {
+    const dlg = $("gate");
+    if (dlg.open) return;
+    fillGate();
+    dlg.showModal();
+    dlg.scrollTop = 0;
+    const first = dlg.querySelector(".gate__opt");
+    if (first) first.focus({ preventScroll: true });
+  }
+
+  function bindGate() {
+    const dlg = $("gate");
+    dlg.addEventListener("click", (e) => {
+      const btn = e.target.closest("[data-pick]");
+      if (!btn) return;
+      const k = btn.dataset.pick;
+      store.set(KEY_LANG, k);
+      dlg.close();
+      if (k !== state.lang) setLang(k);
+      showSwipeHint();
+      requestAnimationFrame(() => {
+        const active = document.querySelector('.lang[aria-pressed="true"]');
+        if (active) active.scrollIntoView({ inline: "center", block: "nearest" });
+      });
+    });
+    $("langBtn").addEventListener("click", openGate);
+  }
+
+  // First visit only: no saved language, no ?lang= in the link, and not a staff phone.
+  const needsGate = () => params.get("gate") === "1" ||
+    (!isStaff() && !params.has("staff") && !params.get("lang") && !store.get(KEY_LANG));
 
   /* ---------- Tabs: click, arrow keys, and a swipe that follows the finger ---------- */
   function bindTabs() {
@@ -749,8 +812,9 @@
   bindWakeLock();
   bindSizePanel();
   bindTheme();
+  bindGate();
   render("up");
-  showSwipeHint();
+  if (needsGate()) openGate(); else showSwipeHint();
 
   requestAnimationFrame(() => {
     const active = document.querySelector('.lang[aria-pressed="true"]');

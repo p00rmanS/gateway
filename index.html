@@ -17,12 +17,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400..700&family=Instrument+Serif:ital@0;1&family=Noto+Sans+Arabic:wght@400..700&family=Noto+Sans+Devanagari:wght@400..700&family=Noto+Sans+Thai:wght@400..700&display=swap">
-  <link rel="stylesheet" href="css/styles.css?v=31">
-  <script src="js/boot.js?v=31"></script>
+  <link rel="stylesheet" href="css/styles.css?v=32">
+  <script src="js/boot.js?v=32"></script>
 
-  <script src="js/i18n.js?v=31" defer></script>
-  <script src="js/icons.js?v=31" defer></script>
-  <script src="js/app.js?v=31" defer></script>
+  <script src="js/i18n.js?v=32" defer></script>
+  <script src="js/icons.js?v=32" defer></script>
+  <script src="js/app.js?v=32" defer></script>
 </head>
 <body>
   <a class="skip" href="#panel">Skip to content</a>
@@ -32,6 +32,9 @@
     <div class="topbar__inner">
       <h1 class="topbar__greet" id="greet">Aloha!</h1>
       <div class="tools">
+        <button class="tool" id="langBtn" type="button" aria-label="Choose language / Idioma / 语言 / भाषा / Язык">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+        </button>
         <button class="tool" id="sizeBtn" type="button" aria-label="Text size" aria-expanded="false" aria-controls="sizePanel">Aa</button>
         <button class="tool tool--bulb" id="themeBtn" type="button" aria-label="Light or dark mode" aria-pressed="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path class="bulb-glass" d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5Z"/><path d="M9 18h6M10 22h4"/><path class="bulb-rays" d="M12 1v.5M4.2 3.2l.4.4M19.8 3.2l-.4.4M1 9h.5M22.5 9H23"/></svg>
@@ -99,6 +102,17 @@
       <button class="notice__ok" id="noticeOk" type="button">OK</button>
     </div>
   </aside>
+
+  <!-- ============ Language gate: big, easy language choice on first open (and from the globe button) ============ -->
+  <dialog class="gate" id="gate" aria-labelledby="gateTitle">
+    <div class="gate__inner">
+      <svg class="gate__globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+      <h2 class="gate__title" id="gateTitle">Choose your language</h2>
+      <p class="gate__sub" aria-hidden="true">Idioma · 语言 · भाषा · Язык · 言語 · 언어 · لغة</p>
+      <div class="gate__suggest" id="gateSuggest"></div>
+      <div class="gate__grid" id="gateGrid"></div>
+    </div>
+  </dialog>
 
   <!-- ============ Server settings ============ -->
   <dialog class="sheet" id="setDlg" aria-labelledby="setTitle">

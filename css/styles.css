@@ -223,7 +223,7 @@ html:lang(zh-Hans) .topbar__greet, html:lang(zh-Hant) .topbar__greet { font-styl
 .langs__icon {
   flex: 0 0 auto; display: grid; place-items: center;
   color: var(--ink-2);
-  padding-right: 2px;
+  padding: 0 2px 0 0; border: 0; background: none; cursor: pointer;
 }
 .langs__icon svg { width: 18px; height: 18px; }
 .lang__flag { width: 20px; height: 14px; border-radius: 2px; object-fit: cover; box-shadow: 0 0 0 1px rgb(0 0 0 / .12); }
@@ -694,3 +694,47 @@ body.is-setup > :not(.setup) { visibility: hidden; }
 @media (min-width: 720px) { .notice { bottom: calc(96px + env(safe-area-inset-bottom, 0px)); } }
 @media (orientation: landscape) and (max-height: 500px) { .notice { bottom: calc(74px + env(safe-area-inset-bottom, 0px)); } }
 @media (prefers-reduced-motion: reduce) { .notice { animation: none; } }
+
+/* ---------- Language gate (full-screen picker) ---------- */
+.gate {
+  position: fixed; inset: 0; width: 100%; height: 100%; max-width: none; max-height: none; margin: 0;
+  border: 0; padding: 0; background: var(--paper); color: var(--ink);
+  overflow-y: auto; overscroll-behavior: contain;
+}
+.gate[open] { animation: sheet-in .35s var(--ease); }
+.gate::backdrop { background: var(--paper); }
+.gate__inner {
+  max-width: 560px; margin: 0 auto;
+  padding: max(28px, env(safe-area-inset-top, 0px)) var(--gutter) max(32px, env(safe-area-inset-bottom, 0px));
+}
+.gate__globe { display: block; width: 40px; height: 40px; color: var(--lava); margin: 8px auto 12px; }
+.gate__title { font-family: var(--serif); font-weight: 400; font-size: clamp(2rem, 9vw, 2.6rem); line-height: 1.05; text-align: center; }
+.gate__sub { margin: 10px 0 24px; text-align: center; color: var(--ink-2); font-size: 1.05rem; line-height: 1.5; }
+.gate__suggest:empty { display: none; }
+.gate__suggest { margin-bottom: 18px; }
+.gate__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.gate__opt {
+  display: flex; align-items: center; gap: 12px;
+  min-height: 64px; padding: 10px 14px;
+  border: 1.5px solid var(--rule); border-radius: 14px;
+  background: var(--paper-2); color: var(--ink);
+  font: inherit; font-size: 1.12rem; font-weight: 600; text-align: start; cursor: pointer;
+  transition: transform .15s, border-color .2s, background .2s;
+}
+.gate__opt:hover { border-color: var(--ink-2); }
+.gate__opt:active { transform: scale(.97); }
+.gate__opt:focus-visible { outline: 3px solid var(--lava); outline-offset: 2px; }
+.gate__opt[aria-current="true"] { border-color: var(--lava); }
+.gate__opt--suggest {
+  width: 100%; min-height: 84px; padding: 14px 18px;
+  background: var(--ink); color: var(--paper); border-color: var(--ink);
+  font-size: 1.5rem;
+}
+.gate__opt--suggest:hover { border-color: var(--ink); }
+.gate__flag { flex: 0 0 auto; width: 30px; height: 22px; border-radius: 3px; object-fit: cover; box-shadow: 0 0 0 1px rgb(0 0 0 / .15); }
+.gate__opt--suggest .gate__flag { width: 44px; height: 32px; border-radius: 4px; }
+.gate__name { flex: 1 1 auto; min-width: 0; line-height: 1.2; }
+.gate__go { flex: 0 0 auto; width: 30px; height: 30px; }
+[dir="rtl"] .gate__go { transform: scaleX(-1); }
+@media (max-width: 340px) { .gate__grid { grid-template-columns: 1fr; } }
+@media (prefers-reduced-motion: reduce) { .gate[open] { animation: none; } .gate__opt { transition: none; } }
