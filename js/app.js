@@ -1,5 +1,5 @@
 /* Gateway Buffet Guest Guide — app logic.
-   Depends on window.I18N (js/i18n.js), window.icon (js/icons.js) and, optionally, window.QRCode (CDN).
+   Depends on window.I18N (js/i18n.js) and window.icon (js/icons.js). The QR library is loaded only when the QR button is tapped.
 
    Preview helper: ?time=18:20 pretends it's that Hawaiʻi time (for checking countdowns and statuses). */
 (() => {
@@ -639,9 +639,22 @@
     closeOnBackdrop(dlg);
   }
 
+  // The QR-code library is only needed on a server's phone when they tap the QR button,
+  // so guests never download it. Once loaded, the offline cache (sw.js) keeps a copy.
+  const QR_LIB = "https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js";
+  let qrLib = null;
+  const loadQrLib = () => qrLib || (qrLib = new Promise((resolve, reject) => {
+    if (window.QRCode) return resolve();
+    const s = document.createElement("script");
+    s.src = QR_LIB;
+    s.onload = () => resolve();
+    s.onerror = () => { qrLib = null; reject(new Error("QR library failed to load")); };
+    document.head.appendChild(s);
+  }));
+
   function bindQr() {
     const dlg = $("qrDlg");
-    $("qrBtn").addEventListener("click", () => {
+    $("qrBtn").addEventListener("click", async () => {
       const box = $("qrbox");
       box.textContent = "";
       const url = new URL(location.href);
@@ -652,12 +665,15 @@
       url.searchParams.delete("staff");
       if (settings.name) url.searchParams.set("server", settings.name);
       else url.searchParams.delete("server");
-      if (window.QRCode) {
-        new window.QRCode(box, { text: url.toString(), width: 240, height: 240, correctLevel: window.QRCode.CorrectLevel.M });
-      } else {
-        box.textContent = "QR unavailable offline";
-      }
+      box.textContent = "…";
       dlg.showModal();
+      try {
+        await loadQrLib();
+        box.textContent = "";
+        new window.QRCode(box, { text: url.toString(), width: 240, height: 240, correctLevel: window.QRCode.CorrectLevel.M });
+      } catch {
+        box.textContent = "QR unavailable — check the internet connection and try again.";
+      }
     });
     $("qrClose").addEventListener("click", () => dlg.close());
     closeOnBackdrop(dlg);
