@@ -742,3 +742,6 @@ body.is-setup > :not(.setup) { visibility: hidden; }
 .busy__thanks { font-weight: 600; }
 .busy .sheet__actions { justify-content: stretch; }
 .busy .btn { width: 100%; min-height: 50px; }
+
+/* A closed popup must never show inline in browsers that do not know <dialog> */
+dialog:not([open]) { display: none; }

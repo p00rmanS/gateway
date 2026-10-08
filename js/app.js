@@ -480,7 +480,7 @@
 
   function openGate() {
     const dlg = $("gate");
-    if (dlg.open) return;
+    if (dlg.open || typeof dlg.showModal !== "function") return;
     fillGate();
     dlg.showModal();
     dlg.scrollTop = 0;
@@ -522,7 +522,7 @@
 
   function showBusy() {
     const dlg = $("busyDlg");
-    if (!busyId || dlg.open || $("gate").open || document.querySelector("dialog[open]")) return;
+    if (!busyId || dlg.open || typeof dlg.showModal !== "function" || $("gate").open || document.querySelector("dialog[open]")) return;
     const b = t().busy;
     $("busyTitle").textContent = b.title;
     $("busyP1").textContent = b.p1;
