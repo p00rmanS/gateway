@@ -446,7 +446,7 @@
     const box = $("langs");
     box.innerHTML = `<button class="langs__icon" type="button" data-gate aria-label="All languages">${icon("globe")}</button>` + LANGS.map((k) => `
       <button class="lang" type="button" data-lang="${k}" lang="${I18N[k].htmlLang}" dir="auto" aria-pressed="false">
-        <img class="lang__flag" src="assets/flags/${k}.svg" alt="" width="20" height="14" decoding="async" onerror="this.remove()">${esc(I18N[k].name)}
+        <img class="lang__flag" src="assets/flags/${k}.svg" alt="" width="21" height="14" decoding="async" onerror="this.remove()">${esc(I18N[k].name)}
       </button>`).join("");
 
     box.addEventListener("click", (e) => {
@@ -463,7 +463,7 @@
   /* ---------- Language gate: a big full-screen choice, shown once on a guest's first visit ---------- */
   const gateOption = (k, extra = "") => `
     <button class="gate__opt${extra}" type="button" data-pick="${k}" lang="${I18N[k].htmlLang}" dir="auto"${k === state.lang ? ' aria-current="true"' : ""}>
-      <img class="gate__flag" src="assets/flags/${k}.svg" alt="" width="30" height="22" decoding="async" onerror="this.remove()">
+      <img class="gate__flag" src="assets/flags/${k}.svg" alt="" width="33" height="22" decoding="async" onerror="this.remove()">
       <span class="gate__name">${esc(I18N[k].name)}</span>
       ${extra ? `<svg class="gate__go" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>` : ""}
     </button>`;

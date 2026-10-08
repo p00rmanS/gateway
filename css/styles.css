@@ -226,7 +226,7 @@ html:lang(zh-Hans) .topbar__greet, html:lang(zh-Hant) .topbar__greet { font-styl
   padding: 0 2px 0 0; border: 0; background: none; cursor: pointer;
 }
 .langs__icon svg { width: 18px; height: 18px; }
-.lang__flag { width: 20px; height: 14px; border-radius: 2px; object-fit: cover; box-shadow: 0 0 0 1px rgb(0 0 0 / .12); }
+.lang__flag { width: 21px; height: 14px; object-fit: contain; filter: drop-shadow(0 0 .6px rgb(0 0 0 / .55)); }
 .lang::after {
   content: ""; position: absolute; left: 0; right: 0; bottom: -1px; height: 2px;
   background: var(--lava);
@@ -731,8 +731,8 @@ body.is-setup > :not(.setup) { visibility: hidden; }
   font-size: 1.5rem;
 }
 .gate__opt--suggest:hover { border-color: var(--ink); }
-.gate__flag { flex: 0 0 auto; width: 30px; height: 22px; border-radius: 3px; object-fit: cover; box-shadow: 0 0 0 1px rgb(0 0 0 / .15); }
-.gate__opt--suggest .gate__flag { width: 44px; height: 32px; border-radius: 4px; }
+.gate__flag { flex: 0 0 auto; width: 33px; height: 22px; object-fit: contain; filter: drop-shadow(0 0 .7px rgb(0 0 0 / .55)); }
+.gate__opt--suggest .gate__flag { width: 48px; height: 32px; }
 .gate__name { flex: 1 1 auto; min-width: 0; line-height: 1.2; }
 .gate__go { flex: 0 0 auto; width: 30px; height: 30px; }
 [dir="rtl"] .gate__go { transform: scaleX(-1); }
