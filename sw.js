@@ -2,7 +2,7 @@
    - The page itself: network first, falling back to the cached copy when offline.
    - Everything else (CSS, JS, flags, icons, fonts, QR library): served from cache, refreshed in the background.
    When you deploy changes: raise the ?v= number in index.html, and set VERSION here to the same number. */
-const VERSION = "v35";
+const VERSION = "v36";
 const V = VERSION.slice(1); // must match the ?v= number in index.html
 const CACHE = `guest-guide-${VERSION}`;
 
@@ -61,7 +61,6 @@ self.addEventListener("fetch", (event) => {
 
   // Assets: cache first, refresh in the background (stale-while-revalidate).
   const url = new URL(req.url);
-  if (url.origin === location.origin && url.pathname.endsWith("/announcement.json")) return; // always fresh from the network
   const cacheable = url.origin === location.origin
     || url.hostname === "fonts.googleapis.com"
     || url.hostname === "fonts.gstatic.com"

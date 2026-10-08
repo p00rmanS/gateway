@@ -513,8 +513,11 @@
 
 
   /* ---------- "We're busy" notice ----------
-     Controlled by announcement.json on the site: {"busy": true, "id": "1"} turns it on for everyone who opens the guide.
-     Each guest sees it once; change the id (for example to the date) to show it again. ?busy=1 previews it any time. */
+     Pops up by itself during the dinner rush (Hawaiʻi time), once per guest per day. Nothing to switch on or off.
+     To change the hours, edit the two numbers below (minutes after midnight: 16 * 60 + 30 = 4:30 PM).
+     ?busy=1 previews it at any time; ?time=17:30 pretends it's that Hawaiʻi time. */
+  const BUSY_FROM = 16 * 60 + 30;   // 4:30 PM
+  const BUSY_TO = 19 * 60 + 30;     // 7:30 PM
   let busyId = null;
 
   function showBusy() {
@@ -532,18 +535,20 @@
     busyId = null;
   }
 
-  async function checkBusy() {
+  function hawaiiDay() {
+    try { return new Intl.DateTimeFormat("en-CA", { timeZone: "Pacific/Honolulu" }).format(new Date()); }
+    catch { return new Date().toDateString(); }
+  }
+
+  function checkBusy() {
     if (params.get("busy") === "1") { busyId = "preview"; return showBusy(); }
     if (isStaff()) return;   // staff phones never get the guest notice
-    try {
-      const res = await fetch(`announcement.json?t=${Date.now()}`, { cache: "no-store" });
-      if (!res.ok) return;
-      const a = await res.json();
-      const id = String((a && a.id) || "1");
-      if (!a || a.busy !== true || store.get(KEY_BUSY) === id) return;
-      busyId = id;
-      showBusy();
-    } catch { /* offline or no file: no notice */ }
+    const now = nowInHawaii();
+    if (now < BUSY_FROM || now >= BUSY_TO) return;
+    const id = hawaiiDay();
+    if (store.get(KEY_BUSY) === id) return;
+    busyId = id;
+    showBusy();
   }
 
   function bindBusy() {

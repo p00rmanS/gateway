@@ -66,4 +66,4 @@ and set `VERSION` in `sw.js` to the same number, so phones load the new version.
 
 ## "We are busy" notice
 
-Edit `announcement.json` on GitHub: set `"busy": true` to show the thank-you-for-your-patience popup to every guest who opens the guide (once each, in their language). Set it back to `false` when the rush is over. To show it again to guests who already saw it, change `"id"` (for example to the date). Preview any time with `?busy=1` on the guest link.
+Pops up automatically every day from 4:30 PM to 7:30 PM Hawaiʻi time (once per guest per day, in their language), so nobody has to turn it on or off. To change the hours, edit `BUSY_FROM` and `BUSY_TO` near the top of the busy-notice section in `js/app.js`. Preview any time with `?busy=1` on the guest link.
