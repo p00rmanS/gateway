@@ -8,6 +8,7 @@
   const I18N = window.I18N;
   const icon = window.icon;
   const LANGS = Object.keys(I18N);
+  const isLang = (k) => typeof k === "string" && Object.prototype.hasOwnProperty.call(I18N, k);
   const TABS = ["guide", "acts", "close"];
 
   /* ---------- Static config ---------- */
@@ -77,9 +78,9 @@
   if (params.get("gate") === "reset") store.set(KEY_LANG, "");
   function guessLang() {
     const fromUrl = params.get("lang");
-    if (fromUrl && I18N[fromUrl]) return fromUrl;
+    if (isLang(fromUrl)) return fromUrl;
     const saved = store.get(KEY_LANG);
-    if (saved && I18N[saved]) return saved;
+    if (isLang(saved)) return saved;
     return phoneLang() || "en";
   }
 
@@ -155,10 +156,13 @@
     }
   }
 
+  // Mongolian people write 18:50, but the browser would print "6:50 PM" in Latin letters; Russian formatting gives 18:50.
+  const TIME_LOCALE = { mn: "ru" };
+
   function formatTime(minutes) {
     const d = new Date(Date.UTC(2024, 0, 1, Math.floor(minutes / 60), minutes % 60));
     try {
-      return new Intl.DateTimeFormat(t().htmlLang, { hour: "numeric", minute: "2-digit", timeZone: "UTC", numberingSystem: "latn" }).format(d);
+      return new Intl.DateTimeFormat(TIME_LOCALE[t().htmlLang] || t().htmlLang, { hour: "numeric", minute: "2-digit", timeZone: "UTC", numberingSystem: "latn" }).format(d);
     } catch {
       return `${Math.floor(minutes / 60)}:${pad2(minutes % 60)}`;
     }
@@ -205,7 +209,7 @@
   // Text with an optional {link}…{/link} part (used by the allergy tip) becomes a tappable link.
   const EXTERNAL = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>`;
   const withLink = (text, url) => esc(text)
-    .replace("{link}", `<a class="inline-link" href="${url}" target="_blank" rel="noopener">`)
+    .replace("{link}", `<a class="inline-link" href="${url}" target="_blank" rel="noopener noreferrer">`)
     .replace("{/link}", `${EXTERNAL}</a>`);
 
   // Previous / next section buttons, labelled with the (already translated) tab names.
@@ -442,12 +446,18 @@
     clearTimeout(showSwipeHint.timer);
   }
 
+  // A language without a flag image just shows its name (error events do not bubble, so listen while capturing).
+  document.addEventListener("error", (e) => {
+    const el = e.target;
+    if (el && el.tagName === "IMG" && el.classList && (el.classList.contains("lang__flag") || el.classList.contains("gate__flag"))) el.remove();
+  }, true);
+
   /* ---------- Language picker ---------- */
   function buildLanguagePicker() {
     const box = $("langs");
     box.innerHTML = `<button class="langs__icon" type="button" data-gate aria-label="All languages">${icon("globe")}</button>` + LANGS.map((k) => `
       <button class="lang" type="button" data-lang="${k}" lang="${I18N[k].htmlLang}" dir="ltr" aria-pressed="false">
-        <img class="lang__flag" src="assets/flags/${k}.svg" alt="" width="21" height="14" decoding="async" onerror="this.remove()"><span dir="auto">${esc(I18N[k].name)}</span>
+        <img class="lang__flag" src="assets/flags/${k}.svg" alt="" width="21" height="14" decoding="async"><span dir="auto">${esc(I18N[k].name)}</span>
       </button>`).join("");
 
     box.addEventListener("click", (e) => {
@@ -464,7 +474,7 @@
   /* ---------- Language gate: a big full-screen choice, shown once on a guest's first visit ---------- */
   const gateOption = (k, extra = "") => `
     <button class="gate__opt${extra}" type="button" data-pick="${k}" lang="${I18N[k].htmlLang}" dir="ltr"${k === state.lang ? ' aria-current="true"' : ""}>
-      <img class="gate__flag" src="assets/flags/${k}.svg" alt="" width="33" height="22" decoding="async" onerror="this.remove()">
+      <img class="gate__flag" src="assets/flags/${k}.svg" alt="" width="33" height="22" decoding="async">
       <span class="gate__name" dir="auto">${esc(I18N[k].name)}</span>
       ${extra ? `<svg class="gate__go" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>` : ""}
     </button>`;
@@ -753,7 +763,7 @@
 
   // The QR-code library is only needed on a server's phone when they tap the QR button,
   // so guests never download it. Once loaded, the offline cache (sw.js) keeps a copy.
-  const QR_LIB = "https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js";
+  const QR_LIB = "js/vendor/qrcode.min.js";
   let qrLib = null;
   const loadQrLib = () => qrLib || (qrLib = new Promise((resolve, reject) => {
     if (window.QRCode) return resolve();

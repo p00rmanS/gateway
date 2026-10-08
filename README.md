@@ -67,3 +67,7 @@ and set `VERSION` in `sw.js` to the same number, so phones load the new version.
 ## "We are busy" notice
 
 Pops up automatically every day from 4:30 PM to 7:30 PM Hawaiʻi time (once per guest per day, in their language), so nobody has to turn it on or off. To change the hours, edit `BUSY_FROM` and `BUSY_TO` near the top of the busy-notice section in `js/app.js`. Preview any time with `?busy=1` on the guest link.
+
+## Checking the languages
+
+Run `node tests/i18n.test.js` after adding or editing a language. It checks every language against English (same sections, all placeholders like {start} and {m} kept, no leftover English, flag file present, busy notice complete).
