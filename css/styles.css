@@ -718,7 +718,7 @@ body.is-setup > :not(.setup) { visibility: hidden; }
   min-height: 64px; padding: 10px 14px;
   border: 1.5px solid var(--rule); border-radius: 14px;
   background: var(--paper-2); color: var(--ink);
-  font: inherit; font-size: 1.12rem; font-weight: 600; text-align: start; cursor: pointer;
+  font: inherit; font-size: 1.12rem; font-weight: 600; text-align: left; cursor: pointer;
   transition: transform .15s, border-color .2s, background .2s;
 }
 .gate__opt:hover { border-color: var(--ink-2); }
@@ -735,6 +735,5 @@ body.is-setup > :not(.setup) { visibility: hidden; }
 .gate__opt--suggest .gate__flag { width: 48px; height: 32px; }
 .gate__name { flex: 1 1 auto; min-width: 0; line-height: 1.2; }
 .gate__go { flex: 0 0 auto; width: 30px; height: 30px; }
-[dir="rtl"] .gate__go { transform: scaleX(-1); }
 @media (max-width: 340px) { .gate__grid { grid-template-columns: 1fr; } }
 @media (prefers-reduced-motion: reduce) { .gate[open] { animation: none; } .gate__opt { transition: none; } }
