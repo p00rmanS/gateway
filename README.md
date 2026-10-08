@@ -63,3 +63,7 @@ activity statuses at a given Hawaiʻi time.
 
 When you change anything, raise the `?v=` number on the CSS/JS links in `index.html`
 and set `VERSION` in `sw.js` to the same number, so phones load the new version.
+
+## "We are busy" notice
+
+Edit `announcement.json` on GitHub: set `"busy": true` to show the thank-you-for-your-patience popup to every guest who opens the guide (once each, in their language). Set it back to `false` when the rush is over. To show it again to guests who already saw it, change `"id"` (for example to the date). Preview any time with `?busy=1` on the guest link.

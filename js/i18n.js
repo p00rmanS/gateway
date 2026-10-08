@@ -14,6 +14,13 @@ self.I18N = {
     "htmlLang": "en",
     "greet": "Aloha! Welcome",
     "qr": "Scan to open on your phone",
+    "busy": {
+      "title": "Aloha! Thank You for Your Patience",
+      "p1": "We're welcoming many guests at the moment, so seating may take a little longer than usual.",
+      "p2": "Our team will be with you as soon as possible. In the meantime, feel free to explore our Guest Guide and discover more things to enjoy during your visit.",
+      "p3": "Mahalo for your patience and understanding. We look forward to serving you!",
+      "ok": "Explore the Guide"
+    },
     "tabs": {
       "guide": "Welcome Guide",
       "acts": "Things to Do",
@@ -165,6 +172,13 @@ self.I18N = {
     "htmlLang": "es",
     "greet": "¡Aloha! Bienvenidos",
     "qr": "Escaneen para abrir la guía en su teléfono",
+    "busy": {
+      "title": "¡Aloha! Gracias por su paciencia",
+      "p1": "En este momento estamos recibiendo a muchos huéspedes, por lo que sentarse puede tardar un poco más de lo habitual.",
+      "p2": "Nuestro equipo los atenderá lo antes posible. Mientras tanto, los invitamos a explorar nuestra Guía para Visitantes y descubrir más cosas para disfrutar durante su visita.",
+      "p3": "Mahalo por su paciencia y comprensión. ¡Esperamos poder atenderlos!",
+      "ok": "Explorar la guía"
+    },
     "tabs": {
       "guide": "Guía",
       "acts": "Qué hacer",
@@ -316,6 +330,13 @@ self.I18N = {
     "htmlLang": "pt-BR",
     "greet": "Aloha! Bem-vindos",
     "qr": "Escaneiem para abrir no celular",
+    "busy": {
+      "title": "Aloha! Obrigado pela sua paciência",
+      "p1": "Estamos recebendo muitos convidados neste momento, por isso a acomodação pode levar um pouco mais de tempo do que o normal.",
+      "p2": "Nossa equipe atenderá vocês o mais rápido possível. Enquanto isso, fiquem à vontade para explorar o nosso Guia do Visitante e descobrir mais coisas para aproveitar durante a sua visita.",
+      "p3": "Mahalo pela paciência e pela compreensão. Estamos ansiosos para atendê-los!",
+      "ok": "Explorar o guia"
+    },
     "tabs": {
       "guide": "Informações",
       "acts": "O que fazer",
@@ -467,6 +488,13 @@ self.I18N = {
     "htmlLang": "fr",
     "greet": "Aloha ! Bienvenue",
     "qr": "Scannez pour ouvrir sur votre téléphone",
+    "busy": {
+      "title": "Aloha ! Merci de votre patience",
+      "p1": "Nous accueillons beaucoup de monde en ce moment ; l'installation à table peut donc prendre un peu plus de temps que d'habitude.",
+      "p2": "Notre équipe sera à vous dès que possible. En attendant, n'hésitez pas à parcourir notre guide du visiteur et à découvrir d'autres choses à apprécier pendant votre visite.",
+      "p3": "Mahalo pour votre patience et votre compréhension. Nous avons hâte de vous servir !",
+      "ok": "Découvrir le guide"
+    },
     "tabs": {
       "guide": "Infos",
       "acts": "À faire",
@@ -618,6 +646,13 @@ self.I18N = {
     "htmlLang": "de",
     "greet": "Aloha! Willkommen",
     "qr": "Zum Öffnen auf dem Handy scannen",
+    "busy": {
+      "title": "Aloha! Vielen Dank für Ihre Geduld",
+      "p1": "Wir begrüßen derzeit sehr viele Gäste, daher kann es mit der Platzierung etwas länger dauern als gewöhnlich.",
+      "p2": "Unser Team kümmert sich so bald wie möglich um Sie. In der Zwischenzeit können Sie gern unseren Gästeführer durchstöbern und weitere Dinge entdecken, die Sie bei Ihrem Besuch genießen können.",
+      "p3": "Mahalo für Ihre Geduld und Ihr Verständnis. Wir freuen uns darauf, Sie zu bedienen!",
+      "ok": "Gästeführer ansehen"
+    },
     "tabs": {
       "guide": "Hinweise",
       "acts": "Aktivitäten",
@@ -769,6 +804,13 @@ self.I18N = {
     "htmlLang": "nl",
     "greet": "Aloha! Welkom",
     "qr": "Scan om te openen op uw telefoon",
+    "busy": {
+      "title": "Aloha! Bedankt voor uw geduld",
+      "p1": "We verwelkomen op dit moment veel gasten, dus het kan iets langer duren voordat u een plaats krijgt dan normaal.",
+      "p2": "Ons team komt zo snel mogelijk bij u. Neem in de tussentijd gerust een kijkje in onze gastengids en ontdek meer dingen om van te genieten tijdens uw bezoek.",
+      "p3": "Mahalo voor uw geduld en begrip. We kijken ernaar uit u te bedienen!",
+      "ok": "Bekijk de gids"
+    },
     "tabs": {
       "guide": "Info",
       "acts": "Te doen",
@@ -920,6 +962,13 @@ self.I18N = {
     "htmlLang": "vi",
     "greet": "Aloha! Xin chào quý khách",
     "qr": "Quét để mở trên điện thoại",
+    "busy": {
+      "title": "Aloha! Cảm ơn quý khách đã kiên nhẫn",
+      "p1": "Hiện chúng tôi đang đón rất đông khách nên việc sắp xếp chỗ ngồi có thể lâu hơn thường lệ một chút.",
+      "p2": "Đội ngũ của chúng tôi sẽ phục vụ quý khách trong thời gian sớm nhất. Trong lúc chờ, quý khách vui lòng xem Cẩm nang Du khách để khám phá thêm nhiều điều thú vị trong chuyến tham quan.",
+      "p3": "Mahalo vì sự kiên nhẫn và thông cảm của quý khách. Chúng tôi rất mong được phục vụ quý khách!",
+      "ok": "Xem cẩm nang"
+    },
     "tabs": {
       "guide": "Hướng dẫn",
       "acts": "Hoạt động",
@@ -1071,6 +1120,13 @@ self.I18N = {
     "htmlLang": "zh-Hans",
     "greet": "Aloha！欢迎光临",
     "qr": "扫码在手机上打开",
+    "busy": {
+      "title": "阿罗哈！感谢您的耐心等候",
+      "p1": "目前来用餐的宾客较多，安排入座可能需要比平时稍长的时间。",
+      "p2": "我们的团队会尽快为您服务。在此期间，欢迎您浏览宾客指南，了解更多可在游览期间享受的精彩内容。",
+      "p3": "感谢您的耐心与理解，我们期待为您服务！",
+      "ok": "浏览指南"
+    },
     "tabs": {
       "guide": "用餐须知",
       "acts": "表演前活动",
@@ -1222,6 +1278,13 @@ self.I18N = {
     "htmlLang": "zh-Hant",
     "greet": "Aloha！歡迎光臨",
     "qr": "掃描在手機上開啟",
+    "busy": {
+      "title": "阿囉哈！感謝您的耐心等候",
+      "p1": "目前前來用餐的賓客較多，安排入座可能需要比平常稍長的時間。",
+      "p2": "我們的團隊會盡快為您服務。在此期間，歡迎您瀏覽賓客指南，了解更多可在遊覽期間享受的精彩內容。",
+      "p3": "感謝您的耐心與體諒，我們期待為您服務！",
+      "ok": "瀏覽指南"
+    },
     "tabs": {
       "guide": "用餐須知",
       "acts": "表演前活動",
@@ -1373,6 +1436,13 @@ self.I18N = {
     "htmlLang": "ko",
     "greet": "알로하! 환영합니다",
     "qr": "스캔하여 휴대폰에서 열기",
+    "busy": {
+      "title": "알로하! 기다려 주셔서 감사합니다",
+      "p1": "현재 많은 손님을 맞이하고 있어 좌석 안내에 평소보다 시간이 조금 더 걸릴 수 있습니다.",
+      "p2": "저희 직원이 최대한 빨리 안내해 드리겠습니다. 기다리시는 동안 게스트 가이드를 둘러보시고, 방문 중에 즐기실 수 있는 더 많은 것들을 알아보세요.",
+      "p3": "기다려 주시고 이해해 주셔서 마할로. 곧 모시겠습니다!",
+      "ok": "가이드 보기"
+    },
     "tabs": {
       "guide": "이용 안내",
       "acts": "즐길 거리",
@@ -1524,6 +1594,13 @@ self.I18N = {
     "htmlLang": "ja",
     "greet": "アロハ！ようこそ",
     "qr": "スマホで開くにはスキャン",
+    "busy": {
+      "title": "アロハ！お待ちいただきありがとうございます",
+      "p1": "ただいま多くのお客様をお迎えしており、ご案内にいつもより少しお時間がかかる場合がございます。",
+      "p2": "スタッフができるだけ早くご案内いたします。お待ちの間は、ぜひゲストガイドをご覧いただき、ご滞在中に楽しめることをさらに見つけてください。",
+      "p3": "お待ちいただき、ご理解いただきありがとうございます（マハロ）。お迎えできるのを楽しみにしております！",
+      "ok": "ガイドを見る"
+    },
     "tabs": {
       "guide": "ご利用案内",
       "acts": "おすすめ",
@@ -1675,6 +1752,13 @@ self.I18N = {
     "htmlLang": "da",
     "greet": "Aloha! Velkommen",
     "qr": "Scan for at åbne guiden på jeres telefon",
+    "busy": {
+      "title": "Aloha! Tak for din tålmodighed",
+      "p1": "Vi byder lige nu mange gæster velkommen, så det kan tage lidt længere end normalt at få anvist en plads.",
+      "p2": "Vores team kommer til dig, så snart det er muligt. Du er velkommen til at kigge i vores gæsteguide i mellemtiden og finde flere ting at nyde under dit besøg.",
+      "p3": "Mahalo for din tålmodighed og forståelse. Vi glæder os til at betjene dig!",
+      "ok": "Se guiden"
+    },
     "tabs": {
       "guide": "Info",
       "acts": "Oplevelser",
@@ -1826,6 +1910,13 @@ self.I18N = {
     "htmlLang": "sr-Cyrl",
     "greet": "Алоха! Добро дошли",
     "qr": "Скенирајте да бисте отворили водич на телефону",
+    "busy": {
+      "title": "Алоха! Хвала на стрпљењу",
+      "p1": "Тренутно дочекујемо много гостију, па распоређивање за столове може потрајати нешто дуже него обично.",
+      "p2": "Наш тим ће се посветити вама што пре. У међувремену, слободно погледајте наш водич за госте и откријте још ствари у којима можете уживати током посете.",
+      "p3": "Махало на стрпљењу и разумевању. Радујемо се што ћемо вас послужити!",
+      "ok": "Погледајте водич"
+    },
     "tabs": {
       "guide": "Упутство",
       "acts": "Активности",
@@ -1978,6 +2069,13 @@ self.I18N = {
     "dir": "rtl",
     "greet": "ألوها! أهلاً وسهلاً بكم",
     "qr": "امسحوا الرمز لفتح الدليل على هواتفكم",
+    "busy": {
+      "title": "ألوها! شكراً لصبركم",
+      "p1": "نستقبل عدداً كبيراً من الضيوف في الوقت الحالي، لذا قد يستغرق تخصيص الطاولات وقتاً أطول قليلاً من المعتاد.",
+      "p2": "سيكون فريقنا معكم في أقرب وقت ممكن. وفي الأثناء، يسعدنا أن تتصفحوا دليل الضيوف وتكتشفوا المزيد من الأشياء التي يمكنكم الاستمتاع بها خلال زيارتكم.",
+      "p3": "ماهالو على صبركم وتفهمكم. نتطلع إلى خدمتكم!",
+      "ok": "تصفّح الدليل"
+    },
     "tabs": {
       "guide": "دليل الضيوف",
       "acts": "أنشطة",
@@ -2129,6 +2227,13 @@ self.I18N = {
     "htmlLang": "it",
     "greet": "Aloha! Benvenuti",
     "qr": "Scansionate per aprire la guida sul telefono",
+    "busy": {
+      "title": "Aloha! Grazie per la vostra pazienza",
+      "p1": "In questo momento stiamo accogliendo molti ospiti, quindi l'assegnazione dei tavoli potrebbe richiedere un po' più tempo del solito.",
+      "p2": "Il nostro team sarà da voi il prima possibile. Nel frattempo, sentitevi liberi di sfogliare la nostra Guida per gli ospiti e scoprire altre cose da gustare durante la vostra visita.",
+      "p3": "Mahalo per la pazienza e la comprensione. Non vediamo l'ora di servirvi!",
+      "ok": "Scopri la guida"
+    },
     "tabs": {
       "guide": "Info",
       "acts": "Da fare",
@@ -2280,6 +2385,13 @@ self.I18N = {
     "htmlLang": "th",
     "greet": "อะโลฮา! ยินดีต้อนรับ",
     "qr": "สแกนเพื่อเปิดคู่มือบนโทรศัพท์ของท่าน",
+    "busy": {
+      "title": "อะโลฮา! ขอบคุณที่รอคอย",
+      "p1": "ขณะนี้มีแขกจำนวนมาก การจัดที่นั่งจึงอาจใช้เวลานานกว่าปกติเล็กน้อย",
+      "p2": "ทีมงานของเราจะดูแลท่านโดยเร็วที่สุด ระหว่างนี้ขอเชิญดูคู่มือสำหรับแขกของเรา และค้นพบสิ่งน่าสนุกอื่น ๆ ที่ท่านจะเพลิดเพลินได้ระหว่างการเยี่ยมชม",
+      "p3": "มาฮาโลสำหรับความอดทนและความเข้าใจของท่าน เรารอที่จะได้ให้บริการท่าน!",
+      "ok": "ดูคู่มือ"
+    },
     "tabs": {
       "guide": "คำแนะนำ",
       "acts": "กิจกรรม",
@@ -2431,6 +2543,13 @@ self.I18N = {
     "htmlLang": "ru",
     "greet": "Алоха! Добро пожаловать",
     "qr": "Отсканируйте, чтобы открыть на телефоне",
+    "busy": {
+      "title": "Алоха! Спасибо за ваше терпение",
+      "p1": "Сейчас у нас много гостей, поэтому размещение за столами может занять немного больше времени, чем обычно.",
+      "p2": "Наша команда подойдёт к вам как можно скорее. А пока вы можете изучить наш гид для гостей и узнать, чем ещё можно насладиться во время визита.",
+      "p3": "Махало за терпение и понимание. Мы с нетерпением ждём возможности вас обслужить!",
+      "ok": "Открыть гид"
+    },
     "tabs": {
       "guide": "Добро пожаловать",
       "acts": "Чем заняться",
@@ -2582,6 +2701,13 @@ self.I18N = {
     "htmlLang": "hi",
     "greet": "अलोहा! स्वागत है",
     "qr": "अपने फ़ोन पर खोलने के लिए स्कैन करें",
+    "busy": {
+      "title": "अलोहा! आपके धैर्य के लिए धन्यवाद",
+      "p1": "इस समय हम बहुत से मेहमानों का स्वागत कर रहे हैं, इसलिए बैठने की व्यवस्था में सामान्य से थोड़ा अधिक समय लग सकता है।",
+      "p2": "हमारी टीम जल्द से जल्द आपके पास पहुँचेगी। तब तक कृपया हमारी गेस्ट गाइड देखें और अपनी यात्रा के दौरान आनंद लेने लायक और बातें जानें।",
+      "p3": "आपके धैर्य और समझ के लिए महालो। हम आपकी सेवा करने के लिए उत्सुक हैं!",
+      "ok": "गाइड देखें"
+    },
     "tabs": {
       "guide": "स्वागत गाइड",
       "acts": "करने के लिए",
@@ -2733,6 +2859,13 @@ self.I18N = {
     "htmlLang": "mn",
     "greet": "Алоха! Тавтай морил",
     "qr": "Утсан дээрээ нээхийн тулд уншуулна уу",
+    "busy": {
+      "title": "Алоха! Тэвчээртэй хүлээсэнд баярлалаа",
+      "p1": "Одоогоор олон зочин хүлээн авч байгаа тул суудал хуваарилахад ердийнхөөс арай удаж магадгүй.",
+      "p2": "Манай баг та бүхэнд аль болох хурдан үйлчлэх болно. Энэ хооронд манай зочдын гарын авлагыг үзэж, айлчлалынхаа үеэр таашаал авах өөр олон зүйлийг олж мэдээрэй.",
+      "p3": "Тэвчээр, ойлголцолд тань Махало. Танд үйлчлэхийг хүсэн хүлээж байна!",
+      "ok": "Гарын авлага үзэх"
+    },
     "tabs": {
       "guide": "Угтах гарын авлага",
       "acts": "Хийх зүйлс",

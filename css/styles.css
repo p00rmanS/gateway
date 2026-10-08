@@ -27,8 +27,8 @@
   --measure: 680px; /* content column width */
   --ease: cubic-bezier(.22, 1, .36, 1);
 
-  --serif: "Instrument Serif", "Iowan Old Style", Georgia, "Noto Sans Arabic", "Noto Sans Thai", "Noto Sans Devanagari", "Noto Serif", "Noto Serif KR", "Noto Serif JP", "Noto Serif SC", serif;
-  --sans: "Instrument Sans", "Noto Sans Arabic", "Noto Sans Thai", "Noto Sans Devanagari", system-ui, -apple-system, "Segoe UI", "Noto Sans", "Apple SD Gothic Neo", "Noto Sans KR",
+  --serif: "Lora", Georgia, "Noto Sans Arabic", "Noto Sans Thai", "Noto Sans Devanagari", "Noto Serif", "Noto Serif KR", "Noto Serif JP", "Noto Serif SC", serif;
+  --sans: "Source Sans 3", "Noto Sans Arabic", "Noto Sans Thai", "Noto Sans Devanagari", system-ui, -apple-system, "Segoe UI", "Noto Sans", "Apple SD Gothic Neo", "Noto Sans KR",
           "Hiragino Sans", "Noto Sans JP", "PingFang SC", "PingFang TC", "Noto Sans SC", "Noto Sans TC", "Microsoft YaHei", sans-serif;
 
   color-scheme: light;
@@ -90,10 +90,9 @@ h1, h2, h3, p, ol, ul { margin: 0; padding: 0; }
   max-width: var(--measure); margin: 0 auto;
 }
 .topbar__greet {
-  font-family: var(--serif); font-style: italic; font-weight: 400;
-  font-size: clamp(2.5rem, 12vw, 3.4rem); line-height: 1; letter-spacing: -.03em;
-  padding-left: .04em; /* room for the italic overhang */
-  min-width: 0;
+  font-family: var(--serif); font-style: normal; font-weight: 600;
+  font-size: clamp(2.1rem, 10vw, 2.9rem); line-height: 1.05; letter-spacing: -.01em;
+    min-width: 0;
   transition: opacity .2s;
 }
 .topbar.is-swapping .topbar__greet { opacity: 0; }
@@ -257,8 +256,8 @@ html:lang(zh-Hans) .topbar__greet, html:lang(zh-Hant) .topbar__greet { font-styl
 .view-head { padding: 36px 0 6px; }
 .view-head__title {
   margin-top: 6px;
-  font-family: var(--serif); font-weight: 400;
-  font-size: clamp(2.4rem, 11vw, 3.4rem); line-height: 1; letter-spacing: -.02em;
+  font-family: var(--serif); font-weight: 600;
+  font-size: clamp(2rem, 9.5vw, 2.8rem); line-height: 1.08; letter-spacing: -.01em;
   text-wrap: balance;
 }
 
@@ -266,8 +265,8 @@ html:lang(zh-Hans) .topbar__greet, html:lang(zh-Hant) .topbar__greet { font-styl
 .endline {
   margin: 0;
   text-align: center;
-  font-family: var(--serif); font-style: italic;
-  font-size: 1.7em; line-height: 1.15;
+  font-family: var(--serif); font-style: normal; font-weight: 600;
+  font-size: 1.45em; line-height: 1.25;
   text-wrap: balance;
 }
 .endline::before { content: ""; display: block; width: 32px; height: 2px; margin: 0 auto 18px; background: var(--lava); }
@@ -282,8 +281,8 @@ html:lang(zh-Hans) .topbar__greet, html:lang(zh-Hant) .topbar__greet { font-styl
   border-top: 1px solid var(--rule);
 }
 .step__num {
-  font-family: var(--serif); font-style: italic;
-  font-size: 2.1em; line-height: .95;
+  font-family: var(--serif); font-style: normal; font-weight: 600;
+  font-size: 1.8em; line-height: 1;
   color: var(--lava);
   font-variant-numeric: lining-nums;
 }
@@ -326,11 +325,11 @@ html:lang(zh-Hans) .topbar__greet, html:lang(zh-Hant) .topbar__greet { font-styl
 .count__line { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
 .count__num {
   font-family: var(--serif);
-  font-size: clamp(5.5rem, 30vw, 8rem); line-height: .85; letter-spacing: -.04em;
+  font-size: clamp(4.6rem, 25vw, 6.6rem); line-height: .9; letter-spacing: -.02em; font-weight: 600;
   color: var(--lava);
   font-variant-numeric: tabular-nums;
 }
-.count__post { font-family: var(--serif); font-style: italic; font-size: 1.9em; }
+.count__post { font-family: var(--serif); font-style: normal; font-weight: 500; font-size: 1.6em; }
 
 .ticket {
   --stub: 136px;
@@ -351,9 +350,9 @@ html:lang(zh-Hans) .topbar__greet, html:lang(zh-Hant) .topbar__greet { font-styl
 .ticket__main, .ticket__stub { padding: 18px 18px 20px; }
 .ticket__stub { padding-left: 14px; padding-right: 14px; }
 .ticket__stub { border-inline-start: 2px dashed color-mix(in srgb, var(--ticket-ink) 30%, transparent); }
-.ticket__title { font-family: var(--serif); font-weight: 400; font-size: 1.65em; line-height: 1.05; margin-bottom: 14px; }
+.ticket__title { font-family: var(--serif); font-weight: 600; font-size: 1.4em; line-height: 1.05; margin-bottom: 14px; }
 .ticket__label { display: block; font-size: .7rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; opacity: .7; }
-.ticket__time { font-family: var(--serif); font-size: 1.75em; line-height: 1.05; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.ticket__time { font-family: var(--serif); font-weight: 600; font-size: 1.5em; line-height: 1.05; font-variant-numeric: tabular-nums; white-space: nowrap; }
 /* CJK fonts have no true italic: keep italic display text upright instead of a fake slant */
 :is(html:lang(ko), html:lang(ja), html:lang(zh-Hans), html:lang(zh-Hant), html:lang(ar), html:lang(th), html:lang(hi)) :is(.count__post, .endline, .mahalo__title, .server__name, .step__num, .locked__note) { font-style: normal; }
 html:lang(ko) .ticket__time, html:lang(ja) .ticket__time,
@@ -381,7 +380,7 @@ html:lang(zh-Hans) .ticket__time, html:lang(zh-Hant) .ticket__time { font-size: 
 .st-next { color: var(--st-next); }
 .act__title {
   margin-top: 6px;
-  font-family: var(--serif); font-weight: 400;
+  font-family: var(--serif); font-weight: 600;
   font-size: 1.75em; line-height: 1.08; letter-spacing: -.01em;
   text-wrap: balance;
 }
@@ -394,8 +393,8 @@ html:lang(zh-Hans) .ticket__time, html:lang(zh-Hant) .ticket__time { font-size: 
 .mahalo { padding-top: 36px; }
 .mahalo__title {
   margin-top: 8px;
-  font-family: var(--serif); font-style: italic; font-weight: 400;
-  font-size: clamp(3.2rem, 15vw, 5.4rem); line-height: .92; letter-spacing: -.03em;
+  font-family: var(--serif); font-style: normal; font-weight: 600;
+  font-size: clamp(2.6rem, 12vw, 4.2rem); line-height: 1.05; letter-spacing: -.01em;
   text-wrap: balance;
 }
 .mahalo__text { margin-top: 18px; font-size: 1.12em; line-height: 1.5; text-wrap: pretty; }
@@ -403,20 +402,20 @@ html:lang(zh-Hans) .ticket__time, html:lang(zh-Hant) .ticket__time { font-size: 
 .locked { padding-top: 8px; }
 .locked__text { margin-top: 18px; font-size: 1.12em; line-height: 1.5; text-wrap: pretty; }
 .locked__text + .locked__text { margin-top: 10px; }
-.locked__note { margin-top: 22px; font-family: var(--serif); font-style: italic; font-size: 1.2em; color: var(--ink-2); }
+.locked__note { margin-top: 22px; font-family: var(--serif); font-style: normal; font-weight: 500; font-size: 1.1em; color: var(--ink-2); }
 .locked__soon { margin-top: 26px; }
 
 .server { margin-top: 28px; padding-top: 18px; border-top: 1px solid var(--rule); }
 .server__label { display: block; font-size: .9em; color: var(--ink-2); }
 .server__name {
   display: block;
-  font-family: var(--serif); font-style: italic;
-  font-size: clamp(2.6rem, 12vw, 3.6rem); line-height: 1;
+  font-family: var(--serif); font-style: normal;
+  font-size: clamp(2.1rem, 10vw, 3rem); line-height: 1.05;
   color: var(--lava);
 }
 
 .block { margin-top: 36px; padding-top: 22px; border-top: 1px solid var(--ink); }
-.block__title { margin-top: 8px; font-family: var(--serif); font-weight: 400; font-size: 2em; line-height: 1.05; text-wrap: balance; }
+.block__title { margin-top: 8px; font-family: var(--serif); font-weight: 600; font-size: 1.7em; line-height: 1.05; text-wrap: balance; }
 .block__text { margin-top: 10px; color: color-mix(in srgb, var(--ink) 82%, var(--paper)); text-wrap: pretty; }
 
 .review-head { display: flex; align-items: center; gap: 14px; margin-top: 4px; }
@@ -515,7 +514,7 @@ html:lang(zh-Hans) .ticket__time, html:lang(zh-Hant) .ticket__time { font-size: 
 .pager__btn--next { grid-column: 2; align-items: flex-end; text-align: end; background: var(--ink); color: var(--paper); border-color: var(--ink); box-shadow: 0 2px 0 var(--lava); }
 .pager__dir { display: flex; align-items: center; gap: 4px; font-size: 1.3rem; line-height: 1; }
 .pager__dir svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
-.pager__label { font-family: var(--serif); font-size: 1.35em; line-height: 1.1; max-width: 100%; overflow-wrap: anywhere; }
+.pager__label { font-family: var(--serif); font-weight: 600; font-size: 1.15em; line-height: 1.1; max-width: 100%; overflow-wrap: anywhere; }
 
 /* ---------- 10. Dialogs ---------- */
 .sheet {
@@ -527,7 +526,7 @@ html:lang(zh-Hans) .ticket__time, html:lang(zh-Hant) .ticket__time { font-size: 
 }
 .sheet::backdrop { background: rgb(20 16 10 / .5); }
 .sheet[open] { animation: sheet-in .35s var(--ease); }
-.sheet__title { font-family: var(--serif); font-weight: 400; font-size: 1.9rem; line-height: 1.05; }
+.sheet__title { font-family: var(--serif); font-weight: 600; font-size: 1.6rem; line-height: 1.15; }
 .sheet__sub { margin-top: 6px; color: var(--ink-2); font-size: .92rem; }
 .sheet__actions { display: flex; justify-content: flex-end; gap: 8px; margin-top: 22px; }
 
@@ -660,7 +659,7 @@ html:lang(th) body { line-height: 1.75; }
 .setup { position: fixed; inset: 0; z-index: 50; display: grid; place-items: center; padding: 24px; background: var(--paper); }
 .setup[hidden] { display: none; }
 .setup__card { width: 100%; max-width: 380px; }
-.setup__title { font-family: var(--serif); font-weight: 400; font-size: clamp(2.2rem, 10vw, 3rem); line-height: 1; letter-spacing: -.02em; }
+.setup__title { font-family: var(--serif); font-weight: 600; font-size: clamp(1.9rem, 9vw, 2.6rem); line-height: 1.08; letter-spacing: -.01em; }
 .setup__sub { margin: 12px 0 28px; color: var(--ink-2); }
 .setup__go { width: 100%; margin-top: 22px; }
 .setup__custom[hidden] { display: none; }
@@ -708,7 +707,7 @@ body.is-setup > :not(.setup) { visibility: hidden; }
   padding: max(28px, env(safe-area-inset-top, 0px)) var(--gutter) max(32px, env(safe-area-inset-bottom, 0px));
 }
 .gate__globe { display: block; width: 40px; height: 40px; color: var(--lava); margin: 8px auto 12px; }
-.gate__title { font-family: var(--serif); font-weight: 400; font-size: clamp(2rem, 9vw, 2.6rem); line-height: 1.05; text-align: center; }
+.gate__title { font-family: var(--serif); font-weight: 600; font-size: clamp(1.75rem, 8vw, 2.3rem); line-height: 1.1; text-align: center; }
 .gate__sub { margin: 10px 0 24px; text-align: center; color: var(--ink-2); font-size: 1.05rem; line-height: 1.5; }
 .gate__suggest:empty { display: none; }
 .gate__suggest { margin-bottom: 18px; }
@@ -737,3 +736,9 @@ body.is-setup > :not(.setup) { visibility: hidden; }
 .gate__go { flex: 0 0 auto; width: 30px; height: 30px; }
 @media (max-width: 340px) { .gate__grid { grid-template-columns: 1fr; } }
 @media (prefers-reduced-motion: reduce) { .gate[open] { animation: none; } .gate__opt { transition: none; } }
+
+/* ---------- "We're busy" notice ---------- */
+.busy__text { margin-top: 14px; font-size: 1.05rem; line-height: 1.55; text-wrap: pretty; }
+.busy__thanks { font-weight: 600; }
+.busy .sheet__actions { justify-content: stretch; }
+.busy .btn { width: 100%; min-height: 50px; }

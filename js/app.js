@@ -31,6 +31,7 @@
   const isValidName = (n) => typeof n === "string" && /^[\p{L}][\p{L}\p{M} .'’-]{0,29}$/u.test(n.trim());
   const cleanName = (n) => String(n).trim().replace(/\s+/g, " ");
   const KEY_STAFF = "gg_staff";
+  const KEY_BUSY = "gg_busy_seen";   // id of the last "we are busy" notice this guest closed
   const KEY_LANG = "gg_lang";   // the language a guest picked on this phone
   const ALLERGY_URL = "https://www.polynesia-allergy.com";
   const DEFAULT_START = "7:15";
@@ -497,6 +498,7 @@
       dlg.close();
       if (k !== state.lang) setLang(k);
       showSwipeHint();
+      setTimeout(showBusy, reducedMotion() ? 0 : 450);
       requestAnimationFrame(() => {
         const active = document.querySelector('.lang[aria-pressed="true"]');
         if (active) active.scrollIntoView({ inline: "center", block: "nearest" });
@@ -508,6 +510,48 @@
   // First visit only: no saved language, no ?lang= in the link, and not a staff phone.
   const needsGate = () => params.get("gate") === "1" ||
     (!isStaff() && !params.has("staff") && !params.get("lang") && !store.get(KEY_LANG));
+
+
+  /* ---------- "We're busy" notice ----------
+     Controlled by announcement.json on the site: {"busy": true, "id": "1"} turns it on for everyone who opens the guide.
+     Each guest sees it once; change the id (for example to the date) to show it again. ?busy=1 previews it any time. */
+  let busyId = null;
+
+  function showBusy() {
+    const dlg = $("busyDlg");
+    if (!busyId || dlg.open || $("gate").open || document.querySelector("dialog[open]")) return;
+    const b = t().busy;
+    $("busyTitle").textContent = b.title;
+    $("busyP1").textContent = b.p1;
+    $("busyP2").textContent = b.p2;
+    $("busyP3").textContent = b.p3;
+    $("busyOk").textContent = b.ok;
+    dlg.showModal();
+    // Once it has been shown, this guest won't get it again for this notice id (even if they just close the tab).
+    if (busyId !== "preview") store.set(KEY_BUSY, busyId);
+    busyId = null;
+  }
+
+  async function checkBusy() {
+    if (params.get("busy") === "1") { busyId = "preview"; return showBusy(); }
+    if (isStaff()) return;   // staff phones never get the guest notice
+    try {
+      const res = await fetch(`announcement.json?t=${Date.now()}`, { cache: "no-store" });
+      if (!res.ok) return;
+      const a = await res.json();
+      const id = String((a && a.id) || "1");
+      if (!a || a.busy !== true || store.get(KEY_BUSY) === id) return;
+      busyId = id;
+      showBusy();
+    } catch { /* offline or no file: no notice */ }
+  }
+
+  function bindBusy() {
+    const dlg = $("busyDlg");
+    $("busyOk").addEventListener("click", () => dlg.close());
+    dlg.addEventListener("close", showSwipeHint);
+    closeOnBackdrop(dlg);
+  }
 
   /* ---------- Tabs: click, arrow keys, and a swipe that follows the finger ---------- */
   function bindTabs() {
@@ -813,8 +857,10 @@
   bindSizePanel();
   bindTheme();
   bindGate();
+  bindBusy();
   render("up");
   if (needsGate()) openGate(); else showSwipeHint();
+  checkBusy();
 
   requestAnimationFrame(() => {
     const active = document.querySelector('.lang[aria-pressed="true"]');
