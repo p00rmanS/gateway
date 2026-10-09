@@ -745,3 +745,6 @@ body.is-setup > :not(.setup) { visibility: hidden; }
 
 /* A closed popup must never show inline in browsers that do not know <dialog> */
 dialog:not([open]) { display: none; }
+
+/* Japanese: break lines between phrases, not in the middle of a word */
+html:lang(ja) :is(.sheet__title, .busy__text, .view-head__title, .block__title, .mahalo__title, .endline) { word-break: auto-phrase; text-wrap: balance; }
