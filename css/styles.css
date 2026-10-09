@@ -354,7 +354,7 @@ html:lang(zh-Hans) .topbar__greet, html:lang(zh-Hant) .topbar__greet { font-styl
 .ticket__label { display: block; font-size: .7rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; opacity: .7; }
 .ticket__time { font-family: var(--serif); font-weight: 600; font-size: 1.5em; line-height: 1.05; font-variant-numeric: tabular-nums; white-space: nowrap; }
 /* CJK fonts have no true italic: keep italic display text upright instead of a fake slant */
-:is(html:lang(ko), html:lang(ja), html:lang(zh-Hans), html:lang(zh-Hant), html:lang(ar), html:lang(th), html:lang(hi)) :is(.count__post, .endline, .mahalo__title, .server__name, .step__num, .locked__note) { font-style: normal; }
+:is(html:lang(ko), html:lang(ja), html:lang(zh-Hans), html:lang(zh-Hant), html:lang(ar), html:lang(th), html:lang(hi)) :is(.count__post, .endline, .mahalo__title, .server__name, .step__num) { font-style: normal; }
 html:lang(ko) .ticket__time, html:lang(ja) .ticket__time,
 html:lang(zh-Hans) .ticket__time, html:lang(zh-Hant) .ticket__time { font-size: 1.4em; }
 .ticket__stub .ticket__time { color: var(--gold); }
@@ -399,11 +399,6 @@ html:lang(zh-Hans) .ticket__time, html:lang(zh-Hant) .ticket__time { font-size: 
 }
 .mahalo__text { margin-top: 18px; font-size: 1.12em; line-height: 1.5; text-wrap: pretty; }
 
-.locked { padding-top: 8px; }
-.locked__text { margin-top: 18px; font-size: 1.12em; line-height: 1.5; text-wrap: pretty; }
-.locked__text + .locked__text { margin-top: 10px; }
-.locked__note { margin-top: 22px; font-family: var(--serif); font-style: normal; font-weight: 500; font-size: 1.1em; color: var(--ink-2); }
-.locked__soon { margin-top: 26px; }
 
 .server { margin-top: 28px; padding-top: 18px; border-top: 1px solid var(--rule); }
 .server__label { display: block; font-size: .9em; color: var(--ink-2); }
@@ -671,28 +666,6 @@ body.is-setup > :not(.setup) { visibility: hidden; }
 .server--top { margin: 0 0 22px; padding-top: 0; border-top: 0; }
 .server-mention { margin-top: 22px; font-size: .9em; color: var(--ink-2); text-wrap: pretty; }
 
-/* ---------- Notice box (Before You Go is open) ---------- */
-.notice {
-  position: fixed; left: 50%; z-index: 32; width: min(calc(100% - 32px), 420px);
-  bottom: calc(112px + env(safe-area-inset-bottom, 0px));
-  transform: translateX(-50%);
-  padding: 14px 16px; border-radius: 16px;
-  background: var(--ink); color: var(--paper);
-  box-shadow: 0 14px 36px -12px rgb(0 0 0 / .5);
-  animation: notice-in .5s var(--ease) both;
-}
-.notice[hidden] { display: none; }
-.notice__text { font-weight: 500; line-height: 1.35; text-wrap: balance; }
-.notice__actions { display: flex; gap: 8px; margin-top: 12px; justify-content: flex-end; flex-wrap: wrap; }
-.notice__open, .notice__ok {
-  min-height: 40px; padding: 8px 16px; border-radius: 999px; font: inherit; font-weight: 600; font-size: .9em; cursor: pointer;
-}
-.notice__open { background: var(--paper); color: var(--ink); border: 1px solid var(--paper); }
-.notice__ok { background: none; color: var(--paper); border: 1px solid color-mix(in srgb, var(--paper) 45%, transparent); }
-@keyframes notice-in { from { opacity: 0; transform: translate(-50%, 12px); } }
-@media (min-width: 720px) { .notice { bottom: calc(96px + env(safe-area-inset-bottom, 0px)); } }
-@media (orientation: landscape) and (max-height: 500px) { .notice { bottom: calc(74px + env(safe-area-inset-bottom, 0px)); } }
-@media (prefers-reduced-motion: reduce) { .notice { animation: none; } }
 
 /* ---------- Language gate (full-screen picker) ---------- */
 .gate {
@@ -748,3 +721,11 @@ dialog:not([open]) { display: none; }
 
 /* Japanese: break lines between phrases, not in the middle of a word */
 html:lang(ja) :is(.sheet__title, .busy__text, .view-head__title, .block__title, .mahalo__title, .endline) { word-break: auto-phrase; text-wrap: balance; }
+
+/* ---------- "Finished eating?" ---------- */
+.done__actions { display: grid; gap: 10px; margin-top: 22px; }
+.done .btn { width: 100%; min-height: 50px; }
+
+/* Very small phones: keep the greeting on one line next to the four buttons */
+.topbar__greet { white-space: nowrap; }
+@media (max-width: 360px) { .topbar__greet { font-size: 1.55rem; } }

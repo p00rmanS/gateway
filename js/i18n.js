@@ -132,12 +132,6 @@ self.I18N = {
     },
     "close": {
       "mention": "If {name} helped make your visit special, you're welcome to mention {name} when sharing your experience.",
-      "ready": "Before You Go is now open.",
-      "locked": {
-        "text": "This section will become available a little later in your visit.\nPlease enjoy your meal and check back in about 25–30 minutes.",
-        "note": "No rush — enjoy your time with us!",
-        "soon": "Available in about {m} min"
-      },
       "thanks": {
         "title": "Mahalo, ʻOhana!",
         "text": "Thank you for joining us at Gateway Buffet tonight. It has been a pleasure serving you, and we hope you enjoyed your time with us.\nPlease feel free to relax and enjoy the rest of your evening."
@@ -153,7 +147,13 @@ self.I18N = {
       "server": "Your server tonight:",
       "end": "Mahalo Nui Loa",
       "qrNote": "Your server will show you the QR code when you're ready.",
-      "endNote": "Thank you for spending part of your day with us.\nMahalo nui loa, and enjoy the rest of your evening!"
+      "endNote": "Thank you for spending part of your day with us.\nMahalo nui loa, and enjoy the rest of your evening!",
+      "confirm": {
+        "title": "Finished eating?",
+        "text": "Before You Go has our thank-you and a quick way to share your feedback. Continue whenever you're ready.",
+        "yes": "Yes, continue",
+        "no": "Not yet"
+      }
     },
     "status": {
       "open": "Open now",
@@ -258,7 +258,7 @@ self.I18N = {
           ]
         },
         {
-          "title": "Recorrido en tranvía por Lāʻie",
+          "title": "Lāʻie Tram Tour",
           "subtitle": "",
           "text": "Disfruten de un recorrido panorámico por el pueblo de Lāʻie y el campus de BYU–Hawaii.\nEl recorrido incluye además una parada de 15 minutos en los jardines del Templo de Lāʻie, Hawái, de La Iglesia de Jesucristo de los Santos de los Últimos Días.",
           "chips": [
@@ -270,7 +270,7 @@ self.I18N = {
         {
           "title": "Hawaiian Journey Theater",
           "subtitle": "Espectáculo de cuchillo de fuego de Jeri",
-          "text": "Descubran la historia y la tradición de la danza del cuchillo de fuego de la mano de Jeri, competidor con muchos años de trayectoria que comenzó a presentarse desde muy joven.",
+          "text": "Descubran la historia y la tradición de la danza del cuchillo de fuego con Jeri, quien lleva años compitiendo y se presenta desde muy joven.",
           "chips": [
             "Cada 30 minutos",
             "1:30–6:30 p. m.",
@@ -278,7 +278,7 @@ self.I18N = {
           ]
         },
         {
-          "title": "Salón de la Fama del Fútbol Americano Polinesio",
+          "title": "Polynesian Football Hall of Fame",
           "subtitle": "",
           "text": "Recorran una galería que rinde homenaje a las leyendas polinesias del fútbol americano, con placas, fotografías, recuerdos, pantallas interactivas y el Muro de Honor.\nSe encuentra justo enfrente de Gateway Buffet, dentro del Welcome Center del Polynesian Cultural Center.",
           "chips": [
@@ -290,12 +290,6 @@ self.I18N = {
     },
     "close": {
       "mention": "Si {name} hizo especial su visita, pueden mencionar a {name} al compartir su experiencia.",
-      "ready": "Antes de irse ya está disponible.",
-      "locked": {
-        "text": "Esta sección estará disponible un poco más tarde durante su visita.\nDisfruten de su comida y vuelvan a pasar en unos 25–30 minutos.",
-        "note": "Sin prisa: ¡disfruten su tiempo con nosotros!",
-        "soon": "Disponible en unos {m} min"
-      },
       "thanks": {
         "title": "¡Mahalo, ʻOhana!",
         "text": "Gracias por acompañarnos esta noche en Gateway Buffet. Ha sido un placer atenderlos y esperamos que lo hayan disfrutado.\nRelájense y disfruten del resto de la noche."
@@ -311,7 +305,13 @@ self.I18N = {
       "server": "Su mesero esta noche:",
       "end": "Mahalo nui loa",
       "qrNote": "Su mesero les mostrará el código QR cuando estén listos.",
-      "endNote": "Gracias por pasar parte de su día con nosotros.\n¡Mahalo nui loa y disfruten el resto de su velada!"
+      "endNote": "Gracias por pasar parte de su día con nosotros.\n¡Mahalo nui loa y disfruten el resto de su velada!",
+      "confirm": {
+        "title": "¿Ya terminaron de comer?",
+        "text": "«Antes de irse» tiene nuestro agradecimiento y una forma rápida de compartir su opinión. Continúen cuando estén listos.",
+        "yes": "Sí, continuar",
+        "no": "Todavía no"
+      }
     },
     "status": {
       "open": "Abierto ahora",
@@ -331,7 +331,7 @@ self.I18N = {
     "greet": "Aloha! Bem-vindos",
     "qr": "Escaneiem para abrir no celular",
     "busy": {
-      "title": "Aloha! Obrigado pela sua paciência",
+      "title": "Aloha! Agradecemos a paciência de vocês",
       "p1": "Estamos recebendo muitos convidados neste momento, por isso a acomodação pode levar um pouco mais de tempo do que o normal.",
       "p2": "Nossa equipe atenderá vocês o mais rápido possível. Enquanto isso, fiquem à vontade para explorar o nosso Guia do Visitante e descobrir mais coisas para aproveitar durante a sua visita.",
       "p3": "Mahalo pela paciência e pela compreensão. Estamos ansiosos para atendê-los!",
@@ -416,7 +416,7 @@ self.I18N = {
           ]
         },
         {
-          "title": "Passeio de bondinho por Lāʻie",
+          "title": "Lāʻie Tram Tour",
           "subtitle": "",
           "text": "Façam um passeio panorâmico pela cidade de Lāʻie e pelo campus da BYU–Hawaii.\nO passeio inclui também uma parada de 15 minutos nos jardins do Templo de Lāʻie, no Havaí, da Igreja de Jesus Cristo dos Santos dos Últimos Dias.",
           "chips": [
@@ -427,8 +427,8 @@ self.I18N = {
         },
         {
           "title": "Hawaiian Journey Theater",
-          "subtitle": "Show de faca de fogo do Jeri",
-          "text": "Descubram a história e a tradição da dança da faca de fogo com Jeri, competidor de longa data que começou a se apresentar ainda bem jovem.",
+          "subtitle": "Show de faca de fogo com Jeri",
+          "text": "Descubram a história e a tradição da dança da faca de fogo com Jeri, que compete há muitos anos e começou a se apresentar ainda muito jovem.",
           "chips": [
             "A cada 30 minutos",
             "13h30–18h30",
@@ -448,15 +448,9 @@ self.I18N = {
     },
     "close": {
       "mention": "Se {name} tornou a visita de vocês especial, fiquem à vontade para mencionar {name} ao compartilhar sua experiência.",
-      "ready": "Antes de ir já está disponível.",
-      "locked": {
-        "text": "Esta seção ficará disponível um pouco mais tarde durante a visita de vocês.\nAproveitem a refeição e voltem em cerca de 25–30 minutos.",
-        "note": "Sem pressa — aproveitem o tempo conosco!",
-        "soon": "Disponível em cerca de {m} min"
-      },
       "thanks": {
         "title": "Mahalo, ʻOhana!",
-        "text": "Obrigado por estarem conosco no Gateway Buffet esta noite. Foi um prazer atendê-los, e esperamos que tenham aproveitado o tempo conosco.\nFiquem à vontade para relaxar e aproveitar o restante da noite."
+        "text": "Agradecemos por estarem conosco no Gateway Buffet esta noite. Foi um prazer atendê-los, e esperamos que tenham aproveitado o tempo conosco.\nFiquem à vontade para relaxar e aproveitar o restante da noite."
       },
       "review": {
         "title": "Compartilhem sua experiência",
@@ -469,7 +463,13 @@ self.I18N = {
       "server": "Seu garçom esta noite:",
       "end": "Mahalo nui loa",
       "qrNote": "Seu garçom vai mostrar o QR code quando vocês estiverem prontos.",
-      "endNote": "Obrigado por passarem parte do seu dia conosco.\nMahalo nui loa e aproveitem o restante da noite!"
+      "endNote": "Agradecemos por passarem parte do dia conosco.\nMahalo nui loa e aproveitem o restante da noite!",
+      "confirm": {
+        "title": "Já terminaram de comer?",
+        "text": "A seção «Antes de ir» traz o nosso agradecimento e uma forma rápida de deixar a sua opinião. Continuem quando estiverem prontos.",
+        "yes": "Sim, continuar",
+        "no": "Ainda não"
+      }
     },
     "status": {
       "open": "Aberto agora",
@@ -574,7 +574,7 @@ self.I18N = {
           ]
         },
         {
-          "title": "Visite en tram de Lāʻie",
+          "title": "Lāʻie Tram Tour",
           "subtitle": "",
           "text": "Profitez d'une balade panoramique à travers la ville de Lāʻie et le campus de BYU–Hawaii.\nLa visite comprend également un arrêt de 15 minutes dans les jardins du temple de Lāʻie (Hawaï) de l'Église de Jésus-Christ des Saints des Derniers Jours.",
           "chips": [
@@ -586,7 +586,7 @@ self.I18N = {
         {
           "title": "Hawaiian Journey Theater",
           "subtitle": "Le spectacle de couteau de feu de Jeri",
-          "text": "Découvrez l'histoire et la tradition de la danse du couteau de feu avec Jeri, compétiteur de longue date qui a commencé à se produire dès son plus jeune âge.",
+          "text": "Découvrez l'histoire et la tradition de la danse du couteau de feu avec Jeri, qui participe à des compétitions depuis de longues années et se produit sur scène dès le plus jeune âge.",
           "chips": [
             "Toutes les 30 minutes",
             "13 h 30 – 18 h 30",
@@ -606,12 +606,6 @@ self.I18N = {
     },
     "close": {
       "mention": "Si {name} a rendu votre visite spéciale, vous pouvez mentionner {name} en partageant votre expérience.",
-      "ready": "Avant de partir est maintenant disponible.",
-      "locked": {
-        "text": "Cette section sera disponible un peu plus tard pendant votre visite.\nProfitez de votre repas et revenez dans environ 25 à 30 minutes.",
-        "note": "Pas de précipitation — profitez de votre moment avec nous !",
-        "soon": "Disponible dans environ {m} min"
-      },
       "thanks": {
         "title": "Mahalo, ʻOhana !",
         "text": "Merci d'avoir été parmi nous au Gateway Buffet ce soir. Ce fut un plaisir de vous servir, et nous espérons que vous avez passé un agréable moment.\nN'hésitez pas à vous détendre et à profiter du reste de votre soirée."
@@ -627,7 +621,13 @@ self.I18N = {
       "server": "Votre serveur ce soir :",
       "end": "Mahalo nui loa",
       "qrNote": "Votre serveur vous présentera le code QR dès que vous serez prêts.",
-      "endNote": "Merci d'avoir passé une partie de votre journée avec nous.\nMahalo nui loa, et excellente fin de soirée !"
+      "endNote": "Merci d'avoir passé une partie de votre journée avec nous.\nMahalo nui loa, et excellente fin de soirée !",
+      "confirm": {
+        "title": "Vous avez terminé votre repas ?",
+        "text": "« Avant de partir » contient nos remerciements et un moyen rapide de donner votre avis. Continuez quand vous êtes prêts.",
+        "yes": "Oui, continuer",
+        "no": "Pas encore"
+      }
     },
     "status": {
       "open": "Ouvert",
@@ -732,7 +732,7 @@ self.I18N = {
           ]
         },
         {
-          "title": "Lāʻie Tram-Tour",
+          "title": "Lāʻie Tram Tour",
           "subtitle": "",
           "text": "Genießen Sie eine malerische Fahrt durch den Ort Lāʻie und über den Campus der BYU–Hawaii.\nDie Tour umfasst außerdem einen 15-minütigen Halt auf dem Gelände des Lāʻie-Hawaiʻi-Tempels der Kirche Jesu Christi der Heiligen der Letzten Tage.",
           "chips": [
@@ -744,7 +744,7 @@ self.I18N = {
         {
           "title": "Hawaiian Journey Theater",
           "subtitle": "Jeris Feuermesser-Show",
-          "text": "Entdecken Sie die Geschichte und Tradition des Feuermessertanzes mit Jeri, einem langjährigen Feuermesser-Wettkämpfer, der schon in jungen Jahren auftrat.",
+          "text": "Entdecken Sie die Geschichte und Tradition des Feuermessertanzes mit Jeri – seit vielen Jahren im Feuermesser-Wettkampf aktiv und schon in jungen Jahren auf der Bühne.",
           "chips": [
             "Alle 30 Minuten",
             "13:30–18:30 Uhr",
@@ -764,12 +764,6 @@ self.I18N = {
     },
     "close": {
       "mention": "Falls {name} Ihren Besuch zu etwas Besonderem gemacht hat, dürfen Sie {name} gern erwähnen, wenn Sie Ihre Erfahrung teilen.",
-      "ready": "Zum Abschied ist jetzt verfügbar.",
-      "locked": {
-        "text": "Dieser Bereich ist erst etwas später während Ihres Besuchs verfügbar.\nGenießen Sie Ihr Essen und schauen Sie in etwa 25–30 Minuten wieder vorbei.",
-        "note": "Keine Eile — genießen Sie die Zeit bei uns!",
-        "soon": "Verfügbar in etwa {m} Min."
-      },
       "thanks": {
         "title": "Mahalo, ʻOhana!",
         "text": "Vielen Dank, dass Sie heute Abend im Gateway Buffet zu Gast waren. Es war uns eine Freude, Sie zu bedienen, und wir hoffen, Sie haben die Zeit bei uns genossen.\nLehnen Sie sich gerne zurück und genießen Sie den restlichen Abend."
@@ -785,7 +779,13 @@ self.I18N = {
       "server": "Ihre Bedienung heute Abend:",
       "end": "Mahalo nui loa",
       "qrNote": "Ihre Bedienung zeigt Ihnen den QR-Code, sobald Sie bereit sind.",
-      "endNote": "Vielen Dank, dass Sie einen Teil Ihres Tages mit uns verbracht haben.\nMahalo nui loa und noch einen schönen Abend!"
+      "endNote": "Vielen Dank, dass Sie einen Teil Ihres Tages mit uns verbracht haben.\nMahalo nui loa und noch einen schönen Abend!",
+      "confirm": {
+        "title": "Schon fertig mit dem Essen?",
+        "text": "Unter „Zum Abschied“ finden Sie unseren Dank und eine schnelle Möglichkeit, uns Feedback zu geben. Machen Sie weiter, wenn Sie so weit sind.",
+        "yes": "Ja, weiter",
+        "no": "Noch nicht"
+      }
     },
     "status": {
       "open": "Jetzt geöffnet",
@@ -890,7 +890,7 @@ self.I18N = {
           ]
         },
         {
-          "title": "Tramtour door Lāʻie",
+          "title": "Lāʻie Tram Tour",
           "subtitle": "",
           "text": "Geniet van een schilderachtige rit door het stadje Lāʻie en over de campus van BYU–Hawaii.\nDe tour omvat ook een stop van 15 minuten bij het terrein van de Lāʻie Hawaiʻi-tempel van De Kerk van Jezus Christus van de Heiligen der Laatste Dagen.",
           "chips": [
@@ -922,12 +922,6 @@ self.I18N = {
     },
     "close": {
       "mention": "Als {name} uw bezoek bijzonder heeft gemaakt, mag u {name} gerust noemen wanneer u uw ervaring deelt.",
-      "ready": "Tot ziens is nu beschikbaar.",
-      "locked": {
-        "text": "Dit onderdeel wordt iets later tijdens uw bezoek beschikbaar.\nGeniet van uw maaltijd en kijk over ongeveer 25–30 minuten nog eens terug.",
-        "note": "Geen haast — geniet van uw tijd bij ons!",
-        "soon": "Beschikbaar over ongeveer {m} min"
-      },
       "thanks": {
         "title": "Mahalo, ʻOhana!",
         "text": "Hartelijk dank dat u vanavond bij Gateway Buffet te gast was. Het was ons een genoegen u te bedienen, en we hopen dat u van uw tijd bij ons heeft genoten.\nNeemt u gerust de tijd om te ontspannen en te genieten van de rest van uw avond."
@@ -943,7 +937,13 @@ self.I18N = {
       "server": "Uw ober vanavond:",
       "end": "Mahalo nui loa",
       "qrNote": "Uw ober laat u de QR-code zien wanneer u er klaar voor bent.",
-      "endNote": "Hartelijk dank dat u een deel van uw dag met ons heeft doorgebracht.\nMahalo nui loa, en nog een fijne avond!"
+      "endNote": "Hartelijk dank dat u een deel van uw dag met ons heeft doorgebracht.\nMahalo nui loa, en nog een fijne avond!",
+      "confirm": {
+        "title": "Klaar met eten?",
+        "text": "Onder ‘Tot ziens’ vindt u ons dankwoord en een snelle manier om uw mening te geven. Ga verder wanneer u er klaar voor bent.",
+        "yes": "Ja, verder",
+        "no": "Nog niet"
+      }
     },
     "status": {
       "open": "Nu open",
@@ -1048,7 +1048,7 @@ self.I18N = {
           ]
         },
         {
-          "title": "Tour xe điện Lāʻie",
+          "title": "Lāʻie Tram Tour",
           "subtitle": "",
           "text": "Tận hưởng chuyến đi ngắm cảnh qua thị trấn Lāʻie và khuôn viên trường BYU–Hawaii.\nChuyến tham quan còn có điểm dừng 15 phút tại khuôn viên Đền Thờ Lāʻie Hawaiʻi của Giáo Hội Các Thánh Hữu Ngày Sau của Chúa Giê Su Ky Tô.",
           "chips": [
@@ -1068,7 +1068,7 @@ self.I18N = {
           ]
         },
         {
-          "title": "Đại sảnh Danh vọng Bóng bầu dục Polynesia",
+          "title": "Polynesian Football Hall of Fame",
           "subtitle": "",
           "text": "Tham quan phòng trưng bày tôn vinh các huyền thoại bóng bầu dục Mỹ gốc Polynesia với bảng vinh danh, ảnh, kỷ vật, màn hình tương tác và Bức tường Danh dự.\nPhòng nằm ngay đối diện Gateway Buffet, bên trong Trung tâm Chào đón (Welcome Center) của Polynesian Cultural Center.",
           "chips": [
@@ -1080,12 +1080,6 @@ self.I18N = {
     },
     "close": {
       "mention": "Nếu quý khách hài lòng với sự phục vụ của {name}, xin nhắc tên {name} khi chia sẻ trải nghiệm nhé.",
-      "ready": "Mục Trước khi về đã mở.",
-      "locked": {
-        "text": "Phần này sẽ mở sau một lúc nữa trong buổi tham quan của quý khách.\nXin cứ thong thả dùng bữa và quay lại sau khoảng 25–30 phút.",
-        "note": "Không cần vội — chúc quý khách có khoảng thời gian thật vui bên chúng tôi!",
-        "soon": "Mở sau khoảng {m} phút"
-      },
       "thanks": {
         "title": "Mahalo, ʻOhana!",
         "text": "Cảm ơn quý khách đã dùng bữa cùng chúng tôi tại Gateway Buffet tối nay. Chúng tôi rất vui được phục vụ quý khách và hy vọng quý khách đã có một bữa ăn vui vẻ.\nXin quý khách cứ thư giãn và tận hưởng phần còn lại của buổi tối."
@@ -1101,7 +1095,13 @@ self.I18N = {
       "server": "Người phục vụ tối nay:",
       "end": "Mahalo nui loa",
       "qrNote": "Người phục vụ sẽ đưa mã QR khi quý khách sẵn sàng.",
-      "endNote": "Cảm ơn quý khách đã dành một phần thời gian trong ngày cùng chúng tôi.\nMahalo nui loa! Chúc quý khách buổi tối thật vui vẻ!"
+      "endNote": "Cảm ơn quý khách đã dành một phần thời gian trong ngày cùng chúng tôi.\nMahalo nui loa! Chúc quý khách buổi tối thật vui vẻ!",
+      "confirm": {
+        "title": "Quý khách đã dùng bữa xong chưa?",
+        "text": "Mục «Trước khi về» có lời cảm ơn của chúng tôi và cách chia sẻ ý kiến nhanh chóng. Quý khách xem tiếp khi sẵn sàng nhé.",
+        "yes": "Rồi, xem tiếp",
+        "no": "Chưa"
+      }
     },
     "status": {
       "open": "Đang mở",
@@ -1178,7 +1178,7 @@ self.I18N = {
         {
           "id": "charging",
           "title": "充电站",
-          "text": "出口门附近设有配备安全储物柜的手机充电站。\n请按照充电站张贴的说明为设备充电并使用储物柜。"
+          "text": "出口附近设有配备安全储物柜的手机充电站。\n请按照充电站张贴的说明为设备充电并使用储物柜。"
         },
         {
           "id": "coupon",
@@ -1198,15 +1198,15 @@ self.I18N = {
       },
       "items": [
         {
-          "title": "Hukilau 市集",
+          "title": "Hukilau Marketplace",
           "subtitle": "",
-          "text": "在商店关门前，不妨花些时间逛逛 Hukilau 市集，选购礼品、零食、纪念品和当地特色商品。",
+          "text": "在商店关门前，不妨花些时间逛逛 Hukilau Marketplace，选购礼品、零食、纪念品和当地特色商品。",
           "chips": [
             "营业至晚上7:30"
           ]
         },
         {
-          "title": "Lāʻie 游览电车",
+          "title": "Lāʻie Tram Tour",
           "subtitle": "",
           "text": "乘车欣赏 Lāʻie 小镇和杨百翰大学夏威夷分校校园的风光。\n途中还将在耶稣基督后期圣徒教会 Lāʻie 夏威夷圣殿园区停留15分钟。",
           "chips": [
@@ -1216,9 +1216,9 @@ self.I18N = {
           ]
         },
         {
-          "title": "Hawaiian Journey 剧院",
+          "title": "Hawaiian Journey Theater",
           "subtitle": "Jeri 的火刀表演",
-          "text": "跟随资深火刀舞参赛者 Jeri，了解火刀舞的故事与传统。他从小就开始登台表演。",
+          "text": "跟随资深火刀舞参赛者 Jeri，了解火刀舞的故事与传统。Jeri 从小就开始登台表演。",
           "chips": [
             "每30分钟一场",
             "下午1:30–6:30",
@@ -1226,7 +1226,7 @@ self.I18N = {
           ]
         },
         {
-          "title": "波利尼西亚美式橄榄球名人堂",
+          "title": "Polynesian Football Hall of Fame",
           "subtitle": "",
           "text": "参观致敬波利尼西亚美式橄榄球传奇人物的展馆，馆内有纪念牌匾、照片、纪念品、互动展示和荣誉墙。\n展馆就在 Gateway Buffet 对面的 Polynesian Cultural Center 游客中心内。",
           "chips": [
@@ -1238,12 +1238,6 @@ self.I18N = {
     },
     "close": {
       "mention": "如果 {name} 的服务让您满意，欢迎在评价时提到 {name} 的名字。",
-      "ready": "“离开之前”现已开放。",
-      "locked": {
-        "text": "此部分将在您用餐稍晚些时候开放。\n请先享用美食，约 25–30 分钟后再回来看看。",
-        "note": "不着急，请尽情享受与我们共度的时光！",
-        "soon": "约 {m} 分钟后开放"
-      },
       "thanks": {
         "title": "Mahalo，ʻOhana！",
         "text": "感谢您今晚光临 Gateway Buffet，很高兴为您服务，希望您用餐愉快。\n接下来的时间请慢慢休息，祝您今晚愉快。"
@@ -1259,7 +1253,13 @@ self.I18N = {
       "server": "今晚为您服务的是：",
       "end": "Mahalo nui loa",
       "qrNote": "当您准备好时，服务员会为您出示二维码。",
-      "endNote": "感谢您今天与我们共度这段时光。\nMahalo nui loa！祝您晚上愉快！"
+      "endNote": "感谢您今天与我们共度这段时光。\nMahalo nui loa！祝您晚上愉快！",
+      "confirm": {
+        "title": "您用完餐了吗？",
+        "text": "“离开之前”里有我们的感谢，还有快速分享反馈的方式。准备好了再继续吧。",
+        "yes": "是的，继续",
+        "no": "还没有"
+      }
     },
     "status": {
       "open": "开放中",
@@ -1336,7 +1336,7 @@ self.I18N = {
         {
           "id": "charging",
           "title": "充電站",
-          "text": "出口門附近設有附安全置物櫃的手機充電站。\n請依照充電站張貼的說明為裝置充電並使用置物櫃。"
+          "text": "出口附近設有附安全置物櫃的手機充電站。\n請依照充電站張貼的說明為裝置充電並使用置物櫃。"
         },
         {
           "id": "coupon",
@@ -1356,15 +1356,15 @@ self.I18N = {
       },
       "items": [
         {
-          "title": "Hukilau 市集",
+          "title": "Hukilau Marketplace",
           "subtitle": "",
-          "text": "在商店打烊前，不妨花點時間逛逛 Hukilau 市集，選購禮品、零食、紀念品和在地特色商品。",
+          "text": "在商店打烊前，不妨花點時間逛逛 Hukilau Marketplace，選購禮品、零食、紀念品和在地特色商品。",
           "chips": [
             "營業至晚上7:30"
           ]
         },
         {
-          "title": "Lāʻie 遊覽電車",
+          "title": "Lāʻie Tram Tour",
           "subtitle": "",
           "text": "搭車欣賞 Lāʻie 小鎮和楊百翰大學夏威夷分校校園的風光。\n途中還會在耶穌基督後期聖徒教會 Lāʻie 夏威夷聖殿園區停留15分鐘。",
           "chips": [
@@ -1374,9 +1374,9 @@ self.I18N = {
           ]
         },
         {
-          "title": "Hawaiian Journey 劇院",
+          "title": "Hawaiian Journey Theater",
           "subtitle": "Jeri 的火刀表演",
-          "text": "跟隨資深火刀舞參賽者 Jeri，認識火刀舞的故事與傳統。他從小就開始登台表演。",
+          "text": "跟隨資深火刀舞參賽者 Jeri，認識火刀舞的故事與傳統。Jeri 從小就開始登台表演。",
           "chips": [
             "每30分鐘一場",
             "下午1:30–6:30",
@@ -1384,7 +1384,7 @@ self.I18N = {
           ]
         },
         {
-          "title": "玻里尼西亞美式足球名人堂",
+          "title": "Polynesian Football Hall of Fame",
           "subtitle": "",
           "text": "參觀向玻里尼西亞美式足球傳奇人物致敬的展館，館內有紀念牌匾、照片、紀念品、互動展示和榮譽牆。\n展館就在 Gateway Buffet 對面的 Polynesian Cultural Center 遊客中心內。",
           "chips": [
@@ -1396,12 +1396,6 @@ self.I18N = {
     },
     "close": {
       "mention": "如果 {name} 的服務讓您滿意，歡迎在留下評論時提到 {name} 的名字。",
-      "ready": "「離開之前」現已開放。",
-      "locked": {
-        "text": "此部分將在您用餐稍晚些時候開放。\n請先享用美食，約 25–30 分鐘後再回來看看。",
-        "note": "不著急，請盡情享受與我們共度的時光！",
-        "soon": "約 {m} 分鐘後開放"
-      },
       "thanks": {
         "title": "Mahalo，ʻOhana！",
         "text": "感謝您今晚光臨 Gateway Buffet，很高興為您服務，希望您用餐愉快。\n接下來的時間請慢慢休息，祝您今晚愉快。"
@@ -1416,8 +1410,14 @@ self.I18N = {
       },
       "server": "今晚為您服務的是：",
       "end": "Mahalo nui loa",
-      "qrNote": "當您準備好時，服務人員會為您出示QR碼。",
-      "endNote": "感謝您今天與我們共度這段時光。\nMahalo nui loa！祝您有個愉快的夜晚！"
+      "qrNote": "當您準備好時，服務人員會為您出示QR 碼。",
+      "endNote": "感謝您今天與我們共度這段時光。\nMahalo nui loa！祝您有個愉快的夜晚！",
+      "confirm": {
+        "title": "您用完餐了嗎？",
+        "text": "「離開之前」裡有我們的感謝，還有快速分享回饋的方式。準備好了再繼續吧。",
+        "yes": "是的，繼續",
+        "no": "還沒有"
+      }
     },
     "status": {
       "open": "開放中",
@@ -1464,12 +1464,12 @@ self.I18N = {
         {
           "id": "icecream",
           "title": "아이스크림 & Dole 파인애플 소프트아이스크림",
-          "text": "아이스크림 코너는 건물 양쪽에 있습니다.\nDole 파인애플 소프트아이스크림은 하우울라(Hauʻula) 쪽에 있습니다. 도움이 필요하시면 서버에게 말씀해 주세요."
+          "text": "아이스크림 코너는 건물 양쪽에 있습니다.\nDole 파인애플 소프트아이스크림은 하우울라(Hauʻula) 쪽에 있습니다. 도움이 필요하시면 직원에게 말씀해 주세요."
         },
         {
           "id": "plates",
           "title": "접시와 식기류",
-          "text": "접시는 뷔페 구역 곳곳에 준비되어 있습니다.\n새 식기가 필요하시면 서버에게 말씀해 주세요. 기꺼이 가져다 드리겠습니다."
+          "text": "접시는 뷔페 구역 곳곳에 준비되어 있습니다.\n새 식기가 필요하시면 직원에게 말씀해 주세요. 기꺼이 가져다 드리겠습니다."
         },
         {
           "id": "after",
@@ -1479,7 +1479,7 @@ self.I18N = {
         {
           "id": "allergy",
           "title": "식품 알레르기",
-          "text": "식품 알레르기나 식이 관련 문의 사항이 있으시면 {link}알레르기 안내 페이지{/link}에서 재료 목록, 알레르기 정보, 이용 가능한 메뉴를 확인해 주세요."
+          "text": "식품 알레르기나 식이 제한이 있으시면 {link}알레르기 안내 페이지{/link}에서 재료 목록, 알레르기 정보, 이용 가능한 메뉴를 확인해 주세요."
         },
         {
           "id": "restroom",
@@ -1494,12 +1494,12 @@ self.I18N = {
         {
           "id": "charging",
           "title": "충전 스테이션",
-          "text": "출구 근처에 보안 사물함을 갖춘 휴대폰 충전 스테이션이 마련되어 있습니다.\n스테이션에 안내된 방법에 따라 기기를 충전하고 사물함을 이용해 주세요."
+          "text": "출구 근처에 잠금 사물함을 갖춘 휴대폰 충전 스테이션이 마련되어 있습니다.\n스테이션에 안내된 방법에 따라 기기를 충전하고 사물함을 이용해 주세요."
         },
         {
           "id": "coupon",
           "title": "할인 쿠폰",
-          "text": "방문 중 후클라우 마켓플레이스 내 일부 매장에서 사용할 수 있는 할인 쿠폰을 받으실 수 있습니다.\n아직 받지 못하셨다면 담당 서버에게 요청해 주세요."
+          "text": "방문 중 Hukilau Marketplace 내 일부 매장에서 사용할 수 있는 할인 쿠폰을 받으실 수 있습니다.\n아직 받지 못하셨다면 담당 직원에게 요청해 주세요."
         }
       ],
       "foot": "맛있는 식사 되세요!",
@@ -1514,15 +1514,15 @@ self.I18N = {
       },
       "items": [
         {
-          "title": "후클라우 마켓플레이스",
+          "title": "Hukilau Marketplace",
           "subtitle": "",
-          "text": "상점이 문을 닫기 전에 후클라우 마켓플레이스를 둘러보며 선물, 간식, 기념품과 현지 특산품을 만나 보세요.",
+          "text": "상점이 문을 닫기 전에 Hukilau Marketplace를 둘러보며 선물, 간식, 기념품과 현지 특산품을 만나 보세요.",
           "chips": [
             "저녁 7시 30분까지"
           ]
         },
         {
-          "title": "라이에 트램 투어",
+          "title": "Lāʻie Tram Tour",
           "subtitle": "",
           "text": "라이에 마을과 BYU–하와이 캠퍼스를 둘러보는 경치 좋은 트램 투어를 즐겨 보세요.\n투어 중에는 예수 그리스도 후기 성도 교회 라이에 하와이 성전 부지에서 15분간 머무릅니다.",
           "chips": [
@@ -1532,7 +1532,7 @@ self.I18N = {
           ]
         },
         {
-          "title": "하와이안 저니 극장",
+          "title": "Hawaiian Journey Theater",
           "subtitle": "제리의 파이어 나이프 쇼",
           "text": "어린 시절부터 무대에 서 온 베테랑 파이어 나이프 선수 제리와 함께 파이어 나이프 댄스의 이야기와 전통을 만나 보세요.",
           "chips": [
@@ -1542,7 +1542,7 @@ self.I18N = {
           ]
         },
         {
-          "title": "폴리네시안 풋볼 명예의 전당",
+          "title": "Polynesian Football Hall of Fame",
           "subtitle": "",
           "text": "폴리네시아 출신 미식축구 전설들을 기리는 갤러리입니다. 명판, 사진, 기념품, 인터랙티브 전시, 명예의 벽이 있습니다.\nGateway Buffet 바로 맞은편, Polynesian Cultural Center 웰컴 센터 안에 있습니다.",
           "chips": [
@@ -1554,12 +1554,6 @@ self.I18N = {
     },
     "close": {
       "mention": "{name}님의 서비스가 만족스러우셨다면, 후기에 {name}님 이름을 남겨 주세요. 큰 힘이 됩니다.",
-      "ready": "“떠나시기 전에”가 열렸습니다.",
-      "locked": {
-        "text": "이 섹션은 방문 중 조금 뒤에 열립니다.\n식사를 즐기시고 25~30분쯤 지나 다시 확인해 주세요.",
-        "note": "서두르지 마시고, 저희와 함께하는 시간을 즐겨 주세요!",
-        "soon": "약 {m}분 후에 열립니다"
-      },
       "thanks": {
         "title": "Mahalo, ʻOhana!",
         "text": "오늘 저녁 Gateway Buffet를 찾아 주셔서 감사합니다. 모시게 되어 즐거웠고, 좋은 시간 보내셨기를 바랍니다.\n남은 저녁도 편안하게 즐기세요."
@@ -1575,7 +1569,13 @@ self.I18N = {
       "server": "오늘 저녁 담당 직원:",
       "end": "Mahalo nui loa",
       "qrNote": "준비되시면 담당 직원이 QR 코드를 보여 드립니다.",
-      "endNote": "오늘 하루의 소중한 시간을 저희와 함께해 주셔서 감사합니다.\nMahalo nui loa! 즐거운 저녁 보내세요!"
+      "endNote": "오늘 하루의 소중한 시간을 저희와 함께해 주셔서 감사합니다.\nMahalo nui loa! 즐거운 저녁 보내세요!",
+      "confirm": {
+        "title": "식사는 다 하셨나요?",
+        "text": "‘떠나시기 전에’에는 저희의 감사 인사와 간단히 후기를 남기는 방법이 있습니다. 준비되시면 이어서 확인해 주세요.",
+        "yes": "네, 계속 보기",
+        "no": "아직이요"
+      }
     },
     "status": {
       "open": "운영 중",
@@ -1657,7 +1657,7 @@ self.I18N = {
         {
           "id": "coupon",
           "title": "割引クーポン",
-          "text": "ご滞在中、フキラウ・マーケットプレイスの一部のお店で使える割引クーポンをお渡ししていることがあります。\nまだ受け取っていない方は、担当スタッフにお声がけください。"
+          "text": "ご滞在中、Hukilau Marketplaceの一部のお店で使える割引クーポンをお渡ししていることがあります。\nまだ受け取っていない方は、担当スタッフにお声がけください。"
         }
       ],
       "foot": "ごゆっくりどうぞ！",
@@ -1672,7 +1672,7 @@ self.I18N = {
       },
       "items": [
         {
-          "title": "フキラウ・マーケットプレイス",
+          "title": "Hukilau Marketplace",
           "subtitle": "",
           "text": "お店が閉まる前に、お土産やお菓子、記念品、地元ならではの品を見てまわってはいかがでしょう。",
           "chips": [
@@ -1680,7 +1680,7 @@ self.I18N = {
           ]
         },
         {
-          "title": "ライエ・トラムツアー",
+          "title": "Lāʻie Tram Tour",
           "subtitle": "",
           "text": "トラムに乗って、ライエの町とBYUハワイのキャンパスをめぐる、景色のよいツアーです。\n途中、末日聖徒イエス・キリスト教会のライエ・ハワイ神殿の敷地に15分ほど立ち寄ります。",
           "chips": [
@@ -1690,7 +1690,7 @@ self.I18N = {
           ]
         },
         {
-          "title": "ハワイアン・ジャーニー・シアター",
+          "title": "Hawaiian Journey Theater",
           "subtitle": "ジェリのファイヤーナイフショー",
           "text": "小さい頃から舞台に立ち、長年ファイヤーナイフの競技に出てきたジェリが、ファイヤーナイフダンスの物語と伝統を紹介します。",
           "chips": [
@@ -1700,7 +1700,7 @@ self.I18N = {
           ]
         },
         {
-          "title": "ポリネシアン・フットボール殿堂",
+          "title": "Polynesian Football Hall of Fame",
           "subtitle": "",
           "text": "ポリネシア出身のアメリカンフットボールの名選手たちをたたえるギャラリーです。記念プレートや写真、記念品、体験型の展示、栄誉の壁があります。\nGateway Buffetのすぐ向かい、Polynesian Cultural Centerのウェルカムセンター内にあります。",
           "chips": [
@@ -1712,12 +1712,6 @@ self.I18N = {
     },
     "close": {
       "mention": "{name}の接客を気に入っていただけたら、口コミを書くときに{name}の名前を入れてもらえると、とても励みになります。",
-      "ready": "「お帰りの前に」が開きました。",
-      "locked": {
-        "text": "このページは、ご来店からしばらくしてから開きます。\nお食事を楽しんだあと、25〜30分ほどしてからもう一度のぞいてみてください。",
-        "note": "お急ぎでなければ、ごゆっくりどうぞ！",
-        "soon": "あと約{m}分で開きます"
-      },
       "thanks": {
         "title": "Mahalo、ʻOhana！",
         "text": "今夜はGateway Buffetにお越しいただき、ありがとうございました。お楽しみいただけましたか？\nこのあとも、どうぞごゆっくりお過ごしください。"
@@ -1733,7 +1727,13 @@ self.I18N = {
       "server": "本日の担当：",
       "end": "Mahalo nui loa",
       "qrNote": "準備ができたら、スタッフがQRコードをお見せします。",
-      "endNote": "今日のひとときをご一緒できて、うれしかったです。\nMahalo nui loa！素敵な夜をお過ごしください！"
+      "endNote": "今日のひとときをご一緒できて、うれしかったです。\nMahalo nui loa！素敵な夜をお過ごしください！",
+      "confirm": {
+        "title": "お食事はお済みですか？",
+        "text": "「お帰りの前に」には、お礼のごあいさつと、ご感想を送る方法がのっています。よろしければお進みください。",
+        "yes": "はい、進みます",
+        "no": "まだです"
+      }
     },
     "status": {
       "open": "営業中",
@@ -1753,10 +1753,10 @@ self.I18N = {
     "greet": "Aloha! Velkommen",
     "qr": "Scan for at åbne guiden på jeres telefon",
     "busy": {
-      "title": "Aloha! Tak for din tålmodighed",
+      "title": "Aloha! Tak for jeres tålmodighed",
       "p1": "Vi byder lige nu mange gæster velkommen, så det kan tage lidt længere end normalt at få anvist en plads.",
-      "p2": "Vores team kommer til dig, så snart det er muligt. Du er velkommen til at kigge i vores gæsteguide i mellemtiden og finde flere ting at nyde under dit besøg.",
-      "p3": "Mahalo for din tålmodighed og forståelse. Vi glæder os til at betjene dig!",
+      "p2": "Vores team kommer til jer, så snart det er muligt. I er velkomne til at kigge i vores gæsteguide i mellemtiden og finde flere ting at nyde under jeres besøg.",
+      "p3": "Mahalo for jeres tålmodighed og forståelse. Vi glæder os til at betjene jer!",
       "ok": "Se guiden"
     },
     "tabs": {
@@ -1838,7 +1838,7 @@ self.I18N = {
           ]
         },
         {
-          "title": "Tramtur i Lāʻie",
+          "title": "Lāʻie Tram Tour",
           "subtitle": "",
           "text": "Nyd en naturskøn tur gennem byen Lāʻie og BYU–Hawaii-campusset.\nTuren omfatter også et stop på 15 minutter ved området omkring Lāʻie Hawaiʻi-templet, som tilhører Jesu Kristi Kirke af Sidste Dages Hellige.",
           "chips": [
@@ -1870,12 +1870,6 @@ self.I18N = {
     },
     "close": {
       "mention": "Hvis {name} gjorde jeres besøg ekstra specielt, er I velkomne til at nævne {name}, når I deler jeres oplevelse.",
-      "ready": "Inden I går er nu tilgængeligt.",
-      "locked": {
-        "text": "Dette afsnit bliver tilgængeligt lidt senere under jeres besøg.\nNyd jeres måltid, og kig forbi igen om cirka 25–30 minutter.",
-        "note": "Ingen hast — nyd tiden hos os!",
-        "soon": "Tilgængeligt om cirka {m} min."
-      },
       "thanks": {
         "title": "Mahalo, ʻOhana!",
         "text": "Tak, fordi I var gæster hos os på Gateway Buffet i aften. Det har været en fornøjelse at betjene jer, og vi håber, I har nydt tiden hos os.\nSlap endelig af, og nyd resten af aftenen."
@@ -1891,7 +1885,13 @@ self.I18N = {
       "server": "Jeres tjener i aften:",
       "end": "Mahalo nui loa",
       "qrNote": "Jeres tjener viser jer QR-koden, når I er klar.",
-      "endNote": "Tak, fordi I tilbragte en del af jeres dag med os.\nMahalo nui loa, og hav en dejlig aften!"
+      "endNote": "Tak, fordi I tilbragte en del af jeres dag med os.\nMahalo nui loa, og hav en dejlig aften!",
+      "confirm": {
+        "title": "Er I færdige med at spise?",
+        "text": "Under «Inden I går» finder I vores tak og en hurtig måde at give feedback på. Fortsæt, når I er klar.",
+        "yes": "Ja, fortsæt",
+        "no": "Ikke endnu"
+      }
     },
     "status": {
       "open": "Åbent nu",
@@ -1914,7 +1914,7 @@ self.I18N = {
       "title": "Алоха! Хвала на стрпљењу",
       "p1": "Тренутно дочекујемо много гостију, па распоређивање за столове може потрајати нешто дуже него обично.",
       "p2": "Наш тим ће се посветити вама што пре. У међувремену, слободно погледајте наш водич за госте и откријте још ствари у којима можете уживати током посете.",
-      "p3": "Махало на стрпљењу и разумевању. Радујемо се што ћемо вас послужити!",
+      "p3": "Махало за стрпљење и разумевање. Радујемо се што ћемо вас послужити!",
       "ok": "Погледајте водич"
     },
     "tabs": {
@@ -1996,7 +1996,7 @@ self.I18N = {
           ]
         },
         {
-          "title": "Обилазак места Lāʻie трамвајем",
+          "title": "Lāʻie Tram Tour",
           "subtitle": "",
           "text": "Уживајте у живописној вожњи кроз градић Lāʻie и кампус BYU–Hawaii.\nОбилазак укључује и паузу од 15 минута у дворишту храма Lāʻie Hawaiʻi Цркве Исуса Христа светаца последњих дана.",
           "chips": [
@@ -2007,8 +2007,8 @@ self.I18N = {
         },
         {
           "title": "Hawaiian Journey Theater",
-          "subtitle": "Џеријева представа са ватреним ножем",
-          "text": "Откријте причу и традицију плеса са ватреним ножем кроз Џерија, дугогодишњег такмичара који је почео да наступа још као дечак.",
+          "subtitle": "Представа са ватреним ножем: Џери",
+          "text": "Откријте причу и традицију плеса са ватреним ножем. Џери се годинама такмичи у том плесу и наступа још од ране младости.",
           "chips": [
             "Сваких 30 минута",
             "13:30–18:30",
@@ -2028,12 +2028,6 @@ self.I18N = {
     },
     "close": {
       "mention": "Ако вам је посета била посебна захваљујући особи {name}, слободно поменујте {name} када будете делили своје искуство.",
-      "ready": "„Пре одласка“ је сада доступно.",
-      "locked": {
-        "text": "Овај одељак ће бити доступан нешто касније током ваше посете.\nУживајте у оброку и навратите се за отприлике 25–30 минута.",
-        "note": "Без журбе — уживајте у времену са нама!",
-        "soon": "Доступно за отприлике {m} мин"
-      },
       "thanks": {
         "title": "Mahalo, ʻOhana!",
         "text": "Хвала вам што сте вечерас били наши гости у Gateway Buffet. Било нам је задовољство да вас услужимо и надамо се да сте уживали у времену проведеном са нама.\nСлободно се опустите и уживајте у остатку вечери."
@@ -2049,7 +2043,13 @@ self.I18N = {
       "server": "Ваш конобар вечерас:",
       "end": "Mahalo nui loa",
       "qrNote": "Ваш конобар ће вам показати QR код када будете спремни.",
-      "endNote": "Хвала вам што сте део свог дана провели са нама.\nMahalo nui loa и пријатно вече!"
+      "endNote": "Хвала вам што сте део свог дана провели са нама.\nMahalo nui loa и пријатно вече!",
+      "confirm": {
+        "title": "Да ли сте завршили са јелом?",
+        "text": "У делу „Пре одласка“ налази се наша захвалница и брз начин да оставите утисак. Наставите када будете спремни.",
+        "yes": "Да, наставите",
+        "no": "Још не"
+      }
     },
     "status": {
       "open": "Отворено",
@@ -2155,7 +2155,7 @@ self.I18N = {
           ]
         },
         {
-          "title": "جولة الترام في Lāʻie",
+          "title": "Lāʻie Tram Tour",
           "subtitle": "",
           "text": "استمتعوا بجولة ذات مناظر خلابة عبر بلدة Lāʻie وحرم جامعة BYU–Hawaii.\nوتتضمن الجولة أيضاً توقفاً لمدة 15 دقيقة في حدائق معبد Lāʻie في هاواي التابع لكنيسة يسوع المسيح لقديسي الأيام الأخيرة.",
           "chips": [
@@ -2167,7 +2167,7 @@ self.I18N = {
         {
           "title": "Hawaiian Journey Theater",
           "subtitle": "عرض السكين النارية مع جيري",
-          "text": "اكتشفوا قصة رقصة السكين النارية وتقاليدها مع جيري، المتسابق المخضرم في السكين النارية الذي بدأ تقديم العروض منذ صغره.",
+          "text": "اكتشفوا قصة رقصة السكين النارية وتقاليدها في عرض جيري، بخبرة سنوات طويلة من المنافسة والعروض منذ سن مبكرة.",
           "chips": [
             "كل 30 دقيقة",
             "1:30–6:30 مساءً",
@@ -2187,12 +2187,6 @@ self.I18N = {
     },
     "close": {
       "mention": "إذا ساهم {name} في جعل زيارتكم مميزة، يمكنكم ذكر {name} عند مشاركة تجربتكم.",
-      "ready": "قسم «قبل المغادرة» متاح الآن.",
-      "locked": {
-        "text": "سيتوفر هذا القسم بعد قليل خلال زيارتكم.\nاستمتعوا بوجبتكم وعاودوا الاطلاع بعد نحو 25–30 دقيقة.",
-        "note": "لا داعي للعجلة — استمتعوا بوقتكم معنا!",
-        "soon": "يتوفر بعد نحو {m} دقيقة"
-      },
       "thanks": {
         "title": "Mahalo, ʻOhana!",
         "text": "شكراً لانضمامكم إلينا في Gateway Buffet هذا المساء. لقد كان من دواعي سرورنا خدمتكم، ونأمل أن تكونوا قد استمتعتم بوقتكم معنا.\nتفضّلوا بالاسترخاء والاستمتاع ببقية أمسيتكم."
@@ -2208,7 +2202,13 @@ self.I18N = {
       "server": "النادل الذي يخدمكم الليلة:",
       "end": "Mahalo nui loa",
       "qrNote": "سيعرض عليكم النادل رمز QR متى كنتم مستعدين.",
-      "endNote": "شكراً لقضائكم جزءاً من يومكم معنا.\nMahalo nui loa، ونتمنى لكم أمسية سعيدة!"
+      "endNote": "شكراً لقضائكم جزءاً من يومكم معنا.\nMahalo nui loa، ونتمنى لكم أمسية سعيدة!",
+      "confirm": {
+        "title": "هل انتهيتم من الطعام؟",
+        "text": "في قسم «قبل المغادرة» كلمة شكر منا وطريقة سريعة لمشاركة رأيكم. تابعوا متى ما كنتم مستعدين.",
+        "yes": "نعم، متابعة",
+        "no": "ليس بعد"
+      }
     },
     "status": {
       "open": "مفتوح الآن",
@@ -2230,7 +2230,7 @@ self.I18N = {
     "busy": {
       "title": "Aloha! Grazie per la vostra pazienza",
       "p1": "In questo momento stiamo accogliendo molti ospiti, quindi l'assegnazione dei tavoli potrebbe richiedere un po' più tempo del solito.",
-      "p2": "Il nostro team sarà da voi il prima possibile. Nel frattempo, sentitevi liberi di sfogliare la nostra Guida per gli ospiti e scoprire altre cose da gustare durante la vostra visita.",
+      "p2": "Il nostro team sarà da voi il prima possibile. Nel frattempo, sentitevi liberi di sfogliare la nostra Guida per gli ospiti e scoprire altre idee per godervi al meglio la visita.",
       "p3": "Mahalo per la pazienza e la comprensione. Non vediamo l'ora di servirvi!",
       "ok": "Scopri la guida"
     },
@@ -2313,7 +2313,7 @@ self.I18N = {
           ]
         },
         {
-          "title": "Giro in tram di Lāʻie",
+          "title": "Lāʻie Tram Tour",
           "subtitle": "",
           "text": "Godetevi un giro panoramico attraverso la cittadina di Lāʻie e il campus della BYU–Hawaii.\nIl tour include anche una sosta di 15 minuti nei giardini del Tempio di Lāʻie, Hawaiʻi, della Chiesa di Gesù Cristo dei Santi degli Ultimi Giorni.",
           "chips": [
@@ -2325,7 +2325,7 @@ self.I18N = {
         {
           "title": "Hawaiian Journey Theater",
           "subtitle": "Lo spettacolo del coltello di fuoco di Jeri",
-          "text": "Scoprite la storia e la tradizione della danza del coltello di fuoco attraverso Jeri, concorrente di lunga esperienza che ha iniziato a esibirsi fin da giovanissimo.",
+          "text": "Scoprite la storia e la tradizione della danza del coltello di fuoco con Jeri, da molti anni protagonista delle gare di coltello di fuoco, che ha iniziato a esibirsi in tenera età.",
           "chips": [
             "Ogni 30 minuti",
             "13:30–18:30",
@@ -2345,12 +2345,6 @@ self.I18N = {
     },
     "close": {
       "mention": "Se {name} ha reso speciale la vostra visita, potete menzionare {name} quando condividete la vostra esperienza.",
-      "ready": "Prima di andare è ora disponibile.",
-      "locked": {
-        "text": "Questa sezione sarà disponibile un po' più tardi durante la vostra visita.\nGoditevi il pasto e ripassate tra circa 25–30 minuti.",
-        "note": "Nessuna fretta — godetevi il tempo con noi!",
-        "soon": "Disponibile tra circa {m} min"
-      },
       "thanks": {
         "title": "Mahalo, ʻOhana!",
         "text": "Grazie per essere stati con noi al Gateway Buffet questa sera. È stato un piacere servirvi e speriamo che abbiate trascorso un piacevole momento.\nRilassatevi pure e godetevi il resto della serata."
@@ -2366,7 +2360,13 @@ self.I18N = {
       "server": "Il vostro cameriere stasera:",
       "end": "Mahalo nui loa",
       "qrNote": "Il vostro cameriere vi mostrerà il codice QR quando sarete pronti.",
-      "endNote": "Grazie per aver trascorso parte della vostra giornata con noi.\nMahalo nui loa e buona serata!"
+      "endNote": "Grazie per aver trascorso parte della vostra giornata con noi.\nMahalo nui loa e buona serata!",
+      "confirm": {
+        "title": "Avete finito di mangiare?",
+        "text": "In «Prima di andare» trovate il nostro ringraziamento e un modo rapido per lasciare la vostra opinione. Proseguite quando siete pronti.",
+        "yes": "Sì, prosegui",
+        "no": "Non ancora"
+      }
     },
     "status": {
       "open": "Aperto ora",
@@ -2398,17 +2398,17 @@ self.I18N = {
       "close": "ก่อนกลับ"
     },
     "guide": {
-      "server": "พนักงานเสิร์ฟของท่านวันนี้:",
+      "server": "พนักงานที่ดูแลคุณวันนี้:",
       "items": [
         {
           "id": "self",
           "title": "บุฟเฟต์แบบบริการตนเอง",
-          "text": "ที่นี่เป็นบุฟเฟต์แบบบริการตนเอง เชิญรับประทานอาหารได้ตามต้องการ และขอให้ท่านเพลิดเพลินกับมื้ออาหาร"
+          "text": "ที่นี่เป็นบุฟเฟต์แบบบริการตนเอง เชิญตักอาหารได้ตามสบาย ขอให้เพลิดเพลินกับมื้ออาหาร"
         },
         {
           "id": "buffet",
           "title": "โซนบุฟเฟต์และรายการอาหาร",
-          "text": "บุฟเฟต์จัดแบ่งเป็นโซนตามประเภทอาหาร ท่านสามารถเริ่มจากโซนใดก็ได้ตามต้องการ\nมีอาหารให้เลือก เช่น เมนูสำหรับเด็ก สเต๊กเซอร์ลอยน์ เนื้อสัตว์หลากหลายชนิด ไก่ ซาชิมิปลาทูน่า (อาฮิ) โปเกะ อาหารทะเล ผัก ข้าว สลัด และของหวาน\nจุดบริการเครื่องดื่มอยู่ทั้งสองฝั่งของอาคาร ส่วนจานวางอยู่ใต้ไลน์บุฟเฟต์หลักและบริเวณสลัดและของหวาน"
+          "text": "บุฟเฟต์จัดแบ่งเป็นโซนตามประเภทอาหาร คุณสามารถเริ่มจากโซนใดก็ได้ตามต้องการ\nมีอาหารให้เลือก เช่น เมนูสำหรับเด็ก สเต๊กเซอร์ลอยน์ เนื้อสัตว์หลากหลายชนิด ไก่ ซาชิมิปลาทูน่า (อาฮิ) โปเกะ อาหารทะเล ผัก ข้าว สลัด และของหวาน\nจุดบริการเครื่องดื่มอยู่ทั้งสองฝั่งของอาคาร ส่วนจานวางอยู่ใต้ไลน์บุฟเฟต์หลักและบริเวณสลัดและของหวาน"
         },
         {
           "id": "icecream",
@@ -2418,7 +2418,7 @@ self.I18N = {
         {
           "id": "plates",
           "title": "จานและช้อนส้อม",
-          "text": "มีจานให้บริการทั่วบริเวณบุฟเฟต์\nหากต้องการช้อนส้อมชุดใหม่ กรุณาแจ้งพนักงานเสิร์ฟ เรายินดีนำมาให้ท่าน"
+          "text": "มีจานให้บริการทั่วบริเวณบุฟเฟต์\nหากต้องการช้อนส้อมชุดใหม่ กรุณาแจ้งพนักงานเสิร์ฟ เรายินดีนำมาให้คุณ"
         },
         {
           "id": "after",
@@ -2428,17 +2428,17 @@ self.I18N = {
         {
           "id": "allergy",
           "title": "การแพ้อาหาร",
-          "text": "หากท่านมีอาการแพ้อาหารหรือมีข้อจำกัดด้านอาหาร กรุณา{link}ดูคู่มือข้อมูลสารก่อภูมิแพ้{/link} เพื่อดูรายการส่วนผสม ข้อมูลสารก่อภูมิแพ้ และตัวเลือกที่มีให้บริการ"
+          "text": "หากคุณมีอาการแพ้อาหารหรือมีข้อจำกัดด้านอาหาร กรุณา{link}ดูคู่มือข้อมูลสารก่อภูมิแพ้{/link} เพื่อดูรายการส่วนผสม ข้อมูลสารก่อภูมิแพ้ และตัวเลือกที่มีให้บริการ"
         },
         {
           "id": "restroom",
           "title": "ห้องน้ำ",
-          "text": "ห้องน้ำอยู่อีกฝั่งหนึ่งของอาคาร ห้องน้ำหญิงอยู่ทางซ้าย และห้องน้ำชายอยู่ทางขวา\nหากท่านต้องการออกไปด้านนอกชั่วคราว กรุณาประทับตราที่มือก่อนออก เพื่อให้สามารถกลับเข้ามาได้"
+          "text": "ห้องน้ำอยู่อีกฝั่งหนึ่งของอาคาร ห้องน้ำหญิงอยู่ทางซ้าย และห้องน้ำชายอยู่ทางขวา\nหากคุณต้องการออกไปด้านนอกชั่วคราว กรุณาประทับตราที่มือก่อนออก เพื่อให้สามารถกลับเข้ามาได้"
         },
         {
           "id": "robot",
           "title": "หุ่นยนต์เสิร์ฟอาหาร",
-          "text": "เพื่อความปลอดภัยของท่าน กรุณาอย่าสัมผัสหุ่นยนต์เสิร์ฟอาหาร หรือวางจานหรือสิ่งของอื่นไว้บนหุ่นยนต์\nพนักงานของเราจะเก็บจานที่ใช้แล้วจากโต๊ะของท่าน"
+          "text": "เพื่อความปลอดภัยของคุณ กรุณาอย่าสัมผัสหุ่นยนต์เสิร์ฟอาหาร หรือวางจานหรือสิ่งของอื่นไว้บนหุ่นยนต์\nพนักงานของเราจะเก็บจานที่ใช้แล้วจากโต๊ะของคุณ"
         },
         {
           "id": "charging",
@@ -2448,18 +2448,18 @@ self.I18N = {
         {
           "id": "coupon",
           "title": "คูปองส่วนลด",
-          "text": "ระหว่างการเยี่ยมชม ท่านอาจได้รับคูปองส่วนลดสำหรับร้านค้าที่ร่วมรายการใน Hukilau Marketplace\nหากท่านยังไม่ได้รับ กรุณาสอบถามพนักงานเสิร์ฟของท่าน"
+          "text": "ระหว่างการเยี่ยมชม คุณอาจได้รับคูปองส่วนลดสำหรับร้านค้าที่ร่วมรายการใน Hukilau Marketplace\nหากคุณยังไม่ได้รับ กรุณาสอบถามพนักงานเสิร์ฟของคุณ"
         }
       ],
       "foot": "ขอให้อร่อยกับมื้ออาหาร!",
-      "footNote": "หวังว่าท่านจะมีช่วงเวลาที่ดีกับเราที่ Gateway Buffet"
+      "footNote": "หวังว่าคุณจะมีช่วงเวลาที่ดีกับเราที่ Gateway Buffet"
     },
     "acts": {
       "head": "ก่อนเริ่มการแสดง",
       "foot": "ขอให้เพลิดเพลินกับช่วงเวลานี้",
       "show": {
         "title": "การแสดงภาคค่ำ",
-        "text": "ท่านจะไปชมการแสดงภาคค่ำคืนนี้หรือไม่? การแสดงเริ่มเวลา {start} น. ช่วงค่ำ และประตูเปิดเวลา {gates} น.\nหากท่านมีที่นั่งที่กำหนดไว้แล้ว กรุณามาถึงก่อนเวลาเพื่อให้มีเวลานั่งได้อย่างสบาย หากท่านยังไม่มีที่นั่งที่กำหนด เจ้าหน้าที่นำที่นั่งของเรายินดีให้ความช่วยเหลือ\nโรงละครอยู่ห่างจาก Gateway Buffet โดยเดินประมาณ 5–7 นาที"
+        "text": "คุณจะไปชมการแสดงภาคค่ำคืนนี้หรือไม่? การแสดงเริ่มเวลา {start} น. ช่วงค่ำ และประตูเปิดเวลา {gates} น.\nหากคุณมีที่นั่งที่กำหนดไว้แล้ว กรุณามาถึงก่อนเวลาเพื่อให้มีเวลานั่งได้อย่างสบาย หากคุณยังไม่มีที่นั่งที่กำหนด พนักงานนำที่นั่งของเรายินดีให้ความช่วยเหลือ\nโรงละครอยู่ห่างจาก Gateway Buffet โดยเดินประมาณ 5–7 นาที"
       },
       "items": [
         {
@@ -2471,7 +2471,7 @@ self.I18N = {
           ]
         },
         {
-          "title": "ทัวร์รถรางเมืองลาอิเอ (Lāʻie)",
+          "title": "Lāʻie Tram Tour",
           "subtitle": "",
           "text": "เพลิดเพลินกับการนั่งรถรางชมทิวทัศน์ผ่านเมืองลาอิเอ (Lāʻie) และวิทยาเขต BYU–Hawaii\nทัวร์นี้ยังแวะชมบริเวณพระวิหารลาอิเอ ฮาวาย ของศาสนจักรของพระเยซูคริสต์แห่งวิสุทธิชนยุคสุดท้ายเป็นเวลา 15 นาที",
           "chips": [
@@ -2503,28 +2503,28 @@ self.I18N = {
     },
     "close": {
       "mention": "ถ้าคุณพอใจกับบริการของคุณ {name} เอ่ยชื่อคุณ {name} ตอนเขียนรีวิวได้เลย เป็นกำลังใจให้ทีมงานมาก",
-      "ready": "ส่วน “ก่อนกลับ” เปิดให้ดูแล้ว",
-      "locked": {
-        "text": "ส่วนนี้จะเปิดให้ดูในอีกสักครู่ระหว่างที่คุณอยู่กับเรา\nเชิญเพลิดเพลินกับมื้ออาหาร แล้วกลับมาดูอีกครั้งในอีกประมาณ 25–30 นาที",
-        "note": "ไม่ต้องรีบ — ขอให้มีความสุขกับเวลาของคุณที่นี่!",
-        "soon": "เปิดในอีกประมาณ {m} นาที"
-      },
       "thanks": {
         "title": "Mahalo, ʻOhana!",
         "text": "ขอบคุณที่มาทานอาหารกับเราที่ Gateway Buffet คืนนี้ ดีใจที่ได้ดูแลคุณ หวังว่าคุณจะมีความสุขกับมื้อนี้\nเชิญพักผ่อนและเพลิดเพลินกับช่วงเวลาที่เหลือของคืนนี้ได้เลย"
       },
       "review": {
-        "title": "แบ่งปันประสบการณ์ของท่าน",
+        "title": "แบ่งปันประสบการณ์ของคุณ",
         "text": "ถ้ามีเวลา อยากฟังประสบการณ์ของคุณที่ Polynesian Cultural Center\nพนักงานจะนำคิวอาร์โค้ดมาให้ แค่สแกนแล้วแตะ TripAdvisor เพื่อบอกเล่าความประทับใจเรื่องอาหาร พนักงาน หมู่บ้านต่าง ๆ บุฟเฟต์ หรือการแสดงภาคค่ำ\nความเห็นของคุณช่วยให้ทีมงานพัฒนาต่อไปได้ ขอบคุณที่สละเวลา"
       },
       "survey": {
-        "title": "ข้อมูลสำหรับภายหลัง",
-        "text": "ประมาณหนึ่งสัปดาห์หลังการเยี่ยมชม ผู้ที่ซื้อบัตรอาจได้รับแบบสอบถามสั้น ๆ ทางอีเมลจาก Polynesian Cultural Center เกี่ยวกับประสบการณ์โดยรวม\nหากท่านได้รับ เราจะขอบคุณเป็นอย่างยิ่งหากท่านสละเวลาสักครู่เพื่อแบ่งปันความคิดเห็นในแบบสอบถามนั้นด้วย"
+        "title": "แจ้งให้ทราบ",
+        "text": "ประมาณหนึ่งสัปดาห์หลังการเยี่ยมชม ผู้ที่ซื้อบัตรอาจได้รับแบบสอบถามสั้น ๆ ทางอีเมลจาก Polynesian Cultural Center เกี่ยวกับประสบการณ์โดยรวม\nหากคุณได้รับ เราจะขอบคุณเป็นอย่างยิ่งหากคุณสละเวลาสักครู่เพื่อแบ่งปันความคิดเห็นในแบบสอบถามนั้นด้วย"
       },
-      "server": "พนักงานเสิร์ฟของท่านในค่ำคืนนี้:",
+      "server": "พนักงานที่ดูแลคุณคืนนี้:",
       "end": "Mahalo nui loa",
-      "qrNote": "พนักงานเสิร์ฟจะนำคิวอาร์โค้ดมาให้เมื่อท่านพร้อม",
-      "endNote": "ขอบคุณที่ใช้เวลาส่วนหนึ่งของวันกับเรา\nMahalo nui loa ขอให้ท่านมีค่ำคืนที่แสนสุข!"
+      "qrNote": "พนักงานเสิร์ฟจะนำคิวอาร์โค้ดมาให้เมื่อคุณพร้อม",
+      "endNote": "ขอบคุณที่ใช้เวลาส่วนหนึ่งของวันกับเรา\nMahalo nui loa ขอให้คุณมีค่ำคืนที่แสนสุข!",
+      "confirm": {
+        "title": "ทานอาหารเสร็จแล้วหรือยัง",
+        "text": "ส่วน “ก่อนกลับ” มีคำขอบคุณจากเรา และช่องทางบอกความเห็นแบบรวดเร็ว ไปต่อได้เมื่อคุณพร้อม",
+        "yes": "เสร็จแล้ว ไปต่อ",
+        "no": "ยังไม่เสร็จ"
+      }
     },
     "status": {
       "open": "เปิดอยู่",
@@ -2629,7 +2629,7 @@ self.I18N = {
           ]
         },
         {
-          "title": "Экскурсия на трамвае по Lāʻie",
+          "title": "Lāʻie Tram Tour",
           "subtitle": "",
           "text": "Насладитесь живописной поездкой по городку Lāʻie и кампусу BYU–Hawaii.\nВ программу входит 15-минутная остановка на территории храма Lāʻie Hawaiʻi Церкви Иисуса Христа Святых последних дней.",
           "chips": [
@@ -2641,7 +2641,7 @@ self.I18N = {
         {
           "title": "Hawaiian Journey Theater",
           "subtitle": "Шоу огненного ножа с Джери",
-          "text": "Узнайте историю и традиции танца с огненным ножом вместе с Джери — многолетним участником соревнований, начавшим выступать с юных лет.",
+          "text": "Узнайте историю и традиции танца с огненным ножом на шоу Джери — за плечами многолетний опыт соревнований и выступлений с юных лет.",
           "chips": [
             "Каждые 30 минут",
             "13:30–18:30",
@@ -2661,12 +2661,6 @@ self.I18N = {
     },
     "close": {
       "mention": "Если вам понравилось обслуживание {name}, будем рады, если вы упомяните {name} в отзыве.",
-      "ready": "Раздел «Перед уходом» теперь открыт.",
-      "locked": {
-        "text": "Этот раздел откроется чуть позже во время вашего визита.\nПриятного аппетита! Загляните сюда примерно через 25–30 минут.",
-        "note": "Не спешите — наслаждайтесь временем у нас!",
-        "soon": "Откроется примерно через {m} мин"
-      },
       "thanks": {
         "title": "Махало, ʻOhana!",
         "text": "Благодарим, что выбрали Gateway Buffet сегодня вечером. Нам было приятно вас обслуживать, и мы надеемся, что вам понравилось.\nОтдыхайте и наслаждайтесь остатком вечера."
@@ -2682,7 +2676,13 @@ self.I18N = {
       "server": "Ваш официант сегодня вечером:",
       "end": "Махало нуи лоа",
       "qrNote": "Ваш официант покажет QR-код, когда вы будете готовы.",
-      "endNote": "Спасибо, что провели с нами часть своего дня.\nМахало нуи лоа, и приятного вечера!"
+      "endNote": "Спасибо, что провели с нами часть своего дня.\nМахало нуи лоа, и приятного вечера!",
+      "confirm": {
+        "title": "Вы уже поели?",
+        "text": "В разделе «Перед уходом» — наша благодарность и быстрый способ оставить отзыв. Переходите, когда будете готовы.",
+        "yes": "Да, продолжить",
+        "no": "Ещё нет"
+      }
     },
     "status": {
       "open": "Открыто",
@@ -2714,7 +2714,7 @@ self.I18N = {
       "close": "जाने से पहले"
     },
     "guide": {
-      "server": "आज आपके सर्वर:",
+      "server": "आज आपके वेटर:",
       "items": [
         {
           "id": "self",
@@ -2729,12 +2729,12 @@ self.I18N = {
         {
           "id": "icecream",
           "title": "आइसक्रीम और डोल पाइनएपल सॉफ़्ट सर्व",
-          "text": "आइसक्रीम स्टेशन इमारत के दोनों ओर उपलब्ध हैं।\nडोल पाइनएपल सॉफ़्ट सर्व Hauʻula वाली ओर मिलता है। कृपया सर्वर से मदद लें।"
+          "text": "आइसक्रीम स्टेशन इमारत के दोनों ओर उपलब्ध हैं।\nडोल पाइनएपल सॉफ़्ट सर्व Hauʻula वाली ओर मिलता है। कृपया वेटर से मदद लें।"
         },
         {
           "id": "plates",
           "title": "प्लेटें और कटलरी",
-          "text": "प्लेटें पूरे बफ़े क्षेत्र में उपलब्ध हैं।\nयदि आपको कटलरी का नया सेट चाहिए, तो कृपया हमारे किसी सर्वर से कहें, वे ख़ुशी से ला देंगे।"
+          "text": "प्लेटें पूरे बफ़े क्षेत्र में उपलब्ध हैं।\nयदि आपको कटलरी का नया सेट चाहिए, तो कृपया हमारे किसी वेटर से कहें, वे ख़ुशी से ला देंगे।"
         },
         {
           "id": "after",
@@ -2764,7 +2764,7 @@ self.I18N = {
         {
           "id": "coupon",
           "title": "डिस्काउंट कूपन",
-          "text": "आपकी यात्रा के दौरान Hukilau Marketplace की चुनिंदा दुकानों के डिस्काउंट कूपन उपलब्ध हो सकते हैं।\nयदि आपको कूपन नहीं मिला है, तो कृपया अपने सर्वर से पूछें।"
+          "text": "आपकी यात्रा के दौरान Hukilau Marketplace की चुनिंदा दुकानों के डिस्काउंट कूपन उपलब्ध हो सकते हैं।\nयदि आपको कूपन नहीं मिला है, तो कृपया अपने वेटर से पूछें।"
         }
       ],
       "foot": "भोजन का आनंद लें!",
@@ -2787,7 +2787,7 @@ self.I18N = {
           ]
         },
         {
-          "title": "Lāʻie ट्राम टूर",
+          "title": "Lāʻie Tram Tour",
           "subtitle": "",
           "text": "Lāʻie शहर और BYU–Hawaii परिसर की सुंदर सैर का आनंद लें।\nइस टूर में The Church of Jesus Christ of Latter-day Saints के Lāʻie Hawaiʻi Temple परिसर में 15 मिनट का ठहराव भी शामिल है।",
           "chips": [
@@ -2819,28 +2819,28 @@ self.I18N = {
     },
     "close": {
       "mention": "यदि {name} ने आपकी यात्रा को ख़ास बनाया हो, तो अपना अनुभव साझा करते समय आप {name} का नाम ले सकते हैं।",
-      "ready": "“जाने से पहले” अब खुल गया है।",
-      "locked": {
-        "text": "यह भाग आपकी यात्रा के थोड़ी देर बाद उपलब्ध होगा।\nकृपया अपने भोजन का आनंद लें और लगभग 25–30 मिनट बाद दोबारा देखें।",
-        "note": "कोई जल्दी नहीं — हमारे साथ अपना समय बिताइए!",
-        "soon": "लगभग {m} मिनट में उपलब्ध"
-      },
       "thanks": {
         "title": "महालो, ʻOhana!",
         "text": "आज रात Gateway Buffet में हमारे साथ आने के लिए धन्यवाद। आपकी सेवा करना हमारे लिए सौभाग्य की बात रही, और हमें आशा है कि आपको अच्छा लगा।\nकृपया आराम करें और शाम के बाक़ी समय का आनंद लें।"
       },
       "review": {
         "title": "अपना अनुभव साझा करें",
-        "text": "यदि आपके पास थोड़ा समय हो, तो हम Polynesian Cultural Center में आपके अनुभव के बारे में सुनना चाहेंगे।\nआपका सर्वर आपको QR कोड दिखाएगा। बस उसे स्कैन करें और TripAdvisor पर टैप करके अपने भोजन, सर्वर, गाँवों, बफ़े या नाइट शो के बारे में प्रतिक्रिया दें।\nआपकी प्रतिक्रिया से हमारी टीम को बेहतर होने में मदद मिलती है, और समय निकालने के लिए हम आपके आभारी हैं।"
+        "text": "यदि आपके पास थोड़ा समय हो, तो हम Polynesian Cultural Center में आपके अनुभव के बारे में सुनना चाहेंगे।\nआपका वेटर आपको QR कोड दिखाएगा। बस उसे स्कैन करें और TripAdvisor पर टैप करके अपने भोजन, वेटर, गाँवों, बफ़े या नाइट शो के बारे में प्रतिक्रिया दें।\nआपकी प्रतिक्रिया से हमारी टीम को बेहतर होने में मदद मिलती है, और समय निकालने के लिए हम आपके आभारी हैं।"
       },
       "survey": {
         "title": "बाद के लिए एक सूचना",
         "text": "आपकी यात्रा के लगभग एक सप्ताह बाद, टिकट ख़रीदने वाले व्यक्ति को Polynesian Cultural Center की ओर से समग्र अनुभव के बारे में एक छोटा ईमेल सर्वे मिल सकता है।\nयदि आपको वह मिले, तो कृपया कुछ क्षण निकालकर वहाँ भी अपनी राय साझा करें, हम आभारी होंगे।"
       },
-      "server": "आज रात आपके सर्वर:",
+      "server": "आज रात आपके वेटर:",
       "end": "महालो नुई लोआ",
-      "qrNote": "जब आप तैयार होंगे, तब आपका सर्वर आपको QR कोड दिखाएगा।",
-      "endNote": "अपने दिन का कुछ समय हमारे साथ बिताने के लिए धन्यवाद।\nमहालो नुई लोआ, और अपनी शाम का आनंद लें!"
+      "qrNote": "जब आप तैयार होंगे, तब आपका वेटर आपको QR कोड दिखाएगा।",
+      "endNote": "अपने दिन का कुछ समय हमारे साथ बिताने के लिए धन्यवाद।\nमहालो नुई लोआ, और अपनी शाम का आनंद लें!",
+      "confirm": {
+        "title": "क्या आपका खाना हो गया?",
+        "text": "“जाने से पहले” में हमारा धन्यवाद और अपनी राय बताने का आसान तरीक़ा है। जब आप तैयार हों, आगे बढ़ें।",
+        "yes": "हाँ, आगे बढ़ें",
+        "no": "अभी नहीं"
+      }
     },
     "status": {
       "open": "अभी खुला है",
@@ -2945,7 +2945,7 @@ self.I18N = {
           ]
         },
         {
-          "title": "Lāʻie трамвайн аялал",
+          "title": "Lāʻie Tram Tour",
           "subtitle": "",
           "text": "Трамвайгаар Lāʻie хот болон BYU–Hawaii-н кампусаар үзэсгэлэнтэй аялаарай.\nАялалын үеэр Хожмын Үеийн Гэгээнтнүүдийн Есүс Христийн Сүмийн Lāʻie Hawaiʻi сүмийн хашаанд 15 минут зогсоно.",
           "chips": [
@@ -2977,12 +2977,6 @@ self.I18N = {
     },
     "close": {
       "mention": "Өнөөдөр танд үйлчилсэн {name} таалагдсан бол сэтгэгдэл бичихдээ нэрийг нь дурдаарай, бидэнд маш их урам болно.",
-      "ready": "«Явахын өмнө» хэсэг нээгдлээ.",
-      "locked": {
-        "text": "Энэ хэсэг арай дараа нээгдэнэ.\nЭхлээд хоолоо сайхан идээд, 25–30 минутын дараа дахин орж үзээрэй.",
-        "note": "Яарах хэрэггүй, цагаа сайхан өнгөрүүлээрэй!",
-        "soon": "Ойролцоогоор {m} минутын дараа нээгдэнэ"
-      },
       "thanks": {
         "title": "Махало, ʻOhana!",
         "text": "Өнөө орой Gateway Buffet-д ирсэнд баярлалаа. Танд үйлчилсэн нь бидэнд таатай байлаа, таалагдсан гэж найдаж байна.\nОройн үлдсэн хугацааг тайван сайхан өнгөрүүлээрэй."
@@ -2998,7 +2992,13 @@ self.I18N = {
       "server": "Өнөө оройн үйлчлэгч:",
       "end": "Махало нуи лоа",
       "qrNote": "Бэлэн болмогц үйлчлэгч тань QR кодыг үзүүлнэ.",
-      "endNote": "Өдрийнхөө нэг хэсгийг бидэнтэй өнгөрүүлсэнд баярлалаа.\nМахало нуи лоа, оройг сайхан өнгөрүүлээрэй!"
+      "endNote": "Өдрийнхөө нэг хэсгийг бидэнтэй өнгөрүүлсэнд баярлалаа.\nМахало нуи лоа, оройг сайхан өнгөрүүлээрэй!",
+      "confirm": {
+        "title": "Хоолоо идэж дууссан уу?",
+        "text": "«Явахын өмнө» хэсэгт бидний талархал болон санал хүсэлтээ үлдээх хялбар арга бий. Бэлэн болмогц үргэлжлүүлээрэй.",
+        "yes": "Тийм, үргэлжлүүлэх",
+        "no": "Одоохондоо үгүй"
+      }
     },
     "status": {
       "open": "Одоо нээлттэй",

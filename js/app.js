@@ -40,11 +40,10 @@
   const SOON_MINUTES = 30;
   const COUNTDOWN_WINDOW = 180;
 
-  // Section 03 (Before You Go) stays locked for the first ~28 minutes after the guide is first opened.
-  const UNLOCK_DELAY = 28 * 60 * 1000;
+  // Before You Go is never locked. If a guest taps it in the first ~28 minutes, a small window asks "Finished eating?" once.
+  const ASK_WINDOW = 28 * 60 * 1000;
   const KEY_FIRST = "gg_first_visit";
-  const KEY_UNLOCKED = "gg_s3_unlocked";
-  const KEY_NOTIFIED = "gg_s3_notified";
+  const KEY_DONE = "gg_done_eating";   // the guest answered yes
 
   /* ---------- Helpers ---------- */
   const $ = (id) => document.getElementById(id);
@@ -106,29 +105,42 @@
   if (params.has("staff")) store.set(KEY_STAFF, "1");
   const isStaff = () => store.get(KEY_STAFF) === "1";
 
-  /* ---------- Section 03 timed unlock ---------- */
-  // Preview helpers: ?unlock=now opens it, ?unlock=reset starts the timer again, ?unlock=<minutes> sets minutes left.
+  /* ---------- Before You Go: "Finished eating?" ---------- */
+  // Preview helpers: ?unlock=now skips the question, ?unlock=reset asks again.
   (() => {
     const u = params.get("unlock");
-    if (u === "reset") { store.set(KEY_FIRST, String(Date.now())); store.set(KEY_UNLOCKED, ""); store.set(KEY_NOTIFIED, ""); }
-    else if (u === "now") store.set(KEY_UNLOCKED, "1");
-    else if (u && /^\d+$/.test(u)) { store.set(KEY_FIRST, String(Date.now() - UNLOCK_DELAY + +u * 60000)); store.set(KEY_UNLOCKED, ""); store.set(KEY_NOTIFIED, ""); }
+    if (u === "reset") { store.set(KEY_FIRST, String(Date.now())); store.set(KEY_DONE, ""); }
+    else if (u === "now") store.set(KEY_DONE, "1");
   })();
 
-  // First visit is saved once, so refreshing or reopening never restarts the timer.
+  // First visit is saved once, so refreshing or reopening never restarts the clock.
   let firstVisit = +store.get(KEY_FIRST) || 0;
   if (!firstVisit || firstVisit > Date.now()) {
     firstVisit = Date.now();
     store.set(KEY_FIRST, String(firstVisit));
   }
 
-  function isUnlocked() {
-    if (store.get(KEY_UNLOCKED) === "1") return true;
-    if (Date.now() - firstVisit < UNLOCK_DELAY) return false;
-    store.set(KEY_UNLOCKED, "1");
-    return true;
+  // Ask only early in the visit and only until the guest says yes; after ~28 minutes they are surely done.
+  const needsAsk = () => store.get(KEY_DONE) !== "1" && Date.now() - firstVisit < ASK_WINDOW;
+
+  function askDone() {
+    const dlg = $("doneDlg");
+    if (typeof dlg.showModal !== "function") { store.set(KEY_DONE, "1"); return goTo("close"); }   // very old browsers: just go
+    if (dlg.open) return;
+    const c = t().close.confirm;
+    $("doneTitle").textContent = c.title;
+    $("doneText").textContent = c.text;
+    $("doneYes").textContent = c.yes;
+    $("doneNo").textContent = c.no;
+    dlg.showModal();
   }
-  const minutesLeft = () => Math.max(1, Math.ceil((firstVisit + UNLOCK_DELAY - Date.now()) / 60000));
+
+  function bindDone() {
+    const dlg = $("doneDlg");
+    $("doneYes").addEventListener("click", () => { store.set(KEY_DONE, "1"); dlg.close(); goTo("close"); });
+    $("doneNo").addEventListener("click", () => dlg.close());
+    closeOnBackdrop(dlg);
+  }
 
   /* ---------- Time (always Hawaiʻi time, regardless of the phone's zone) ---------- */
   const toMinutes = (hhmm) => {
@@ -308,19 +320,7 @@
   }
 
   // Shown until the unlock time: a calm "come back later" note, no review content.
-  function viewLocked() {
-    const { close, tabs } = t();
-    const { locked } = close;
-    return viewHead(tabs.close) + `
-      <section class="locked">
-        ${paras(locked.text, "locked__text")}
-        <p class="locked__note">${esc(locked.note)}</p>
-        <div class="locked__soon" id="lockedSoon">${countdown(locked.soon, minutesLeft())}</div>
-      </section>` + pager();
-  }
-
   function viewClose() {
-    if (!isUnlocked()) return viewLocked();
     const { close, status } = t();
     const name = settings.name;
 
@@ -386,7 +386,6 @@
 
     $$(".lang").forEach((btn) => btn.setAttribute("aria-pressed", btn.dataset.lang === state.lang));
     $("qrTitle").textContent = lang.qr;
-    if (!$("notice").hidden) { $("noticeText").textContent = lang.close.ready; $("noticeOpen").textContent = lang.tabs.close; }
   }
 
   /** enter: "up" | "next" | "prev" | null (no animation) */
@@ -405,7 +404,7 @@
 
   function goTo(tab, { focus = false } = {}) {
     if (tab === state.tab) return;
-    if (tab === "close" && isUnlocked() && !$("notice").hidden) hideNotice();
+    if (tab === "close" && needsAsk()) return askDone();
     const dir = TABS.indexOf(tab) > TABS.indexOf(state.tab) ? "next" : "prev";
     state.tab = tab;
     hideSwipeHint();
@@ -873,6 +872,8 @@
   bindTheme();
   bindGate();
   bindBusy();
+  bindDone();
+  if (state.tab === "close" && needsAsk()) state.tab = "guide";   // a link straight to Before You Go starts on the guide
   render("up");
   if (needsGate()) openGate(); else showSwipeHint();
   checkBusy();
@@ -892,32 +893,4 @@
     if (state.tab === "acts" && !document.querySelector("dialog[open]")) render(null);
   }, 30_000);
 
-  // Section 03: keep the quiet countdown fresh, and swap in the full content the moment it unlocks
-  // (no popup, no redirect, no notification — only if the guest is already looking at it).
-  function checkUnlock() {
-    const soon = $("lockedSoon");
-    if (state.tab === "close" && soon) {
-      if (isUnlocked()) { if (!document.querySelector("dialog[open]")) render("up"); }
-      else soon.innerHTML = countdown(t().close.locked.soon, minutesLeft());
-    }
-    if (!isUnlocked() || store.get(KEY_NOTIFIED) === "1") return;
-    if (state.tab === "close") { if (!$("lockedSoon")) store.set(KEY_NOTIFIED, "1"); return; } // they're already reading it
-    showNotice();
-  }
-
-  /* One small notice box, once, when Before You Go opens. It never takes over the screen or moves the guest. */
-  function showNotice() {
-    $("noticeText").textContent = t().close.ready;
-    $("noticeOpen").textContent = t().tabs.close;
-    $("notice").hidden = false;
-  }
-  function hideNotice() {
-    $("notice").hidden = true;
-    store.set(KEY_NOTIFIED, "1");
-  }
-  $("noticeOk").addEventListener("click", hideNotice);
-  $("noticeOpen").addEventListener("click", () => { hideNotice(); goTo("close"); });
-  setInterval(checkUnlock, 15_000);
-  document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible") checkUnlock(); });
-  checkUnlock();
 })();

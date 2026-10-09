@@ -19,12 +19,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@500..700&family=Source+Sans+3:wght@400..700&family=Noto+Sans+Arabic:wght@400..700&family=Noto+Sans+Devanagari:wght@400..700&family=Noto+Sans+Thai:wght@400..700&display=swap">
-  <link rel="stylesheet" href="css/styles.css?v=39">
-  <script src="js/boot.js?v=39"></script>
+  <link rel="stylesheet" href="css/styles.css?v=41">
+  <script src="js/boot.js?v=41"></script>
 
-  <script src="js/i18n.js?v=39" defer></script>
-  <script src="js/icons.js?v=39" defer></script>
-  <script src="js/app.js?v=39" defer></script>
+  <script src="js/i18n.js?v=41" defer></script>
+  <script src="js/icons.js?v=41" defer></script>
+  <script src="js/app.js?v=41" defer></script>
 </head>
 <body>
   <a class="skip" href="#panel">Skip to content</a>
@@ -96,14 +96,15 @@
     <svg class="swipe-hint__arrow" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg>
   </div>
 
-  <!-- Quiet notice when Before You Go opens (never a popup over the page, never auto-navigates) -->
-  <aside class="notice" id="notice" role="status" hidden>
-    <p class="notice__text" id="noticeText"></p>
-    <div class="notice__actions">
-      <button class="notice__open" id="noticeOpen" type="button"></button>
-      <button class="notice__ok" id="noticeOk" type="button">OK</button>
+  <!-- ============ "Finished eating?" (asked once when a guest taps Before You Go early in the visit) ============ -->
+  <dialog class="sheet done" id="doneDlg" aria-labelledby="doneTitle">
+    <h2 class="sheet__title" id="doneTitle"></h2>
+    <p class="busy__text" id="doneText"></p>
+    <div class="done__actions">
+      <button class="btn" type="button" id="doneYes"></button>
+      <button class="btn btn--ghost" type="button" id="doneNo"></button>
     </div>
-  </aside>
+  </dialog>
 
   <!-- ============ Language gate: big, easy language choice on first open (and from the globe button) ============ -->
   <dialog class="gate" id="gate" aria-labelledby="gateTitle">

@@ -58,12 +58,15 @@ for (const lang of keys) {
   // busy notice present and complete
   const b = L.busy;
   if (!b || !["title", "p1", "p2", "p3", "ok"].every((k) => b[k] && b[k].trim())) bad(lang, "busy", "notice text incomplete");
-  // the lock-screen countdown needs {m}
-  if (!L.close.locked.soon.includes("{m}")) bad(lang, "close.locked.soon", "needs {m}");
+  // the "Finished eating?" window
+  const cf = L.close.confirm;
+  if (!cf || !["title", "text", "yes", "no"].every((k) => cf[k] && cf[k].trim())) bad(lang, "close.confirm", "\"Finished eating?\" window text incomplete");
   if (!L.status.gatesIn.includes("{m}") || !L.status.gatesOpen.includes("{m}")) bad(lang, "status", "countdown texts need {m}");
   // the guide must still contain the allergy link markers exactly once
   const allergy = L.guide.items.find((i) => i.id === "allergy");
   if (!allergy || (allergy.text.match(/\{link\}/g) || []).length !== 1 || (allergy.text.match(/\{\/link\}/g) || []).length !== 1) bad(lang, "guide.allergy", "needs exactly one {link}...{/link}");
+  // place and tour names must match English exactly (they are the names on the signs)
+  L.acts.items.forEach((it, i) => { if (it.title !== en.acts.items[i].title) bad(lang, `acts.items[${i}].title`, "place name must stay exactly: " + en.acts.items[i].title); });
   // item ids unchanged
   L.guide.items.forEach((it, i) => { if (it.id !== en.guide.items[i].id) bad(lang, `guide.items[${i}].id`, "id changed"); });
   // the greeting must start with the Hawaiian greeting so the top bar can use its first word
