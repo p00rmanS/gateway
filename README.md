@@ -37,13 +37,12 @@ Staff open the guide with `?staff=1` on the end of the link (e.g. `https://your-
 (`gatewayServer`) and shows as "Your server today" on the Welcome Guide and as a soft mention in Before You Go.
 To switch: settings (person icon) → Change Server. The QR code gives guests a link with the server's name but without the picker.
 
-## Section 03 timed unlock
+## Before You Go: "Finished eating?" window
 
-Before You Go is always visible in the navigation, but stays on a calm "available a little later" note for the
-first 28 minutes after the guide is first opened on a phone (`UNLOCK_DELAY` in `js/app.js`). The first-visit time
-and unlocked state are saved in localStorage (`gg_first_visit`, `gg_s3_unlocked`), so refreshing does not restart it.
-It swaps to the full content on its own, with no popup or redirect. Preview with `?unlock=now`, `?unlock=reset`
-or `?unlock=5` (5 minutes left).
+Before You Go is never locked. If a guest taps it in the first 28 minutes after the guide is first opened on a phone
+(`ASK_WINDOW` in `js/app.js`), a small window asks "Finished eating?" with **Yes, continue** / **Not yet**. "Yes" opens it and
+is remembered (`gg_done_eating`); "Not yet" stays where they are and asks again next time. After 28 minutes it opens with no
+question. Preview with `?unlock=now` (skip the question) or `?unlock=reset` (ask again).
 
 ## Going back to the version without the timed unlock
 
@@ -57,7 +56,10 @@ python -m http.server 5288
 ```
 
 Then open http://localhost:5288. Add `?time=18:20` to the address to preview the countdown and
-activity statuses at a given Hawaiʻi time.
+activity statuses at a given Hawaiʻi time. Other preview helpers: `?busy=1` (busy popup), `?gate=1` (language picker),
+`?gate=reset` (forget the saved language), `?lang=ja`.
+
+Tests: `node tests/i18n.test.js` checks all languages. `node tests/export-review.js` writes `translation-review.csv`.
 
 ## Publishing updates
 

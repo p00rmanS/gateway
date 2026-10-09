@@ -121,11 +121,13 @@
   }
 
   // Ask only early in the visit and only until the guest says yes; after ~28 minutes they are surely done.
-  const needsAsk = () => store.get(KEY_DONE) !== "1" && Date.now() - firstVisit < ASK_WINDOW;
+  // (doneNow also remembers the answer in memory, for phones that block saved settings)
+  let doneNow = false;
+  const needsAsk = () => !doneNow && store.get(KEY_DONE) !== "1" && Date.now() - firstVisit < ASK_WINDOW;
 
   function askDone() {
     const dlg = $("doneDlg");
-    if (typeof dlg.showModal !== "function") { store.set(KEY_DONE, "1"); return goTo("close"); }   // very old browsers: just go
+    if (typeof dlg.showModal !== "function") { doneNow = true; store.set(KEY_DONE, "1"); return goTo("close"); }   // very old browsers: just go
     if (dlg.open) return;
     const c = t().close.confirm;
     $("doneTitle").textContent = c.title;
@@ -137,7 +139,7 @@
 
   function bindDone() {
     const dlg = $("doneDlg");
-    $("doneYes").addEventListener("click", () => { store.set(KEY_DONE, "1"); dlg.close(); goTo("close"); });
+    $("doneYes").addEventListener("click", () => { doneNow = true; store.set(KEY_DONE, "1"); dlg.close(); goTo("close"); });
     $("doneNo").addEventListener("click", () => dlg.close());
     closeOnBackdrop(dlg);
   }
